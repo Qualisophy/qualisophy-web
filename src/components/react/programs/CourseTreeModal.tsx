@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { courseCategories } from "@/data/courseCatalog"; // Importamos la fuente de verdad
+import { useTranslations } from "@/hooks/useTranslations"; // Añadimos el hook
 
 interface CourseTreeModalProps {
   isOpen: boolean;
@@ -12,6 +13,7 @@ export const CourseTreeModal: React.FC<CourseTreeModalProps> = ({
 }) => {
   const [selectedBranchId, setSelectedBranchId] = useState<string | null>("qa");
   const coursesContainerRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations(); // Inicializamos el traductor
 
   useEffect(() => {
     if (isOpen) {
@@ -44,6 +46,19 @@ export const CourseTreeModal: React.FC<CourseTreeModalProps> = ({
     }
   };
 
+  // Funciones de ayuda para obtener la traducción dinámica evitando errores de TypeScript
+  const getTranslatedCategoryTitle = (id: string, fallback: string) => {
+    const key = `cat.${id}.title`;
+    const translated = t(key as any);
+    return translated && translated !== key ? translated : fallback;
+  };
+
+  const getTranslatedCourseTitle = (id: string, fallback: string) => {
+    const key = `course.${id}.title`;
+    const translated = t(key as any);
+    return translated && translated !== key ? translated : fallback;
+  };
+
   return (
     <div
       className="fixed inset-0 z-[9999] flex items-end md:items-center justify-center bg-secondary/90 backdrop-blur-sm animate-in fade-in duration-200 p-4 md:pt-28 md:pb-6"
@@ -53,10 +68,10 @@ export const CourseTreeModal: React.FC<CourseTreeModalProps> = ({
         <div className="p-6 md:p-8 border-b border-gray-100 flex justify-between items-start shrink-0 bg-white z-10 relative rounded-t-3xl">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold font-heading text-secondary">
-              Áreas de Formación
+              {t("modal.courses.title")}
             </h2>
             <p className="text-gray-500 font-primary text-sm mt-1">
-              Selecciona una rama para ver todos los itinerarios disponibles
+              {t("modal.courses.subtitle")}
             </p>
           </div>
           <button
@@ -72,6 +87,10 @@ export const CourseTreeModal: React.FC<CourseTreeModalProps> = ({
             <div className="flex flex-col gap-3">
               {courseCategories.map((branch) => {
                 const isActive = selectedBranchId === branch.id;
+                const translatedBranchTitle = getTranslatedCategoryTitle(
+                  branch.id,
+                  branch.title,
+                );
 
                 return (
                   <div key={branch.id} className="flex flex-col">
@@ -95,7 +114,7 @@ export const CourseTreeModal: React.FC<CourseTreeModalProps> = ({
                         <span
                           className={`block font-bold text-lg transition-colors ${isActive ? "text-primary" : "text-slate-800 group-hover:text-primary"}`}
                         >
-                          {branch.title}
+                          {translatedBranchTitle}
                         </span>
                       </div>
 
@@ -116,7 +135,8 @@ export const CourseTreeModal: React.FC<CourseTreeModalProps> = ({
                             href={branch.link}
                             className="flex items-center gap-2 text-sm font-bold text-primary hover:underline mb-2"
                           >
-                            Ver toda la rama {branch.title}
+                            {t("modal.courses.viewBranch")}{" "}
+                            {translatedBranchTitle}
                             <span className="material-symbols-outlined text-sm">
                               open_in_new
                             </span>
@@ -131,7 +151,10 @@ export const CourseTreeModal: React.FC<CourseTreeModalProps> = ({
                                 menu_book
                               </span>
                               <span className="text-sm font-medium leading-snug">
-                                {course.title}
+                                {getTranslatedCourseTitle(
+                                  course.id,
+                                  course.title,
+                                )}
                               </span>
                             </a>
                           ))}
@@ -149,16 +172,19 @@ export const CourseTreeModal: React.FC<CourseTreeModalProps> = ({
               <div className="flex items-center justify-between mb-4">
                 {/* Píldora de Categoría Activa */}
                 <div
-                  className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-100 text-seconday`}
+                  className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-100 text-secondary`}
                 >
-                  {activeBranch.title}
+                  {getTranslatedCategoryTitle(
+                    activeBranch.id,
+                    activeBranch.title,
+                  )}
                 </div>
                 <a
                   href={activeBranch.link}
                   className="flex items-center gap-2 text-sm font-bold text-primary transition-colors group"
                 >
                   <span className="group-hover:underline">
-                    Ir a la sección completa
+                    {t("modal.courses.goSection")}
                   </span>
                   <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">
                     arrow_forward
@@ -167,7 +193,7 @@ export const CourseTreeModal: React.FC<CourseTreeModalProps> = ({
               </div>
               <div className="flex flex-col gap-2">
                 <h3 className="text-2xl font-bold font-heading text-secondary">
-                  Cursos Disponibles
+                  {t("modal.courses.available")}
                 </h3>
               </div>
             </div>
@@ -193,11 +219,11 @@ export const CourseTreeModal: React.FC<CourseTreeModalProps> = ({
                     <div className="flex-1 min-w-0">
                       {/* Título del curso */}
                       <span className="block font-bold text-secondary text-base mb-1 group-hover:text-primary transition-colors pr-2 leading-snug">
-                        {course.title}
+                        {getTranslatedCourseTitle(course.id, course.title)}
                       </span>
                       {/* Enlace estético */}
                       <span className="text-xs text-gray-400 group-hover:text-primary transition-colors">
-                        Ver temario y detalles →
+                        {t("modal.courses.details")}
                       </span>
                     </div>
                   </a>
@@ -214,7 +240,9 @@ export const CourseTreeModal: React.FC<CourseTreeModalProps> = ({
             href="/cursos"
             className="inline-flex items-center gap-2 text-primary font-bold text-base group"
           >
-            <span className="group-hover:underline">Ver Catálogo Completo</span>
+            <span className="group-hover:underline">
+              {t("modal.courses.catalog")}
+            </span>
             <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">
               arrow_forward
             </span>

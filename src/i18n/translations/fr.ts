@@ -757,4 +757,131 @@ export default {
     "Votre entreprise peut être le moteur de changement dont quelqu'un a besoin. Rejoignez le réseau inclusif.",
   "social.cta.btn1": "Recrutez avec un Impact Social",
   "social.cta.btn2": "Demandez un Accompagnement",
+  // --- RESKILLING PAGE ---
+  "reskilling.meta.title": "Reconversion Professionnelle - Qualisophy",
+  "reskilling.meta.desc":
+    "Votre réinvention professionnelle commence ici. Nous transformons votre expérience passée en nouvelles compétences numériques.",
+
+  "reskilling.hero.title": "Votre Réinvention Professionnelle",
+  "reskilling.hero.highlight": "Commence Ici",
+  "reskilling.hero.subtitle":
+    "Nous transformons votre expérience passée en nouvelles compétences numériques pour le marché technologique actuel.",
+  "reskilling.hero.cta": "Voir les Programmes de Formation",
+
+  "reskilling.methodology1.title": "De l'Expérience à l'Innovation",
+  "reskilling.methodology1.desc1":
+    "Vous ne partez pas de zéro. Nous tirons parti de vos compétences non techniques existantes — leadership, gestion, communication — et les complétons avec les compétences techniques les plus demandées.",
+  "reskilling.methodology1.desc2":
+    "Un chemin structuré pour faire de votre parcours votre plus grand atout.",
+  "reskilling.methodology1.check1": "Diagnostic des compétences transférables",
+  "reskilling.methodology1.check2": "Plan d'étude personnalisé",
+  "reskilling.methodology1.check3": "Valorisation de l'expérience passée",
+
+  "reskilling.methodology2.title": "Accompagnement dans la Transition",
+  "reskilling.methodology2.desc1":
+    "Le changement professionnel est un défi émotionnel et stratégique. Nous proposons des séances de stratégie de carrière individuelles.",
+  "reskilling.methodology2.desc2":
+    "Nous vous guidons à chaque étape, de la réécriture de votre CV à la préparation aux entretiens techniques pour des rôles junior/intermédiaire.",
+  "reskilling.methodology2.check1": "Mentorat de Carrière 1:1",
+  "reskilling.methodology2.check2": "Rebranding Professionnel (LinkedIn, CV)",
+  "reskilling.methodology2.check3": "Simulations d'Entretien Technique",
+
+  "reskilling.pillars.title": "Piliers du Programme",
+  "reskilling.pillars.subtitle":
+    "Quatre fondements qui garantissent votre succès dans votre nouveau rôle.",
+  "reskilling.pillars.1.title": "Mentors Seniors",
+  "reskilling.pillars.1.desc":
+    "Apprenez directement de professionnels actifs dans l'industrie qui ont suivi des chemins similaires et connaissent les exigences actuelles.",
+  "reskilling.pillars.2.title": "Projets Réels",
+  "reskilling.pillars.2.desc":
+    "Oubliez la théorie abstraite. Vous développerez un portfolio solide en résolvant des problèmes réels pour des entreprises partenaires.",
+  "reskilling.pillars.3.title": "Stages en Entreprise",
+  "reskilling.pillars.3.desc":
+    "De réelles opportunités d'appliquer vos connaissances dans des environnements d'entreprise pour gagner en expérience pratique et en visibilité.",
+  "reskilling.pillars.4.title": "Réseautage Stratégique",
+  "reskilling.pillars.4.desc":
+    "Accédez à des événements exclusifs et connectez-vous avec une communauté active qui vous ouvrira des portes dans l'écosystème technologique.",
+
+  "reskilling.routes.title": "Itinéraires de Transformation Communs",
+  "reskilling.routes.subtitle":
+    "Découvrez comment votre profil actuel peut évoluer vers des rôles technologiques à fort impact.",
+  "reskilling.routes.1.title": "Data Analyst",
+  "reskilling.routes.1.desc":
+    "Votre capacité d'analyse et votre souci du détail (Finance/Admin) sont la base parfaite pour maîtriser SQL, Python et la visualisation de données.",
+  "reskilling.routes.2.title": "Digital Marketing",
+  "reskilling.routes.2.desc":
+    "Apportez votre force de persuasion commerciale au monde numérique. Apprenez le Growth Hacking, le SEO/SEM et l'automatisation du marketing.",
+  "reskilling.routes.3.title": "Testeur QA",
+  "reskilling.routes.3.desc":
+    "Votre empathie avec le client (Service Client) et votre capacité à résoudre des problèmes vous rendent idéal pour assurer la qualité des logiciels.",
+  "reskilling.routes.4.title": "Chef de Projet IT",
+  "reskilling.routes.4.desc":
+    "Votre expérience en gestion d'équipes vaut de l'or. Certifiez-vous en méthodes agiles (Scrum/Kanban) pour diriger le développement de produits.",
+  // --- GLOBALES POUR PROGRAMMES ---
+  "program.phase1": "Phase 1",
+  "program.phase2": "Phase 2",
+
+  // --- RESKILLING CTA (ReskillingCourses) ---
+  "reskilling.cta.title": "Boostez votre carrière technologique",
+  "reskilling.cta.desc":
+    "Que vous cherchiez à vous spécialiser techniquement ou que vous ayez besoin d'une orientation personnalisée, nous avons le parcours qu'il vous faut.",
+  "reskilling.cta.btn1": "Commencez votre Transformation",
+  "reskilling.cta.btn2": "Planifier une Consultation",
+  // --- COURSE TREE MODAL ---
+  "modal.courses.title": "Domaines de Formation",
+  "modal.courses.subtitle":
+    "Sélectionnez une branche pour voir tous les itinéraires disponibles",
+  "modal.courses.viewBranch": "Voir toute la branche",
+  "modal.courses.goSection": "Aller à la section complète",
+  "modal.courses.available": "Cours Disponibles",
+  "modal.courses.details": "Voir le programme et les détails →",
+  "modal.courses.catalog": "Voir le Catalogue Complet",
+
+  // --- PROGRAMS MODAL ---
+  "modal.programs.title1": "Découvrez nos ",
+  "modal.programs.title2": "Programmes",
+  "modal.programs.subtitle":
+    "Nos parcours de formation sont conçus pour s'adapter à différents profils et réalités, favorisant l'inclusion et la transformation numérique.",
+  "modal.programs.1.title": "Neurodivergence",
+  "modal.programs.1.desc":
+    "Nous stimulons le talent des personnes atteintes de TDAH, d'Autisme et à Haut Potentiel.",
+  "modal.programs.2.title": "Talent Migrant",
+  "modal.programs.2.desc":
+    "Nous validons les compétences pour une intégration professionnelle mondiale et digne.",
+  "modal.programs.3.title": "Impact Social",
+  "modal.programs.3.desc":
+    "Nous créons des opportunités numériques pour les personnes menacées d'exclusion.",
+  "modal.programs.4.title": "Milieu Rural",
+  "modal.programs.4.desc":
+    "Nous formons et connectons les talents dans les zones de l'Espagne Rurale.",
+  "modal.programs.5.title": "Reconversion Pro",
+  "modal.programs.5.desc": "Réinvention professionnelle pour le marché actuel.",
+  "modal.programs.details": "Voir les détails du programme",
+  "modal.programs.footer.q": "Vous ne savez pas lequel choisir ?",
+  "modal.programs.footer.desc":
+    " Nous vous guidons gratuitement pour trouver votre voie dans le secteur technologique.",
+  "modal.programs.footer.btn": "Contactez-nous maintenant",
+  // --- CATÉGORIES DU CATALOGUE ---
+  "cat.qa.title": "QA & Automatisation",
+  "cat.data.title": "Data & BI",
+  "cat.tools.title": "Outils d'Entreprise",
+  "cat.devops.title": "DevOps & Gestion",
+  "cat.agile.title": "Agile & Scrum",
+
+  // --- TITRES DES COURS ---
+  "course.qa-software.title": "Qualité Logicielle (QA) et Testing",
+  "course.qa-api.title": "API Testing avec Postman",
+  "course.qa-cypress.title": "Cypress Automation Bootcamp",
+  "course.qa-junit.title": "Tests Unitaires avec JUnit",
+  "course.qa-agile.title": "Agile Testing",
+  "course.qa-genai.title": "Generative AI pour Software Testing",
+  "course.data-sql.title": "Introduction à SQL pour Power BI",
+  "course.data-powerbi.title": "Analyse de Données avec Power BI",
+  "course.tools-excel.title": "Microsoft Excel Expert",
+  "course.tools-office.title": "Bureautique Intégrale",
+  "course.tools-chatbots.title": "Chatbots pour le E-commerce",
+  "course.tools-make.title": "Productivité avec Make",
+  "course.devops-gitlab.title": "Gestion Avancée et CI/CD avec GitLab",
+  "course.devops-intro.title": "DevOps, Continuous Testing et CI/CD",
+  "course.agile-scrum.title": "Agile Mastery : La Voie du Scrum Master",
 } as const;

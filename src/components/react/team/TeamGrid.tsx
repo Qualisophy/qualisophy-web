@@ -13,7 +13,7 @@ import imgJavi from "../../../assets/instructor/instructor-javi.jpeg";
 const teamMembers = [
   {
     name: "Elena Martín",
-    role: "CEO and Founder",
+    role: "CEO & Founder",
     image: imgElena.src,
     position: "object-top",
     scale: "scale-100",

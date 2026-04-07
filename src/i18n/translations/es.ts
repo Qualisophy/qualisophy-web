@@ -745,4 +745,131 @@ export default {
     "Tu empresa puede ser el motor de cambio que alguien necesita. Únete a la red inclusiva.",
   "social.cta.btn1": "Contrata con Impacto Social",
   "social.cta.btn2": "Solicita Acompañamiento",
+  // --- RESKILLING PAGE ---
+  "reskilling.meta.title": "Reconversión Laboral - Qualisophy",
+  "reskilling.meta.desc":
+    "Tu reinvención profesional comienza aquí. Transformamos tu experiencia previa en nuevas competencias digitales.",
+
+  "reskilling.hero.title": "Tu Reinvención Profesional",
+  "reskilling.hero.highlight": "Comienza Aquí",
+  "reskilling.hero.subtitle":
+    "Transformamos tu experiencia previa en nuevas competencias digitales para el mercado tecnológico actual.",
+  "reskilling.hero.cta": "Ver Programas Formativos",
+
+  "reskilling.methodology1.title": "De la Experiencia a la Innovación",
+  "reskilling.methodology1.desc1":
+    "No empiezas de cero. Aprovechamos tus habilidades blandas existentes —liderazgo, gestión, comunicación— y las complementamos con las competencias técnicas más demandadas.",
+  "reskilling.methodology1.desc2":
+    "Un camino estructurado para convertir tu trayectoria en tu mayor activo.",
+  "reskilling.methodology1.check1": "Diagnóstico de competencias transferibles",
+  "reskilling.methodology1.check2": "Plan de estudio personalizado",
+  "reskilling.methodology1.check3": "Valoración de experiencia previa",
+
+  "reskilling.methodology2.title": "Acompañamiento en la Transición",
+  "reskilling.methodology2.desc1":
+    "El cambio profesional es un reto emocional y estratégico. Ofrecemos sesiones de estrategia de carrera uno a uno.",
+  "reskilling.methodology2.desc2":
+    "Te guiamos en cada paso, desde la reescritura de tu CV hasta la preparación de entrevistas técnicas para roles junior/mid.",
+  "reskilling.methodology2.check1": "Mentoring de Carrera 1:1",
+  "reskilling.methodology2.check2": "Rebranding Profesional (LinkedIn, CV)",
+  "reskilling.methodology2.check3": "Simulacros de Entrevista Técnica",
+
+  "reskilling.pillars.title": "Pilares del Programa",
+  "reskilling.pillars.subtitle":
+    "Cuatro fundamentos que garantizan tu éxito en el nuevo rol.",
+  "reskilling.pillars.1.title": "Mentores Senior",
+  "reskilling.pillars.1.desc":
+    "Aprende directamente de profesionales activos en la industria que han recorrido caminos similares y conocen las exigencias actuales.",
+  "reskilling.pillars.2.title": "Proyectos Reales",
+  "reskilling.pillars.2.desc":
+    "Olvida la teoría abstracta. Desarrollarás un portafolio robusto resolviendo problemas reales de empresas asociadas.",
+  "reskilling.pillars.3.title": "Prácticas en Empresa",
+  "reskilling.pillars.3.desc":
+    "Oportunidades reales de aplicar tus conocimientos en entornos corporativos para ganar experiencia práctica y visibilidad.",
+  "reskilling.pillars.4.title": "Networking Estratégico",
+  "reskilling.pillars.4.desc":
+    "Accede a eventos exclusivos y conecta con una comunidad activa que te abrirá puertas en el ecosistema tecnológico.",
+
+  "reskilling.routes.title": "Rutas de Transformación Comunes",
+  "reskilling.routes.subtitle":
+    "Descubre cómo tu perfil actual puede evolucionar hacia roles tecnológicos de alto impacto.",
+  "reskilling.routes.1.title": "Data Analyst",
+  "reskilling.routes.1.desc":
+    "Tu capacidad analítica y atención al detalle (Finanzas/Admin) son la base perfecta para dominar SQL, Python y visualización de datos.",
+  "reskilling.routes.2.title": "Digital Marketing",
+  "reskilling.routes.2.desc":
+    "Lleva tu persuasión comercial al mundo digital. Aprende Growth Hacking, SEO/SEM y automatización de marketing.",
+  "reskilling.routes.3.title": "QA Tester",
+  "reskilling.routes.3.desc":
+    "Tu empatía con el cliente (Atención al Cliente) y resolución de problemas te hacen ideal para asegurar la calidad del software.",
+  "reskilling.routes.4.title": "IT Project Manager",
+  "reskilling.routes.4.desc":
+    "Tu experiencia gestionando equipos es oro. Certifícate en metodologías ágiles (Scrum/Kanban) para liderar el desarrollo de producto.",
+  // --- GLOBALES DE PROGRAMAS ---
+  "program.phase1": "Fase 1",
+  "program.phase2": "Fase 2",
+
+  // --- RESKILLING CTA (ReskillingCourses) ---
+  "reskilling.cta.title": "Impulsa tu carrera tecnológica",
+  "reskilling.cta.desc":
+    "Tanto si buscas especializarte técnicamente como si necesitas orientación personalizada, tenemos el camino para ti.",
+  "reskilling.cta.btn1": "Empieza tu Transformación",
+  "reskilling.cta.btn2": "Agendar Asesoría",
+  // --- COURSE TREE MODAL ---
+  "modal.courses.title": "Áreas de Formación",
+  "modal.courses.subtitle":
+    "Selecciona una rama para ver todos los itinerarios disponibles",
+  "modal.courses.viewBranch": "Ver toda la rama",
+  "modal.courses.goSection": "Ir a la sección completa",
+  "modal.courses.available": "Cursos Disponibles",
+  "modal.courses.details": "Ver temario y detalles →",
+  "modal.courses.catalog": "Ver Catálogo Completo",
+
+  // --- PROGRAMS MODAL ---
+  "modal.programs.title1": "Descubre nuestros ",
+  "modal.programs.title2": "Programas",
+  "modal.programs.subtitle":
+    "Nuestras rutas formativas están diseñadas para adaptarse a diferentes perfiles y realidades, impulsando la inclusión y la transformación digital.",
+  "modal.programs.1.title": "Neurodivergencia",
+  "modal.programs.1.desc":
+    "Impulsamos el talento de personas con TDAH, Autismo y Altas Capacidades.",
+  "modal.programs.2.title": "Talento Migrante",
+  "modal.programs.2.desc":
+    "Validamos competencias para una integración laboral global y digna.",
+  "modal.programs.3.title": "Impacto Social",
+  "modal.programs.3.desc":
+    "Creamos oportunidades digitales para personas en riesgo de exclusión.",
+  "modal.programs.4.title": "Entorno Rural",
+  "modal.programs.4.desc":
+    "Capacitamos y conectamos talento en áreas de la España Rural.",
+  "modal.programs.5.title": "Reciclaje Laboral",
+  "modal.programs.5.desc": "Reinvención profesional para el mercado actual.",
+  "modal.programs.details": "Ver detalles del programa",
+  "modal.programs.footer.q": "¿No sabes cuál elegir?",
+  "modal.programs.footer.desc":
+    " Te orientamos gratuitamente para encontrar tu camino en el sector tecnológico.",
+  "modal.programs.footer.btn": "Contactar ahora",
+  // --- CATEGORÍAS DEL CATÁLOGO ---
+  "cat.qa.title": "QA & Automatización",
+  "cat.data.title": "Data & BI",
+  "cat.tools.title": "Herramientas Empresariales",
+  "cat.devops.title": "DevOps & Gestión",
+  "cat.agile.title": "Agile & Scrum",
+
+  // --- TÍTULOS DE CURSOS ---
+  "course.qa-software.title": "Calidad de Software (QA) y Testing",
+  "course.qa-api.title": "API Testing con Postman",
+  "course.qa-cypress.title": "Cypress Automation Bootcamp",
+  "course.qa-junit.title": "Tests Unitarios con JUnit",
+  "course.qa-agile.title": "Agile Testing",
+  "course.qa-genai.title": "Generative AI para Software Testing",
+  "course.data-sql.title": "Introducción a SQL para Power BI",
+  "course.data-powerbi.title": "Analítica de Datos con Power BI",
+  "course.tools-excel.title": "Microsoft Excel Expert",
+  "course.tools-office.title": "Ofimática Integral",
+  "course.tools-chatbots.title": "Chatbots para E-commerce",
+  "course.tools-make.title": "Productividad con Make",
+  "course.devops-gitlab.title": "Gestión Avanzada y CI/CD con GitLab",
+  "course.devops-intro.title": "DevOps, Continuous Testing y CI/CD",
+  "course.agile-scrum.title": "Agile Mastery: El Camino del Scrum Master",
 } as const;

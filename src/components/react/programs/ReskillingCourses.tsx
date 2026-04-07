@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+// Añadimos el hook de traducciones
+import { useTranslations } from "@/hooks/useTranslations";
 
 // Datos de los cursos para el Modal (Diseño exacto imagen)
 const courseCards = [
@@ -46,6 +48,7 @@ const courseCards = [
 
 export const ReskillingCourses: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const t = useTranslations(); // Inicializamos el traductor
 
   // Bloqueo de scroll
   useEffect(() => {
@@ -74,11 +77,10 @@ export const ReskillingCourses: React.FC = () => {
           <div className="max-w-3xl mx-auto flex flex-col gap-8 items-center">
             <div className="flex flex-col gap-4">
               <h2 className="text-3xl md:text-5xl font-bold font-heading text-secondary leading-tight">
-                Impulsa tu carrera tecnológica
+                {t("reskilling.cta.title")}
               </h2>
               <p className="text-lg md:text-xl text-gray-600 font-primary leading-relaxed">
-                Tanto si buscas especializarte técnicamente como si necesitas
-                orientación personalizada, tenemos el camino para ti.
+                {t("reskilling.cta.desc")}
               </p>
             </div>
 
@@ -89,7 +91,7 @@ export const ReskillingCourses: React.FC = () => {
                 href="/cursos"
                 className="flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform text-lg min-w-[240px] cursor-pointer"
               >
-                Empieza tu Transformación
+                {t("reskilling.cta.btn1")}
               </a>
 
               {/* Botón 2: Contacto / Asesoría */}
@@ -97,7 +99,7 @@ export const ReskillingCourses: React.FC = () => {
                 href="/contact"
                 className="flex items-center justify-center gap-3 bg-white border-2 border-gray-200 hover:border-primary text-secondary hover:text-primary font-bold py-4 px-8 rounded-xl transition-all text-lg min-w-[240px]"
               >
-                Agendar Asesoría
+                {t("reskilling.cta.btn2")}
               </a>
             </div>
           </div>

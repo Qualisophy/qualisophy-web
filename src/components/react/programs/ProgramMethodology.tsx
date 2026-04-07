@@ -1,6 +1,8 @@
 import React from "react";
 // Importamos el fondo Mesh reutilizable
 import { ParticleMeshBackground } from "@/components/react/shared/ParticleMeshBackground";
+// Añadimos el hook de traducciones
+import { useTranslations } from "@/hooks/useTranslations";
 
 interface MethodologyProps {
   title: string;
@@ -19,6 +21,9 @@ export const ProgramMethodology: React.FC<MethodologyProps> = ({
   reverse = false,
   variant = "white",
 }) => {
+  // Inicializamos el traductor
+  const t = useTranslations();
+
   // "isGrayVariant" true si es la variante gris (blue). False si es blanco.
   const isGrayVariant = variant === "blue";
 
@@ -75,7 +80,8 @@ export const ProgramMethodology: React.FC<MethodologyProps> = ({
               <span className="material-symbols-outlined text-sm">
                 verified
               </span>
-              <span>{reverse ? "Fase 2" : "Fase 1"}</span>
+              {/* Traducción dinámica de la Fase */}
+              <span>{reverse ? t("program.phase2") : t("program.phase1")}</span>
             </div>
 
             {/* Título - Siempre oscuro */}
