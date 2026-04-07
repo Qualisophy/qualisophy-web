@@ -509,4 +509,128 @@ export default {
   "rural.map.status.risk": "Risque de dépeuplement",
   "rural.map.status.normal": "Normal",
   "rural.map.legend.title": "Densité (hab/km²)",
+  // --- MIGRANT TALENT PAGE ---
+  "migrant.meta.title": "Talent Migrant - Qualisophy",
+  "migrant.meta.desc":
+    "Intégration des talents internationaux. Nous transformons la diversité culturelle en avantage concurrentiel.",
+
+  "migrant.hero.title": "Valoriser les Compétences Globales :",
+  "migrant.hero.highlight": "Talent Migrant",
+  "migrant.hero.subtitle":
+    "Une alliance stratégique pour intégrer des profils internationaux et faire de la diversité culturelle un avantage concurrentiel pour votre entreprise.",
+  "migrant.hero.cta": "Voir l'Itinéraire",
+
+  "migrant.reality.title": "Le Talent Caché",
+  "migrant.reality.subtitle": "Métriques d'Impact",
+  "migrant.reality.desc":
+    "Des milliers de professionnels hautement qualifiés ne peuvent pas apporter leur valeur en raison d'obstacles administratifs et culturels.",
+  "migrant.stats.1.label": "Surqualification",
+  "migrant.stats.1.desc":
+    "Un migrant diplômé sur deux travaille à un poste inférieur à son niveau d'études (contre 1 sur 3 pour les nationaux).",
+  "migrant.stats.2.label": "Chômage",
+  "migrant.stats.2.desc":
+    "Taux de chômage des diplômés étrangers. Il s'élève à 15% pour ceux qui sont en Espagne depuis moins de 10 ans.",
+  "migrant.stats.3.label": "du PIB",
+  "migrant.stats.3.desc":
+    "C'est le coût annuel pour l'Espagne du « Brain Waste » (gaspillage de talents) dû à un manque d'inclusion effective.",
+
+  "migrant.barriers.title": "Obstacles Persistants",
+  "migrant.barriers.desc":
+    "Nous identifions et éliminons les obstacles structurels qui empêchent l'accès à l'emploi.",
+  "migrant.barriers.1.title": "Accès Limité",
+  "migrant.barriers.1.desc":
+    "Bureaucratie de reconnaissance des diplômes qui « gèle » les carrières professionnelles pendant 3 ans en moyenne et biais de sélection.",
+  "migrant.barriers.2.title": "Maintien",
+  "migrant.barriers.2.desc":
+    "Le « Cercle du Permis » : la difficulté administrative d'avoir besoin d'un contrat pour le permis et d'un permis pour le contrat.",
+  "migrant.barriers.3.title": "Promotion",
+  "migrant.barriers.3.desc":
+    "Écart salarial structurel ; un étranger diplômé se situe, en moyenne, 1,5 échelon en dessous en termes de revenus.",
+
+  "migrant.impact.title": "L'Impact Transformateur",
+  "migrant.impact.desc":
+    "L'emploi n'est pas seulement un salaire. C'est la clé de l'autonomie et de la pleine participation sociale.",
+  "migrant.impact.1":
+    "Exploitation des réseaux internationaux et de nouveaux marchés.",
+  "migrant.impact.2":
+    "Enrichissement de la culture d'entreprise et résolution créative.",
+  "migrant.impact.3":
+    "Réduction de la pénurie de talents dans les secteurs techniques.",
+  "migrant.impact.4": "Validation de l'expérience globale sur le marché local.",
+
+  "migrant.legal.title": "Cadre Légal : Conformité en Attente",
+  "migrant.legal.footer":
+    "Bien qu'il n'y ait pas de quota obligatoire, la diversité culturelle est un pilier clé des stratégies ESG et rapporte des points dans les marchés publics.",
+  "migrant.legal.1.label": "Quota Légal",
+  "migrant.legal.1.desc":
+    "Contrairement au handicap, il n'y a pas de quota obligatoire, ce qui invisibilise le besoin d'inclusion.",
+  "migrant.legal.2.label": "Incitations",
+  "migrant.legal.2.desc":
+    "Bonus allant jusqu'à 128 €/mois pour l'embauche et amélioration du score pour les marchés publics (ESG).",
+
+  "migrant.strategy1.title":
+    "Stratégie 1 : Formation Passerelle et en Alternance",
+  "migrant.strategy1.desc1":
+    "Nous concevons des « ponts de formation » qui adaptent les connaissances internationales aux réglementations et outils locaux.",
+  "migrant.strategy1.desc2":
+    "L'objectif est de valider techniquement ce que le professionnel sait déjà, en éliminant la barrière de la « première expérience locale ».",
+  "migrant.strategy1.check1": "Qualification Technique : Adaptation au marché.",
+  "migrant.strategy1.check2": "Compétences Transversales : Langue et codes.",
+  "migrant.strategy1.check3":
+    "Pratique Réelle : Validation dans un environnement local.",
+
+  "migrant.strategy2.title": "Stratégie 2 : Faciliter l'Accès",
+  "migrant.strategy2.subtitle":
+    "Briser le plafond de verre administratif et culturel.",
+  "migrant.strategy2.1.title": "Accélération des Reconnaissances",
+  "migrant.strategy2.1.desc":
+    "Unités de conseil technique pour réduire les temps d'attente administratifs et légaux.",
+  "migrant.strategy2.2.title": "Sensibilisation",
+  "migrant.strategy2.2.desc":
+    "Programmes pour les entreprises visant à éliminer les préjugés racistes et les biais d'origine.",
+  "migrant.strategy2.3.title": "Réseautage et Contacts",
+  "migrant.strategy2.3.desc":
+    "Création de réseaux de contacts professionnels facilitant l'accès au marché du travail caché.",
+  "migrant.strategy2.4.title": "Médiation Culturelle",
+  "migrant.strategy2.4.desc":
+    "Facilitateurs qui traduisent les codes culturels et les attentes professionnelles pour les deux parties.",
+
+  "migrant.curriculum.title": "Itinéraires Personnalisés : La Clé du Succès",
+  "migrant.curriculum.subtitle":
+    "Du « Brain Waste » au « Brain Gain » : un processus structuré de valorisation.",
+  "migrant.curriculum.1.title": "Évaluation Individuelle",
+  "migrant.curriculum.1.desc":
+    "Audit des diplômes, de l'expérience passée et diagnostic des besoins linguistiques.",
+  "migrant.curriculum.2.title": "Planification Adaptée",
+  "migrant.curriculum.2.desc":
+    "Conception du chemin critique pour la reconnaissance ou le recyclage professionnel accéléré.",
+  "migrant.curriculum.3.title": "Accompagnement Continu",
+  "migrant.curriculum.3.desc":
+    "Tutorat et suivi pendant les 6 premiers mois pour assurer l'adaptation culturelle.",
+  "migrant.curriculum.4.title": "Insertion Durable",
+  "migrant.curriculum.4.desc":
+    "Combler l'écart de surqualification avec un poste correspondant au talent réel du professionnel.",
+
+  "migrant.quote.title": "Vers une Inclusion Professionnelle Réelle",
+  "migrant.quote.subtitle":
+    "Nous construisons un avenir où les talents n'ont pas d'étiquettes.",
+  "migrant.quote.p1.title": "Engagement des Entreprises",
+  "migrant.quote.p1.desc":
+    "Respect effectif de la législation et création d'environnements véritablement inclusifs et productifs.",
+  "migrant.quote.p2.title": "Soutien Institutionnel",
+  "migrant.quote.p2.desc":
+    "Politiques publiques qui promeuvent et facilitent activement l'inclusion professionnelle des talents internationaux.",
+  "migrant.quote.p3.title": "Transformation Sociale",
+  "migrant.quote.p3.desc":
+    "Une société plus juste, diversifiée et compétitive qui tire parti de tous les talents disponibles.",
+  "migrant.quote.text":
+    "« L'inclusion professionnelle des talents migrants n'est pas seulement une responsabilité sociale, c'est une ",
+  "migrant.quote.highlight": "opportunité de croissance",
+  "migrant.quote.end": " pour nos organisations et notre économie. »",
+
+  "migrant.cta.title": "Débloquez le Potentiel Global",
+  "migrant.cta.desc":
+    "Faites de la diversité le moteur d'innovation de votre entreprise.",
+  "migrant.cta.btn1": "Boostez votre Diversité Globale",
+  "migrant.cta.btn2": "Faites Reconnaître votre Avenir",
 } as const;
