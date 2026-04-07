@@ -111,14 +111,24 @@ export default {
   "validation.invalidEmail": "Email inválido",
   "validation.minLength": "Debe tener al menos {min} caracteres",
 
-  // Footer
-  "footer.follow": "Síguenos",
-  "footer.contact": "Contáctanos",
-  "footer.rights": "Marca registrada",
+  // --- FOOTER ---
   "footer.slogan":
-    "Formación práctica, personalizada y oportunidades reales para el crecimiento profesional.",
-  "footer.navigation": "Navegación",
-
+    "Formaciones profesionales, Consultoría personalizada a empresas y emprendedores, Coaching individualizado.",
+  "footer.inclusion": "Inclusión",
+  "footer.neuro": "Neurodivergencia",
+  "footer.rural": "Entorno Rural",
+  "footer.migrant": "Talento Migrante",
+  "footer.social": "Riesgo de Exclusión",
+  "footer.trainings": "Formaciones",
+  "footer.individuals": "Para Particulares",
+  "footer.companies": "Para Empresas",
+  "footer.collab": "¿Colaboramos?",
+  "footer.partnership": "Partnership",
+  "footer.badge": "Empresas",
+  "footer.about": "Conócenos",
+  "footer.team": "Nuestro Equipo",
+  "footer.blog": "Blog & Actualidad",
+  "footer.contact": "Contacto",
   //404 Page
   "button.404": "Volver al inicio",
   "title.404": "Página no encontrada", //Pending

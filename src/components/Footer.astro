@@ -70,38 +70,38 @@ const currentYear = new Date().getFullYear();
       
       {/* 1. INCLUSIÓN (URLs Corregidas) */}
       <div>
-        <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">
+        <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4" data-i18n="footer.inclusion">
           Inclusión
         </h3>
         <ul class="space-y-3">
-          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/neurodivergence">Neurodivergencia</a></li>
-          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/rural-area">Entorno Rural</a></li>
-          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/migrant-talent">Talento Migrante</a></li>
-          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/social-impact">Riesgo de Exclusión</a></li>
+          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/neurodivergence" data-i18n="footer.neuro">Neurodivergencia</a></li>
+          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/rural-area" data-i18n="footer.rural">Entorno Rural</a></li>
+          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/migrant-talent" data-i18n="footer.migrant">Talento Migrante</a></li>
+          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/social-impact" data-i18n="footer.social">Riesgo de Exclusión</a></li>
         </ul>
       </div>
 
       {/* 2. FORMACIONES (Prioridad Alta) */}
       <div>
-        <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">
+        <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4" data-i18n="footer.trainings">
           Formaciones
         </h3>
         <ul class="space-y-3">
-          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/cursos">Para Particulares</a></li>
-          <li><a class="text-sm text-gray-300 hover:text-primary hidden transition-colors" href="/corporate-training">Para Empresas</a></li>
+          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/cursos" data-i18n="footer.individuals">Para Particulares</a></li>
+          <li><a class="text-sm text-gray-300 hover:text-primary hidden transition-colors" href="/corporate-training" data-i18n="footer.companies">Para Empresas</a></li>
         </ul>
       </div>
 
       {/* 3. ¿COLABORAMOS? (Nuevo enfoque Partnership) */}
       <div>
-        <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">
+        <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4" data-i18n="footer.collab">
           ¿Colaboramos?
         </h3>
         <ul class="space-y-3">
           <li>
             <a class="text-sm text-gray-300 hover:text-primary transition-colors flex items-center gap-2" href="/partnership">
-              Partnership
-              <span class="text-xs bg-primary/20 text-primary px-2 py-0.5 rounded-full border border-primary/30">Empresas</span>
+              <span data-i18n="footer.partnership">Partnership</span>
+              <span class="text-xs bg-primary/20 text-primary px-2 py-0.5 rounded-full border border-primary/30" data-i18n="footer.badge">Empresas</span>
             </a>
           </li>
         </ul>
@@ -109,14 +109,14 @@ const currentYear = new Date().getFullYear();
 
       {/* 4. CONÓCENOS (Incluye Inicio) */}
       <div>
-        <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">
+        <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4" data-i18n="footer.about">
           Conócenos
         </h3>
         <ul class="space-y-3">
           {/* NUEVO: Inicio movido aquí */}
-          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/team">Nuestro Equipo</a></li>
-          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/blog">Blog & Actualidad</a></li>
-          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/contact">Contacto</a></li>
+          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/team" data-i18n="footer.team">Nuestro Equipo</a></li>
+          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/blog" data-i18n="footer.blog">Blog & Actualidad</a></li>
+          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/contact" data-i18n="footer.contact">Contacto</a></li>
         </ul>
       </div>
 
@@ -145,7 +145,7 @@ const currentYear = new Date().getFullYear();
       </div>
 
       <p class="text-base text-gray-200 order-1 md:order-1 text-center md:text-left w-full md:w-auto">
-        Qualisophy&#174; 
+        Qualisophy® <span data-i18n="footer.trademark"></span>
       </p>
     </div>
   </div>

@@ -113,14 +113,24 @@ export default {
   "validation.invalidEmail": "Courriel invalide",
   "validation.minLength": "Doit comporter au moins {min} caractères",
 
-  // Footer
-  "footer.follow": "Suivez-nous",
-  "footer.contact": "Contactez-nous",
-  "footer.rights": "Marque déposée",
+  // --- FOOTER ---
   "footer.slogan":
     "Formations professionnelles, Conseils personnalisés aux entreprises et entrepreneurs, Coaching individualisé.",
-  "footer.navigation": "Navigation",
-
+  "footer.inclusion": "Inclusion",
+  "footer.neuro": "Neurodivergence",
+  "footer.rural": "Milieu Rural",
+  "footer.migrant": "Talent Migrant",
+  "footer.social": "Risque d'Exclusion",
+  "footer.trainings": "Formations",
+  "footer.individuals": "Pour Particuliers",
+  "footer.companies": "Pour Entreprises",
+  "footer.collab": "Collaborons ?",
+  "footer.partnership": "Partenariat",
+  "footer.badge": "Entreprises",
+  "footer.about": "Découvrez-nous",
+  "footer.team": "Notre Équipe",
+  "footer.blog": "Blog & Actualité",
+  "footer.contact": "Contact",
   //404 Page
   "button.404": "Retour à l'accueil",
   "title.404": "Page non trouvée", //Pending
