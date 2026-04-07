@@ -872,4 +872,58 @@ export default {
   "course.devops-gitlab.title": "Gestión Avanzada y CI/CD con GitLab",
   "course.devops-intro.title": "DevOps, Continuous Testing y CI/CD",
   "course.agile-scrum.title": "Agile Mastery: El Camino del Scrum Master",
+  // --- PARTNERSHIP PAGE ---
+  "partnership.meta.title": "Partnership - Qualisophy",
+  "partnership.meta.desc":
+    "Colabora con Qualisophy. Soluciones de talento diverso e impacto social para empresas tecnológicas líderes.",
+
+  "partnership.value.title": "Más que Selección: Integración Estratégica",
+  "partnership.value.desc1":
+    "Las empresas líderes ya no buscan solo cubrir vacantes; buscan talento que aporte diversidad cognitiva y resiliencia. Qualisophy actúa como tu socio estratégico, no como un proveedor transaccional.",
+  "partnership.value.desc2":
+    "Te conectamos con perfiles altamente motivados y formados en las tecnologías que realmente necesitas, reduciendo drásticamente la rotación y mejorando el clima laboral.",
+  "partnership.value.check1": "Reducción del Coste de Rotación (Churn Rate)",
+  "partnership.value.check2": "Impacto Directo en Objetivos ESG y RSC",
+  "partnership.value.check3": "Talento con Soft Skills de Alta Resiliencia",
+
+  "partnership.models.title": "Modelos de Colaboración Flexible",
+  "partnership.models.subtitle":
+    "Adapta la alianza a tus necesidades de contratación, formación y estrategia de RSC.",
+  "partnership.models.1.title": "Hiring Partner",
+  "partnership.models.1.desc":
+    "Acceso prioritario a nuestra bolsa de talento validado. Incorpora perfiles Junior/Mid con acompañamiento inicial incluido para garantizar el 'fit' cultural.",
+  "partnership.models.2.title": "Upskilling Ad-hoc",
+  "partnership.models.2.desc":
+    "Diseñamos 'Bootcamps' a medida para tu stack tecnológico. Formamos a tus futuros empleados o reciclamos a tu plantilla actual según tus necesidades.",
+  "partnership.models.3.title": "Voluntariado Corporativo",
+  "partnership.models.3.desc":
+    "Involucra a tus equipos técnicos como mentores. Una potente herramienta de fidelización y 'team building' que conecta a tus seniors con nuestro propósito.",
+  "partnership.models.4.title": "Sponsoring & Becas",
+  "partnership.models.4.desc":
+    "Financia becas para colectivos vulnerables o apadrina una promoción completa, posicionando tu marca empleadora como líder en impacto social.",
+
+  "partnership.roadmap.title": "Roadmap de la Alianza",
+  "partnership.roadmap.subtitle":
+    "Un proceso estructurado, sencillo y eficaz para garantizar el éxito de la colaboración.",
+  "partnership.roadmap.1.title": "Diagnóstico y Cultura",
+  "partnership.roadmap.1.desc":
+    "Nos reunimos para entender no solo tus vacantes técnicas, sino tu cultura de equipo y objetivos de negocio. Analizamos dónde el talento diverso aporta más valor.",
+  "partnership.roadmap.2.title": "Diseño de la Propuesta",
+  "partnership.roadmap.2.desc":
+    "Definimos el modelo de colaboración ideal (Hiring directo, Formación o Voluntariado) y establecemos los KPIs de éxito y el cronograma de incorporación.",
+  "partnership.roadmap.3.title": "Selección y Acompañamiento",
+  "partnership.roadmap.3.desc":
+    "Presentamos candidatos finalistas. Durante los primeros 3 meses, nuestros psicólogos acompañan tanto al talento como a tus managers para asegurar la integración.",
+  "partnership.hero.title": "Talento que Transforma:",
+  "partnership.hero.highlight": "Alianzas Corporativas",
+  "partnership.hero.subtitle":
+    "Ayudamos a empresas visionarias a integrar diversidad real en sus equipos tecnológicos, impulsando la innovación y el impacto social.",
+  "partnership.hero.cta": "Agendar Reunión",
+
+  "partnership.cta.title":
+    "¿Listo para multiplicar el impacto de tu organización?",
+  "partnership.cta.desc":
+    "Aliémonos para crear futuros. Hablemos de cómo podemos colaborar para la inserción laboral de vuestros usuarios.",
+  "partnership.cta.btn1": "Hablemos de una Alianza",
+  "partnership.cta.btn2": "Agendar Reunión",
 } as const;

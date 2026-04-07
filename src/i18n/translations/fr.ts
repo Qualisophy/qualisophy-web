@@ -884,4 +884,59 @@ export default {
   "course.devops-gitlab.title": "Gestion Avancée et CI/CD avec GitLab",
   "course.devops-intro.title": "DevOps, Continuous Testing et CI/CD",
   "course.agile-scrum.title": "Agile Mastery : La Voie du Scrum Master",
+  // --- PARTNERSHIP PAGE ---
+  "partnership.meta.title": "Partenariat - Qualisophy",
+  "partnership.meta.desc":
+    "Collaborez avec Qualisophy. Solutions de talents diversifiés et impact social pour les entreprises technologiques de premier plan.",
+
+  "partnership.value.title": "Plus qu'un Recrutement : Intégration Stratégique",
+  "partnership.value.desc1":
+    "Les entreprises leaders ne cherchent plus seulement à pourvoir des postes ; elles recherchent des talents qui apportent une diversité cognitive et de la résilience. Qualisophy agit comme votre partenaire stratégique, et non comme un fournisseur transactionnel.",
+  "partnership.value.desc2":
+    "Nous vous connectons avec des profils très motivés et formés aux technologies dont vous avez réellement besoin, réduisant considérablement la rotation du personnel et améliorant le climat de travail.",
+  "partnership.value.check1": "Réduction du Coût de Rotation (Churn Rate)",
+  "partnership.value.check2": "Impact Direct sur les Objectifs ESG et RSE",
+  "partnership.value.check3":
+    "Des Talents dotés de Soft Skills à Haute Résilience",
+
+  "partnership.models.title": "Modèles de Collaboration Flexibles",
+  "partnership.models.subtitle":
+    "Adaptez l'alliance à vos besoins de recrutement, de formation et à votre stratégie RSE.",
+  "partnership.models.1.title": "Partenaire de Recrutement",
+  "partnership.models.1.desc":
+    "Accès prioritaire à notre vivier de talents validés. Intégrez des profils Junior/Intermédiaire avec un accompagnement initial inclus pour garantir l'adéquation culturelle.",
+  "partnership.models.2.title": "Montée en Compétences sur Mesure",
+  "partnership.models.2.desc":
+    "Nous concevons des 'Bootcamps' sur mesure pour votre stack technologique. Nous formons vos futurs employés ou recyclons votre personnel actuel selon vos besoins.",
+  "partnership.models.3.title": "Bénévolat d'Entreprise",
+  "partnership.models.3.desc":
+    "Impliquez vos équipes techniques en tant que mentors. Un outil puissant de fidélisation et de 'team building' qui connecte vos seniors à notre mission.",
+  "partnership.models.4.title": "Sponsoring & Bourses",
+  "partnership.models.4.desc":
+    "Financez des bourses pour des groupes vulnérables ou parrainez une promotion entière, positionnant votre marque employeur comme un leader de l'impact social.",
+
+  "partnership.roadmap.title": "Feuille de Route de l'Alliance",
+  "partnership.roadmap.subtitle":
+    "Un processus structuré, simple et efficace pour garantir le succès de la collaboration.",
+  "partnership.roadmap.1.title": "Diagnostic et Culture",
+  "partnership.roadmap.1.desc":
+    "Nous nous réunissons pour comprendre non seulement vos postes techniques vacants, mais aussi la culture de votre équipe et vos objectifs commerciaux. Nous analysons où les talents diversifiés apportent le plus de valeur.",
+  "partnership.roadmap.2.title": "Conception de la Proposition",
+  "partnership.roadmap.2.desc":
+    "Nous définissons le modèle de collaboration idéal (Recrutement direct, Formation ou Bénévolat) et établissons les KPI de réussite ainsi que le calendrier d'intégration.",
+  "partnership.roadmap.3.title": "Sélection et Accompagnement",
+  "partnership.roadmap.3.desc":
+    "Nous présentons les candidats finalistes. Au cours des 3 premiers mois, nos psychologues accompagnent à la fois le talent et vos managers pour assurer l'intégration.",
+  "partnership.hero.title": "Le Talent qui Transforme :",
+  "partnership.hero.highlight": "Alliances Corporatives",
+  "partnership.hero.subtitle":
+    "Nous aidons les entreprises visionnaires à intégrer une véritable diversité dans leurs équipes technologiques, stimulant ainsi l'innovation et l'impact social.",
+  "partnership.hero.cta": "Planifier une Réunion",
+
+  "partnership.cta.title":
+    "Prêt à démultiplier l'impact de votre organisation ?",
+  "partnership.cta.desc":
+    "Allions-nous pour créer des avenirs. Parlons de la manière dont nous pouvons collaborer pour l'insertion professionnelle de vos utilisateurs.",
+  "partnership.cta.btn1": "Parlons d'une Alliance",
+  "partnership.cta.btn2": "Planifier une Réunion",
 } as const;

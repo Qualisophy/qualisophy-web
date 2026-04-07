@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslations } from "@/hooks/useTranslations"; // Añadimos el hook
 
 interface PartnershipCTAProps {
   variant?: "white" | "gray";
@@ -7,6 +8,7 @@ interface PartnershipCTAProps {
 export const PartnershipCTA: React.FC<PartnershipCTAProps> = ({
   variant = "white",
 }) => {
+  const t = useTranslations(); // Inicializamos el traductor
   const isGray = variant === "gray";
 
   return (
@@ -28,11 +30,10 @@ export const PartnershipCTA: React.FC<PartnershipCTAProps> = ({
       <div className="max-w-4xl w-full flex flex-col items-center gap-8 relative z-10">
         <div className="flex flex-col gap-6">
           <h2 className="text-3xl font-bold leading-tight md:text-5xl font-heading text-secondary">
-            ¿Listo para multiplicar el impacto de tu organización?
+            {t("partnership.cta.title")}
           </h2>
           <p className="text-lg lg:text-xl font-normal leading-relaxed font-primary max-w-2xl mx-auto text-gray-600">
-            Aliémonos para crear futuros. Hablemos de cómo podemos colaborar
-            para la inserción laboral de vuestros usuarios.
+            {t("partnership.cta.desc")}
           </p>
         </div>
 
@@ -42,7 +43,7 @@ export const PartnershipCTA: React.FC<PartnershipCTAProps> = ({
             href="/contact?type=partnership"
             className="flex items-center justify-center rounded-xl h-14 px-8 bg-primary text-white text-lg font-bold shadow-lg hover:bg-primary/90 transition-all min-w-[240px]"
           >
-            Hablemos de una Alianza
+            {t("partnership.cta.btn1")}
           </a>
 
           {/* Botón Secundario (Agenda) */}
@@ -52,7 +53,7 @@ export const PartnershipCTA: React.FC<PartnershipCTAProps> = ({
             rel="noopener noreferrer"
             className="flex items-center justify-center rounded-xl h-14 px-8 border-2 border-gray-200 text-secondary text-lg font-bold hover:border-primary hover:text-primary transition-all min-w-[240px] bg-transparent"
           >
-            Agendar Reunión
+            {t("partnership.cta.btn2")}
           </a>
         </div>
       </div>
