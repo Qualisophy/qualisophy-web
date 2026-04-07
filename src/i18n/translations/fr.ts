@@ -633,4 +633,128 @@ export default {
     "Faites de la diversité le moteur d'innovation de votre entreprise.",
   "migrant.cta.btn1": "Boostez votre Diversité Globale",
   "migrant.cta.btn2": "Faites Reconnaître votre Avenir",
+
+  // --- SOCIAL IMPACT PAGE ---
+  "social.meta.title": "Risque d'Exclusion - Qualisophy",
+  "social.meta.desc":
+    "Inclusion professionnelle des groupes vulnérables. Nous brisons le cycle de l'exclusion par un emploi digne.",
+
+  "social.hero.title": "Transformer la Vulnérabilité en Autonomie :",
+  "social.hero.highlight": "Inclusion Professionnelle",
+  "social.hero.subtitle":
+    "Nous facilitons la réinsertion sur le marché des groupes défavorisés pour briser le cycle de l'exclusion grâce à un emploi digne.",
+  "social.hero.cta": "Voir l'Itinéraire",
+
+  "social.reality.title": "Une Réalité Préoccupante",
+  "social.reality.subtitle": "Contexte Social",
+  "social.reality.desc":
+    "L'exclusion sociale n'est pas seulement un problème économique, c'est une perte de capital humain pour toute la société.",
+  "social.stats.1.label": "Taux AROPE",
+  "social.stats.1.desc":
+    "Un résident sur quatre en Espagne est menacé de pauvreté ou d'exclusion sociale.",
+  "social.stats.2.label": "Travailleurs Pauvres",
+  "social.stats.2.desc":
+    "L'emploi précaire ne suffit pas ; l'objectif est l'insertion dans des postes stables et autonomes.",
+  "social.stats.3.value": "+ Élevée",
+  "social.stats.3.label": "Intersectionnalité",
+  "social.stats.3.desc":
+    "Les femmes étrangères souffrent d'une surqualification encore plus grande, cumulant les obstacles liés au genre et à l'origine.",
+
+  "social.barriers.title": "Obstacles Persistants",
+  "social.barriers.desc":
+    "Nous identifions et éliminons les obstacles structurels qui empêchent l'accès à l'emploi.",
+  "social.barriers.1.title": "Accès Limité",
+  "social.barriers.1.desc":
+    "Stigmates sociaux envers les plus de 45 ans et les chômeurs de longue durée qui bloquent l'accès aux entretiens.",
+  "social.barriers.2.title": "Maintien",
+  "social.barriers.2.desc":
+    "Instabilité personnelle due au manque de logement ou à la précarité structurelle dans les secteurs à faible valeur ajoutée (hôtellerie, nettoyage).",
+  "social.barriers.3.title": "Promotion",
+  "social.barriers.3.desc":
+    "Manque de formation continue et de numérisation qui chronicise le maintien dans des postes peu qualifiés.",
+
+  "social.impact.title": "L'Impact Transformateur",
+  "social.impact.desc":
+    "L'emploi n'est pas seulement un salaire. C'est la clé de l'autonomie et de la pleine participation sociale.",
+  "social.impact.1":
+    "Augmentation significative de l'autonomie et réduction de la dépendance aux aides.",
+  "social.impact.2":
+    "Plus grande cohésion sociale et intégration dans la communauté locale.",
+  "social.impact.3": "Accès à une vie indépendante et stabilité familiale.",
+  "social.impact.4":
+    "Récupération de l'identité et de la dignité professionnelle.",
+
+  "social.legal.title": "Cadre Légal : La Valeur de l'Inclusion",
+  "social.legal.footer":
+    "Les entreprises socialement responsables n'améliorent pas seulement leur image, elles bénéficient également d'incitations fiscales importantes.",
+  "social.legal.1.label": "Bonus",
+  "social.legal.1.desc":
+    "Économies jusqu'à 1 300 €/an sur les cotisations de sécurité sociale pour l'embauche de groupes vulnérables.",
+  "social.legal.2.label": "Conformité",
+  "social.legal.2.desc":
+    "Amélioration du respect des critères ESG et de la responsabilité sociale des entreprises (RSE).",
+
+  "social.strategy1.title": "Stratégie 1 : Recyclage et Compétences",
+  "social.strategy1.desc1":
+    "La technologie est le grand égalisateur. Nous offrons une formation intensive aux outils numériques de base et aux compétences non techniques.",
+  "social.strategy1.desc2":
+    "Nous combinons cela avec une formation en alternance afin que l'apprentissage génère des revenus dès le premier instant.",
+  "social.strategy1.check1": "Alphabétisation Numérique Accélérée",
+  "social.strategy1.check2": "Soft Skills et Intelligence Émotionnelle",
+  "social.strategy1.check3": "Formation en Alternance Rémunérée",
+
+  "social.strategy2.title": "Stratégie 2 : Faciliter l'Accès",
+  "social.strategy2.subtitle":
+    "Un accompagnement complet pour garantir la stabilité de l'emploi.",
+  "social.strategy2.1.title": "Accompagnement Social",
+  "social.strategy2.1.desc":
+    "Soutien psychologique et médiation pour stabiliser l'environnement personnel (logement, conciliation).",
+  "social.strategy2.2.title": "Intermédiation Proactive",
+  "social.strategy2.2.desc":
+    "Alliances stratégiques avec des ONG pour assurer l'adéquation parfaite entre le profil et le poste à pourvoir.",
+  "social.strategy2.3.title": "Suivi Post-Insertion",
+  "social.strategy2.3.desc":
+    "Prévention des départs précoces grâce à un soutien constant du travailleur et de l'entreprise.",
+  "social.strategy2.4.title": "Équipement Technologique",
+  "social.strategy2.4.desc":
+    "Nous facilitons l'accès au matériel informatique et à la connectivité pour combler la fracture numérique.",
+
+  "social.curriculum.title": "Itinéraires Personnalisés : La Clé du Succès",
+  "social.curriculum.subtitle":
+    "Un chemin structuré pour retrouver l'autonomie et la dignité professionnelle.",
+  "social.curriculum.1.title": "Évaluation Complète",
+  "social.curriculum.1.desc":
+    "Diagnostic approfondi de la situation sociale et économique et des compétences de formation.",
+  "social.curriculum.2.title": "Planification des Objectifs",
+  "social.curriculum.2.desc":
+    "Feuille de route pour éliminer les barrières externes (fracture numérique, situation légale, logistique).",
+  "social.curriculum.3.title": "Formation en Cours d'Emploi",
+  "social.curriculum.3.desc":
+    "Stages tutorés pour retrouver confiance et identité professionnelle.",
+  "social.curriculum.4.title": "Autonomie Professionnelle",
+  "social.curriculum.4.desc":
+    "Consolidation dans un poste stable avec des perspectives de carrière à long terme.",
+
+  "social.quote.title": "Vers une Inclusion Professionnelle Réelle",
+  "social.quote.subtitle":
+    "Nous construisons un avenir où les talents n'ont pas d'étiquettes.",
+  "social.quote.p1.title": "Engagement des Entreprises",
+  "social.quote.p1.desc":
+    "Respect effectif de la législation et création d'environnements véritablement inclusifs et productifs.",
+  "social.quote.p2.title": "Soutien Institutionnel",
+  "social.quote.p2.desc":
+    "Politiques publiques qui promeuvent et facilitent activement l'inclusion professionnelle des groupes vulnérables.",
+  "social.quote.p3.title": "Transformation Sociale",
+  "social.quote.p3.desc":
+    "Une société plus juste, diversifiée et compétitive qui tire parti de tous les talents disponibles.",
+  "social.quote.text":
+    "« L'inclusion professionnelle des groupes vulnérables n'est pas seulement de la charité, c'est une ",
+  "social.quote.highlight": "opportunité de croissance",
+  "social.quote.end": " pour nos organisations et notre société. »",
+
+  "social.cta.title": "Construisez un Avenir Inclusif",
+  "social.cta.desc":
+    "Votre entreprise peut être le moteur de changement dont quelqu'un a besoin. Rejoignez le réseau inclusif.",
+  "social.cta.btn1": "Recrutez avec un Impact Social",
+  "social.cta.btn2": "Demandez un Accompagnement",
 } as const;
