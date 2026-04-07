@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslations } from "@/hooks/useTranslations";
 
 interface AboutSectionProps {
   imageSrc?: string;
@@ -7,6 +8,8 @@ interface AboutSectionProps {
 export const AboutSection: React.FC<AboutSectionProps> = ({
   imageSrc = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
 }) => {
+  const t = useTranslations();
+
   return (
     <section className="bg-white pt-16 md:pt-24 pb-8 md:pb-12 w-full">
       <div className="flex justify-center w-full">
@@ -27,20 +30,15 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
             <div className="w-full md:flex-1 flex flex-col gap-6 order-1 md:order-2">
               <div className="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wider font-primary">
                 <span className="w-8 h-[2px] bg-primary"></span>
-                Identidad
+                {t("home.about.tag")}
               </div>
 
               <h2 className="text-secondary text-3xl md:text-4xl lg:text-5xl font-bold leading-tight font-heading">
-                ¿Quiénes somos?
+                {t("home.about.title")}
               </h2>
 
               <p className="text-gray-600 text-lg lg:text-xl leading-relaxed font-primary">
-                Somos el nexo estratégico entre el talento diverso y el sector
-                tecnológico. Ayudamos a profesionales en transición y a empresas
-                innovadoras a conectar, eliminando la escasez de talento
-                especializado y las barreras de exclusión. A través de una
-                formación tecnológica 100% personalizada y un acompañamiento,
-                garantizamos un empleo de calidad y un impacto social medible.
+                {t("home.about.description")}
               </p>
 
               {/* Botón hacia la página de equipo */}
@@ -49,7 +47,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
                   href="/team"
                   className="inline-flex items-center gap-2 bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-xl shadow-lg transition-all duration-300 transform group"
                 >
-                  Conoce a nuestro equipo
+                  {t("home.about.btn")}
                   <span className="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">
                     arrow_forward
                   </span>

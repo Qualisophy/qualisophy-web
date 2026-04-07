@@ -19,13 +19,13 @@ import { Newsletter } from "@/components/react/shared/Newsletter";
   <HeroSection client:load />
 
   {/* 2. IDENTIDAD / QUIÉNES SOMOS (Fondo Blanco - Imagen Izquierda) */}
-  <AboutSection />
+  <AboutSection client:visible />
 
   {/* 3. MISIÓN / OBJETO SOCIAL (Fondo Blanco - Imagen Derecha) */}
-  <MissionSection />
+  <MissionSection client:visible />
 
   {/* 4. VALORES (Fondo Gris Claro) */}
-  <ValuesSection />
+  <ValuesSection client:visible />
 
   {/* 5. PILARES (Fondo Blanco) */}
   <InclusionPillars client:visible />

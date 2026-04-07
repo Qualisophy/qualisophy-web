@@ -3,11 +3,15 @@ import React from "react";
 import { ParticleMeshBackground } from "@/components/react/shared/ParticleMeshBackground";
 
 interface TalentImpactProps {
+  title?: string;
+  description?: string;
   items: string[];
   imageSrc?: string;
 }
 
 export const TalentImpact: React.FC<TalentImpactProps> = ({
+  title = "El Impacto Transformador",
+  description = "El empleo no es solo un salario. Es la llave para la autonomía y la participación social plena.",
   items,
   imageSrc = "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&q=80",
 }) => {
@@ -22,11 +26,10 @@ export const TalentImpact: React.FC<TalentImpactProps> = ({
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl font-heading sm:text-4xl font-bold text-secondary mb-6">
-              El Impacto Transformador
+              {title}
             </h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              El empleo no es solo un salario. Es la llave para la autonomía y
-              la participación social plena.
+              {description}
             </p>
 
             <ul className="space-y-6">

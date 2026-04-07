@@ -1,73 +1,69 @@
 import React, { useState } from "react";
-
-const pillarsData = [
-  {
-    id: "neurodivergence",
-    category: "TDAH / Autismo",
-    title: "Neurodivergencia",
-    description:
-      "Potenciamos habilidades únicas en entornos donde el enfoque y el análisis brillan.",
-    icon: "psychology",
-    image:
-      "https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80&w=1000",
-    link: "/neurodivergence",
-  },
-  {
-    id: "rural-environment",
-    category: "Talento Local",
-    title: "Entorno Rural",
-    description:
-      "Llevamos la formación tecnológica a tu tierra para fijar población y fomentar el trabajo remoto.",
-    icon: "nature_people",
-    image:
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000&auto=format&fit=crop",
-    link: "/rural-area",
-  },
-  {
-    id: "migrant-talent",
-    category: "Integración Global",
-    title: "Talento Migrante",
-    description:
-      "Validación de competencias y adaptación cultural para profesionales internacionales.",
-    icon: "public",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000",
-    link: "/migrant-talent",
-  },
-  {
-    id: "social-impact",
-    category: "Impacto Social",
-    title: "Riesgo de Exclusión",
-    description:
-      "Oportunidades reales de carrera y capacitación digital para colectivos vulnerables.",
-    icon: "volunteer_activism",
-    image:
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=1000",
-    link: "/social-impact",
-  },
-  {
-    id: "reskilling",
-    category: "Reskilling",
-    title: "Reconversión Laboral",
-    description:
-      "Transformación de perfiles profesionales para adaptarse a las demandas tecnológicas.",
-    icon: "model_training",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1000",
-    link: "/reskilling",
-  },
-];
+import { useTranslations } from "@/hooks/useTranslations";
 
 export const InclusionPillars: React.FC = () => {
   const [activeId, setActiveId] = useState<string>("neurodivergence");
+  const t = useTranslations();
+
+  const pillarsData = [
+    {
+      id: "neurodivergence",
+      category: t("home.pillars.p1.cat"),
+      title: t("home.pillars.p1.title"),
+      description: t("home.pillars.p1.desc"),
+      icon: "psychology",
+      image:
+        "https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80&w=1000",
+      link: "/neurodivergence",
+    },
+    {
+      id: "rural-environment",
+      category: t("home.pillars.p2.cat"),
+      title: t("home.pillars.p2.title"),
+      description: t("home.pillars.p2.desc"),
+      icon: "nature_people",
+      image:
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000&auto=format&fit=crop",
+      link: "/rural-area",
+    },
+    {
+      id: "migrant-talent",
+      category: t("home.pillars.p3.cat"),
+      title: t("home.pillars.p3.title"),
+      description: t("home.pillars.p3.desc"),
+      icon: "public",
+      image:
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000",
+      link: "/migrant-talent",
+    },
+    {
+      id: "social-impact",
+      category: t("home.pillars.p4.cat"),
+      title: t("home.pillars.p4.title"),
+      description: t("home.pillars.p4.desc"),
+      icon: "volunteer_activism",
+      image:
+        "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=1000",
+      link: "/social-impact",
+    },
+    {
+      id: "reskilling",
+      category: t("home.pillars.p5.cat"),
+      title: t("home.pillars.p5.title"),
+      description: t("home.pillars.p5.desc"),
+      icon: "model_training",
+      image:
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1000",
+      link: "/reskilling",
+    },
+  ];
 
   return (
-    // CAMBIO APLICADO: bg-gray-50 y borde superior para la alternancia de color
     <section className="bg-gray-50 py-16 w-full border-t border-gray-100">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10">
           <h2 className="text-secondary text-3xl md:text-4xl font-bold font-heading">
-            Nuestros Pilares de Inclusión
+            {t("home.pillars.title")}
           </h2>
         </div>
 
@@ -94,9 +90,7 @@ export const InclusionPillars: React.FC = () => {
                 `}
                 ></div>
 
-                {/* ==================================================
-                   CONTENIDO EXPANDIDO (Visible si isActive)
-                   ================================================== */}
+                {/* CONTENIDO EXPANDIDO */}
                 <div
                   className={`
                   absolute bottom-0 left-0 right-0 p-6 md:p-8 lg:p-10 flex flex-col justify-end
@@ -120,12 +114,10 @@ export const InclusionPillars: React.FC = () => {
                     </span>
                   </div>
 
-                  {/* APLICAMOS EL FIX AQUÍ: Tamaño adaptable y forzado de salto de palabra */}
                   <h3 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold font-heading mb-3 leading-tight break-words hyphens-auto pr-2">
                     {pillar.title}
                   </h3>
 
-                  {/* Descripción adaptable */}
                   <p className="text-white/90 text-sm md:text-base lg:text-lg mb-6 max-w-lg font-primary leading-relaxed hidden md:block">
                     {pillar.description}
                   </p>
@@ -135,7 +127,7 @@ export const InclusionPillars: React.FC = () => {
                       href={pillar.link}
                       className="inline-flex items-center gap-2 bg-white text-secondary hover:bg-primary hover:text-white px-6 py-3 rounded-xl font-bold text-sm transition-colors shadow-lg"
                     >
-                      Saber más
+                      {t("home.pillars.btn")}
                       <span className="material-symbols-outlined text-sm">
                         arrow_forward
                       </span>
@@ -143,9 +135,7 @@ export const InclusionPillars: React.FC = () => {
                   </div>
                 </div>
 
-                {/* ==================================================
-                   CONTENIDO CONTRAÍDO (Visible si !isActive)
-                   ================================================== */}
+                {/* CONTENIDO CONTRAÍDO */}
                 <div
                   className={`
                   absolute inset-0 
@@ -153,7 +143,6 @@ export const InclusionPillars: React.FC = () => {
                   ${isActive ? "opacity-0 pointer-events-none" : "opacity-100"}
                 `}
                 >
-                  {/* --- MÓVIL: CENTRADO TOTAL --- */}
                   <div className="md:hidden flex h-full items-center justify-center gap-3">
                     <span className="material-symbols-outlined text-white text-2xl">
                       {pillar.icon}
@@ -163,9 +152,7 @@ export const InclusionPillars: React.FC = () => {
                     </h3>
                   </div>
 
-                  {/* --- DESKTOP: SOLO TÍTULO GRANDE VERTICAL --- */}
                   <div className="hidden md:flex flex-col items-center justify-center h-full w-full">
-                    {/* APLICAMOS FIX AQUÍ: Evitar desbordamiento vertical en zoom bajando a text-2xl en md */}
                     <h3 className="text-white font-bold text-2xl lg:text-[2rem] uppercase tracking-widest whitespace-nowrap -rotate-90 origin-center transition-all duration-300">
                       {pillar.title}
                     </h3>

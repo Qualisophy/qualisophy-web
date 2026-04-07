@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { ProgramsModal } from "@/components/react/shared/ProgramsModal";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export const HeroSection: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const t = useTranslations();
 
   // Imagen de fondo
   const bgImage =
@@ -28,14 +30,18 @@ export const HeroSection: React.FC = () => {
         <div className="relative z-10 layout-container flex flex-col items-center justify-center w-full px-6 lg:px-8 py-20 mx-auto max-w-7xl">
           <div className="max-w-4xl text-center flex flex-col gap-6">
             <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight font-heading drop-shadow-md">
-              Tecnología que <span className="text-primary">Une</span>,<br />
-              Talento que <span className="text-primary">Transforma</span>
+              {t("home.hero.title1")}
+              <span className="text-primary">
+                {t("home.hero.titleHighlight1")}
+              </span>
+              {t("home.hero.title2")}
+              <span className="text-primary">
+                {t("home.hero.titleHighlight2")}
+              </span>
             </h1>
 
             <p className="text-gray-100 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto font-primary drop-shadow-sm">
-              Impulsamos la inclusión laboral en tecnología conectando talento
-              diverso con empresas innovadoras, construyendo puentes hacia el
-              futuro.
+              {t("home.hero.subtitle")}
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mt-4 font-primary">
@@ -43,13 +49,13 @@ export const HeroSection: React.FC = () => {
                 onClick={() => setIsModalOpen(true)}
                 className="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all transform text-base border border-transparent cursor-pointer"
               >
-                Ver Programas
+                {t("home.hero.btnPrograms")}
               </button>
               <a
                 href="/contact"
                 className="bg-transparent border-2 border-white hover:bg-white hover:text-secondary text-white font-bold py-3 px-8 rounded-lg transition-all text-base backdrop-blur-sm"
               >
-                Contactar
+                {t("home.hero.btnContact")}
               </a>
             </div>
           </div>

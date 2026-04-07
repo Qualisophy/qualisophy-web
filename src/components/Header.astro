@@ -94,7 +94,8 @@ const navItemInactiveClass = "text-secondary hover:text-primary hover:bg-gray-50
         <a href="/contact" class={`${navItemBaseClass} outline-none focus:outline-none focus:ring-0 ${isContact ? navItemActiveClass : navItemInactiveClass}`} data-i18n="nav.contact">Contacto</a>
       </li>
 
-      <li class="h-full hidden flex items-center ml-4 pl-4 border-l border-gray-200">
+      {/* QUILADA LA CLASE 'hidden' DE ESTE LI PARA MOSTRAR EL SELECTOR EN ESCRITORIO */}
+      <li class="h-full flex items-center ml-4 pl-4 border-l border-gray-200">
         <div class="text-secondary hover:text-primary font-medium h-full">
             <LanguageSelector client:load />
         </div>
@@ -139,7 +140,8 @@ const navItemInactiveClass = "text-secondary hover:text-primary hover:bg-gray-50
         <a href="/partnership" class={`block py-3 px-4 rounded-xl hover:bg-gray-50 outline-none focus:outline-none ${isPartnership ? "text-primary font-bold bg-blue-50" : "text-secondary font-medium"}`}>Partnership</a>
         <a href="/contact" class={`block py-3 px-4 rounded-xl hover:bg-gray-50 outline-none focus:outline-none ${isContact ? "text-primary font-bold bg-blue-50" : "text-secondary font-medium"}`}>Contacto</a>
 
-        <div class="hidden pt-6 mt-2 px-4">
+        {/* QUILADA LA CLASE 'hidden' DE ESTE CONTENEDOR PARA MOSTRAR EL SELECTOR EN MÓVIL */}
+        <div class="pt-6 mt-2 px-4">
              <div class="text-secondary font-medium p-2 bg-gray-50 rounded-lg inline-block w-full text-center">
                 <LanguageSelector client:load />
              </div>
