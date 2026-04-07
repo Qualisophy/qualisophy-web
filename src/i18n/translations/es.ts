@@ -351,4 +351,154 @@ export default {
     "“La inclusión laboral de personas con autismo no es solo una obligación legal, es una ",
   "neuro.quote.highlight": "oportunidad de crecimiento",
   "neuro.quote.end": " para nuestras organizaciones y nuestra sociedad.”",
+  // --- RURAL AREA PAGE ---
+  "rural.meta.title": "Entorno Rural - Qualisophy",
+  "rural.meta.desc":
+    "Llevamos la formación tecnológica a tu tierra para que construyas tu futuro digital sin moverte de ella.",
+
+  "rural.hero.title": "Tecnología que Une:",
+  "rural.hero.highlight": "Talento que Transforma",
+  "rural.hero.subtitle":
+    "Edición Rural. Llevamos la formación tecnológica a tu tierra para que construyas tu futuro digital sin moverte de ella. El talento no tiene fronteras. Tú tampoco necesitas moverte.",
+  "rural.hero.cta": "Descubrir Programa",
+
+  "rural.reality.title": "Una Realidad Territorial Desigual",
+  "rural.reality.subtitle": "El Talento Oculto",
+  "rural.reality.desc":
+    "El talento existe en todo el país, pero las oportunidades laborales siguen concentrándose en las grandes ciudades. Este fenómeno de despoblación es lo que comúnmente conocemos como “España vaciada”.",
+  "rural.stats.1.label": "Población",
+  "rural.stats.1.desc":
+    "Solo una pequeña parte de la población vive en zonas rurales.",
+  "rural.stats.2.label": "Territorio",
+  "rural.stats.2.desc": "La mayor parte de España es rural.",
+  "rural.stats.3.label": "hab/km²",
+  "rural.stats.3.desc":
+    "Muchas regiones del interior tienen densidades extremadamente bajas.",
+
+  "rural.vaciada.title": "La España Vaciada",
+  "rural.vaciada.p1":
+    "Gran parte del territorio español tiene densidades de población extremadamente bajas, lo que limita el desarrollo económico y la creación de oportunidades laborales.",
+  "rural.vaciada.p2":
+    "Mientras las grandes ciudades concentran población, empresas y empleo, miles de municipios rurales afrontan despoblación, envejecimiento y pérdida de talento.",
+  "rural.vaciada.f1.title": "70% del territorio",
+  "rural.vaciada.f1.desc":
+    "Gran parte del país tiene densidades de población muy bajas, con menos de 13 hab/km².",
+  "rural.vaciada.f2.title": "6.600 municipios",
+  "rural.vaciada.f2.desc":
+    "Miles de pequeños municipios donde viven comunidades con gran potencial humano.",
+  "rural.vaciada.f3.title": "Despoblación progresiva",
+  "rural.vaciada.f3.desc":
+    "Durante décadas, la falta de oportunidades laborales ha impulsado la migración a las ciudades.",
+  "rural.vaciada.f4.title": "Talento oculto",
+  "rural.vaciada.f4.desc":
+    "Miles de profesionales cualificados viven en zonas rurales con menos acceso a oportunidades.",
+
+  "rural.barriers.1.title": "Brecha Digital",
+  "rural.barriers.1.desc":
+    "Limitaciones en conectividad e infraestructuras tecnológicas en algunos territorios.",
+  "rural.barriers.2.title": "Acceso al Empleo",
+  "rural.barriers.2.desc":
+    "Las oportunidades laborales cualificadas suelen concentrarse en las grandes ciudades.",
+  "rural.barriers.3.title": "Fuga de Talento",
+  "rural.barriers.3.desc":
+    "Muchos jóvenes cualificados abandonan su entorno rural para desarrollar su carrera profesional.",
+  "rural.barriers.4.title": "Centralización Empresarial",
+  "rural.barriers.4.desc":
+    "Las empresas tienden a buscar talento únicamente en ecosistemas urbanos.",
+
+  "rural.impact.1":
+    "Fijación de población y lucha contra la despoblación en miles de municipios.",
+  "rural.impact.2":
+    "Dinamización de economías locales mediante oportunidades digitales.",
+  "rural.impact.3": "Desarrollo de ecosistemas tecnológicos rurales.",
+  "rural.impact.4":
+    "Nuevos modelos de trabajo: el teletrabajo integra talento rural en empresas globales.",
+  "rural.impact.5":
+    "Mayor diversidad territorial en las plantillas de las empresas.",
+
+  "rural.legal.title": "Marco Institucional: El Reto Demográfico",
+  "rural.legal.footer":
+    "La despoblación rural es uno de los grandes desafíos estratégicos de España. Cada vez más políticas públicas (como los fondos europeos Next Generation) buscan atraer talento, crear empresas y generar empleo en territorios rurales.",
+  "rural.legal.1.label": "Subvenciones públicas",
+  "rural.legal.1.desc":
+    "Algunos programas financian hasta el 90 % de proyectos empresariales en zonas rurales.",
+  "rural.legal.2.label": "Incentivos regionales",
+  "rural.legal.2.desc":
+    "Varias comunidades autónomas ofrecen ayudas adicionales a empresas en zonas despobladas.",
+
+  "rural.strategy1.title": "Estrategia 1: Formación Rural Tech",
+  "rural.strategy1.desc1":
+    "La capacitación tecnológica es la clave para conectar el talento rural con el mercado global.",
+  "rural.strategy1.desc2":
+    "Llevamos la formación especializada directamente a tu municipio, permitiéndote adquirir competencias de alta demanda sin necesidad de abandonar tu hogar o tu estilo de vida.",
+  "rural.strategy1.check1": "Formación digital especializada.",
+  "rural.strategy1.check2": "Programas de especialización tecnológica.",
+  "rural.strategy1.check3": "Prácticas en empresas innovadoras.",
+  "rural.strategy1.check4": "Inserción laboral en entornos remotos o híbridos.",
+
+  "rural.strategy2.title": "Estrategia 2: Conectar Talento y Empresa",
+  "rural.strategy2.subtitle":
+    "Creamos puentes reales entre profesionales rurales y organizaciones innovadoras.",
+  "rural.strategy2.1.title": "Intermediación Laboral",
+  "rural.strategy2.1.desc":
+    "Conectamos empresas con talento cualificado del entorno rural.",
+  "rural.strategy2.2.title": "Programas de Inserción",
+  "rural.strategy2.2.desc":
+    "Acompañamos a profesionales rurales en su acceso al mercado laboral.",
+  "rural.strategy2.3.title": "Ecosistemas Rurales Tech",
+  "rural.strategy2.3.desc":
+    "Impulsamos hubs de talento y colaboración empresarial.",
+  "rural.strategy2.4.title": "Teletrabajo",
+  "rural.strategy2.4.desc":
+    "Integramos talento rural en equipos distribuidos globales.",
+
+  "rural.curriculum.title": "Itinerarios Personalizados: Clave del Éxito",
+  "rural.curriculum.subtitle":
+    "Cada profesional tiene una realidad diferente. Nuestro enfoque es individualizado.",
+  "rural.curriculum.1.title": "Evaluación Individual",
+  "rural.curriculum.1.desc":
+    "Análisis de habilidades, experiencia y objetivos profesionales.",
+  "rural.curriculum.2.title": "Plan Formativo",
+  "rural.curriculum.2.desc":
+    "Diseño de rutas de capacitación adaptadas al mercado laboral.",
+  "rural.curriculum.3.title": "Acompañamiento Continuo",
+  "rural.curriculum.3.desc": "Mentoría y seguimiento durante todo el proceso.",
+  "rural.curriculum.4.title": "Inserción Laboral",
+  "rural.curriculum.4.desc":
+    "Integración en empresas comprometidas con el desarrollo territorial.",
+
+  "rural.quote.title": "Hacia un Desarrollo Territorial Sostenible",
+  "rural.quote.subtitle":
+    "El futuro del trabajo también se construye desde el mundo rural.",
+  "rural.quote.p1.title": "Compromiso Empresarial",
+  "rural.quote.p1.desc":
+    "Empresas que descubren y potencian nuevas fuentes de talento descentralizado.",
+  "rural.quote.p2.title": "Territorios Vivos",
+  "rural.quote.p2.desc":
+    "Comunidades rurales con oportunidades reales de desarrollo digital y económico.",
+  "rural.quote.p3.title": "Equilibrio Territorial",
+  "rural.quote.p3.desc":
+    "Una economía nacional más sostenible, conectada y territorialmente equilibrada.",
+  "rural.quote.text": "“El talento no depende del código postal. ",
+  "rural.quote.highlight": "El futuro del trabajo",
+  "rural.quote.end": " también se construye desde el mundo rural.”",
+
+  "rural.cta.title": "Impulsa el Talento del Mundo Rural",
+  "rural.cta.desc":
+    "La innovación también nace fuera de las grandes ciudades. Conecta empresas con talento rural y crea nuevas oportunidades.",
+  "rural.cta.btn1": "Contrata Talento Rural",
+  "rural.cta.btn2": "Únete al Programa Talento Rural Tech",
+  "rural.barriers.title": "Barreras Persistentes",
+  "rural.barriers.desc":
+    "Identificamos y derribamos los obstáculos estructurales que impiden el acceso al empleo.",
+  "rural.impact.title": "El Impacto Transformador",
+  "rural.impact.desc":
+    "El empleo no es solo un salario. Es la llave para la autonomía y la participación social plena.",
+  "rural.map.tooltip.province": "(provincia)",
+  "rural.map.tooltip.density": "Densidad de población\n(habitantes/km²):",
+  "rural.map.tooltip.state": "Estado:",
+  "rural.map.status.extreme": "Extrema despoblación",
+  "rural.map.status.risk": "Riesgo de despoblación",
+  "rural.map.status.normal": "Normal",
+  "rural.map.legend.title": "Densidad (hab/km²)",
 } as const;

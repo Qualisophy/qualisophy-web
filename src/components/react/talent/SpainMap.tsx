@@ -8,6 +8,7 @@ import React, {
 import { provinces, type ProvinceData } from "../../../data/provincesDensity";
 // @ts-ignore
 import spainMapSvg from "../../../assets/data/spain-map.svg?raw";
+import { useTranslations } from "@/hooks/useTranslations";
 
 // Constants outside component to avoid recreation on each render
 const TOOLTIP_WIDTH = 270;
@@ -42,6 +43,7 @@ const initialTooltipState: TooltipState = {
 export const SpainMap: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations();
 
   const [tooltipState, setTooltipState] =
     useState<TooltipState>(initialTooltipState);
@@ -108,14 +110,6 @@ export const SpainMap: React.FC = () => {
     return svg;
   }, [getProvinceColor]);
 
-  /**
-   * Smart tooltip positioning:
-   * - Default: centered horizontally on cursor, below it
-   * - Flips above if there is not enough room below
-   * - Baleares (path236): tooltip appears to the LEFT of the cursor
-   * - Canarias (path374, path390): tooltip appears ABOVE and to the RIGHT
-   * - All coords are clamped to the container as a final safety net
-   */
   const getSmartPosition = useCallback(
     (
       rawX: number,
@@ -129,8 +123,6 @@ export const SpainMap: React.FC = () => {
       const containerWidth = containerRef.current.offsetWidth;
       const containerHeight = containerRef.current.offsetHeight;
 
-      // Clamp raw coords — islands render outside via overflow:visible
-      // so their mouse events can report coords beyond the container size
       const cx = Math.max(0, Math.min(rawX, containerWidth));
       const cy = Math.max(0, Math.min(rawY, containerHeight));
 
@@ -139,7 +131,6 @@ export const SpainMap: React.FC = () => {
       let placement: TooltipPlacement;
 
       if (provinceId === BALEARES_ID) {
-        // Baleares: tooltip to the LEFT of the cursor, vertically centered
         x = cx - TOOLTIP_WIDTH - OFFSET;
         x = Math.max(MARGIN, x);
         y = cy - TOOLTIP_HEIGHT / 2;
@@ -149,7 +140,6 @@ export const SpainMap: React.FC = () => {
         );
         placement = "above";
       } else if (CANARIAS_IDS.includes(provinceId ?? "")) {
-        // Canarias: tooltip ABOVE and to the RIGHT of the cursor
         x = cx + OFFSET;
         x = Math.max(
           MARGIN,
@@ -159,7 +149,6 @@ export const SpainMap: React.FC = () => {
         y = Math.max(MARGIN, y);
         placement = "above";
       } else {
-        // Default: centered below cursor, flip above if no room
         x = cx - TOOLTIP_WIDTH / 2;
         x = Math.max(
           MARGIN,
@@ -247,17 +236,14 @@ export const SpainMap: React.FC = () => {
 
       const rawX = clientX - rect.left;
       const rawY = clientY - rect.top;
-      // Pass the province ID so islands get special positioning
       const { x, y, placement } = getSmartPosition(rawX, rawY, pathId);
 
       if (e.type === "click") {
         e.stopPropagation();
         setTooltipState((prev) => {
           if (prev.lockedId === pathId) {
-            // Unlock: revert to hover mode
             return { ...prev, lockedId: null };
           }
-          // Lock new province
           resetAllColors();
           target.style.fill = getProvinceColor(
             provinceData.density,
@@ -276,7 +262,6 @@ export const SpainMap: React.FC = () => {
       } else if (e.type === "mousemove" || e.type === "mouseover") {
         setTooltipState((prev) => {
           if (prev.lockedId) {
-            // Update position only if hovering the locked province
             if (prev.lockedId === pathId) {
               return { ...prev, x, y, placement };
             }
@@ -304,7 +289,6 @@ export const SpainMap: React.FC = () => {
     [getProvinceColor, resetAllColors, getSmartPosition],
   );
 
-  // Global click listener to unlock tooltip
   useEffect(() => {
     const handleGlobalClick = () => {
       setTooltipState((prev) => {
@@ -317,15 +301,14 @@ export const SpainMap: React.FC = () => {
     return () => document.removeEventListener("click", handleGlobalClick);
   }, [resetAllColors]);
 
-  // Pre-compute status label and class to keep JSX clean
   const statusLabel =
     tooltipState.data == null
       ? ""
       : tooltipState.data.density < 12
-        ? "Extrema despoblación"
+        ? t("rural.map.status.extreme")
         : tooltipState.data.density <= 30
-          ? "Riesgo de despoblación"
-          : "Normal";
+          ? t("rural.map.status.risk")
+          : t("rural.map.status.normal");
 
   const statusClass =
     tooltipState.data == null
@@ -342,7 +325,6 @@ export const SpainMap: React.FC = () => {
       className="relative w-full h-full bg-white rounded-3xl border border-gray-100 p-4 lg:p-8 shadow-sm flex flex-col justify-center items-center overflow-hidden"
       style={{ minHeight: "420px" }}
     >
-      {/* MAP AREA */}
       <div
         className="w-full flex-grow flex items-center justify-center relative cursor-default"
         onMouseMove={handleMapInteraction}
@@ -355,7 +337,6 @@ export const SpainMap: React.FC = () => {
           dangerouslySetInnerHTML={{ __html: SvgMemoized }}
         />
 
-        {/* TOOLTIP */}
         <div
           ref={tooltipRef}
           className={`absolute z-50 bg-white rounded-xl shadow-2xl border border-blue-100 pointer-events-none transition-opacity duration-150 ease-out ${
@@ -374,17 +355,15 @@ export const SpainMap: React.FC = () => {
                 <h4 className="font-bold text-base text-[#004b79] text-center">
                   {tooltipState.data.name}{" "}
                   <span className="text-slate-400 font-normal text-sm">
-                    (provincia)
+                    {t("rural.map.tooltip.province")}
                   </span>
                 </h4>
               </div>
 
               <div className="px-4 py-3 bg-[#f8fafc]">
                 <div className="flex justify-between items-center gap-3">
-                  <span className="text-xs text-[#004b79] font-medium leading-snug">
-                    Densidad de población
-                    <br />
-                    (habitantes/km²):
+                  <span className="text-xs text-[#004b79] font-medium leading-snug whitespace-pre-line">
+                    {t("rural.map.tooltip.density")}
                   </span>
                   <span className="text-2xl font-bold text-slate-800 shrink-0">
                     {tooltipState.data.density}
@@ -394,7 +373,7 @@ export const SpainMap: React.FC = () => {
 
               <div className="px-4 py-2 flex justify-between items-center border-t border-gray-100 bg-white rounded-b-xl">
                 <span className="text-xs text-[#004b79] font-medium">
-                  Estado:
+                  {t("rural.map.tooltip.state")}
                 </span>
                 <span
                   className={`font-bold px-2 py-1 rounded-md text-xs ${statusClass}`}
@@ -407,10 +386,9 @@ export const SpainMap: React.FC = () => {
         </div>
       </div>
 
-      {/* LEGEND */}
       <div className="mt-4 flex flex-col items-center gap-1.5 text-xs font-medium text-slate-600 bg-white/90 backdrop-blur border border-gray-100 shadow-sm px-4 py-3 rounded-xl z-20 pointer-events-none w-full max-w-[260px]">
         <div className="w-full text-center mb-1 text-[10px] text-slate-500 uppercase tracking-wider font-semibold">
-          Densidad (hab/km²)
+          {t("rural.map.legend.title")}
         </div>
         <div className="flex gap-0.5 h-2.5 w-full">
           <span className="flex-1 bg-[#cc0000] rounded-l-sm" />
