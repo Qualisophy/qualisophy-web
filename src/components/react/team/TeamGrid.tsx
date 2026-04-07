@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ParticleMeshBackground } from "../shared/ParticleMeshBackground";
+import { useTranslations } from "@/hooks/useTranslations"; // Añadimos el hook
 
 // Importación de imágenes
 import imgFran from "../../../assets/team-fran.png";
@@ -10,83 +11,74 @@ import imgPatricia from "../../../assets/team-patricia.jpeg";
 import imgEnrique from "../../../assets/instructor/instructor-enrique.jpeg";
 import imgJavi from "../../../assets/instructor/instructor-javi.jpeg";
 
-const teamMembers = [
-  {
-    name: "Elena Martín",
-    role: "CEO & Founder",
-    image: imgElena.src,
-    position: "object-top",
-    scale: "scale-100",
-    highlights: [
-      "Operaciones y Cultura",
-      "Gestión de talento y personas",
-      "Alianzas de impacto social",
-    ],
-  },
-  {
-    name: "Patricia Beyet",
-    role: "Project Manager & Agile Coach",
-    image: imgPatricia.src,
-    position: "object-top",
-    scale: "scale-125",
-    hoverScale: "group-hover:scale-[1.35]",
-    highlights: [
-      "Gestión de proyectos y Scrum",
-      "Formación especializada en TI",
-      "Metodologías ágiles",
-    ],
-  },
-  {
-    name: "Juan Pedro Gómez",
-    role: "Desarrollo Web Fullstack",
-    image: imgJuanpe.src,
-    position: "object-center",
-    scale: "scale-80",
-    highlights: [
-      "Arquitectura de la plataforma",
-      "Desarrollo Fullstack (Web)",
-      "Experiencia de Usuario (UX/UI)",
-    ],
-  },
-  {
-    name: "Francisco Guerrero",
-    role: "Instructor Tech",
-    image: imgFran.src,
-    position: "object-top",
-    scale: "scale-100",
-    highlights: [
-      "Estrategia y Liderazgo Tech",
-      "Docencia especializada sector TI",
-      "Visión global de la plataforma",
-    ],
-  },
-  {
-    name: "Javier Flores",
-    role: "INSTRUCTOR TECH · AUTOMATIZACIÓN QA",
-    image: imgJavi.src,
-    position: "object-center",
-    scale: "scale-80",
-    highlights: [
-      "Cypress Ambassador (2026)",
-      "Automatización eficiente",
-      "Frameworks mantenibles",
-    ],
-  },
-  {
-    name: "Enrique Román",
-    role: "INSTRUCTOR TECH · POWER BI & ANALÍTICA",
-    image: imgEnrique.src,
-    position: "object-center",
-    scale: "scale-80",
-    highlights: [
-      "Modelado de datos",
-      "Analítica de negocio",
-      "Toma de decisiones",
-    ],
-  },
-];
-
 export const TeamGrid = () => {
+  const t = useTranslations(); // Inicializamos el traductor
+
+  // Metemos el array dentro del componente para que lea de las traducciones
+  const teamMembers = [
+    {
+      name: "Elena Martín",
+      role: t("team.elena.role"),
+      image: imgElena.src,
+      position: "object-top",
+      scale: "scale-100",
+      highlights: [t("team.elena.h1"), t("team.elena.h2"), t("team.elena.h3")],
+    },
+    {
+      name: "Patricia Beyet",
+      role: t("team.patricia.role"),
+      image: imgPatricia.src,
+      position: "object-top",
+      scale: "scale-125",
+      hoverScale: "group-hover:scale-[1.35]",
+      highlights: [
+        t("team.patricia.h1"),
+        t("team.patricia.h2"),
+        t("team.patricia.h3"),
+      ],
+    },
+    {
+      name: "Juan Pedro Gómez",
+      role: t("team.juanpe.role"),
+      image: imgJuanpe.src,
+      position: "object-center",
+      scale: "scale-80",
+      highlights: [
+        t("team.juanpe.h1"),
+        t("team.juanpe.h2"),
+        t("team.juanpe.h3"),
+      ],
+    },
+    {
+      name: "Francisco Guerrero",
+      role: t("team.fran.role"),
+      image: imgFran.src,
+      position: "object-top",
+      scale: "scale-100",
+      highlights: [t("team.fran.h1"), t("team.fran.h2"), t("team.fran.h3")],
+    },
+    {
+      name: "Javier Flores",
+      role: t("team.javi.role"),
+      image: imgJavi.src,
+      position: "object-center",
+      scale: "scale-80",
+      highlights: [t("team.javi.h1"), t("team.javi.h2"), t("team.javi.h3")],
+    },
+    {
+      name: "Enrique Román",
+      role: t("team.enrique.role"),
+      image: imgEnrique.src,
+      position: "object-center",
+      scale: "scale-80",
+      highlights: [
+        t("team.enrique.h1"),
+        t("team.enrique.h2"),
+        t("team.enrique.h3"),
+      ],
+    },
+  ];
+
   return (
     <section className="py-20 relative overflow-hidden bg-white">
       <div className="absolute inset-0 z-0 opacity-60 pointer-events-none">
@@ -96,7 +88,7 @@ export const TeamGrid = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <div className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary font-heading mb-4">
-            Las personas detrás del cambio
+            {t("team.grid.title")}
           </h2>
           <div className="w-20 h-1 bg-primary"></div>
         </div>

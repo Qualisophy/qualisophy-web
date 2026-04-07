@@ -1,50 +1,49 @@
 import React from "react";
-
-// Datos unificados con slugs correctos
-const posts = [
-  {
-    slug: "impacto-ia-testing",
-    category: "Tendencias",
-    title: "El impacto de la IA en el testing de software moderno",
-    excerpt:
-      "Descubre cómo la inteligencia artificial está redefiniendo los roles de QA y qué habilidades son necesarias hoy.",
-    image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=600",
-    date: "12 Feb, 2026",
-  },
-  {
-    slug: "neurodivergencia-ventaja",
-    category: "Inclusión",
-    title: "Neurodivergencia: La ventaja competitiva oculta",
-    excerpt:
-      "Las empresas que apuestan por la neurodiversidad reportan un aumento del 30% en productividad e innovación.",
-    image:
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
-    date: "2 Ene, 2026",
-  },
-  {
-    slug: "caso-exito-maria",
-    category: "Casos de Éxito",
-    title: "De la hostelería a Desarrollador Full Stack en 6 meses",
-    excerpt:
-      "La historia de María y cómo el reskilling transformó su vida profesional gracias a la metodología Qualisophy.",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600",
-    date: "23 Dic, 2025",
-  },
-];
+import { useTranslations } from "@/hooks/useTranslations"; // Añadimos el hook
 
 export const BlogSection = () => {
+  const t = useTranslations(); // Inicializamos el traductor
+
+  // Metemos el array dentro del componente para que lea de las traducciones
+  const posts = [
+    {
+      slug: "impacto-ia-testing",
+      category: t("blog.post1.cat"),
+      title: t("blog.post1.title"),
+      excerpt: t("blog.post1.desc"),
+      image:
+        "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=600",
+      date: t("blog.post1.date"),
+    },
+    {
+      slug: "neurodivergencia-ventaja",
+      category: t("blog.post2.cat"),
+      title: t("blog.post2.title"),
+      excerpt: t("blog.post2.desc"),
+      image:
+        "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
+      date: t("blog.post2.date"),
+    },
+    {
+      slug: "caso-exito-maria",
+      category: t("blog.post3.cat"),
+      title: t("blog.post3.title"),
+      excerpt: t("blog.post3.desc"),
+      image:
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600",
+      date: t("blog.post3.date"),
+    },
+  ];
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary font-heading mb-4">
-            Nuestro Blog
+            {t("blog.section.title")}
           </h2>
           <p className="text-gray-600 font-primary max-w-2xl mx-auto">
-            Conoce las últimas tendencias en tecnología, inclusión y crecimiento
-            profesional.
+            {t("blog.section.subtitle")}
           </p>
         </div>
 
@@ -95,13 +94,12 @@ export const BlogSection = () => {
                   className="group inline-flex items-center text-primary font-bold text-sm no-underline mt-auto"
                 >
                   <span className="group-hover:underline">
-                    Leer artículo completo
+                    {t("blog.readMore")}
                   </span>
                   <span className="material-symbols-outlined text-sm ml-1 inline-block transition-transform group-hover:translate-x-1">
                     arrow_forward
                   </span>
                 </a>
-
               </div>
             </article>
           ))}
@@ -113,7 +111,7 @@ export const BlogSection = () => {
             href="/blog"
             className="inline-flex items-center gap-2 bg-white border border-gray-300 text-secondary hover:text-primary hover:border-primary font-bold py-3 px-8 rounded-lg transition-all shadow-sm hover:shadow-md"
           >
-            Ver todos los artículos
+            {t("blog.viewAll")}
             <span className="material-symbols-outlined text-sm">grid_view</span>
           </a>
         </div>

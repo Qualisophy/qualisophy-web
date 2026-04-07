@@ -1011,4 +1011,69 @@ export default {
   "nav.reskilling": "Reconversión Laboral",
   "nav.menu": "Menú",
   "nav.mobile.programs": "Programas Formativos",
+  // --- TEAM PAGE ---
+  "team.meta.title": "Nuestro Equipo - Qualisophy",
+  "team.meta.desc":
+    "Conoce a los profesionales que hacen posible la inclusión tecnológica.",
+  "team.hero.title1": "Nuestro ",
+  "team.hero.title2": "Equipo",
+  "team.hero.subtitle":
+    "Expertos en tecnología, psicología y educación trabajando juntos para construir puentes de oportunidades.",
+  // --- BLOG SECTION ---
+  "blog.section.title": "Nuestro Blog",
+  "blog.section.subtitle":
+    "Conoce las últimas tendencias en tecnología, inclusión y crecimiento profesional.",
+  "blog.readMore": "Leer artículo completo",
+  "blog.viewAll": "Ver todos los artículos",
+
+  "blog.post1.cat": "Tendencias",
+  "blog.post1.title": "El impacto de la IA en el testing de software moderno",
+  "blog.post1.desc":
+    "Descubre cómo la inteligencia artificial está redefiniendo los roles de QA y qué habilidades son necesarias hoy.",
+  "blog.post1.date": "12 Feb, 2026",
+
+  "blog.post2.cat": "Inclusión",
+  "blog.post2.title": "Neurodivergencia: La ventaja competitiva oculta",
+  "blog.post2.desc":
+    "Las empresas que apuestan por la neurodiversidad reportan un aumento del 30% en productividad e innovación.",
+  "blog.post2.date": "2 Ene, 2026",
+
+  "blog.post3.cat": "Casos de Éxito",
+  "blog.post3.title": "De la hostelería a Desarrollador Full Stack en 6 meses",
+  "blog.post3.desc":
+    "La historia de María y cómo el reskilling transformó su vida profesional gracias a la metodología Qualisophy.",
+  "blog.post3.date": "23 Dic, 2025",
+
+  // --- TEAM GRID ---
+  "team.grid.title": "Las personas detrás del cambio",
+
+  "team.elena.role": "CEO & Founder",
+  "team.elena.h1": "Operaciones y Cultura",
+  "team.elena.h2": "Gestión de talento y personas",
+  "team.elena.h3": "Alianzas de impacto social",
+
+  "team.patricia.role": "Project Manager & Agile Coach",
+  "team.patricia.h1": "Gestión de proyectos y Scrum",
+  "team.patricia.h2": "Formación especializada en TI",
+  "team.patricia.h3": "Metodologías ágiles",
+
+  "team.juanpe.role": "Desarrollo Web Fullstack",
+  "team.juanpe.h1": "Arquitectura de la plataforma",
+  "team.juanpe.h2": "Desarrollo Fullstack (Web)",
+  "team.juanpe.h3": "Experiencia de Usuario (UX/UI)",
+
+  "team.fran.role": "Instructor Tech",
+  "team.fran.h1": "Estrategia y Liderazgo Tech",
+  "team.fran.h2": "Docencia especializada sector TI",
+  "team.fran.h3": "Visión global de la plataforma",
+
+  "team.javi.role": "INSTRUCTOR TECH · AUTOMATIZACIÓN QA",
+  "team.javi.h1": "Cypress Ambassador (2026)",
+  "team.javi.h2": "Automatización eficiente",
+  "team.javi.h3": "Frameworks mantenibles",
+
+  "team.enrique.role": "INSTRUCTOR TECH · POWER BI & ANALÍTICA",
+  "team.enrique.h1": "Modelado de datos",
+  "team.enrique.h2": "Analítica de negocio",
+  "team.enrique.h3": "Toma de decisiones",
 } as const;
