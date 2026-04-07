@@ -991,4 +991,14 @@ export default {
   "route.reskilling": "Reconversión Laboral",
   "route.rural-area": "Entorno Rural",
   "route.social-impact": "Impacto Social",
+  // --- HEADER / NAVEGACIÓN ---
+  "nav.programs": "Programas Inclusivos",
+  "nav.neuro": "Neurodivergencia",
+  "nav.rural": "Entorno Rural",
+  "nav.migrant": "Talento Migrante",
+  "nav.social": "Riesgo de Exclusión",
+  "nav.trainings": "Nuestras Formaciones",
+  "nav.reskilling": "Reconversión Laboral",
+  "nav.menu": "Menú",
+  "nav.mobile.programs": "Programas Formativos",
 } as const;
