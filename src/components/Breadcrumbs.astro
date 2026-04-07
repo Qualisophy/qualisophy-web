@@ -1,4 +1,9 @@
 ---
+import { getLangFromUrl, useTranslations } from "@/i18n/ui";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 const { class: className } = Astro.props;
 
 const paths = Astro.url.pathname.split("/").filter(Boolean);
@@ -58,6 +63,13 @@ const routeNameMap: Record<string, string> = {
 
 // Function to format names if they are not in the map
 const formatName = (slug: string) => {
+  // 0. Intentamos obtener la traducción primero desde el diccionario
+  const key = `route.${slug}` as any;
+  const translated = t(key);
+  if (translated && translated !== key) {
+    return translated;
+  }
+
   // 1. If it's in the map, use it
   if (routeNameMap[slug]) return routeNameMap[slug];
 

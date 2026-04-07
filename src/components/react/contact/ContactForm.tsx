@@ -36,47 +36,42 @@ export const ContactForm = ({
       if (paramValue) {
         // 1. Lógica específica para Partnership
         if (paramValue === "partnership") {
-          setCurrentSource("Solicitud de Alianza Corporativa");
+          setCurrentSource(t("contact.dynamic.partnership.source"));
           setFormData((prev) => ({
             ...prev,
-            message:
-              "Hola, represento a [Nombre de tu Empresa] y estamos interesados en explorar una alianza con Qualisophy para...",
+            message: t("contact.dynamic.partnership.msg"),
           }));
         }
         // 2. Lógica para 'company' general (pilares)
         else if (paramValue === "company") {
-          setCurrentSource("Interés Corporativo (Desde Pilares)");
+          setCurrentSource(t("contact.dynamic.company.source"));
           setFormData((prev) => ({
             ...prev,
-            message:
-              "Hola, nos gustaría recibir más información sobre vuestros programas de inclusión para empresas.",
+            message: t("contact.dynamic.company.msg"),
           }));
         }
         // 3. Lógica para Empresa Rural ('company-rural')
         else if (paramValue === "company-rural") {
-          setCurrentSource("Interés Corporativo (Talento Rural)");
+          setCurrentSource(t("contact.dynamic.company-rural.source"));
           setFormData((prev) => ({
             ...prev,
-            message:
-              "Hola, nos gustaría recibir información sobre cómo podemos colaborar y contratar talento cualificado del entorno rural.",
+            message: t("contact.dynamic.company-rural.msg"),
           }));
         }
         // 4. Lógica para Candidato Rural ('candidate-rural')
         else if (paramValue === "candidate-rural") {
-          setCurrentSource("Inscripción Programa (Talento Rural)");
+          setCurrentSource(t("contact.dynamic.candidate-rural.source"));
           setFormData((prev) => ({
             ...prev,
-            message:
-              "Hola, me gustaría apuntarme al programa Talento Rural Tech para construir mi futuro digital sin moverme de mi entorno. ¿Me podéis dar más información?",
+            message: t("contact.dynamic.candidate-rural.msg"),
           }));
         }
         // 5. NUEVO: Lógica para Candidato General ('candidate') (Neurodivergencia, Migrante, Exclusión)
         else if (paramValue === "candidate") {
-          setCurrentSource("Inscripción Programa (Candidato)");
+          setCurrentSource(t("contact.dynamic.candidate.source"));
           setFormData((prev) => ({
             ...prev,
-            message:
-              "Hola, me gustaría apuntarme a vuestros programas de formación inclusiva y descubrir cómo podéis ayudarme a impulsar mi carrera profesional.",
+            message: t("contact.dynamic.candidate.msg"),
           }));
         }
         // 6. Lógica genérica (fallback)
@@ -85,7 +80,7 @@ export const ContactForm = ({
           if (!formData.message) {
             setFormData((prev) => ({
               ...prev,
-              message: `Hola, me interesa saber más sobre: ${paramValue}.`,
+              message: `${t("contact.dynamic.fallback.msg")}${paramValue}.`,
             }));
           }
         }
@@ -143,7 +138,11 @@ export const ContactForm = ({
           // Aquí enviamos el origen dinámico para que Make sepa de dónde viene
           source: currentSource,
           // Enviamos un tipo explícito para ayudar al Router de Make
-          type: currentSource.includes("Alianza") ? "partnership" : "contact",
+          type:
+            currentSource.includes("Alianza") ||
+            currentSource.includes("Alliance")
+              ? "partnership"
+              : "contact",
         }),
       });
 

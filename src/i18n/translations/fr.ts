@@ -939,4 +939,69 @@ export default {
     "Allions-nous pour créer des avenirs. Parlons de la manière dont nous pouvons collaborer pour l'insertion professionnelle de vos utilisateurs.",
   "partnership.cta.btn1": "Parlons d'une Alliance",
   "partnership.cta.btn2": "Planifier une Réunion",
+  // --- CONTACT PAGE ---
+  "contact.meta.title": "Contact - Qualisophy",
+  "contact.meta.desc":
+    "Contactez-nous pour discuter de votre projet ou vous renseigner sur nos services.",
+  "contact.hero.title": "Parlons-en",
+  "contact.hero.subtitle":
+    "Nous sommes là pour vous aider. Remplissez le formulaire et nous vous contacterons dans les plus brefs délais.",
+  "contact.sidebar.title": "Autres moyens de contact",
+  "contact.sidebar.address": "Adresse",
+  "contact.sidebar.phone": "Téléphone",
+  "contact.sidebar.email": "E-mail",
+  "contact.map.title": "Où sommes-nous ?",
+
+  // --- TEXTES DYNAMIQUES DU FORMULAIRE ---
+  "contact.dynamic.partnership.source": "Demande d'Alliance Corporative",
+  "contact.dynamic.partnership.msg":
+    "Bonjour, je représente [Nom de votre Entreprise] et nous sommes intéressés par l'exploration d'une alliance avec Qualisophy pour...",
+  "contact.dynamic.company.source": "Intérêt Corporatif (Depuis Piliers)",
+  "contact.dynamic.company.msg":
+    "Bonjour, nous aimerions recevoir plus d'informations sur vos programmes d'inclusion pour les entreprises.",
+  "contact.dynamic.company-rural.source": "Intérêt Corporatif (Talent Rural)",
+  "contact.dynamic.company-rural.msg":
+    "Bonjour, nous aimerions recevoir des informations sur la manière dont nous pouvons collaborer et embaucher des talents qualifiés du milieu rural.",
+  "contact.dynamic.candidate-rural.source":
+    "Inscription Programme (Talent Rural)",
+  "contact.dynamic.candidate-rural.msg":
+    "Bonjour, j'aimerais m'inscrire au programme Talent Rural Tech pour construire mon avenir numérique sans quitter mon environnement. Pouvez-vous m'en dire plus ?",
+  "contact.dynamic.candidate.source": "Inscription Programme (Candidat)",
+  "contact.dynamic.candidate.msg":
+    "Bonjour, j'aimerais m'inscrire à vos programmes de formation inclusive et découvrir comment vous pouvez m'aider à propulser ma carrière professionnelle.",
+  "contact.dynamic.fallback.msg": "Bonjour, je souhaite en savoir plus sur : ",
+  // --- BREADCRUMBS (ROUTES) ---
+  "route.corporate-training": "Formation Entreprises",
+  "route.cursos": "Cours",
+  "route.partnership": "Partenariat",
+  "route.contact": "Contact",
+  "route.talent-inclusion": "Inclusion Professionnelle",
+  "route.faq": "Foire Aux Questions",
+  "route.course-enrollment": "Inscription",
+  "route.desarrollo": "Développement",
+  "route.qa": "QA & Testing",
+  "route.data": "Data & BI",
+  "route.herramientas": "Outils d'Entreprise",
+  "route.devops": "DevOps & Gestion",
+  "route.agile": "Agile & Scrum",
+  "route.calidad-software": "Qualité Logicielle (QA) et Testing",
+  "route.pruebas-api": "API Testing avec Postman",
+  "route.bootcamp-cypress": "Cypress Automation Bootcamp",
+  "route.pruebas-junit": "Tests Unitaires avec JUnit",
+  "route.pruebas-agiles": "Agile Testing",
+  "route.pruebas-ia-generativa": "Generative AI pour Software Testing",
+  "route.sql-powerbi": "Introduction à SQL pour Power BI",
+  "route.analitica-powerbi": "Analyse de Données avec Power BI",
+  "route.excel-experto": "Microsoft Excel Expert",
+  "route.ofimatica-integral": "Bureautique Intégrale",
+  "route.chatbots": "Chatbots pour le E-commerce",
+  "route.productividad-make": "Productivité avec Make",
+  "route.gitlab-cicd": "Gestion Avancée et CI/CD avec GitLab",
+  "route.introduccion-devops": "DevOps, Continuous Testing et CI/CD",
+  "route.scrum-master": "Agile Mastery : La Voie du Scrum Master",
+  "route.migrant-talent": "Talent Migrant",
+  "route.neurodivergence": "Neurodivergence",
+  "route.reskilling": "Reconversion Pro",
+  "route.rural-area": "Milieu Rural",
+  "route.social-impact": "Impact Social",
 } as const;
