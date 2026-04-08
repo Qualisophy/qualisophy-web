@@ -1,57 +1,12 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { ProgramHero } from "@/components/react/programs/ProgramHero";
-import { CourseGridCard } from "@/components/react/course/CourseGridCard";
-import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { DevopsIndexContent } from "@/components/react/course/DevopsIndexContent";
+import { getLangFromUrl, useTranslations } from "@/i18n/ui";
 
-import { courseCategories } from "@/data/courseCatalog";
-
-const categoryData = courseCategories.find(c => c.id === "devops");
-const courses = categoryData?.courses || [];
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<Layout title="Cursos DevOps & CI/CD - Qualisophy" fullWidth={true}>
-  <ProgramHero
-    client:load
-    title="Formación en"
-    highlight="DevOps & Gestión"
-    subtitle="Rompe los silos entre desarrollo y operaciones. Aprende integración continua, automatización de despliegues y observabilidad."
-    backgroundImage="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&q=80"
-    ctaText="Ver Itinerarios"
-    scrollToId="courses-grid"
-  />
-
-  <div class="bg-gray-50/50 min-h-screen">
-    <div class="container mx-auto px-6 pt-8 pb-4">
-        <Breadcrumbs />
-    </div>
-
-    <section id="courses-grid" class="py-12 pb-24">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4 border-b border-gray-200 pb-6">
-                <div class="max-w-2xl">
-                    <h2 class="text-3xl font-bold font-heading text-secondary mb-2">Cultura e Integración Continua</h2>
-                    <p class="text-gray-600 font-primary">Domina las herramientas que aceleran la entrega de software de alta calidad.</p>
-                </div>
-                <div class="hidden md:block text-sm text-gray-400 font-medium">Mostrando {courses.length} cursos</div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                {courses.map((course) => (
-                <CourseGridCard
-                    client:visible
-                    title={course.title}
-                    description={course.description}
-                    imageSrc={course.image}
-                    href={course.href}
-                    level={course.level as any}
-                    duration={course.duration}
-                    modality={course.modality as any}
-                    category={course.categoryName}
-                />
-                ))}
-            </div>
-        </div>
-    </section>
-  </div>
+<Layout title={t("devops.index.meta.title" as any) || "Cursos DevOps & CI/CD - Qualisophy"} fullWidth={true}>
+  <DevopsIndexContent client:load pathname={Astro.url.pathname} />
 </Layout>

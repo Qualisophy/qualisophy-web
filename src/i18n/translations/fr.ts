@@ -1566,4 +1566,125 @@ export default {
     "Comprendre et forcer le Query Folding pour maximiser les performances.",
   "course.data-sql.mod4.t3":
     "Cas pratiques : d'un schéma SQL complexe à une table plate parfaite pour l'analyse.",
+
+  // --- DEVOPS INDEX ---
+  "devops.index.meta.title": "Cours DevOps & CI/CD - Qualisophy",
+  "devops.index.hero.title1": "Formation en",
+  "devops.index.hero.title2": "DevOps & Gestion",
+  "devops.index.hero.subtitle":
+    "Brisez les silos entre le développement et les opérations. Apprenez l'intégration continue, l'automatisation des déploiements et l'observabilité.",
+  "devops.index.hero.cta": "Voir les Itinéraires",
+  "devops.index.section.title": "Culture et Intégration Continue",
+  "devops.index.section.subtitle":
+    "Maîtrisez les outils qui accélèrent la livraison de logiciels de haute qualité.",
+  "devops.index.showing": "Affichage de",
+  "devops.index.courses": "cours",
+
+  // --- GITLAB CI/CD COURSE CONTENT ---
+  "course.devops-gitlab.name": "Gestion Avancée et CI/CD avec GitLab",
+  "course.devops-gitlab.fullDesc":
+    "Le développement moderne exige des plateformes complètes. Ce cours, basé sur la philosophie learning by doing, forme les utilisateurs avancés, les administrateurs et les DevOps à l'utilisation exhaustive de GitLab. Loin d'être un simple référentiel de code, les étudiants configureront des tableaux agiles, automatiseront des flux de tests et de déploiements, et mettront en œuvre des politiques strictes de sécurité et de conformité pour des projets à grande échelle.",
+  "course.devops-gitlab.prereq":
+    "Solides connaissances de Git et du contrôle de version, principes fondamentaux des méthodologies agiles et notions de base de l'intégration continue.",
+
+  "course.devops-gitlab.mod1.title":
+    "Gestion de Projets, Équipes et Planification Agile",
+  "course.devops-gitlab.mod1.desc":
+    "Organisez le travail et les équipes au sein de GitLab.",
+  "course.devops-gitlab.mod1.t1":
+    "Utilisation avancée de GitLab Boards, Milestones et Issues pour le suivi du travail.",
+  "course.devops-gitlab.mod1.t2":
+    "Configuration des référentiels, rôles d'accès et ramifications stratégiques (Git Flow).",
+  "course.devops-gitlab.mod1.t3":
+    "Intégration bidirectionnelle avec des outils de communication comme Slack ou Microsoft Teams.",
+
+  "course.devops-gitlab.mod2.title":
+    "Intégration et Déploiement Continu (CI/CD)",
+  "course.devops-gitlab.mod2.desc":
+    "Automatisez votre cycle de vie de développement.",
+  "course.devops-gitlab.mod2.t1":
+    "Architecture du fichier .gitlab-ci.yml : stages, jobs et runners.",
+  "course.devops-gitlab.mod2.t2":
+    "Automatisation des tests unitaires et de qualité intégrés à chaque commit.",
+  "course.devops-gitlab.mod2.t3":
+    "Stratégies de déploiement automatisé, gestion des environnements (staging/production) et simulations de rollback.",
+
+  "course.devops-gitlab.mod3.title":
+    "Sécurité, Audit et Conformité (DevSecOps)",
+  "course.devops-gitlab.mod3.desc":
+    "Protégez votre code et respectez les réglementations.",
+  "course.devops-gitlab.mod3.t1":
+    "Configuration de l'analyse statique (SAST) et dynamique (DAST) du code source.",
+  "course.devops-gitlab.mod3.t2":
+    "Intégration de l'analyse des vulnérabilités et de la révision des dépendances.",
+  "course.devops-gitlab.mod3.t3":
+    "Mise en œuvre de politiques de conformité, d'audits d'actions et de journaux d'activité.",
+
+  "course.devops-gitlab.mod4.title":
+    "Surveillance, Maintenance et Cas Pratiques",
+  "course.devops-gitlab.mod4.desc":
+    "Observabilité et projets à grande échelle.",
+  "course.devops-gitlab.mod4.t1":
+    "Intégration des métriques de santé du projet avec des outils comme Prometheus.",
+  "course.devops-gitlab.mod4.t2":
+    "Configuration d'alertes de performance et génération de rapports personnalisés.",
+  "course.devops-gitlab.mod4.t3":
+    "Atelier Pratique Intégrateur : déploiement, sécurisation et surveillance d'un projet monolithique et sa transition vers des microservices.",
+
+  // --- INTRO DEVOPS COURSE CONTENT ---
+  "course.devops-intro.name": "DevOps, Continuous Testing et CI/CD",
+  "course.devops-intro.fullDesc":
+    "La philosophie DevOps a transformé la manière dont les logiciels sont construits, testés et déployés, brisant les silos traditionnels entre le développement et les opérations. Ce cours offre une immersion complète dans la culture, les pratiques et les outils DevOps. Les étudiants apprendront à automatiser des processus clés via des pipelines d'Intégration et de Déploiement Continu (CI/CD), garantissant la qualité du produit à chaque étape grâce au Testing Continu et à la surveillance active.",
+  "course.devops-intro.prereq":
+    "Connaissances de base du cycle de vie du développement logiciel (SDLC) et familiarité générale avec les concepts de test. Il est recommandé d'avoir des notions de base de navigation en ligne de commande.",
+
+  "course.devops-intro.mod1.title": "Fondamentaux de DevOps",
+  "course.devops-intro.mod1.desc":
+    "Découvrez la culture qui unit le développement et les opérations.",
+  "course.devops-intro.mod1.t1":
+    "Introduction à la culture DevOps : intégration des processus, pratiques et outils clés.",
+  "course.devops-intro.mod1.t2":
+    "Avantages tangibles de l'adoption de DevOps dans le cycle de vie du développement logiciel (SDLC).",
+  "course.devops-intro.mod1.t3":
+    "Le rôle critique du Continuous Testing (Tests Continus) au sein de l'écosystème DevOps.",
+
+  "course.devops-intro.mod2.title": "Outils de Gestion et de Configuration",
+  "course.devops-intro.mod2.desc":
+    "Maîtrisez les bases du contrôle de version et des environnements.",
+  "course.devops-intro.mod2.t1":
+    "Systèmes de Contrôle de Version : maîtrise fondamentale de Git.",
+  "course.devops-intro.mod2.t2":
+    "Gestion de la configuration pour standardiser et automatiser l'infrastructure et les environnements de développement.",
+
+  "course.devops-intro.mod3.title": "Intégration Continue (CI)",
+  "course.devops-intro.mod3.desc":
+    "Automatisez la construction et les tests de votre code.",
+  "course.devops-intro.mod3.t1":
+    "Concepts de base et architecture de l'Intégration Continue.",
+  "course.devops-intro.mod3.t2":
+    "Exploration des outils CI les plus demandés sur le marché (Jenkins, GitLab CI, entre autres).",
+  "course.devops-intro.mod3.t3":
+    "Création et configuration étape par étape de pipelines CI efficaces.",
+
+  "course.devops-intro.mod4.title": "Livraison et Déploiement Continu (CD)",
+  "course.devops-intro.mod4.desc":
+    "Mettez votre code en production en toute sécurité.",
+  "course.devops-intro.mod4.t1":
+    "Différences structurelles et stratégiques entre la Livraison Continue et le Déploiement Continu.",
+  "course.devops-intro.mod4.t2":
+    "Techniques pour l'automatisation sécurisée des déploiements dans différents environnements.",
+  "course.devops-intro.mod4.t3":
+    "Mise en œuvre de stratégies de déploiement avancées pour atténuer les risques (Déploiements Blue/Green, Canary Releases).",
+
+  "course.devops-intro.mod5.title": "Tests Continus et Surveillance",
+  "course.devops-intro.mod5.desc":
+    "Fermez la boucle en assurant la qualité et l'observabilité.",
+  "course.devops-intro.mod5.t1":
+    "Intégration stratégique de tests automatisés directement dans les pipelines CI/CD.",
+  "course.devops-intro.mod5.t2":
+    "Mise en œuvre d'outils de surveillance et de journalisation pour une observabilité totale.",
+  "course.devops-intro.mod5.t3":
+    "Gestion de la boucle de rétroaction (Feedback Loop) pour assurer une amélioration continue.",
+
+  "course.details.tbd": "À définir",
 } as const;
