@@ -1455,4 +1455,115 @@ export default {
   "floating.btn.enroll": "S'inscrire",
   "floating.btn.interested.title": "Je suis intéressé(e) par :",
   "floating.btn.enroll.title": "S'inscrire à",
+
+  // --- DATA INDEX ---
+  "data.index.meta.title": "Cours de Data & BI - Qualisophy",
+  "data.index.hero.title1": "Formation en",
+  "data.index.hero.title2": "Microsoft & Data",
+  "data.index.hero.subtitle":
+    "Maîtrisez l'écosystème des données. Outils de Business Intelligence et SQL pour dynamiser votre profil analytique et la prise de décision.",
+  "data.index.hero.cta": "Voir les Itinéraires",
+  "data.index.section.title": "Business Intelligence",
+  "data.index.section.subtitle":
+    "Outils essentiels pour l'analyse et la gestion de l'information.",
+  "data.index.showing": "Affichage de",
+  "data.index.courses": "cours",
+
+  // --- POWER BI COURSE CONTENT ---
+  "course.data-powerbi.name": "Analyse de Données avec Power BI",
+  "course.data-powerbi.fullDesc":
+    "Ce cours couvre l'ensemble du cycle de vie de la Business Intelligence moderne. Sans avoir besoin de toucher à SQL, les étudiants apprendront à connecter Power BI à diverses sources, à transformer les données via l'interface Power Query, à créer des modèles de données relationnels précis (modèle en étoile) et à générer des métriques commerciales avec le langage DAX. Tout cela aboutira à la conception de rapports visuels interactifs à fort impact pour la prise de décision.",
+  "course.data-powerbi.prereq":
+    "Niveau avancé sur Excel (tableaux croisés dynamiques, formules RECHERCHEV) et forte orientation analytique et business.",
+
+  "course.data-powerbi.instructor.role":
+    "Spécialiste en Power BI et Analyse de Données",
+  "course.data-powerbi.instructor.exp":
+    "Plus de 8 ans d'expérience en Business Intelligence",
+  "course.data-powerbi.instructor.desc":
+    "Enrique est un consultant expert qui propose des formations pratiques orientées métier. Il est spécialiste de la transformation, de la modélisation et de la visualisation des données, offrant aux étudiants une vision complète de Power BI pour une prise de décision commerciale correcte.",
+
+  "course.data-powerbi.mod1.title": "Introduction (2h)",
+  "course.data-powerbi.mod1.desc":
+    "Ce module jettera les bases pour comprendre la pertinence de l'analyse de données dans l'environnement des affaires. Il abordera le rôle que joue l'analyste de données dans la prise de décision, ainsi que les types de rapports les plus utilisés dans les organisations modernes. De plus, Power BI sera présenté comme un outil clé. Nous étudierons son objectif et la manière dont il s'intègre dans le flux de travail de l'analyse de données.",
+  "course.data-powerbi.mod1.t1":
+    "Importance de l'analyse des données dans les entreprises et Rôle de l'analyste de données.",
+  "course.data-powerbi.mod1.t2":
+    "Types de rapports les plus utilisés aujourd'hui.",
+  "course.data-powerbi.mod1.t3": "Introduction à l'outil Power BI.",
+
+  "course.data-powerbi.mod2.title": "Prise en main de Power BI (40h)",
+  "course.data-powerbi.mod2.desc":
+    "Ce module couvre l'ensemble du processus de travail avec Power BI : de la connexion et l'importation des données, leur transformation et leur modélisation, à la création de rapports visuels et leur publication. Le langage DAX est également introduit pour des analyses plus avancées. L'objectif est de fournir une vision pratique et structurée du processus d'analyse des données avec cet outil.",
+  "course.data-powerbi.mod2.t1": "Configurer les Sources de données.",
+  "course.data-powerbi.mod2.t2": "Importer des données.",
+  "course.data-powerbi.mod2.t3":
+    "Transformation des données (Base, Intermédiaire et Avancée).",
+  "course.data-powerbi.mod2.t4": "Modélisation des données.",
+  "course.data-powerbi.mod2.t5":
+    "Expressions pour l'analyse de données avec DAX.",
+  "course.data-powerbi.mod2.t6":
+    "Visualisation de données et création de rapports.",
+  "course.data-powerbi.mod2.t7": "Publication de rapports.",
+  "course.data-powerbi.mod2.t8": "Configurations avancées et bonnes pratiques.",
+
+  "course.data-powerbi.mod3.title": "Cas Pratique (8h)",
+  "course.data-powerbi.mod3.desc":
+    "Ce module est consacré à l'application de tout ce qui a été appris grâce à la création d'un rapport complet dans Power BI, de la connexion des données à la visualisation finale. Les participants travailleront sur un cas pratique guidé, résolvant des doutes en temps réel et consolidant les connaissances. À la fin, une séance de clôture aura lieu pour revoir les concepts clés et résoudre les questions finales.",
+  "course.data-powerbi.mod3.t1": "Cas pratique : Création d'un rapport.",
+  "course.data-powerbi.mod3.t2": "Doutes et clôture.",
+
+  "course.data-powerbi.details.start": "Début Octobre",
+  "course.data-powerbi.details.duration": "50 heures",
+  "course.data-powerbi.details.schedule": "Mardi et Jeudi / 18:00 - 21:00",
+  "course.data-powerbi.details.price": "450 €",
+  "course.data-powerbi.details.earlybird": "À définir",
+
+  // --- SQL FOR POWER BI COURSE CONTENT ---
+  "course.data-sql.name": "Introduction à SQL pour Power BI",
+  "course.data-sql.fullDesc":
+    "Power BI est puissant, mais l'envoi de millions de lignes de données non nettoyées ou inutiles ralentit considérablement les rapports. Ce cours apprend aux analystes à utiliser SQL pour faire le 'gros du travail' directement sur le serveur de base de données. Les étudiants apprendront à extraire, filtrer, nettoyer et agréger les données à la source, en maîtrisant le concept de 'Query Folding' (Pliage de Requêtes) afin que Power BI ne traite que les informations finales, garantissant des tableaux de bord ultra-rapides et optimisés.",
+  "course.data-sql.prereq":
+    "Logique mathématique de base et expérience préalable de la manipulation de données dans des feuilles de calcul.",
+
+  "course.data-sql.mod1.title":
+    "Bases de Données Relationnelles et Fondamentaux SQL",
+  "course.data-sql.mod1.desc":
+    "Découvrez l'architecture des bases de données et le langage de requête.",
+  "course.data-sql.mod1.t1":
+    "Comprendre l'architecture des bases de données relationnelles et le langage DML/DDL.",
+  "course.data-sql.mod1.t2":
+    "Instructions de base : SELECT, FROM, et filtrage puissant avec la clause WHERE.",
+  "course.data-sql.mod1.t3":
+    "Recherche de modèles (LIKE), opérateurs logiques (AND, OR, NOT) et plages (BETWEEN).",
+
+  "course.data-sql.mod2.title": "Analyse et Agrégation de Données à la Source",
+  "course.data-sql.mod2.desc":
+    "Apprenez à regrouper et résumer efficacement les informations.",
+  "course.data-sql.mod2.t1":
+    "Fonctions d'agrégation : SUM, AVG, COUNT, MIN, MAX.",
+  "course.data-sql.mod2.t2":
+    "Regroupement de données avec GROUP BY et filtrage conditionnel des groupes avec HAVING.",
+  "course.data-sql.mod2.t3":
+    "Tri des résultats (ORDER BY) et limitation des enregistrements (TOP/LIMIT).",
+
+  "course.data-sql.mod3.title": "Relier des Informations Complexes (JOINs)",
+  "course.data-sql.mod3.desc":
+    "Croisez les données de plusieurs tables comme un expert.",
+  "course.data-sql.mod3.t1":
+    "Différences et utilisations stratégiques de INNER JOIN, LEFT JOIN et RIGHT JOIN.",
+  "course.data-sql.mod3.t2":
+    "Sous-requêtes (Subqueries) pour des calculs dynamiques avancés.",
+  "course.data-sql.mod3.t3":
+    "Utilisation de DISTINCT et résolution des redondances dans les grands volumes.",
+
+  "course.data-sql.mod4.title": "Intégration Optimisée avec Power BI",
+  "course.data-sql.mod4.desc":
+    "Connectez votre base de données optimisée à Power BI.",
+  "course.data-sql.mod4.t1":
+    "Configuration des connexions et utilisation de la méthode de requête native (Native Query) dans Power BI.",
+  "course.data-sql.mod4.t2":
+    "Comprendre et forcer le Query Folding pour maximiser les performances.",
+  "course.data-sql.mod4.t3":
+    "Cas pratiques : d'un schéma SQL complexe à une table plate parfaite pour l'analyse.",
 } as const;
