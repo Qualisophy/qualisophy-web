@@ -1,82 +1,87 @@
 import React, { useState, useMemo } from "react";
-
-// Simulamos una base de datos más grande para el blog
-const allPosts = [
-  {
-    slug: "impacto-ia-testing",
-    category: "Tendencias",
-    title: "El impacto de la IA en el testing de software moderno",
-    excerpt:
-      "Descubre cómo la inteligencia artificial está redefiniendo los roles de QA y qué habilidades son necesarias hoy.",
-    image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=600",
-    date: "12 Feb, 2026",
-  },
-  {
-    slug: "neurodivergencia-ventaja",
-    category: "Inclusión",
-    title: "Neurodivergencia: La ventaja competitiva oculta",
-    excerpt:
-      "Las empresas que apuestan por la neurodiversidad reportan un aumento del 30% en productividad e innovación.",
-    image:
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
-    date: "2 Ene, 2026",
-  },
-  {
-    slug: "caso-exito-maria",
-    category: "Casos de Éxito",
-    title: "De la hostelería a Desarrollador Full Stack en 6 meses",
-    excerpt:
-      "La historia de María y cómo el reskilling transformó su vida profesional gracias a la metodología Qualisophy.",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600",
-    date: "23 Dic, 2025",
-  },
-  {
-    slug: "powerbi-negocios",
-    category: "Tecnología",
-    title: "Power BI: Transformando datos en decisiones estratégicas",
-    excerpt:
-      "Aprende por qué el análisis de datos es la habilidad más demandada por las empresas en 2025.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600",
-    date: "10 Nov, 2025",
-  },
-  {
-    slug: "diversidad-equipos-agiles",
-    category: "Inclusión",
-    title: "Cómo gestionar la diversidad en equipos ágiles",
-    excerpt:
-      "Guía para Scrum Masters: integrando diferentes perfiles cognitivos en ceremonias ágiles.",
-    image:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600",
-    date: "21 Oct, 2025",
-  },
-];
-
-const categories = [
-  "Todos",
-  "Tendencias",
-  "Inclusión",
-  "Casos de Éxito",
-  "Tecnología",
-];
+import { useTranslations } from "@/hooks/useTranslations";
 
 export const BlogGrid = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Todos");
+  const t = useTranslations();
+
+  // IDs internos para el filtrado (No se traducen, aseguran que la lógica no se rompa)
+  const [selectedCategoryId, setSelectedCategoryId] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Filtrado en tiempo real
+  // Categorías con su ID y su traducción
+  const categories = [
+    { id: "all", label: t("blog.grid.cat.all") },
+    { id: "trends", label: t("blog.grid.cat.trends") },
+    { id: "inclusion", label: t("blog.grid.cat.inclusion") },
+    { id: "success", label: t("blog.grid.cat.success") },
+    { id: "tech", label: t("blog.grid.cat.tech") },
+  ];
+
+  // Posts movidos dentro del componente para que lean t()
+  const allPosts = [
+    {
+      slug: "impacto-ia-testing",
+      categoryId: "trends",
+      category: t("blog.post1.cat"),
+      title: t("blog.post1.title"),
+      excerpt: t("blog.post1.desc"),
+      image:
+        "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=600",
+      date: t("blog.post1.date"),
+    },
+    {
+      slug: "neurodivergencia-ventaja",
+      categoryId: "inclusion",
+      category: t("blog.post2.cat"),
+      title: t("blog.post2.title"),
+      excerpt: t("blog.post2.desc"),
+      image:
+        "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
+      date: t("blog.post2.date"),
+    },
+    {
+      slug: "caso-exito-maria",
+      categoryId: "success",
+      category: t("blog.post3.cat"),
+      title: t("blog.post3.title"),
+      excerpt: t("blog.post3.desc"),
+      image:
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600",
+      date: t("blog.post3.date"),
+    },
+    {
+      slug: "powerbi-negocios",
+      categoryId: "tech",
+      category: t("blog.post4.cat"),
+      title: t("blog.post4.title"),
+      excerpt: t("blog.post4.desc"),
+      image:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600",
+      date: t("blog.post4.date"),
+    },
+    {
+      slug: "diversidad-equipos-agiles",
+      categoryId: "inclusion",
+      category: t("blog.post5.cat"),
+      title: t("blog.post5.title"),
+      excerpt: t("blog.post5.desc"),
+      image:
+        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600",
+      date: t("blog.post5.date"),
+    },
+  ];
+
+  // Filtrado en tiempo real usando IDs
   const filteredPosts = useMemo(() => {
     return allPosts.filter((post) => {
       const matchesCategory =
-        selectedCategory === "Todos" || post.category === selectedCategory;
+        selectedCategoryId === "all" || post.categoryId === selectedCategoryId;
       const matchesSearch =
         post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
       return matchesCategory && matchesSearch;
     });
-  }, [selectedCategory, searchQuery]);
+  }, [selectedCategoryId, searchQuery, allPosts]);
 
   return (
     <section className="py-12 min-h-screen">
@@ -87,15 +92,15 @@ export const BlogGrid = () => {
           <div className="flex flex-wrap gap-2 justify-center md:justify-start">
             {categories.map((cat) => (
               <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
+                key={cat.id}
+                onClick={() => setSelectedCategoryId(cat.id)}
                 className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${
-                  selectedCategory === cat
+                  selectedCategoryId === cat.id
                     ? "bg-primary text-white shadow-md"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`}
               >
-                {cat}
+                {cat.label}
               </button>
             ))}
           </div>
@@ -107,7 +112,7 @@ export const BlogGrid = () => {
             </span>
             <input
               type="text"
-              placeholder="Buscar artículos..."
+              placeholder={t("blog.grid.search.placeholder")}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
@@ -163,7 +168,7 @@ export const BlogGrid = () => {
                       href={`/blog/${post.slug}`}
                       className="inline-flex items-center text-primary font-bold text-sm hover:underline"
                     >
-                      Leer artículo completo
+                      {t("blog.readMore")}
                       <span className="material-symbols-outlined text-sm ml-1">
                         arrow_forward
                       </span>
@@ -182,19 +187,17 @@ export const BlogGrid = () => {
               </span>
             </div>
             <h3 className="text-xl font-bold text-gray-600 mb-2">
-              No se encontraron artículos
+              {t("blog.grid.empty.title")}
             </h3>
-            <p className="text-gray-500">
-              Intenta con otra búsqueda o categoría.
-            </p>
+            <p className="text-gray-500">{t("blog.grid.empty.desc")}</p>
             <button
               onClick={() => {
                 setSearchQuery("");
-                setSelectedCategory("Todos");
+                setSelectedCategoryId("all");
               }}
               className="mt-4 text-primary font-bold hover:underline"
             >
-              Limpiar filtros
+              {t("blog.grid.empty.clear")}
             </button>
           </div>
         )}

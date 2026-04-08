@@ -1076,4 +1076,182 @@ export default {
   "team.enrique.h1": "Modelado de datos",
   "team.enrique.h2": "Analítica de negocio",
   "team.enrique.h3": "Toma de decisiones",
+
+  // --- BLOG PAGE (UI) ---
+  "blog.index.title": "Blog Qualisophy - Tecnología e Inclusión",
+  "blog.index.desc":
+    "Artículos sobre tendencias tecnológicas, diversidad y desarrollo profesional.",
+  "blog.index.hero.title1": "Blog & ",
+  "blog.index.hero.title2": "Actualidad",
+  "blog.index.hero.subtitle":
+    "Insights, historias de éxito y las últimas tendencias del sector.",
+
+  "blog.post.readTime": "5 min de lectura",
+  "blog.post.share": "¿Te ha gustado? Compártelo:",
+  "blog.post.copied": "¡Copiado!",
+  "blog.post.prev": "Anterior",
+  "blog.post.next": "Siguiente",
+  // --- BLOG GRID (Página completa de Blog) ---
+  "blog.grid.cat.all": "Todos",
+  "blog.grid.cat.trends": "Tendencias",
+  "blog.grid.cat.inclusion": "Inclusión",
+  "blog.grid.cat.success": "Casos de Éxito",
+  "blog.grid.cat.tech": "Tecnología",
+
+  "blog.grid.search.placeholder": "Buscar artículos...",
+  "blog.grid.empty.title": "No se encontraron artículos",
+  "blog.grid.empty.desc": "Intenta con otra búsqueda o categoría.",
+  "blog.grid.empty.clear": "Limpiar filtros",
+
+  "blog.post4.cat": "Tecnología",
+  "blog.post4.title":
+    "Power BI: Transformando datos en decisiones estratégicas",
+  "blog.post4.desc":
+    "Aprende por qué el análisis de datos es la habilidad más demandada por las empresas en 2025.",
+  "blog.post4.date": "10 Nov, 2025",
+
+  "blog.post5.cat": "Inclusión",
+  "blog.post5.title": "Cómo gestionar la diversidad en equipos ágiles",
+  "blog.post5.desc":
+    "Guía para Scrum Masters: integrando diferentes perfiles cognitivos en ceremonias ágiles.",
+  "blog.post5.date": "21 Oct, 2025",
+  // --- CONTENIDO DE LOS ARTÍCULOS DEL BLOG ---
+  // 1. impacto-ia-testing
+  "article.impacto-ia-testing.category": "Tendencias",
+  "article.impacto-ia-testing.title":
+    "El impacto de la IA en el testing de software moderno",
+  "article.impacto-ia-testing.intro":
+    "La Inteligencia Artificial ya no es ciencia ficción; es una herramienta diaria que está redefiniendo cómo aseguramos la calidad del software. Descubre cómo los equipos de QA están integrando algoritmos para predecir fallos antes de que ocurran.",
+  "article.impacto-ia-testing.sec0.title":
+    "De la ejecución manual a la automatización inteligente",
+  "article.impacto-ia-testing.sec0.p0":
+    "El testing de software ha evolucionado drásticamente. Lo que antes requería horas de ejecución de casos de prueba manuales y repetitivos, hoy se optimiza mediante herramientas impulsadas por IA que pueden generar scripts de prueba, mantener selectores dinámicos y analizar resultados masivos en segundos.",
+  "article.impacto-ia-testing.sec0.p1":
+    "Herramientas modernas no solo ejecutan, sino que aprenden. Al analizar el historial de fallos y el código fuente, la IA es capaz de identificar las áreas de mayor riesgo (Risk-based testing) y priorizar las pruebas que realmente importan, ahorrando tiempo y costes de infraestructura.",
+  "article.impacto-ia-testing.sec0.kf.title": "Dato Clave",
+  "article.impacto-ia-testing.sec0.kf.text":
+    "Según informes recientes de la industria tecnológica, el 80% de los equipos de QA de alto rendimiento utilizarán herramientas integradas con IA para el año 2025, transformando el rol del tester.",
+  "article.impacto-ia-testing.sec1.title":
+    "El toque humano sigue siendo indispensable",
+  "article.impacto-ia-testing.sec1.p0":
+    "A pesar de la revolución automatizada, la IA carece de algo fundamental: el sentido común y la empatía del usuario final. El rol del especialista en QA evoluciona de 'buscador de bugs' a 'ingeniero de calidad' estratégico.",
+  "article.impacto-ia-testing.sec1.li0":
+    "<strong>Pensamiento crítico:</strong> Evaluar si el software no solo funciona, sino si resuelve el problema del usuario.",
+  "article.impacto-ia-testing.sec1.li1":
+    "<strong>Pruebas exploratorias:</strong> La creatividad humana para encontrar casos límite que la IA no puede predecir.",
+  "article.impacto-ia-testing.sec1.li2":
+    "<strong>Ética y Sesgos:</strong> Auditar que los propios algoritmos de la aplicación no contengan sesgos discriminatorios.",
+  "article.impacto-ia-testing.sec1.closing":
+    "La sinergia entre la velocidad computacional de la IA y el análisis crítico del talento humano es la verdadera clave del testing del futuro.",
+
+  // 2. neurodivergencia-ventaja
+  "article.neurodivergencia-ventaja.category": "Inclusión",
+  "article.neurodivergencia-ventaja.title":
+    "Neurodivergencia: La ventaja competitiva oculta",
+  "article.neurodivergencia-ventaja.intro":
+    "Tradicionalmente vista desde una óptica de déficit, la neurodivergencia se está revelando como una de las mayores ventajas competitivas en el sector tecnológico. Así es como mentes diferentes construyen soluciones innovadoras.",
+  "article.neurodivergencia-ventaja.sec0.title":
+    "El poder del pensamiento lateral",
+  "article.neurodivergencia-ventaja.sec0.p0":
+    "El autismo, el TDAH, la dislexia y otras condiciones neurodivergentes a menudo vienen acompañadas de habilidades cognitivas excepcionales. En el desarrollo de software y el análisis de datos, competencias como el reconocimiento de patrones, la atención extrema al detalle y el pensamiento lateral son invaluables.",
+  "article.neurodivergencia-ventaja.sec0.p1":
+    "Empresas pioneras ya han adaptado sus procesos de selección, sustituyendo las entrevistas tradicionales (basadas en habilidades sociales) por pruebas técnicas prácticas, permitiendo que el talento puro brille sin barreras artificiales.",
+  "article.neurodivergencia-ventaja.sec0.kf.title": "Impacto Real",
+  "article.neurodivergencia-ventaja.sec0.kf.text":
+    "Equipos que incluyen profesionales neurodivergentes han demostrado ser hasta un 30% más productivos en tareas técnicas complejas, según estudios de Harvard Business Review.",
+  "article.neurodivergencia-ventaja.sec1.title":
+    "Cómo crear un entorno realmente inclusivo",
+  "article.neurodivergencia-ventaja.sec1.p0":
+    "Integrar talento diverso no consiste en obligar a las personas a encajar en un molde rígido, sino en flexibilizar la estructura de la empresa para maximizar el potencial de todos.",
+  "article.neurodivergencia-ventaja.sec1.li0":
+    "<strong>Comunicación explícita:</strong> Evitar ambigüedades, sarcasmos o suposiciones en las tareas y objetivos.",
+  "article.neurodivergencia-ventaja.sec1.li1":
+    "<strong>Flexibilidad sensorial:</strong> Permitir el trabajo remoto o el uso de auriculares con cancelación de ruido en la oficina.",
+  "article.neurodivergencia-ventaja.sec1.li2":
+    "<strong>Liderazgo empático:</strong> Formar a los managers para que entiendan y gestionen diferentes estilos de trabajo.",
+  "article.neurodivergencia-ventaja.sec1.closing":
+    "La verdadera innovación no ocurre cuando todos en la sala piensan de la misma manera.",
+
+  // 3. caso-exito-maria
+  "article.caso-exito-maria.category": "Casos de Éxito",
+  "article.caso-exito-maria.title":
+    "De la hostelería a Desarrollador Full Stack en 6 meses",
+  "article.caso-exito-maria.intro":
+    "María trabajaba turnos de 12 horas en un restaurante. Hoy, diseña arquitecturas web para una startup internacional. Este es el viaje de resiliencia y reskilling que cambió su vida profesional.",
+  "article.caso-exito-maria.sec0.title":
+    "El punto de inflexión y el reskilling",
+  "article.caso-exito-maria.sec0.p0":
+    "El agotamiento físico y la falta de proyección a largo plazo en el sector servicios llevaron a María a buscar alternativas. Sin conocimientos previos de programación, decidió dar el salto al sector tecnológico a través de un programa de formación intensivo (bootcamp).",
+  "article.caso-exito-maria.sec0.p1":
+    "Aprender a programar desde cero requiere frustración, errores de sintaxis y horas frente a la pantalla. Sin embargo, María contaba con una ventaja invisible: la tolerancia al estrés y la capacidad de gestionar problemas bajo presión que había adquirido en la hostelería.",
+  "article.caso-exito-maria.sec0.kf.title": "El auge del Reskilling",
+  "article.caso-exito-maria.sec0.kf.text":
+    "Más del 60% de los nuevos desarrolladores junior en España provienen de sectores no tecnológicos, demostrando que la actitud y la formación intensiva superan a los títulos tradicionales.",
+  "article.caso-exito-maria.sec1.title": "Las claves de su éxito",
+  "article.caso-exito-maria.sec1.p0":
+    "Para lograr una transición tan radical, la motivación debe ir acompañada de una estrategia clara y un entorno que apoye el proceso de aprendizaje continuo.",
+  "article.caso-exito-maria.sec1.li0":
+    "<strong>Práctica basada en proyectos:</strong> Aprender haciendo (learning by doing) en lugar de memorizar teoría.",
+  "article.caso-exito-maria.sec1.li1":
+    "<strong>Soft Skills transferibles:</strong> Su habilidad para comunicarse con el cliente en el restaurante se tradujo en una excelente comunicación con el equipo de producto.",
+  "article.caso-exito-maria.sec1.li2":
+    "<strong>Comunidad:</strong> Apoyarse en mentores y compañeros para superar el síndrome del impostor.",
+  "article.caso-exito-maria.sec1.closing":
+    "La historia de María es la prueba de que el talento está en todas partes; a veces solo necesita la oportunidad tecnológica adecuada.",
+
+  // 4. powerbi-negocios
+  "article.powerbi-negocios.category": "Tecnología",
+  "article.powerbi-negocios.title":
+    "Power BI: Transformando datos en decisiones estratégicas",
+  "article.powerbi-negocios.intro":
+    "Acumular gigabytes de datos no sirve de nada si no sabes qué historia cuentan. Power BI ha democratizado el análisis de datos, permitiendo a cualquier empresa transformar números fríos en decisiones estratégicas visuales.",
+  "article.powerbi-negocios.sec0.title":
+    "Del Excel estático al Dashboard interactivo",
+  "article.powerbi-negocios.sec0.p0":
+    "Durante décadas, las hojas de cálculo fueron las reinas del análisis empresarial. Sin embargo, en un mundo donde los datos se generan a tiempo real desde múltiples plataformas (CRMs, ERPs, RRSS), el análisis estático es obsoleto.",
+  "article.powerbi-negocios.sec0.p1":
+    "Power BI permite conectar decenas de fuentes de datos de forma simultánea, limpiar la información automáticamente con Power Query y modelar relaciones complejas. El resultado son informes interactivos donde un directivo puede hacer clic en una región y ver cómo cambian todas las métricas al instante.",
+  "article.powerbi-negocios.sec0.kf.title": "Inteligencia de Negocio",
+  "article.powerbi-negocios.sec0.kf.text":
+    "Las empresas que implementan análisis de datos visuales e interactivos toman decisiones críticas hasta 5 veces más rápido que sus competidores directos.",
+  "article.powerbi-negocios.sec1.title":
+    "Habilidades necesarias para dominarlo",
+  "article.powerbi-negocios.sec1.p0":
+    "Convertirse en un experto en Data Analytics con Power BI va más allá de saber crear gráficos bonitos. Requiere una combinación de conocimientos técnicos y visión de negocio.",
+  "article.powerbi-negocios.sec1.li0":
+    "<strong>Modelado de Datos:</strong> Entender cómo relacionar tablas mediante esquemas de estrella para optimizar el rendimiento.",
+  "article.powerbi-negocios.sec1.li1":
+    "<strong>Lenguaje DAX:</strong> Dominar Data Analysis Expressions para crear medidas complejas, cálculos temporales y KPIs personalizados.",
+  "article.powerbi-negocios.sec1.li2":
+    "<strong>Storytelling Visual:</strong> Saber elegir el gráfico adecuado para guiar la atención del usuario hacia el insight importante.",
+  "article.powerbi-negocios.sec1.closing":
+    "En la era de la información, dominar Power BI no es una habilidad exclusiva de los informáticos; es el nuevo idioma de los negocios.",
+
+  // 5. diversidad-equipos-agiles
+  "article.diversidad-equipos-agiles.category": "Inclusión",
+  "article.diversidad-equipos-agiles.title":
+    "Cómo gestionar la diversidad en equipos ágiles",
+  "article.diversidad-equipos-agiles.intro":
+    "Un equipo ágil donde todos piensan igual es un equipo condenado a la mediocridad. La verdadera agilidad nace de la fricción constructiva, y gestionar esa diversidad es el mayor reto de un Scrum Master moderno.",
+  "article.diversidad-equipos-agiles.sec0.title":
+    "Más allá del código: Scrum y las personas",
+  "article.diversidad-equipos-agiles.sec0.p0":
+    "Los marcos de trabajo ágiles como Scrum se basan en la colaboración constante y la adaptación. Cuando un equipo cuenta con perfiles de diferentes culturas, géneros, edades o neurotipos, el abanico de soluciones a un mismo problema se multiplica.",
+  "article.diversidad-equipos-agiles.sec0.p1":
+    "Sin embargo, la diversidad también trae consigo diferentes estilos de comunicación y resolución de conflictos. El trabajo del líder ágil es asegurar que todas las voces sean escuchadas durante las ceremonias (Dailies, Retrospectivas), evitando que las personalidades más extrovertidas monopolicen las decisiones.",
+  "article.diversidad-equipos-agiles.sec0.kf.title": "Decisiones superiores",
+  "article.diversidad-equipos-agiles.sec0.kf.text":
+    "Estudios sobre comportamiento organizacional revelan que los equipos diversos e inclusivos toman decisiones empresariales superiores en el 87% de los casos en comparación con equipos homogéneos.",
+  "article.diversidad-equipos-agiles.sec1.title":
+    "Estrategias para líderes ágiles",
+  "article.diversidad-equipos-agiles.sec1.p0":
+    "La inclusión no ocurre por arte de magia al juntar a personas diferentes en una sala. Requiere metodologías activas y facilitación.",
+  "article.diversidad-equipos-agiles.sec1.li0":
+    "<strong>Fomentar la seguridad psicológica:</strong> Crear un entorno donde cometer un error o proponer una idea inusual no sea motivo de burla o castigo.",
+  "article.diversidad-equipos-agiles.sec1.li1":
+    "<strong>Adaptar dinámicas:</strong> Usar herramientas asíncronas o de brainstorming silencioso en las retrospectivas para que los perfiles más introvertidos aporten su valor.",
+  "article.diversidad-equipos-agiles.sec1.li2":
+    "<strong>Evitar el 'pensamiento de grupo':</strong> Promover el rol del abogado del diablo constructivo para asegurar que se exploran todas las aristas de una funcionalidad.",
+  "article.diversidad-equipos-agiles.sec1.closing":
+    "Al final del día, el software lo construyen personas para personas. Un equipo diverso es simplemente el reflejo de los usuarios finales.",
 } as const;

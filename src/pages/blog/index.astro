@@ -1,15 +1,19 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { Breadcrumbs } from "@/components/react/shared/Breadcrumbs";
 import { BlogGrid } from "@/components/react/blog/BlogGrid";
 import { Newsletter } from "@/components/react/shared/Newsletter";
+
+import { getLangFromUrl, useTranslations } from "@/i18n/ui";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const heroBg = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070";
 ---
 
 <Layout 
-  title="Blog Qualisophy - Tecnología e Inclusión"
-  description="Artículos sobre tendencias tecnológicas, diversidad y desarrollo profesional."
+  title={t("blog.index.title")}
+  description={t("blog.index.desc")}
   fullWidth={true}
 >
   
@@ -29,9 +33,9 @@ const heroBg = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?aut
     <div class="relative z-10 container mx-auto px-6 text-center">
       <div class="max-w-4xl mx-auto flex flex-col gap-6">
         <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight font-heading drop-shadow-md">
-          Blog & <span class="text-primary">Actualidad</span>
+          <span data-i18n="blog.index.hero.title1">Blog & </span><span class="text-primary" data-i18n="blog.index.hero.title2">Actualidad</span>
         </h1>
-        <p class="text-gray-100 text-lg md:text-xl font-light leading-relaxed font-primary drop-shadow-sm max-w-2xl mx-auto">
+        <p class="text-gray-100 text-lg md:text-xl font-light leading-relaxed font-primary drop-shadow-sm max-w-2xl mx-auto" data-i18n="blog.index.hero.subtitle">
           Insights, historias de éxito y las últimas tendencias del sector.
         </p>
       </div>
@@ -39,7 +43,7 @@ const heroBg = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?aut
   </section>
 
   <div class="container mx-auto px-6 pt-10">
-    <Breadcrumbs />
+    <Breadcrumbs client:load pathname={Astro.url.pathname} />
   </div>
 
   {/* GRID INTERACTIVO */}
