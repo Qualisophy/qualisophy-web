@@ -1299,4 +1299,57 @@ export default {
     "Nuestro equipo de orientación está listo para ayudarte. Contacta con nosotros y te responderemos en menos de 24 horas.",
   "faq.cta.btn1": "Ir a Contacto",
   "faq.cta.btn2": "Ver Formaciones",
+
+  // --- CATÁLOGO DE CURSOS (index.astro & Grid) ---
+  "courses.meta.title":
+    "Catálogo de Cursos - Formación Individual | Qualisophy",
+  "courses.meta.desc":
+    "Impulsa tu carrera con nuestros itinerarios especializados. Domina las herramientas de QA, Datos, DevOps y Gestión Ágil con formación inclusiva y práctica.",
+  "courses.hero.tag": "CATÁLOGO FORMATIVO",
+  "courses.hero.title1": "Formación ",
+  "courses.hero.title2": "Individual",
+  "courses.hero.subtitle":
+    "Impulsa tu carrera con nuestros itinerarios especializados. Domina las herramientas de QA, Datos, DevOps y Gestión Ágil.",
+
+  "courses.grid.cat.all": "Todos",
+  "courses.grid.search.placeholder": "Buscar curso...",
+  "courses.grid.allCourses": "Todos los cursos",
+  "courses.grid.showing": "Mostrando",
+  "courses.grid.course": "curso",
+  "courses.grid.courses": "cursos",
+  "courses.grid.empty.title": "No se encontraron cursos",
+  "courses.grid.empty.desc": "Intenta con otra búsqueda o categoría.",
+  "courses.grid.empty.clear": "Limpiar filtros",
+
+  // --- DESCRIPCIONES DE CURSOS ---
+  "course.qa-software.desc":
+    "Verifica que las aplicaciones funcionan correctamente y valida requerimientos.",
+  "course.qa-api.desc":
+    "Domina la validación del backend integrándola en procesos CI/CD.",
+  "course.qa-cypress.desc":
+    "Aprende automatización de pruebas web modernas con Cypress desde cero.",
+  "course.qa-junit.desc":
+    "Creación de pruebas robustas usando el estándar de la industria para Java.",
+  "course.qa-agile.desc":
+    "Técnicas y mentalidad para integrarse en equipos ágiles Scrum/Kanban.",
+  "course.qa-genai.desc":
+    "Acelera tus labores diarias de QA utilizando Inteligencia Artificial Generativa.",
+  "course.data-sql.desc":
+    "Extrae, filtra y limpia datos en el origen optimizando el rendimiento.",
+  "course.data-powerbi.desc":
+    "Transforma, modela y visualiza datos para la toma de decisiones empresariales.",
+  "course.tools-excel.desc":
+    "Maneja grandes volúmenes de datos, macros y Power Pivot.",
+  "course.tools-office.desc":
+    "Mejora radicalmente tu velocidad y organización corporativa diaria.",
+  "course.tools-chatbots.desc":
+    "Diseña e integra asistentes virtuales conversacionales automatizados.",
+  "course.tools-make.desc":
+    "Crea flujos de trabajo automatizados para gestionar correos e integrar IA.",
+  "course.devops-gitlab.desc":
+    "Configura tableros, automatiza pruebas y despliegues seguros.",
+  "course.devops-intro.desc":
+    "Inmersión completa en la cultura, prácticas y herramientas de DevOps.",
+  "course.agile-scrum.desc":
+    "Facilita, asesora y mentoriza a los equipos de desarrollo para maximizar valor.",
 } as const;
