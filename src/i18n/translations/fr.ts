@@ -1268,4 +1268,50 @@ export default {
     "<strong>Éviter la 'pensée de groupe' :</strong> Promouvoir le rôle constructif de l'avocat du diable pour s'assurer que toutes les facettes d'une fonctionnalité sont explorées.",
   "article.diversidad-equipos-agiles.sec1.closing":
     "En fin de compte, les logiciels sont construits par des personnes pour des personnes. Une équipe diversifiée n'est que le reflet des utilisateurs finaux.",
+
+  // --- FAQ PAGE ---
+  "faq.meta.title": "Foire Aux Questions - Qualisophy",
+  "faq.meta.desc":
+    "Résolvez tous vos doutes sur nos cours de formation en développement, QA et DevOps.",
+
+  "faq.section.title": "Foire Aux Questions",
+  "faq.section.subtitle":
+    "Nous résolvons vos doutes avant que vous ne nous contactiez. Si vous ne trouvez pas ce que vous cherchez, nous sommes à un clic.",
+
+  "faq.stats.queries": "500+",
+  "faq.stats.queriesText": "demandes résolues",
+  "faq.stats.response": "Réponse en",
+  "faq.stats.responseTime": "<24h",
+  "faq.badge.popular": "Populaire",
+
+  "faq.q1.q": "Les cours sont-ils en direct ou enregistrés ?",
+  "faq.q1.a":
+    "Tous nos cours sont EN DIRECT avec des instructeurs certifiés. Vous aurez des sessions interactives où vous pourrez poser des questions en temps réel. De plus, tous les cours sont enregistrés et disponibles pendant 6 mois pour que vous puissiez les revoir à tout moment.",
+
+  "faq.q2.q": "Est-ce que j'obtiens une certification à la fin ?",
+  "faq.q2.a":
+    "Oui, à la fin du cours, vous recevez un certificat officiel reconnu par les entreprises technologiques. De plus, le programme comprend des projets pratiques que vous pourrez ajouter à votre portfolio professionnel.",
+
+  "faq.q3.q":
+    "Que se passe-t-il si je ne peux pas assister à un cours en direct ?",
+  "faq.q3.a":
+    "Ne vous inquiétez pas. Toutes les sessions sont enregistrées et disponibles en moins de 24 heures. Nous proposons également des tutorats de rattrapage hebdomadaires sans frais supplémentaires pour répondre à vos questions.",
+
+  "faq.q4.q": "Proposez-vous des facilités de paiement ?",
+  "faq.q4.a":
+    "Oui, nous proposons des plans de paiement échelonnés sans intérêts. Nous avons également des réductions pour paiement anticipé (jusqu'à 20% de réduction) et des packs pour les entreprises avec des conditions spéciales.",
+
+  "faq.q5.q": "Le cours inclut-il des stages en entreprise ?",
+  "faq.q5.a":
+    "Nos cours incluent des projets basés sur des cas réels d'entreprises. De plus, nous avons un programme de partenariats où nous connectons nos meilleurs étudiants avec des entreprises à la recherche de talents technologiques.",
+
+  "faq.q6.q": "Ai-je besoin de connaissances préalables ?",
+  "faq.q6.a":
+    "Cela dépend du cours. Les cours de niveau de base ne nécessitent aucune expérience préalable. Pour les cours avancés, nous indiquons les exigences spécifiques sur la page de chaque cours. Si vous avez des doutes, contactez-nous et nous vous conseillerons.",
+
+  "faq.cta.title": "Vous ne trouvez pas votre réponse ?",
+  "faq.cta.desc":
+    "Notre équipe d'orientation est prête à vous aider. Contactez-nous et nous vous répondrons en moins de 24 heures.",
+  "faq.cta.btn1": "Aller au Contact",
+  "faq.cta.btn2": "Voir les Formations",
 } as const;

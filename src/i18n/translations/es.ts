@@ -1254,4 +1254,49 @@ export default {
     "<strong>Evitar el 'pensamiento de grupo':</strong> Promover el rol del abogado del diablo constructivo para asegurar que se exploran todas las aristas de una funcionalidad.",
   "article.diversidad-equipos-agiles.sec1.closing":
     "Al final del día, el software lo construyen personas para personas. Un equipo diverso es simplemente el reflejo de los usuarios finales.",
+
+  // --- FAQ PAGE ---
+  "faq.meta.title": "Preguntas Frecuentes - Qualisophy",
+  "faq.meta.desc":
+    "Resuelve todas tus dudas sobre nuestros cursos de formación en desarrollo, QA y DevOps.",
+
+  "faq.section.title": "Preguntas Frecuentes",
+  "faq.section.subtitle":
+    "Resolvemos tus dudas antes de que nos contactes. Si no encuentras lo que buscas, estamos a un clic de distancia.",
+
+  "faq.stats.queries": "500+",
+  "faq.stats.queriesText": "consultas resueltas",
+  "faq.stats.response": "Respuesta en",
+  "faq.stats.responseTime": "<24h",
+  "faq.badge.popular": "Popular",
+
+  "faq.q1.q": "¿Los cursos son en vivo o grabados?",
+  "faq.q1.a":
+    "Todos nuestros cursos son EN VIVO con instructores certificados. Tendrás sesiones interactivas donde podrás hacer preguntas en tiempo real. Además, todas las clases quedan grabadas y disponibles durante 6 meses para que puedas repasarlas cuando quieras.",
+
+  "faq.q2.q": "¿Obtengo certificación al finalizar?",
+  "faq.q2.a":
+    "Sí, al completar el curso recibes un certificado oficial reconocido por empresas tech. Además, el programa incluye proyectos prácticos que podrás añadir a tu portfolio profesional.",
+
+  "faq.q3.q": "¿Qué pasa si no puedo asistir a una clase en vivo?",
+  "faq.q3.a":
+    "No te preocupes. Todas las sesiones quedan grabadas y las tienes disponibles en menos de 24 horas. También ofrecemos tutorías de recuperación semanales sin coste adicional para resolver dudas.",
+
+  "faq.q4.q": "¿Ofrecen facilidades de pago?",
+  "faq.q4.a":
+    "Sí, ofrecemos planes de pago a plazos sin intereses. También tenemos descuentos por pronto pago (hasta 20% OFF) y packs para empresas con condiciones especiales.",
+
+  "faq.q5.q": "¿El curso incluye prácticas en empresas?",
+  "faq.q5.a":
+    "Nuestros cursos incluyen proyectos basados en casos reales de empresas. Además, tenemos un programa de partnerships donde conectamos a nuestros mejores alumnos con empresas que buscan talento tech.",
+
+  "faq.q6.q": "¿Necesito conocimientos previos?",
+  "faq.q6.a":
+    "Depende del curso. Los cursos de nivel básico no requieren experiencia previa. Para cursos avanzados, te indicamos los requisitos específicos en la página de cada curso. Si tienes dudas, contáctanos y te asesoramos.",
+
+  "faq.cta.title": "¿No encuentras tu respuesta?",
+  "faq.cta.desc":
+    "Nuestro equipo de orientación está listo para ayudarte. Contacta con nosotros y te responderemos en menos de 24 horas.",
+  "faq.cta.btn1": "Ir a Contacto",
+  "faq.cta.btn2": "Ver Formaciones",
 } as const;

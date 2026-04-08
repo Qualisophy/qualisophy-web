@@ -1,14 +1,17 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { FAQSection } from "@/components/react/shared/FAQSection";
-import Breadcrumbs from "@/components/Breadcrumbs.astro";
-// Importamos el fondo de partículas
+import { Breadcrumbs } from "@/components/react/shared/Breadcrumbs";
 import { ParticleMeshBackground } from "@/components/react/shared/ParticleMeshBackground";
+
+import { getLangFromUrl, useTranslations } from "@/i18n/ui";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Layout
-  title="Preguntas Frecuentes - Qualisophy"
-  description="Resuelve todas tus dudas sobre nuestros cursos de formación en desarrollo, QA y DevOps."
+  title={t("faq.meta.title")}
+  description={t("faq.meta.desc")}
 >
   {/* Contenedor principal que envuelve todo con fondo blanco y partículas */}
   <div class="relative w-full bg-white overflow-hidden min-h-screen pb-12">
@@ -20,7 +23,7 @@ import { ParticleMeshBackground } from "@/components/react/shared/ParticleMeshBa
 
     {/* Contenido (Breadcrumbs + FAQ) por encima de las partículas */}
     <div class="relative z-10 max-w-7xl mx-auto px-6 pt-8">
-      <Breadcrumbs />
+      <Breadcrumbs client:load pathname={Astro.url.pathname} />
     </div>
 
     <div class="relative z-10">

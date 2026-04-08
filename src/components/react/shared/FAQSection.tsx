@@ -10,6 +10,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { ProgramCTA } from "@/components/react/programs/ProgramCTA";
+import { useTranslations } from "@/hooks/useTranslations";
 
 interface FAQ {
   question: string;
@@ -27,43 +28,39 @@ export const FAQSection = ({ alwaysExpanded = false }: FAQSectionProps) => {
     alwaysExpanded ? 0 : null,
   );
 
+  const t = useTranslations();
+
   const faqs: FAQ[] = [
     {
-      question: "¿Los cursos son en vivo o grabados?",
-      answer:
-        "Todos nuestros cursos son EN VIVO con instructores certificados. Tendrás sesiones interactivas donde podrás hacer preguntas en tiempo real. Además, todas las clases quedan grabadas y disponibles durante 6 meses para que puedas repasarlas cuando quieras.",
+      question: t("faq.q1.q"),
+      answer: t("faq.q1.a"),
       icon: Clock,
       popular: true,
     },
     {
-      question: "¿Obtengo certificación al finalizar?",
-      answer:
-        "Sí, al completar el curso recibes un certificado oficial reconocido por empresas tech. Además, el programa incluye proyectos prácticos que podrás añadir a tu portfolio profesional.",
+      question: t("faq.q2.q"),
+      answer: t("faq.q2.a"),
       icon: Award,
       popular: true,
     },
     {
-      question: "¿Qué pasa si no puedo asistir a una clase en vivo?",
-      answer:
-        "No te preocupes. Todas las sesiones quedan grabadas y las tienes disponibles en menos de 24 horas. También ofrecemos tutorías de recuperación semanales sin coste adicional para resolver dudas.",
+      question: t("faq.q3.q"),
+      answer: t("faq.q3.a"),
       icon: CheckCircle2,
     },
     {
-      question: "¿Ofrecen facilidades de pago?",
-      answer:
-        "Sí, ofrecemos planes de pago a plazos sin intereses. También tenemos descuentos por pronto pago (hasta 20% OFF) y packs para empresas con condiciones especiales.",
+      question: t("faq.q4.q"),
+      answer: t("faq.q4.a"),
       icon: CreditCard,
     },
     {
-      question: "¿El curso incluye prácticas en empresas?",
-      answer:
-        "Nuestros cursos incluyen proyectos basados en casos reales de empresas. Además, tenemos un programa de partnerships donde conectamos a nuestros mejores alumnos con empresas que buscan talento tech.",
+      question: t("faq.q5.q"),
+      answer: t("faq.q5.a"),
       icon: Briefcase,
     },
     {
-      question: "¿Necesito conocimientos previos?",
-      answer:
-        "Depende del curso. Los cursos de nivel básico no requieren experiencia previa. Para cursos avanzados, te indicamos los requisitos específicos en la página de cada curso. Si tienes dudas, contáctanos y te asesoramos.",
+      question: t("faq.q6.q"),
+      answer: t("faq.q6.a"),
       icon: GraduationCap,
     },
   ];
@@ -81,11 +78,10 @@ export const FAQSection = ({ alwaysExpanded = false }: FAQSectionProps) => {
           {/* Cabecera de la sección */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-secondary mb-6">
-              Preguntas Frecuentes
+              {t("faq.section.title")}
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-primary leading-relaxed">
-              Resolvemos tus dudas antes de que nos contactes. Si no encuentras
-              lo que buscas, estamos a un clic de distancia.
+              {t("faq.section.subtitle")}
             </p>
 
             {/* Estadísticas rápidas integradas */}
@@ -93,15 +89,19 @@ export const FAQSection = ({ alwaysExpanded = false }: FAQSectionProps) => {
               <div className="flex items-center gap-2 bg-gray-50 px-5 py-2.5 rounded-full border border-gray-200 text-sm text-gray-700">
                 <MessageCircle className="w-5 h-5 text-primary" />
                 <span>
-                  <span className="font-bold text-secondary">500+</span>{" "}
-                  consultas resueltas
+                  <span className="font-bold text-secondary">
+                    {t("faq.stats.queries")}
+                  </span>{" "}
+                  {t("faq.stats.queriesText")}
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-gray-50 px-5 py-2.5 rounded-full border border-gray-200 text-sm text-gray-700">
                 <Clock className="w-5 h-5 text-primary" />
                 <span>
-                  Respuesta en{" "}
-                  <span className="font-bold text-secondary">&lt;24h</span>
+                  {t("faq.stats.response")}{" "}
+                  <span className="font-bold text-secondary">
+                    {t("faq.stats.responseTime")}
+                  </span>
                 </span>
               </div>
             </div>
@@ -142,7 +142,7 @@ export const FAQSection = ({ alwaysExpanded = false }: FAQSectionProps) => {
                         </span>
                         {faq.popular && (
                           <span className="inline-block bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider self-start sm:self-auto">
-                            Popular
+                            {t("faq.badge.popular")}
                           </span>
                         )}
                       </div>
@@ -179,16 +179,16 @@ export const FAQSection = ({ alwaysExpanded = false }: FAQSectionProps) => {
       {/* CTA final con fondo blanco y botones estratégicos */}
       <ProgramCTA
         variant="white"
-        title="¿No encuentras tu respuesta?"
-        description="Nuestro equipo de orientación está listo para ayudarte. Contacta con nosotros y te responderemos en menos de 24 horas."
+        title={t("faq.cta.title")}
+        description={t("faq.cta.desc")}
         buttons={[
           {
-            label: "Ir a Contacto",
+            label: t("faq.cta.btn1"),
             href: "/contact",
             variant: "solid",
           },
           {
-            label: "Ver Formaciones",
+            label: t("faq.cta.btn2"),
             href: "/cursos",
             variant: "outline",
           },
