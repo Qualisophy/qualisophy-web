@@ -64,7 +64,7 @@ export const Course = ({
                 <span className="material-symbols-outlined text-primary">
                   info
                 </span>
-                Requisitos previos
+                {t("course.prerequisites.title" as any)}
               </h3>
               <p className="text-slate-700 text-base leading-relaxed">
                 {prerequisites}
@@ -80,16 +80,16 @@ export const Course = ({
 
             <div className="bg-white rounded-lg border border-gray-200 p-6 text-center shadow-sm">
               <h3 className="font-bold text-slate-800 mb-2">
-                {t("course.faq.title")}
+                {t("course.faq.title" as any)}
               </h3>
               <p className="text-sm text-slate-600 mb-4">
-                {t("course.faq.description")}
+                {t("course.faq.description" as any)}
               </p>
               <a
                 href="/faq"
                 className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-[#16223f] hover:bg-primary transition-colors w-full"
               >
-                {t("course.faq.button")}
+                {t("course.faq.button" as any)}
               </a>
             </div>
           </div>

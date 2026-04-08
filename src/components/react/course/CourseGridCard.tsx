@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslations } from "@/hooks/useTranslations";
 
 interface CourseGridCardProps {
   title: string;
@@ -21,6 +22,23 @@ export const CourseGridCard: React.FC<CourseGridCardProps> = ({
   modality = "Online",
   category,
 }) => {
+  const t = useTranslations();
+
+  // Traducir dinámicamente los "enumerados" fijos con 'as any' para evitar TS2345
+  const translatedLevel =
+    level === "Principiante"
+      ? t("course.level.beginner" as any)
+      : level === "Intermedio"
+        ? t("course.level.intermediate" as any)
+        : t("course.level.advanced" as any);
+
+  const translatedModality =
+    modality === "Online"
+      ? t("course.modality.online" as any)
+      : modality === "Presencial"
+        ? t("course.modality.presential" as any)
+        : t("course.modality.hybrid" as any);
+
   return (
     <a
       href={href}
@@ -45,7 +63,7 @@ export const CourseGridCard: React.FC<CourseGridCardProps> = ({
           className={`absolute bottom-4 right-4 text-xs font-bold px-3 py-1 rounded-lg text-white shadow-sm 
           ${level === "Principiante" ? "bg-emerald-500" : level === "Intermedio" ? "bg-amber-500" : "bg-primary"}`}
         >
-          {level}
+          {translatedLevel}
         </span>
       </div>
 
@@ -73,11 +91,11 @@ export const CourseGridCard: React.FC<CourseGridCardProps> = ({
               <span className="material-symbols-outlined text-lg text-primary">
                 wifi
               </span>
-              <span>{modality}</span>
+              <span>{translatedModality}</span>
             </div>
 
             <div className="flex items-center gap-1 text-secondary font-bold group-hover:text-primary transition-colors group-hover:translate-x-1 duration-300">
-              Ver
+              {t("course.grid.view" as any)}
               <span className="material-symbols-outlined text-sm">
                 arrow_forward_ios
               </span>

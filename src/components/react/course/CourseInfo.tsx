@@ -41,28 +41,32 @@ export const CourseInfo = ({
 }: CourseInfoProps) => {
   const t = useTranslations();
 
-  // Detectamos si el curso está "Por definir"
-  const isComingSoon = courseDetails.startDate
-    .toLowerCase()
-    .includes("por definir");
+  // Detectamos si el curso está "Por definir" (funciona en ES y FR)
+  const isComingSoon =
+    courseDetails.startDate.toLowerCase().includes("definir") ||
+    courseDetails.startDate.toLowerCase().includes("définir");
 
   const discountMessage =
-    courseDetails.oldStudentsDiscount ||
-    "25% de descuento extra para antiguos alumnos";
+    courseDetails.oldStudentsDiscount || t("course.info.discount" as any);
 
   const formatSchedule = (scheduleStr: string) => {
     if (scheduleStr.includes("/")) {
       const parts = scheduleStr.split("/");
       return (
         <div className="flex flex-col text-xs xl:text-sm 2xl:text-base font-semibold space-y-0.5">
-          <span>Días: {parts[0].trim()}</span>
-          <span>Horario: {parts[1].trim()} horas</span>
+          <span>
+            {t("course.info.days" as any)} {parts[0].trim()}
+          </span>
+          <span>
+            {t("course.info.schedule" as any)} {parts[1].trim()}{" "}
+            {t("course.info.hours" as any)}
+          </span>
         </div>
       );
     }
     return (
       <span className="font-semibold text-xs xl:text-sm 2xl:text-base">
-        Horario: {scheduleStr}
+        {t("course.info.schedule" as any)} {scheduleStr}
       </span>
     );
   };
@@ -75,7 +79,7 @@ export const CourseInfo = ({
           icon={<Calendar className="w-6 h-6 md:w-7 md:h-7 flex-shrink-0" />}
           content={
             <span className="font-semibold text-xs xl:text-sm 2xl:text-base">
-              Inicio: {courseDetails.startDate}
+              {t("course.info.start" as any)} {courseDetails.startDate}
             </span>
           }
         />
@@ -88,31 +92,37 @@ export const CourseInfo = ({
 
       <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
         <h2 className="text-lg font-bold text-slate-800 mb-4">
-          Detalles del Curso
+          {t("course.info.details" as any)}
         </h2>
         <div className="space-y-3">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
-            <span className="text-slate-600 text-sm font-medium">Inicio:</span>
+            <span className="text-slate-600 text-sm font-medium">
+              {t("course.info.start" as any)}
+            </span>
             <span className="font-semibold text-slate-800 text-sm">
               {courseDetails.startDate}
             </span>
           </div>
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
             <span className="text-slate-600 text-sm font-medium">
-              Duración:
+              {t("course.info.duration" as any)}
             </span>
             <span className="font-semibold text-slate-800 text-sm">
               {courseDetails.duration}
             </span>
           </div>
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
-            <span className="text-slate-600 text-sm font-medium">Horario:</span>
+            <span className="text-slate-600 text-sm font-medium">
+              {t("course.info.schedule" as any)}
+            </span>
             <span className="font-semibold text-slate-800 text-sm">
               {courseDetails.schedule}
             </span>
           </div>
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
-            <span className="text-slate-600 text-sm font-medium">Coste:</span>
+            <span className="text-slate-600 text-sm font-medium">
+              {t("course.info.cost" as any)}
+            </span>
             <span className="font-semibold text-slate-800 text-sm">
               {courseDetails.regularPrice}
             </span>
@@ -123,7 +133,7 @@ export const CourseInfo = ({
             <>
               <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
                 <span className="text-slate-600 text-sm font-medium">
-                  Inscripción anticipada:
+                  {t("course.info.earlyBird" as any)}
                 </span>
                 <span className="font-semibold text-green-700 text-sm">
                   {courseDetails.earlyBirdPrice}
@@ -154,7 +164,9 @@ export const CourseInfo = ({
               size="md"
               className="font-bold shadow-md bg-primary hover:bg-secondary text-white border-primary transition-colors duration-200"
             >
-              {isComingSoon ? "Me interesa el curso" : t("button.enroll")}
+              {isComingSoon
+                ? t("button.interested.course" as any)
+                : t("button.enroll" as any)}
             </Button>
           </a>
         </div>

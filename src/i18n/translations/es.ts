@@ -1352,4 +1352,91 @@ export default {
     "Inmersión completa en la cultura, prácticas y herramientas de DevOps.",
   "course.agile-scrum.desc":
     "Facilita, asesora y mentoriza a los equipos de desarrollo para maximizar valor.",
+
+  // --- AGILE INDEX ---
+  "agile.index.meta.title": "Cursos Agile & Scrum - Qualisophy",
+  "agile.index.hero.title1": "Formación en",
+  "agile.index.hero.title2": "Agile & Scrum",
+  "agile.index.hero.subtitle":
+    "Lidera equipos hacia el éxito. Domina los frameworks Scrum, Kanban y asume roles clave para la entrega de valor constante.",
+  "agile.index.hero.cta": "Ver Itinerarios",
+  "agile.index.section.title": "Metodologías Ágiles y Liderazgo",
+  "agile.index.section.subtitle":
+    "Facilita, gestiona y mentoriza equipos de alto rendimiento.",
+  "agile.index.showing": "Mostrando",
+  "agile.index.courses": "cursos",
+
+  // --- SCRUM MASTER COURSE CONTENT ---
+  "course.agile-scrum.name": "Agile Mastery: El Camino del Scrum Master",
+  "course.agile-scrum.prereq":
+    "No es necesario ningún conocimiento técnico, lenguaje de programación o experiencia previa en puestos de management o gestión. Scrum puede aplicarse en cualquier entorno de trabajo complejo.",
+
+  "course.agile-scrum.mod1.title": "Introducción a Agile y Scrum",
+  "course.agile-scrum.mod1.desc":
+    "Comprende por qué la agilidad es vital hoy en día.",
+  "course.agile-scrum.mod1.t1":
+    "Entender las bases de la agilidad y por qué surge en el desarrollo de proyectos complejos.",
+
+  "course.agile-scrum.mod2.title": "Marco Scrum",
+  "course.agile-scrum.mod2.desc":
+    "Las reglas del juego del framework más usado.",
+  "course.agile-scrum.mod2.t1": "Definición del marco de trabajo.",
+  "course.agile-scrum.mod2.t2": "Pilares y valores fundamentales.",
+  "course.agile-scrum.mod2.t3": "Roles, artefactos y eventos de Scrum.",
+
+  "course.agile-scrum.mod3.title": "Herramientas Ágiles",
+  "course.agile-scrum.mod3.desc": "Lleva la teoría a la práctica visual.",
+  "course.agile-scrum.mod3.t1":
+    "Uso de herramientas de gestión que facilitan la transparencia y la inspección.",
+  "course.agile-scrum.mod3.t2": "Jira y Trello.",
+  "course.agile-scrum.mod3.t3":
+    "Conjunto de herramientas complementarias para el equipo Scrum.",
+
+  "course.agile-scrum.mod4.title": "Conociendo el Product Backlog",
+  "course.agile-scrum.mod4.desc":
+    "Gestión efectiva de los requisitos del producto.",
+  "course.agile-scrum.mod4.t1": "Apoyo activo al Product Owner.",
+  "course.agile-scrum.mod4.t2":
+    "Estrategias para ordenar, desglosar y refinar el Product Backlog.",
+
+  "course.agile-scrum.mod5.title": "Métodos de Planificación",
+  "course.agile-scrum.mod5.desc": "Organiza los Sprints con éxito.",
+  "course.agile-scrum.mod5.t1":
+    "Ayudar al equipo a planificar el trabajo de forma iterativa y aumentar la predictibilidad.",
+  "course.agile-scrum.mod5.t2": "Sistemas de puntuación y estimación.",
+  "course.agile-scrum.mod5.t3": "Prácticas efectivas de Sprint Planning.",
+
+  "course.agile-scrum.mod6.title": "Base de Mejoras Constantes: Retrospectivas",
+  "course.agile-scrum.mod6.desc": "El corazón de la mejora continua.",
+  "course.agile-scrum.mod6.t1":
+    "Bases para realizar una retrospectiva sana y adecuada.",
+  "course.agile-scrum.mod6.t2": "Métodos de facilitación de una retrospectiva.",
+  "course.agile-scrum.mod6.t3":
+    "Soft skills de inspección para asegurar que el equipo mejore realmente.",
+
+  "course.agile-scrum.mod7.title": "Apoyo a la Organización",
+  "course.agile-scrum.mod7.desc": "Escalando la agilidad en la empresa.",
+  "course.agile-scrum.mod7.t1":
+    "El papel del Scrum Master no solo como líder servicial, sino como agente del cambio.",
+  "course.agile-scrum.mod7.t2":
+    "Las 3 bandas: Pods, bottom to top, top to bottom.",
+  "course.agile-scrum.mod7.t3": "Conceptos básicos de Scrum Escalado.",
+  "course.details.tbd": "Por definir",
+  "button.interested": "Me interesa",
+  // --- COURSE ITINERARY & INFO ---
+  "course.module.prefix": "MÓDULO",
+  "course.info.details": "Detalles del Curso",
+  "course.info.start": "Inicio:",
+  "course.info.duration": "Duración:",
+  "course.info.schedule": "Horario:",
+  "course.info.cost": "Coste:",
+  "course.info.earlyBird": "Inscripción anticipada:",
+  "course.info.days": "Días:",
+  "course.info.hours": "horas",
+  "course.info.discount": "25% de descuento extra para antiguos alumnos",
+  "button.interested.course": "Me interesa el curso",
+  "floating.btn.interested": "Me interesa",
+  "floating.btn.enroll": "Inscribirse",
+  "floating.btn.interested.title": "Me interesa:",
+  "floating.btn.enroll.title": "Inscribirse en",
 } as const;

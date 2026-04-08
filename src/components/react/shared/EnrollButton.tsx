@@ -14,6 +14,7 @@ export const EnrollButton = ({
   isComingSoon = false,
 }: EnrollButtonProps) => {
   const [bottomOffset, setBottomOffset] = useState<number>(32);
+  const t = useTranslations();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,22 +52,22 @@ export const EnrollButton = ({
     }
   };
 
-  const t = useTranslations();
-
   return (
     <motion.button
-      id="floating-enroll-btn" // AÑADIDO: ID para detección desde el Layout
+      id="floating-enroll-btn"
       onClick={handleClick}
       title={
         isComingSoon
-          ? `Me interesa: ${courseName}`
-          : `Inscribirse en ${courseName}`
+          ? `${t("floating.btn.interested.title" as any)} ${courseName}`
+          : `${t("floating.btn.enroll.title" as any)} ${courseName}`
       }
       animate={{ bottom: bottomOffset }}
       transition={{ type: "spring", stiffness: 200, damping: 20 }}
       className={`fixed left-4 lg:left-auto lg:right-24 px-5 lg:px-6 h-12 lg:h-14 rounded-full shadow-lg flex items-center justify-center text-xs lg:text-sm font-semibold z-40 transition-colors duration-200 cursor-pointer bg-secondary hover:bg-primary text-white border-none`}
     >
-      {isComingSoon ? "Me interesa" : t("button.enroll")}
+      {isComingSoon
+        ? t("floating.btn.interested" as any)
+        : t("floating.btn.enroll" as any)}
     </motion.button>
   );
 };

@@ -7,6 +7,7 @@ import {
   Zap,
   type LucideIcon,
 } from "lucide-react";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export interface Module {
   id: string;
@@ -41,6 +42,7 @@ export const CourseModule = ({
   isExpanded: boolean;
   onToggle: () => void;
 }) => {
+  const t = useTranslations();
   const IconComponent = getIconComponent(module.icon);
 
   return (
@@ -59,7 +61,7 @@ export const CourseModule = ({
             </div>
             <div className="text-left">
               <h3 className="font-bold text-slate-800 text-sm">
-                MÓDULO {module.number}
+                {t("course.module.prefix" as any)} {module.number}
               </h3>
               <p className="text-slate-600 font-semibold text-sm">
                 {module.title}
@@ -102,7 +104,7 @@ export const CourseItinerary = ({
   className = "",
 }: CourseItineraryProps) => {
   const [expandedModules, setExpandedModules] = useState<Set<string>>(
-    new Set([])
+    new Set([]),
   );
 
   const toggleModule = (moduleId: string) => {
