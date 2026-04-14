@@ -3,7 +3,7 @@ import { useTranslations } from "@/hooks/useTranslations";
 import { validateEnrollmentForm } from "@/lib/validation";
 import { Button } from "@/components/react/shared/Button";
 import { Card } from "@/components/react/shared/Card";
-import { provinces } from "@/data/provincesDensity"; // IMPORTAMOS LA LISTA DE PROVINCIAS
+import { provinces } from "@/data/provincesDensity";
 
 interface Course {
   id: string;
@@ -28,6 +28,7 @@ export interface EnrollmentFormDataExtended {
   province: string;
   course: string;
   courseName: string;
+  discountCode: string;
   privacyAccepted: boolean;
   type: string;
 }
@@ -44,6 +45,7 @@ const initialFormDataBase: Omit<EnrollmentFormDataExtended, "type"> = {
   province: "",
   course: "",
   courseName: "",
+  discountCode: "",
   privacyAccepted: false,
 };
 
@@ -155,15 +157,11 @@ export const CourseEnrollmentForm = ({
         course: formData.course,
       });
 
-      // ------------------------------------------------------------------
-      // VALIDACIÓN EXTRA: Bloquear números/caracteres y validar formatos
-      // ------------------------------------------------------------------
       let finalErrors: Record<string, string> = validation.success
         ? {}
         : validation.errors || {};
       let hasCustomErrors = false;
 
-      // Regex para nombres y localizaciones: Letras (con acentos/ñ), espacios y guiones
       const textOnlyRegex = /^[a-zA-ZÀ-ÿ\s\-]+$/;
 
       if (formData.firstName && !textOnlyRegex.test(formData.firstName)) {
@@ -183,14 +181,12 @@ export const CourseEnrollmentForm = ({
         hasCustomErrors = true;
       }
 
-      // Dirección: No puede ser solo números (debe contener al menos una letra)
       if (formData.address && !/[a-zA-ZÀ-ÿ]/.test(formData.address)) {
         finalErrors.address =
           "La dirección no puede estar formada solo por números.";
         hasCustomErrors = true;
       }
 
-      // Teléfono: Exactamente 9 dígitos, o prefijo internacional (+) seguido de 10-15 dígitos
       if (formData.phone) {
         const phoneClean = formData.phone.replace(/[\s-]/g, "");
         const phoneRegex = /^([0-9]{9}|\+[0-9]{10,15})$/;
@@ -201,7 +197,6 @@ export const CourseEnrollmentForm = ({
         }
       }
 
-      // DNI / NIE: Exactamente 8 números + 1 letra (DNI) o X/Y/Z + 7 números + 1 letra (NIE)
       if (formData.dni) {
         const dniClean = formData.dni.toUpperCase().replace(/[^0-9A-Z]/g, "");
         const dniRegex = /^([0-9]{8}[A-Z]|[XYZ][0-9]{7}[A-Z])$/;
@@ -215,9 +210,8 @@ export const CourseEnrollmentForm = ({
       if (!validation.success || hasCustomErrors) {
         setFormErrors(finalErrors);
         setIsSubmitting(false);
-        return; // Detenemos la ejecución y mostramos errores
+        return;
       }
-      // ------------------------------------------------------------------
 
       const response = await fetch("/api/enroll-course", {
         method: "POST",
@@ -273,7 +267,8 @@ export const CourseEnrollmentForm = ({
             <span className="text-green-800 text-sm font-medium">
               {enrollmentType === "interest"
                 ? "¡Genial! Hemos anotado tu interés. Te avisaremos en cuanto haya novedades."
-                : t("enrollment.successMessage")}
+                : t("enrollment.successMessage" as any) ||
+                  "¡Inscripción enviada con éxito!"}
             </span>
           </div>
         </div>
@@ -539,6 +534,33 @@ export const CourseEnrollmentForm = ({
           )}
           {formErrors.course && (
             <p className="text-red-600 text-xs mt-2">{formErrors.course}</p>
+          )}
+        </div>
+
+        <div>
+          <label
+            htmlFor="discountCode"
+            className="block text-xs sm:text-sm font-bold text-slate-700 mb-1.5"
+          >
+            {t("enrollment.discountCode" as any) ||
+              "Código de descuento (Opcional)"}
+          </label>
+          <input
+            type="text"
+            id="discountCode"
+            name="discountCode"
+            value={formData.discountCode}
+            onChange={handleInputChange}
+            className={getInputClasses("discountCode")}
+            placeholder={
+              t("enrollment.discountPlaceholder" as any) ||
+              "Introduce el código de la charla"
+            }
+          />
+          {formErrors.discountCode && (
+            <p className="text-red-600 text-xs mt-2">
+              {formErrors.discountCode}
+            </p>
           )}
         </div>
 

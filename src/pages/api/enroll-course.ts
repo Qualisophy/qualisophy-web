@@ -21,17 +21,15 @@ export const POST: APIRoute = async ({ request }) => {
     const data = await request.json();
 
     // 1. SANITIZACIÓN AUTOMÁTICA DE TODOS LOS CAMPOS
-    // Recorremos todo el objeto y limpiamos cualquier texto malicioso
     const sanitizedData: Record<string, any> = {};
     for (const key in data) {
       if (Object.prototype.hasOwnProperty.call(data, key)) {
-        // No sanitizamos booleanos como privacyAccepted
         sanitizedData[key] =
           typeof data[key] === "string" ? escapeHTML(data[key]) : data[key];
       }
     }
 
-    // 2. Extraemos los campos requeridos para validación del servidor
+    // 2. Extraemos los campos
     const { firstName, email, course, privacyAccepted } = sanitizedData;
 
     // 3. Validación del lado del servidor
@@ -77,7 +75,6 @@ export const POST: APIRoute = async ({ request }) => {
         }
       } catch (validationError) {
         console.error("Fallo silencioso en Abstract API:", validationError);
-        // Si la API falla, dejamos continuar el proceso para no bloquear al usuario
       }
     }
 
@@ -94,13 +91,12 @@ export const POST: APIRoute = async ({ request }) => {
       );
     }
 
-    // 6. Enviar TODOS los datos sanitizados a Make.com
-    // Ya no forzamos el type="enrollment" aquí, porque el frontend ya nos manda el type correcto (interest o enrollment)
+    // 6. Enviar TODOS los datos sanitizados a Make.com (incluyendo discountCode)
     const response = await fetch(makeWebhookUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        ...sanitizedData, // Extendemos todo, incluyendo el type dinámico y el nuevo courseName
+        ...sanitizedData,
         submittedAt: new Date().toISOString(),
       }),
     });
