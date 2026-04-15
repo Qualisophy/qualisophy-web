@@ -1,4 +1,4 @@
-export class Formulario {
+export class FormularioGeneral {
 
     /// ATRIBUTOS ///
     web = 'http://localhost:4321/contact';
@@ -58,4 +58,4 @@ export class Formulario {
 
 }
 
-export const formularioGeneral = new Formulario();
+export const formularioGeneral = new FormularioGeneral();
