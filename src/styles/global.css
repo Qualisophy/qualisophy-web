@@ -4,21 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Fuentes */
-@font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter-Variable.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("/fonts/WorkSans-Variable.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
+/* Fuentes (Mantenemos solo Gotham porque esta sí funciona y no da 404) */
 @font-face {
   font-family: "Gotham Rounded";
   src: url("/fonts/gothamrnd_book.otf") format("opentype");
@@ -49,12 +35,13 @@
 }
 
 :root {
+  /* Al quitar Inter y Work Sans, forzamos la fuente nativa del sistema, que es la que te gusta visualmente en producción */
   --font-primary:
-    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif;
+    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
   --font-heading:
-    "Work Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif;
+    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
 }
 
 @layer base {
