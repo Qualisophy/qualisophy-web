@@ -1,10 +1,10 @@
+/** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
       fontFamily: {
         primary: [
-          "Inter",
           "system-ui",
           "-apple-system",
           "BlinkMacSystemFont",
@@ -13,7 +13,6 @@ export default {
           "sans-serif",
         ],
         heading: [
-          "Work Sans",
           "Comfortaa",
           "system-ui",
           "-apple-system",
@@ -33,7 +32,8 @@ export default {
         semibold: "600",
         bold: "700",
       },
-      keyframes: { // Carrousel
+      keyframes: {
+        // Carrousel
         "slide-mobile": {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
@@ -44,7 +44,6 @@ export default {
         },
       },
       animation: {
-        // name: "<keyframes-name> <duration> <timing-function> <iteration-count>"
         "slide-mobile": "slide-mobile 8s linear infinite",
         "slide-desktop": "slide-desktop 20s linear infinite",
       },
