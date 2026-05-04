@@ -21,6 +21,7 @@ import imgToolsChatbots from "@/assets/imagenes-cursos/tools/chatbots.jpeg";
 import imgToolsMake from "@/assets/imagenes-cursos/tools/make.jpeg";
 
 // DEVOPS
+import imgDevopsGit from "@/assets/imagenes-cursos/devops/git.jpeg";
 import imgDevopsGitlab from "@/assets/imagenes-cursos/devops/gitlab.jpeg";
 import imgDevopsIntro from "@/assets/imagenes-cursos/devops/ci-cd.jpeg";
 
@@ -224,6 +225,18 @@ export const courseCategories = [
     hoverText: "group-hover:text-[#70A0D2]",
     link: "/cursos/devops",
     courses: [
+      {
+        id: "devops-git",
+        title: "Control de Versiones con Git",
+        description:
+          "Aprende Git desde cero: control de versiones, repositorios, ramas y trabajo colaborativo.",
+        image: imgDevopsGit.src,
+        duration: "Por definir",
+        level: "Principiante",
+        modality: "Online",
+        categoryName: "DevOps",
+        href: "/cursos/devops/git",
+      },
       {
         id: "devops-gitlab",
         title: "Gestión Avanzada y CI/CD con GitLab",
