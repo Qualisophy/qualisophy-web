@@ -66,9 +66,10 @@ const currentYear = new Date().getFullYear();
 
 
     {/* --- SECCIÓN MEDIA: ENLACES REESTRUCTURADOS --- */}
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-gray-700/50 pt-12">
+    {/* CORRECCIÓN: Se cambia a md:grid-cols-5 para alinear las 5 columnas */}
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8 border-t border-gray-700/50 pt-12">
       
-      {/* 1. INCLUSIÓN (URLs Corregidas) */}
+      {/* 1. INCLUSIÓN */}
       <div>
         <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">
           Inclusión
@@ -81,7 +82,7 @@ const currentYear = new Date().getFullYear();
         </ul>
       </div>
 
-      {/* 2. FORMACIONES (Prioridad Alta) */}
+      {/* 2. FORMACIONES */}
       <div>
         <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">
           Formaciones
@@ -92,7 +93,7 @@ const currentYear = new Date().getFullYear();
         </ul>
       </div>
 
-      {/* 3. ¿COLABORAMOS? (Nuevo enfoque Partnership) */}
+      {/* 3. ¿COLABORAMOS? */}
       <div>
         <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">
           ¿Colaboramos?
@@ -107,19 +108,28 @@ const currentYear = new Date().getFullYear();
         </ul>
       </div>
 
-      {/* 4. CONÓCENOS (Incluye Inicio) */}
+      {/* 4. CONÓCENOS */}
       <div>
         <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">
           Conócenos
         </h3>
         <ul class="space-y-3">
-          {/* NUEVO: Inicio movido aquí */}
           <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/team">Nuestro Equipo</a></li>
           <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/blog">Blog & Actualidad</a></li>
           <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/contact">Contacto</a></li>
         </ul>
       </div>
 
+      {/* 5. LEGAL */}
+      <div>
+        <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">
+          Legal
+        </h3>
+        <ul class="space-y-3">
+          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/privacidad">Privacidad</a></li>
+          <li><a class="text-sm text-gray-300 hover:text-primary transition-colors" href="/terminos">Términos y Condiciones</a></li>
+        </ul>
+      </div>
 
     </div>
 
