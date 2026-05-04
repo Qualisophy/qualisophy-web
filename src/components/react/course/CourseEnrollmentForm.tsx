@@ -554,7 +554,7 @@ export const CourseEnrollmentForm = ({
             className={getInputClasses("discountCode")}
             placeholder={
               t("enrollment.discountPlaceholder" as any) ||
-              "Introduce el código de la charla"
+              "Introduce el código de la Introduce el código de descuento si tienes uno"
             }
           />
           {formErrors.discountCode && (
