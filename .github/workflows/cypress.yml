@@ -1,0 +1,75 @@
+name: Cypress CI Pipeline
+
+on:
+  push:
+    branches: [main, qw-187-tests-cypress]
+  pull_request:
+    branches: [main, qw-187-tests-cypress]
+
+jobs:
+  cypress:
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node-24.14.0-chrome-145.0.7632.116-1-ff-148.0-edge-145.0.3800.70-1
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Instalar pnpm
+        run: npm install -g pnpm
+
+      - name: Caché de pnpm
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store/v3
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: ${{ runner.os }}-pnpm-
+        continue-on-error: true
+
+      - name: Caché de Cypress
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/Cypress
+          key: ${{ runner.os }}-cypress-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: ${{ runner.os }}-cypress-
+        continue-on-error: true
+
+      - name: Caché de build (dist)
+        uses: actions/cache@v3
+        id: cache-dist
+        with:
+          path: dist
+          key: ${{ runner.os }}-dist-${{ hashFiles('src/**', 'astro.config.mjs', 'package.json') }}
+          restore-keys: ${{ runner.os }}-dist-
+
+      - name: Instalar dependencias
+        run: pnpm install --frozen-lockfile
+
+      - name: Descargar binario de Cypress
+        run: pnpm exec cypress install
+
+      - name: Build del proyecto
+        if: steps.cache-dist.outputs.cache-hit != 'true'
+        run: pnpm run build
+
+      - name: Levantar servidor y ejecutar los tests
+        run: |
+          set -e
+          pnpm run preview > /dev/null 2>&1 &
+          SERVER_PID=$!
+          sleep 10
+          set +e
+          pnpm run cypress:run
+          TEST_RESULT=$?
+          set -e
+          kill $SERVER_PID 2>/dev/null || pkill -f "astro preview" 2>/dev/null || true
+          exit $TEST_RESULT
+
+      - name: Guardar artefactos de Cypress
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-artifacts
+          path:
+            screenshots
+            videos
