@@ -32,11 +32,10 @@ export const HeroSection: React.FC = () => {
               Talento que <span className="text-primary">Transforma</span>
             </h1>
 
-            <p className="text-gray-100 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto font-primary drop-shadow-sm">
-              Impulsamos la inclusión laboral en tecnología conectando talento
-              diverso con empresas innovadoras, construyendo puentes hacia el
-              futuro.
-            </p>
+           <p className="text-gray-100 text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto font-primary drop-shadow-sm">
+      Expertos en <span className="font-semibold text-white">inclusión laboral en tecnología</span>, 
+      conectando talento diverso con empresas innovadoras para construir puentes hacia el futuro.
+    </p>
 
             <div className="flex flex-wrap justify-center gap-4 mt-4 font-primary">
               <button
