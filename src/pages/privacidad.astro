@@ -114,6 +114,8 @@ import Layout from "@/layouts/Layout.astro";
   .privacy-page {
     width: 100%;
     background: white;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 
   .hero-legal {
@@ -123,6 +125,8 @@ import Layout from "@/layouts/Layout.astro";
     right: 50% !important;
     margin-left: -50vw !important;
     margin-right: -50vw !important;
+margin-top: -80px !important; /* Ajusta este valor según la altura de tu Navbar */
+    padding-top: 80px !important; /* Recuperamos el espacio para que el texto no quede tapado */
     min-height: 550px;
     display: flex;
     align-items: center;
