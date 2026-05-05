@@ -1,69 +1,132 @@
 ---
+import { getLangFromUrl } from '../i18n/ui';
+
 const { class: className } = Astro.props;
 
-const paths = Astro.url.pathname.split("/").filter(Boolean);
+// Obtenemos los segmentos de la URL
+let paths = Astro.url.pathname.split("/").filter(Boolean);
 
-// Map your folders/files to readable names
-const routeNameMap: Record<string, string> = {
-  // Main routes
-  "corporate-training": "Formación Empresas",
-  cursos: "Cursos",
-  partnership: "Partnership",
-  contact: "Contacto",
-  "talent-inclusion": "Inclusión Laboral",
-  faq: "Preguntas Frecuentes",
-  "course-enrollment": "Matriculación",
+// 1. Detectar el idioma actual usando la función que ya tienes
+const currentLang = getLangFromUrl(Astro.url);
 
-  // Categories
-  desarrollo: "Desarrollo",
-  qa: "QA & Testing",
-  data: "Data & BI",
-  herramientas: "Herramientas Empresariales",
-  devops: "DevOps & Gestión",
-  agile: "Agile & Scrum",
+// Filtrar los prefijos de idioma ('es' o 'fr') de las rutas 
+// para que no aparezcan como un paso en el Breadcrumb (ej. Inicio / fr / Cours)
+paths = paths.filter(path => path !== 'es' && path !== 'fr');
 
-  // Specific Courses (Nuevos Nombres en Español)
-  "calidad-software": "Calidad de Software (QA) y Testing",
-  "pruebas-api": "API Testing con Postman",
-  "bootcamp-cypress": "Cypress Automation Bootcamp",
-  "pruebas-junit": "Tests Unitarios con JUnit",
-  "pruebas-agiles": "Agile Testing",
-  "pruebas-ia-generativa": "Generative AI para Software Testing",
-  
-  "sql-powerbi": "Introducción a SQL para Power BI",
-  "analitica-powerbi": "Analítica de Datos con Power BI",
-  
-  "excel-experto": "Microsoft Excel Expert",
-  "ofimatica-integral": "Ofimática Integral",
-  "chatbots": "Chatbots para E-commerce",
-  "productividad-make": "Productividad con Make",
-  
-  "git": "Control de Versiones con Git",
-  "gitlab-cicd": "Gestión Avanzada y CI/CD con GitLab",
-  "introduccion-devops": "DevOps, Continuous Testing y CI/CD",
-  
-  "scrum-master": "Agile Mastery: El Camino del Scrum Master",
+// 2. Mapa de rutas estructurado por idioma
+const routeNameMap: Record<string, Record<string, string>> = {
+  es: {
+    // Main routes
+    "corporate-training": "Formación Empresas",
+    "cursos": "Cursos",
+    "partnership": "Partnership",
+    "contact": "Contacto",
+    "talent-inclusion": "Inclusión Laboral",
+    "faq": "Preguntas Frecuentes",
+    "course-enrollment": "Matriculación",
+    "team": "Equipo",
+    "blog": "Blog",
 
-  // Legacy courses (Por si hay algún enlace antiguo rondando)
-  "backend-course": "Backend",
-  "frontend-course": "Frontend",
-  "fullstack-course": "Fullstack Development",
-  "automation-course": "Automatización de Pruebas",
-  "quality-management": "Gestión de Calidad del Software",
-  "dashboards-course": "Dashboards y Visualización",
-  "data-analytics": "Introducción a la Analítica de Datos con PowerBI",
-  "bdd-automation-e2e-course": "Curso BDD y Automatización E2E",
-  "devops-for-testers-course": "Coding and DevOps for Testers",
-  "software-quality-testing-course": "Testing y Calidad del Software",
+    // Categories
+    "desarrollo": "Desarrollo",
+    "qa": "QA & Testing",
+    "data": "Data & BI",
+    "herramientas": "Herramientas Empresariales",
+    "devops": "DevOps & Gestión",
+    "agile": "Agile & Scrum",
+
+    // Specific Courses
+    "calidad-software": "Calidad de Software (QA) y Testing",
+    "pruebas-api": "API Testing con Postman",
+    "bootcamp-cypress": "Cypress Automation Bootcamp",
+    "pruebas-junit": "Tests Unitarios con JUnit",
+    "pruebas-agiles": "Agile Testing",
+    "pruebas-ia-generativa": "Generative AI para Software Testing",
+    "sql-powerbi": "Introducción a SQL para PowerBI",
+    "analitica-powerbi": "Analítica de Datos con Power BI",
+    "excel-experto": "Microsoft Excel Expert",
+    "ofimatica-integral": "Ofimática Integral",
+    "chatbots": "Chatbots para E-commerce",
+    "productividad-make": "Productividad con Make",
+    "git": "Control de Versiones con Git",
+    "gitlab-cicd": "Gestión Avanzada y CI/CD con GitLab",
+    "introduccion-devops": "DevOps, Continuous Testing y CI/CD",
+    "scrum-master": "Agile Mastery: El Camino del Scrum Master",
+
+    // Blog Articles
+    "impacto-ia-testing": "Impacto IA Testing",
+    "neurodivergencia-ventaja": "Neurodivergencia Ventaja",
+    "caso-exito-maria": "Caso Éxito María",
+    "powerbi-negocios": "PowerBI Negocios",
+    "diversidad-equipos-agiles": "Diversidad Equipos Ágiles",
+  },
+  
+  fr: {
+    // Main routes
+    "corporate-training": "Formations d'Entreprise",
+    "cursos": "Cours",
+    "partnership": "Partenariats",
+    "contact": "Contact",
+    "talent-inclusion": "Inclusion Professionnelle",
+    "faq": "Questions Fréquentes",
+    "course-enrollment": "Inscription",
+    "team": "Équipe",
+    "blog": "Blog",
+
+    // Categories
+    "desarrollo": "Développement",
+    "qa": "QA & Testing",
+    "data": "Data & BI",
+    "herramientas": "Outils d'Entreprise",
+    "devops": "DevOps & Gestion",
+    "agile": "Agile & Scrum",
+
+    // Specific Courses
+    "calidad-software": "Qualité Logicielle (QA) et Testing",
+    "pruebas-api": "Tests API avec Postman",
+    "bootcamp-cypress": "Cypress Automation Bootcamp",
+    "pruebas-junit": "Tests Unitaires avec JUnit",
+    "pruebas-agiles": "Agile Testing",
+    "pruebas-ia-generativa": "IA Générative pour le Software Testing",
+    "sql-powerbi": "Introduction à SQL pour PowerBI",
+    "analitica-powerbi": "Analyse de Données avec Power BI",
+    "excel-experto": "Microsoft Excel Expert",
+    "ofimatica-integral": "Bureautique Intégrale",
+    "chatbots": "Chatbots pour E-commerce",
+    "productividad-make": "Productivité avec Make",
+    "git": "Contrôle de Version avec Git",
+    "gitlab-cicd": "Gestion Avancée et CI/CD avec GitLab",
+    "introduccion-devops": "DevOps, Continuous Testing et CI/CD",
+    "scrum-master": "Agile Mastery: El Chemin du Scrum Master",
+
+    // Blog Articles
+    "impacto-ia-testing": "Impact IA Testing",
+    "neurodivergencia-ventaja": "Neurodivergence Avantage",
+    "caso-exito-maria": "Cas de Succès Maria",
+    "powerbi-negocios": "PowerBI Affaires",
+    "diversidad-equipos-agiles": "Diversité Équipes Agiles",
+  }
 };
 
-// Function to format names if they are not in the map
-const formatName = (slug: string) => {
-  // 1. If it's in the map, use it
-  if (routeNameMap[slug]) return routeNameMap[slug];
+// 3. Modificar la función para que reciba el idioma (lang)
+const formatName = (slug: string, lang: string) => {
+  const normalizedSlug = slug.toLowerCase();
 
-  // 2. If not, try cleaning it (remove hyphens and capitalize)
-  return slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
+  // 1. Prioridad absoluta: Idioma actual
+  if (routeNameMap[lang] && routeNameMap[lang][normalizedSlug]) {
+    return routeNameMap[lang][normalizedSlug];
+  }
+
+  // 2. Solo si no existe en el actual Y el actual no es español, buscamos en español
+  if (lang !== 'es' && routeNameMap['es'] && routeNameMap['es'][normalizedSlug]) {
+    return routeNameMap['es'][normalizedSlug];
+  }
+
+  // 3. Formateo por defecto (limpieza de slug)
+  return slug
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (l) => l.toUpperCase())
+    .replace(/Powerbi/g, "PowerBI");
 };
 
 let accumulatePath = "";
@@ -100,9 +163,12 @@ let accumulatePath = "";
     {/* 🔄 AUTOMATIC GENERATION */}
     {
       paths.map((path, index) => {
+        // Acumulamos la ruta manteniendo el prefijo de idioma si existe
         accumulatePath += `/${path}`;
+        
         const isLast = index === paths.length - 1;
-        const name = formatName(path);
+        // 4. Pasamos el idioma actual detectado a la función de formateo
+        const name = formatName(path, currentLang);
 
         return (
           <li class="flex items-center">
