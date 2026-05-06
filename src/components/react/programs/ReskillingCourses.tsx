@@ -74,7 +74,7 @@ export const ReskillingCourses: React.FC = () => {
           <div className="max-w-3xl mx-auto flex flex-col gap-8 items-center">
             <div className="flex flex-col gap-4">
               <h2 className="text-3xl md:text-5xl font-bold font-heading text-secondary leading-tight">
-                Impulsa tu carrera tecnológica
+                Da el Salto al Sector Tecnológico con Qualisophy
               </h2>
               <p className="text-lg md:text-xl text-gray-600 font-primary leading-relaxed">
                 Tanto si buscas especializarte técnicamente como si necesitas
