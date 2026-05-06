@@ -1,9 +1,16 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { FAQSection } from "@/components/react/shared/FAQSection";
+import { faqMap, type FaqSlug } from "@/data/faqs/index";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 // Importamos el fondo de partículas
 import { ParticleMeshBackground } from "@/components/react/shared/ParticleMeshBackground";
+
+const { slug } = Astro.params;
+const faqs =
+  slug && (slug as FaqSlug) in faqMap
+    ? faqMap[slug as FaqSlug]
+    : [];
 ---
 
 <Layout
@@ -24,7 +31,7 @@ import { ParticleMeshBackground } from "@/components/react/shared/ParticleMeshBa
     </div>
 
     <div class="relative z-10">
-      <FAQSection client:load />
+      <FAQSection client:load faqs={faqs}/>
     </div>
     
   </div>

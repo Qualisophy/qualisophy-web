@@ -1,0 +1,56 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { FAQSection } from "@/components/react/shared/FAQSection";
+import { faqMap, type FaqSlug } from "@/data/faqs/index";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { ParticleMeshBackground } from "@/components/react/shared/ParticleMeshBackground";
+
+export async function getStaticPaths() {
+  return Object.keys(faqMap).map((slug) => ({
+    params: { slug },
+  }));
+}
+
+const { slug } = Astro.params;
+
+// 1. Verificación estricta: si el slug no existe en nuestro mapa, no renderizamos la página
+if (!slug || !(slug in faqMap)) {
+  return Astro.redirect('/404'); 
+}
+
+// Aquí TypeScript ya sabe que currentSlug es una de las llaves válidas
+const currentSlug = slug as FaqSlug;
+const faqs = faqMap[currentSlug];
+
+const titles: Record<FaqSlug, string> = {
+  "neurodivergencia": "FAQ Neurodivergencia",
+  "talento-migrante": "FAQ Talento Migrante",
+  "entorno-rural": "FAQ Entorno Rural",
+  "riesgo-exclusion": "FAQ Riesgo de Exclusión",
+  "reconversion-laboral": "FAQ Reconversión Laboral",
+};
+
+const title = titles[currentSlug];
+---
+
+<Layout
+  title={`${title} - Qualisophy`}
+  description="Resuelve todas tus dudas sobre nuestros programas de inclusión y formación."
+>
+  <div class="relative w-full bg-white overflow-hidden min-h-screen pb-12">
+    
+    <div class="absolute inset-0 z-0 opacity-60 pointer-events-none">
+      <ParticleMeshBackground client:load />
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pt-8">
+      <Breadcrumbs />
+    </div>
+
+    <div class="relative z-10">
+      {/* Usamos el faqs que ahora sabemos con seguridad que existe */}
+      <FAQSection client:load faqs={faqs} key={currentSlug} />
+    </div>
+    
+  </div>
+</Layout>
