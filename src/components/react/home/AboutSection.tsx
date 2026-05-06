@@ -31,7 +31,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
               </div>
 
               <h2 className="text-secondary text-3xl md:text-4xl lg:text-5xl font-bold leading-tight font-heading">
-                ¿Quiénes somos?
+                Consultora de Inclusión Tecnológica y Talento Diverso
               </h2>
 
               <p className="text-gray-600 text-lg lg:text-xl leading-relaxed font-primary">

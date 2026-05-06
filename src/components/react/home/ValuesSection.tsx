@@ -46,7 +46,7 @@ export const ValuesSection: React.FC = () => {
           {/* 1. Cabecera */}
           <div className="text-center mb-16 md:mb-20">
             <h2 className="text-secondary text-3xl md:text-5xl font-bold mb-6 font-heading">
-              Nuestra Filosofía
+              El Valor de la Inclusión en el Sector Tecnológico
             </h2>
             <div className="w-20 h-1.5 bg-primary mx-auto rounded-full mb-8"></div>
             <p className="text-gray-600 max-w-3xl mx-auto text-lg md:text-xl font-primary leading-relaxed">
