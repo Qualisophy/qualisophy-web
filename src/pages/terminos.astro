@@ -1,0 +1,96 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { LegalHero } from "@/components/react/shared/LegalHero";
+---
+
+<Layout title="Términos y Condiciones | Qualisophy" fullWidth={true}>
+  <main class="w-full bg-white">
+    
+    <!-- HERO SECTION REUTILIZABLE DE REACT -->
+    <LegalHero 
+      title1="Términos Y" 
+      titleHighlight="Condiciones" 
+      date="27 de Abril de 2026" 
+    />
+
+    <!-- CONTENIDO LEGAL (Estilizado con Tailwind) -->
+    <div class="relative z-20 w-full max-w-4xl mx-auto px-6 lg:px-8 py-20 font-primary">
+      <div class="flex flex-col gap-8 text-gray-700 leading-relaxed text-lg">
+        
+        <p>
+          El presente documento establece las condiciones generales de uso que regulan el acceso y la utilización del sitio web https://qualisophy.com/ (en adelante, el "Sitio Web"), titularidad de Qualisophy SL (en adelante, "la Empresa").
+        </p>
+
+        <section>
+          <h2 class="text-2xl font-bold text-secondary font-heading mb-4 border-b border-gray-200 pb-2">
+            1. Información General y Aceptación
+          </h2>
+          <p>
+            En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSICE), se exponen a continuación los datos identificativos del titular: Francisco Antonio Guerrero Sánchez (Qualisophy SL), con NIF/CIF B16444960 y domicilio en Calle Esteban Salazar Chapela, 11, Puerta 9, C.P. 29004, Málaga, España. Correo electrónico de contacto: hello@qualisophy.com.
+          </p>
+          <p class="mt-4">
+            La navegación y el uso de los servicios del Sitio Web atribuyen la condición de Usuario y conllevan la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en estos Términos y Condiciones.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-secondary font-heading mb-4 border-b border-gray-200 pb-2">
+            2. Objeto de los Servicios
+          </h2>
+          <p>
+            Qualisophy SL tiene como misión impulsar la inclusión laboral en el sector tecnológico conectando talento diverso con empresas innovadoras. A través de este Sitio Web, proporcionamos información sobre nuestros programas inclusivos de formación, servicios de consultoría y opciones de reconversión laboral.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-secondary font-heading mb-4 border-b border-gray-200 pb-2">
+            3. Uso Correcto del Sitio Web
+          </h2>
+          <p class="mb-4">El Usuario se compromete a utilizar el Sitio Web, los contenidos y servicios de conformidad con la Ley, el presente aviso legal, las buenas costumbres y el orden público. Del mismo modo, el Usuario se obliga a no utilizar el Sitio Web o los servicios que se presten a través de él con fines o efectos ilícitos.</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>No destruir, alterar, inutilizar o, de cualquier otra forma, dañar los datos, programas o documentos electrónicos y demás que se encuentren en la web.</li>
+            <li>No obstaculizar el acceso a otros usuarios al servicio de acceso mediante el consumo masivo de los recursos informáticos.</li>
+            <li>No introducir programas, virus o cualquier otro dispositivo lógico que cause o sea susceptible de causar cualquier tipo de alteración en los sistemas informáticos de la Empresa o de terceros.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-secondary font-heading mb-4 border-b border-gray-200 pb-2">
+            4. Propiedad Intelectual e Industrial
+          </h2>
+          <p>
+            Todos los contenidos del Sitio Web, entendiendo por estos a título meramente enunciativo, los textos, fotografías, gráficos, imágenes, iconos, tecnología, software, así como su diseño gráfico y códigos fuente, constituyen una obra cuya propiedad pertenece a Qualisophy SL, sin que puedan entenderse cedidos al Usuario ninguno de los derechos de explotación sobre los mismos más allá de lo estrictamente necesario para el correcto uso de la web.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-secondary font-heading mb-4 border-b border-gray-200 pb-2">
+            5. Exclusión de Garantías y Responsabilidad
+          </h2>
+          <p>
+            Qualisophy SL no se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran ocasionar, a título enunciativo: errores u omisiones en los contenidos, falta de disponibilidad del portal o la transmisión de virus o programas maliciosos o lesivos en los contenidos, a pesar de haber adoptado todas las medidas tecnológicas necesarias para evitarlo.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-secondary font-heading mb-4 border-b border-gray-200 pb-2">
+            6. Modificaciones de los Términos
+          </h2>
+          <p>
+            La Empresa se reserva el derecho de efectuar sin previo aviso las modificaciones que considere oportunas en su portal, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través de la misma como la forma en la que éstos aparezcan presentados o localizados en su portal.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-secondary font-heading mb-4 border-b border-gray-200 pb-2">
+            7. Legislación Aplicable y Jurisdicción
+          </h2>
+          <p>
+            La relación entre Qualisophy SL y el Usuario se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y Tribunales de la ciudad de Málaga, salvo que la ley aplicable disponga otra cosa de manera imperativa.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+</Layout>
