@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { FAQSection } from "@/components/react/shared/FAQSection";
-import { faqMap, type FaqSlug } from "@/data/faqs/index";
+import { faqMap, type FaqSlug, faqTitles } from "@/data/faqs/index";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { ParticleMeshBackground } from "@/components/react/shared/ParticleMeshBackground";
 
@@ -18,19 +18,10 @@ if (!slug || !(slug in faqMap)) {
   return Astro.redirect('/404'); 
 }
 
-// Aquí TypeScript ya sabe que currentSlug es una de las llaves válidas
 const currentSlug = slug as FaqSlug;
 const faqs = faqMap[currentSlug];
 
-const titles: Record<FaqSlug, string> = {
-  "neurodivergencia": "FAQ Neurodivergencia",
-  "talento-migrante": "FAQ Talento Migrante",
-  "entorno-rural": "FAQ Entorno Rural",
-  "riesgo-exclusion": "FAQ Riesgo de Exclusión",
-  "reconversion-laboral": "FAQ Reconversión Laboral",
-};
-
-const title = titles[currentSlug];
+const title = faqTitles[currentSlug];
 ---
 
 <Layout

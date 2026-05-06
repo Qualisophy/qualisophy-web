@@ -27,6 +27,11 @@ export const FAQSection = ({ faqs, alwaysExpanded = false }: FAQSectionProps) =>
     }
   };
 
+  // Iconos estáticos de la interfaz extraídos del mapa
+  const MessageCircle = Icons.MessageCircle;
+  const Clock = Icons.Clock;
+  const ChevronDown = Icons.ChevronDown;
+
   return (
     <>
       <section className="pt-24 pb-16 bg-white">
@@ -63,7 +68,8 @@ export const FAQSection = ({ faqs, alwaysExpanded = false }: FAQSectionProps) =>
           {/* Contenedor del Acordeón */}
           <div className="space-y-4">
             {faqs.map((faq, index) => {
-              const IconComponent = faq.icon;
+              // Resolución dinámica del icono del FAQ
+              const IconComponent = (Icons as any)[faq.icon] || Icons.HelpCircle;
               const isOpen = openIndex === index;
 
               return (

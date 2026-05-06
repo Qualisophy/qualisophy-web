@@ -13,3 +13,11 @@ export const faqMap = {
 } as const;
 
 export type FaqSlug = keyof typeof faqMap;
+
+export const faqTitles: Record<FaqSlug, string> = {
+  "neurodivergencia": "FAQ Neurodivergencia",
+  "talento-migrante": "FAQ Talento Migrante",
+  "entorno-rural": "FAQ Entorno Rural",
+  "riesgo-exclusion": "FAQ Riesgo de Exclusión",
+  "reconversion-laboral": "FAQ Reconversión Laboral",
+};

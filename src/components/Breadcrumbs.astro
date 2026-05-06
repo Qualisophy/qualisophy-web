@@ -104,6 +104,10 @@ let accumulatePath = "";
         const isLast = index === paths.length - 1;
         const name = formatName(path);
 
+        // Segmentos que NO deben ser clicables
+        const nonClickableSegments = ["faq"];
+        const isClickable = !isLast && !nonClickableSegments.includes(path);
+
         return (
           <li class="flex items-center">
             {/* Separator */}
@@ -113,13 +117,15 @@ let accumulatePath = "";
               <span class="text-secondary font-medium" aria-current="page">
                 {name}
               </span>
-            ) : (
+            ) : isClickable ? (
               <a
                 href={accumulatePath}
                 class="hover:text-primary transition-colors"
               >
                 {name}
               </a>
+            ) : (
+              <span class="text-slate-500">{name}</span>
             )}
           </li>
         );
