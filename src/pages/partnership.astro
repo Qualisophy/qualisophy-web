@@ -1,20 +1,14 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 
-// Reutilizamos los componentes del sistema de diseño actual
 import { ProgramMethodology } from "@/components/react/programs/ProgramMethodology";
 import { ProgramFeatures } from "@/components/react/programs/ProgramFeatures";
 import { ProgramCurriculum } from "@/components/react/programs/ProgramCurriculum";
-
-// Importamos los componentes específicos para Partnership
 import { PartnershipHero } from "@/components/react/partnership/PartnershipHero";
 import { PartnershipCTA } from "@/components/react/partnership/PartnershipCTA";
 
-// --- DATOS: PARTNERSHIP / B2B ---
-
-// 1. PROPUESTA DE VALOR (Zig-Zag)
 const valuePropData = {
-  title: "Más que Selección: Integración Estratégica",
+  title: "Hiring Partners IT", 
   description: [
     "Las empresas líderes ya no buscan solo cubrir vacantes; buscan talento que aporte diversidad cognitiva y resiliencia. Qualisophy actúa como tu socio estratégico, no como un proveedor transaccional.",
     "Te conectamos con perfiles altamente motivados y formados en las tecnologías que realmente necesitas, reduciendo drásticamente la rotación y mejorando el clima laboral."
@@ -27,7 +21,6 @@ const valuePropData = {
   imageSrc: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
 };
 
-// 2. MODELOS DE COLABORACIÓN (Pilares)
 const collaborationModels = [
   {
     icon: "person_search",
@@ -51,7 +44,6 @@ const collaborationModels = [
   }
 ];
 
-// 3. ROADMAP (Línea de tiempo)
 const partnershipProcess = [
   {
     stepNumber: 1,
@@ -72,15 +64,13 @@ const partnershipProcess = [
 ---
 
 <Layout 
-  title="Partnership - Qualisophy"
+  title="Alianzas Corporativas (Partnership B2B) - Qualisophy"
   description="Colabora con Qualisophy. Soluciones de talento diverso e impacto social para empresas tecnológicas líderes."
   fullWidth={true}
 >
   
-  {/* 1. HERO - Fondo Azul */}
   <PartnershipHero client:load />
 
-  {/* 2. PROPUESTA DE VALOR - Fondo BLANCO */}
   <ProgramMethodology 
     client:visible
     {...valuePropData}
@@ -88,28 +78,26 @@ const partnershipProcess = [
     variant="white"
   />
 
-  {/* 3. MODELOS DE COLABORACIÓN - Fondo GRIS */}
   <ProgramFeatures 
     client:visible
-    title="Modelos de Colaboración Flexible"
+    title="Modelos de Colaboración RSC"
     subtitle="Adapta la alianza a tus necesidades de contratación, formación y estrategia de RSC."
     features={collaborationModels}
     variant="dark" 
     layout="pillars" 
   />
 
-  {/* 4. ROADMAP - Fondo BLANCO */}
   <ProgramCurriculum 
     client:visible
-    title="Roadmap de la Alianza"
+    title="Roadmap de la Alianza Tech"
     subtitle="Un proceso estructurado, sencillo y eficaz para garantizar el éxito de la colaboración."
     steps={partnershipProcess}
     variant="white"
   />
 
-  {/* 5. CTA FINAL - Fondo GRIS */}
   <PartnershipCTA 
     client:visible 
+    title="Multiplica tu Impacto Social"
     variant="gray"
   />
 
