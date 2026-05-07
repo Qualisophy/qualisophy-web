@@ -1,0 +1,37 @@
+---
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Pago Cancelado | Qualisophy">
+  <div class="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 max-w-2xl mx-auto py-16 animate-fadeIn">
+    
+    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mb-6 animate-scaleIn">
+      <span class="material-symbols-outlined text-5xl text-red-600">cancel</span>
+    </div>
+
+    <h1 class="text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">
+      Inscripción no completada
+    </h1>
+    
+    <p class="text-slate-600 text-lg mb-8">
+      Has cancelado el proceso de pago y no se ha realizado ningún cargo en tu tarjeta. Si has tenido algún problema técnico o tienes dudas, estamos aquí para ayudarte.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+      {/* Botón primario */}
+      <a 
+        href="/cursos" 
+        class="w-full sm:w-auto px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-colors text-center"
+      >
+        Volver a los cursos
+      </a>
+      {/* Botón secundario */}
+      <a 
+        href="/contact" 
+        class="w-full sm:w-auto px-6 py-3 bg-slate-200 text-slate-700 font-semibold rounded-md hover:bg-slate-100 transition-colors text-center"
+      >
+        Contactar soporte
+      </a>
+    </div>
+  </div>
+</Layout>

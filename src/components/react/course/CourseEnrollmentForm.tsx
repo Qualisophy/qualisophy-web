@@ -224,6 +224,15 @@ export const CourseEnrollmentForm = ({
         throw new Error(errorData.message || "Error del servidor");
       }
 
+      const responseData = await response.json();
+
+      // REDIRECCIÓN A STRIPE: Si el backend devuelve la URL de pago, enviamos al usuario allí.
+      if (responseData.url) {
+        window.location.href = responseData.url;
+        return; // Detenemos la ejecución aquí, el usuario ya está viajando a Stripe
+      }
+
+      // Si por algún casual no hay URL (ej. formulario de interesados), mostramos el éxito habitual.
       setFormSuccess(true);
       setFormData({
         ...initialFormDataBase,
@@ -238,7 +247,6 @@ export const CourseEnrollmentForm = ({
       setFormErrors({
         general: error.message || "Hubo un error procesando tu solicitud.",
       });
-    } finally {
       setIsSubmitting(false);
     }
   };
@@ -595,10 +603,10 @@ export const CourseEnrollmentForm = ({
           className="mt-2"
         >
           {isSubmitting
-            ? "Enviando..."
+            ? "Procesando pago..."
             : enrollmentType === "interest"
               ? "Avísame de novedades"
-              : "Inscríbete"}
+              : "Inscríbete y paga ahora"}
         </Button>
 
         <p className="font-bold border-b border-slate-100 pb-1 mb-2 text-slate-800">
