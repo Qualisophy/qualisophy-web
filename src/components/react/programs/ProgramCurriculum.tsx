@@ -70,7 +70,7 @@ export const ProgramCurriculum: React.FC<ProgramCurriculumProps> = ({
       <div className="max-w-7xl w-full flex flex-col gap-16 relative z-10">
         {/* CABECERA (Siempre texto oscuro) */}
         <div className="flex flex-col gap-6 text-center md:text-left">
-          <h2 className="text-3xl font-bold leading-tight md:text-4xl lg:text-5xl font-heading text-secondary">
+          <h2 className="text-3xl font-bold text-center leading-tight md:text-4xl lg:text-5xl font-heading text-secondary">
             {title}
           </h2>
           <p className="text-lg lg:text-xl font-normal font-primary text-gray-600">

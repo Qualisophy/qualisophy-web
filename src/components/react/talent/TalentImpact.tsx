@@ -22,7 +22,7 @@ export const TalentImpact: React.FC<TalentImpactProps> = ({
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl font-heading sm:text-4xl font-bold text-secondary mb-6">
-              El Impacto Transformador
+              Impacto en Equipos Tech
             </h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
               El empleo no es solo un salario. Es la llave para la autonomía y
