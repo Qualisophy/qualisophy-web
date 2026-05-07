@@ -67,7 +67,7 @@ export const InclusionPillars: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10">
           <h2 className="text-secondary text-3xl md:text-4xl font-bold font-heading">
-            Nuestros Pilares de Inclusión
+            Pilares de Inclusión Laboral
           </h2>
         </div>
 

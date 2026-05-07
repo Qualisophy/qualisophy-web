@@ -1,13 +1,16 @@
 import React from "react";
-// Importamos el fondo Mesh
 import { ParticleMeshBackground } from "@/components/react/shared/ParticleMeshBackground";
 
 interface TalentImpactProps {
+  title?: string; // NUEVO: Permite pasar un título personalizado
+  subtitle?: string; // NUEVO: Permite pasar un subtítulo personalizado
   items: string[];
   imageSrc?: string;
 }
 
 export const TalentImpact: React.FC<TalentImpactProps> = ({
+  title = "Impacto en Equipos Tech", // Valor por defecto si no le pasan nada
+  subtitle = "El empleo no es solo un salario. Es la llave para la autonomía y la participación social plena.", // Valor por defecto
   items,
   imageSrc = "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&q=80",
 }) => {
@@ -22,11 +25,10 @@ export const TalentImpact: React.FC<TalentImpactProps> = ({
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl font-heading sm:text-4xl font-bold text-secondary mb-6">
-              El Impacto Transformador
+              {title} {/* Pintamos la variable */}
             </h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              El empleo no es solo un salario. Es la llave para la autonomía y
-              la participación social plena.
+              {subtitle} {/* Pintamos la variable */}
             </p>
 
             <ul className="space-y-6">
@@ -44,7 +46,7 @@ export const TalentImpact: React.FC<TalentImpactProps> = ({
             <div className="absolute -inset-4 bg-secondary/5 rounded-3xl -z-10 transform rotate-3"></div>
             <img
               src={imageSrc}
-              alt="Impacto transformador"
+              alt={title} // Aprovechamos para el alt de la imagen
               className="rounded-3xl shadow-xl w-full object-cover h-[400px]"
             />
           </div>

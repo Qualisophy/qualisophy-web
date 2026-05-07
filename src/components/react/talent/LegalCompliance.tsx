@@ -100,7 +100,7 @@ interface LegalComplianceProps {
 }
 
 export const LegalCompliance: React.FC<LegalComplianceProps> = ({
-  title = "Marco Legal: Cumplimiento Pendiente",
+  title = "Marco Legal y RSC",
   items,
   footerText,
   footerSize = "normal",

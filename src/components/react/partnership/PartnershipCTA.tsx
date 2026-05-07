@@ -1,10 +1,12 @@
 import React from "react";
 
 interface PartnershipCTAProps {
+  title?: string; // NUEVO: Añadido para el SEO
   variant?: "white" | "gray";
 }
 
 export const PartnershipCTA: React.FC<PartnershipCTAProps> = ({
+  title = "¿Listo para multiplicar el impacto de tu organización?", // Valor por defecto
   variant = "white",
 }) => {
   const isGray = variant === "gray";
@@ -27,8 +29,9 @@ export const PartnershipCTA: React.FC<PartnershipCTAProps> = ({
 
       <div className="max-w-4xl w-full flex flex-col items-center gap-8 relative z-10">
         <div className="flex flex-col gap-6">
+          {/* AQUÍ PINTAMOS EL TÍTULO */}
           <h2 className="text-3xl font-bold leading-tight md:text-5xl font-heading text-secondary">
-            ¿Listo para multiplicar el impacto de tu organización?
+            {title}
           </h2>
           <p className="text-lg lg:text-xl font-normal leading-relaxed font-primary max-w-2xl mx-auto text-gray-600">
             Aliémonos para crear futuros. Hablemos de cómo podemos colaborar
@@ -37,7 +40,6 @@ export const PartnershipCTA: React.FC<PartnershipCTAProps> = ({
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto">
-          {/* Botón Principal (Redirige a Contacto con contexto) */}
           <a
             href="/contact?type=partnership"
             className="flex items-center justify-center rounded-xl h-14 px-8 bg-primary text-white text-lg font-bold shadow-lg hover:bg-primary/90 transition-all min-w-[240px]"
@@ -45,7 +47,6 @@ export const PartnershipCTA: React.FC<PartnershipCTAProps> = ({
             Hablemos de una Alianza
           </a>
 
-          {/* Botón Secundario (Agenda) */}
           <a
             href="https://calendar.app.google/CJSbUs95RLyvXCJZ7"
             target="_blank"

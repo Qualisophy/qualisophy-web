@@ -46,7 +46,7 @@ export const ValuesSection: React.FC = () => {
           {/* 1. Cabecera */}
           <div className="text-center mb-16 md:mb-20">
             <h2 className="text-secondary text-3xl md:text-5xl font-bold mb-6 font-heading">
-              Nuestra Filosofía
+              Filosofía de Formación Tech
             </h2>
             <div className="w-20 h-1.5 bg-primary mx-auto rounded-full mb-8"></div>
             <p className="text-gray-600 max-w-3xl mx-auto text-lg md:text-xl font-primary leading-relaxed">
@@ -95,7 +95,7 @@ export const ValuesSection: React.FC = () => {
           <div className="mt-20 md:mt-28 bg-white text-secondary rounded-[2rem] p-8 md:p-12 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 relative overflow-hidden border border-gray-100 shadow-sm transition-shadow hover:shadow-lg">
             <div className="relative z-10 md:w-2/3 text-center md:text-left">
               <h3 className="text-2xl md:text-3xl font-bold font-heading mb-4 lg:mb-6">
-                El Compromiso Qualisophy
+                Compromiso con el Talento Diverso
               </h3>
               {/* Se ha cambiado text-gray-300 por text-gray-600 */}
               <p className="text-gray-600 text-lg md:text-xl leading-relaxed font-primary">

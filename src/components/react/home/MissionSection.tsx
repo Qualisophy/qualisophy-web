@@ -20,7 +20,7 @@ export const MissionSection: React.FC<MissionSectionProps> = ({
               </div>
 
               <h2 className="text-secondary text-3xl md:text-4xl lg:text-5xl font-bold leading-tight font-heading">
-                Nuestra Misión
+                Misión: Diversidad en el Sector IT
               </h2>
 
               <p className="text-gray-600 text-lg lg:text-xl leading-relaxed font-primary">

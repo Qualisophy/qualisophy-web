@@ -14,7 +14,7 @@ interface TalentBarriersProps {
 }
 
 export const TalentBarriers: React.FC<TalentBarriersProps> = ({
-  title = "Barreras Persistentes",
+  title = "Barreras en el Sector IT",
   description = "Identificamos y derribamos los obstáculos estructurales que impiden el acceso al empleo.",
   barriers,
   layout = "grid3", // Por defecto a 3 columnas para no romper otras páginas

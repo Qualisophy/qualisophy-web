@@ -38,7 +38,7 @@ const defaultPillars: SocialPillar[] = [
 ];
 
 export const SocialImpactQuote: React.FC<SocialImpactQuoteProps> = ({
-  title = "Hacia una Inclusión Laboral Real",
+  title = "Hacia la Inclusión Real",
   subtitle = "Construimos un futuro donde el talento no tiene etiquetas.",
   pillars = defaultPillars,
   quoteText = "“La inclusión laboral de personas con autismo no es solo una obligación legal, es una ",

@@ -78,7 +78,7 @@ const legalItems = [
 ];
 
 const strategySkills = {
-  title: "Estrategia 1: Reciclaje y Habilidades",
+  title: "Estrategia 1: Reciclaje Profesional IT", // <-- H2 ACTUALIZADO AQUÍ
   description: [
     "La tecnología es el gran igualador. Ofrecemos capacitación intensiva en herramientas digitales básicas y competencias blandas.",
     "Combinamos esto con Formación Dual para que el aprendizaje genere ingresos desde el primer momento."
@@ -149,7 +149,6 @@ const ctaButtons = [
   fullWidth={true}
 >
   
-  {/* SECCIÓN 0: HERO (Con ID de scroll) */}
   <ProgramHero 
     client:load
     title="Transformando la Vulnerabilidad en Autonomía:" 
@@ -160,41 +159,40 @@ const ctaButtons = [
     scrollToId="itinerario"
   />
 
-  {/* SECCIÓN 1: REALIDAD */}
   <TalentReality 
     client:load 
-    title="Una Realidad Preocupante" 
+    title="Desafíos de Inserción Actuales" 
     subtitle="Contexto Social"
     description="La exclusión social no es solo un problema económico, es una pérdida de capital humano para toda la sociedad."
     stats={realityStats}
   />
 
-  {/* SECCIÓN 2: BARRERAS */}
-  <TalentBarriers client:load barriers={barrierList} />
+  <TalentBarriers 
+    client:load 
+    title="Barreras de Alta Cualificación"
+    barriers={barrierList} 
+  />
 
-  {/* SECCIÓN 3: IMPACTO */}
   <TalentImpact 
     client:load 
+    title="Impacto Social Tecnológico"
     items={impactList} 
     imageSrc="https://images.unsplash.com/photo-1455849318743-b2233052fcff?auto=format&fit=crop&q=80"
   />
 
-  {/* SECCIÓN 4: MARCO LEGAL */}
   <LegalCompliance 
     client:load 
-    title="Marco Legal: El Valor de la Inclusión"
+    title="El Valor de la Inclusión RSC"
     items={legalItems}
     footerText="Las empresas socialmente responsables no solo mejoran su imagen, sino que se benefician de importantes incentivos fiscales."
   />
 
-  {/* SECCIÓN 5: ESTRATEGIA 1 */}
   <ProgramMethodology 
     client:visible
     {...strategySkills}
     variant="white"
   />
 
-  {/* SECCIÓN 6: ESTRATEGIA 2 */}
   <ProgramFeatures 
     client:visible
     title="Estrategia 2: Facilitar Acceso"
@@ -204,21 +202,21 @@ const ctaButtons = [
     layout="grid4"
   />
 
-  {/* SECCIÓN 7: ITINERARIOS (Destino del scroll) */}
   <div id="itinerario" class="scroll-mt-32">
     <ProgramCurriculum 
       client:visible
-      title="Itinerarios Personalizados: Clave del Éxito"
+      title="Itinerarios hacia la Autonomía"
       subtitle="Un camino estructurado para recuperar la autonomía y dignidad profesional."
       steps={itinerarySteps}
       variant="white"
     />
   </div>
 
-  {/* SECCIÓN 8: CITA FINAL */}
-  <SocialImpactQuote client:load />
+  <SocialImpactQuote 
+    client:load 
+    title="Resultados de Inserción Real"
+  />
 
-  {/* SECCIÓN 9: CTA */}
   <div id="program-cta">
     <ProgramCTA 
       client:visible 
