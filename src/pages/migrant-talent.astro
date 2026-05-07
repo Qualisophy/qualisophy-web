@@ -78,7 +78,7 @@ const legalItems = [
 ];
 
 const strategyTraining = {
-  title: "Estrategia 1: Formación Puente y Dual",
+  title: "Estrategia 1: Formación Puente", // <-- H2 ACTUALIZADO AQUÍ
   description: [
     "Diseñamos 'puentes formativos' que adaptan el conocimiento internacional a la normativa y herramientas locales.",
     "El objetivo es validar técnicamente lo que el profesional ya sabe, eliminando la barrera de la 'primera experiencia local'."
@@ -149,7 +149,6 @@ const ctaButtons = [
   fullWidth={true}
 >
   
-  {/* SECCIÓN 0: HERO (Con ID de scroll) */}
   <ProgramHero 
     client:load
     title="Potenciando Habilidades Globales:" 
@@ -160,69 +159,68 @@ const ctaButtons = [
     scrollToId="itinerario"
   />
 
-  {/* SECCIÓN 1: REALIDAD */}
   <TalentReality 
     client:load 
-    title="El Talento Oculto" 
+    title="Talento Internacional IT" 
     subtitle="Métricas de Impacto"
     description="Miles de profesionales altamente cualificados no pueden aportar su valor debido a barreras administrativas y culturales."
     stats={realityStats}
   />
 
-  {/* SECCIÓN 2: BARRERAS */}
-  <TalentBarriers client:load barriers={barrierList} />
+  <TalentBarriers 
+    client:load 
+    title="Barreras de Contratación" 
+    barriers={barrierList} 
+  />
 
-  {/* SECCIÓN 3: IMPACTO */}
   <TalentImpact 
     client:load 
+    title="Impacto de la Diversidad Cultural"
     items={impactList} 
     imageSrc="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80"
   />
 
-  {/* SECCIÓN 4: MARCO LEGAL */}
   <LegalCompliance 
     client:load 
-    title="Marco Legal: Cumplimiento Pendiente"
+    title="Marco Legal de Extranjería"
     items={legalItems}
     footerText="Aunque no existe cuota obligatoria, la diversidad cultural es un pilar clave en las estrategias ESG y puntúa en licitaciones públicas."
   />
 
-  {/* SECCIÓN 5: ESTRATEGIA 1 */}
   <ProgramMethodology 
     client:visible
     {...strategyTraining}
     variant="white"
   />
 
-  {/* SECCIÓN 6: ESTRATEGIA 2 */}
   <ProgramFeatures 
     client:visible
-    title="Estrategia 2: Facilitar Acceso"
+    title="Estrategia 2: Acompañamiento Laboral"
     subtitle="Rompiendo el techo de cristal administrativo y cultural."
     features={strategyAccess}
     variant="dark"
     layout="grid4"
   />
 
-  {/* SECCIÓN 7: ITINERARIOS (Destino del scroll) */}
   <div id="itinerario" class="scroll-mt-32">
     <ProgramCurriculum 
       client:visible
-      title="Itinerarios Personalizados: Clave del Éxito"
+      title="Capacitación Digital y Lenguaje"
       subtitle="Del 'Brain Waste' al 'Brain Gain': un proceso estructurado de valorización."
       steps={itinerarySteps}
       variant="white"
     />
   </div>
 
-  {/* SECCIÓN 8: CITA FINAL */}
-  <SocialImpactQuote client:load />
+  <SocialImpactQuote 
+    client:load 
+    title="Mercado Tecnológico Global"
+  />
 
-  {/* SECCIÓN 9: CTA */}
   <div id="program-cta">
     <ProgramCTA 
       client:visible 
-      title="Desbloquea el Potencial Global"
+      title="Suma Talento Migrante"
       description="Convierte la diversidad en el motor de innovación de tu empresa."
       buttons={ctaButtons}
       variant="white"
