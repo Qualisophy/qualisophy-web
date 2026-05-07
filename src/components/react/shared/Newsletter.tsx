@@ -51,7 +51,7 @@ export const Newsletter: React.FC<NewsletterProps> = ({ variant = "gray" }) => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="md:w-1/2 text-center md:text-left">
             <h3 className="text-2xl md:text-3xl font-bold font-heading mb-2 text-secondary">
-              Mantente actualizado
+              Novedades y Actualidad
             </h3>
             <p className="text-slate-600 font-primary text-lg">
               Recibe noticias sobre tecnología, inclusión y nuevas convocatorias
