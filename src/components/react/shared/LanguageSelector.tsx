@@ -1,28 +1,42 @@
-import React, { useState, useEffect } from "react";
-import {
-  languages,
-  getCurrentLanguage,
-  setLanguage,
-  type Language,
-} from "@/i18n/ui";
+import React from "react";
+import { languages, type Language } from "@/i18n/ui";
 
-export const LanguageSelector: React.FC = () => {
-  const [currentLang, setCurrentLang] = useState<Language>("es");
+// 1. Le decimos a TypeScript que vamos a recibir currentLang desde el Header
+interface LanguageSelectorProps {
+  currentLang: string;
+}
 
-  useEffect(() => {
-    setCurrentLang(getCurrentLanguage());
-  }, []);
-
+export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
+  currentLang,
+}) => {
   const handleLanguageChange = (lang: Language) => {
-    setLanguage(lang);
-    setCurrentLang(lang);
-    window.location.reload();
+    // Si elige el idioma en el que ya está, no hacemos nada
+    if (lang === currentLang) return;
+
+    const currentPath = window.location.pathname;
+    const pathParts = currentPath.split("/");
+
+    // 2. Lógica SEO para cambiar la URL física (/es/ruta -> /fr/ruta)
+    if (
+      pathParts.length > 1 &&
+      (pathParts[1] === "es" || pathParts[1] === "fr")
+    ) {
+      pathParts[1] = lang;
+      window.location.href = pathParts.join("/") + window.location.search;
+    } else {
+      // Si está en la raíz sin idioma, lo mandamos al nuevo idioma
+      window.location.href = `/${lang}${currentPath === "/" ? "" : currentPath}`;
+    }
   };
+
+  // Asegurarnos de que currentLang es un código válido para el diccionario 'languages'
+  const currentLangCode = (
+    currentLang in languages ? currentLang : "es"
+  ) as Language;
 
   return (
     <div className="relative group h-full flex items-center">
       {/* Current Language Button */}
-      {/* AÑADIDO: 'justify-center' para centrar contenido, 'w-full' para ocupar espacio */}
       <button
         className="flex items-center justify-center space-x-1 transition-colors hover:text-primary focus:outline-none text-secondary h-full px-2 w-full"
         aria-label="Select language"
@@ -43,7 +57,7 @@ export const LanguageSelector: React.FC = () => {
         </svg>
 
         <span className="text-[15px] font-medium">
-          {languages[currentLang]}
+          {languages[currentLangCode]}
         </span>
 
         {/* Flecha unificada */}
@@ -52,21 +66,13 @@ export const LanguageSelector: React.FC = () => {
         </span>
       </button>
 
-      {/* Dropdown Menu Unificado
-          - w-full: Ocupa el 100% del ancho del contenedor padre.
-          - -mt-[1px]: Pegado al header.
-          - p-0: Sin padding.
-          - min-w-[120px]: Ancho mínimo de seguridad para que el texto no se rompa.
-      */}
+      {/* Dropdown Menu Unificado */}
       <div className="absolute top-full right-0 w-full min-w-[120px] bg-white rounded-b-xl rounded-t-none shadow-xl border border-gray-100 border-t-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-0 p-0 z-50 -mt-[1px] overflow-hidden">
         <div className="flex flex-col">
           {Object.entries(languages).map(([code, name]) => (
             <button
               key={code}
               onClick={() => handleLanguageChange(code as Language)}
-              // Items:
-              // - Activo: Fondo azul suave, fuente negrita, borde transparente (SIN LÍNEA).
-              // - Hover: Fondo gris, borde primario (LÍNEA AZUL VISIBLE).
               className={`w-full text-left px-5 py-3 transition-all duration-200 text-sm border-l-4 ${
                 currentLang === code
                   ? "text-primary bg-blue-50 font-bold border-transparent"

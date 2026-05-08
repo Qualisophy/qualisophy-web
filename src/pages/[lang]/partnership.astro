@@ -1,0 +1,67 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+import { ProgramMethodology } from "@/components/react/programs/ProgramMethodology";
+import { ProgramFeatures } from "@/components/react/programs/ProgramFeatures";
+import { ProgramCurriculum } from "@/components/react/programs/ProgramCurriculum";
+import { PartnershipHero } from "@/components/react/partnership/PartnershipHero";
+import { PartnershipCTA } from "@/components/react/partnership/PartnershipCTA";
+
+// 1. IMPORTAMOS LOS DATOS DE AMBOS IDIOMAS
+import { es } from "@/data/pages/partnership/es";
+import { fr } from "@/data/pages/partnership/fr";
+
+// 2. LE DECIMOS A ASTRO QUÉ RUTAS DEBE CREAR (/es/partnership y /fr/partnership)
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'fr' } }
+  ];
+}
+
+// 3. CAPTURAMOS EL IDIOMA DE LA URL
+const { lang } = Astro.params;
+
+// 4. ELEGIMOS LOS DATOS SEGÚN EL IDIOMA
+const content = lang === 'fr' ? fr : es;
+---
+
+<Layout 
+  title={content.meta.title}
+  description={content.meta.description}
+  fullWidth={true}
+>
+  
+  <PartnershipHero client:load />
+
+  <ProgramMethodology 
+    client:visible
+    {...content.valuePropData}
+    reverse={false}
+    variant="white"
+  />
+
+  <ProgramFeatures 
+    client:visible
+    title={content.collaborationModelsTitle}
+    subtitle={content.collaborationModelsSubtitle}
+    features={content.collaborationModels}
+    variant="dark" 
+    layout="pillars" 
+  />
+
+  <ProgramCurriculum 
+    client:visible
+    title={content.roadmapTitle}
+    subtitle={content.roadmapSubtitle}
+    steps={content.partnershipProcess}
+    variant="white"
+  />
+
+  <PartnershipCTA 
+    client:visible 
+    title={content.ctaTitle}
+    variant="gray"
+  />
+
+</Layout>

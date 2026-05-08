@@ -6,21 +6,31 @@ import { LanguageSelector } from "@/components/react/shared/LanguageSelector";
 
 const currentPath = Astro.url.pathname;
 
+// 1. Detectamos el idioma actual desde la URL
+const pathParts = currentPath.split('/');
+const currentLang = (pathParts[1] === 'es' || pathParts[1] === 'fr') ? pathParts[1] : 'es';
+
+// 2. Función helper para generar las URLs con el idioma correcto
+const getUrl = (path: string) => `/${currentLang}${path === '/' ? '' : path}`;
+
+// 3. Limpiamos la ruta actual quitando el idioma para saber qué menú marcar como activo
+const pathWithoutLang = currentPath.replace(`/${currentLang}`, '') || '/';
+
 // Lógica para marcar activo el menú
-const isHome = currentPath === "/";
-const isContact = currentPath === "/contact";
-const isPartnership = currentPath === "/partnership";
+const isHome = pathWithoutLang === "/";
+const isContact = pathWithoutLang === "/contact";
+const isPartnership = pathWithoutLang === "/partnership";
 
 // Grupo Programas
-const isNeuro = currentPath === "/neurodivergence";
-const isRural = currentPath === "/rural-area";
-const isMigrant = currentPath === "/migrant-talent";
-const isSocial = currentPath === "/social-impact";
+const isNeuro = pathWithoutLang === "/neurodivergence";
+const isRural = pathWithoutLang === "/rural-area";
+const isMigrant = pathWithoutLang === "/migrant-talent";
+const isSocial = pathWithoutLang === "/social-impact";
 const isProgramsGroup = isNeuro || isMigrant || isSocial || isRural;
 
 // Grupo Cursos
-const isReskilling = currentPath === "/reskilling";
-const isCorporate = currentPath.includes("/corporate-training");
+const isReskilling = pathWithoutLang === "/reskilling";
+const isCorporate = pathWithoutLang.includes("/corporate-training");
 const isCoursesGroup = isReskilling || isCorporate;
 
 // --- CLASES DROPDOWN ---
@@ -37,7 +47,7 @@ const navItemInactiveClass = "text-secondary hover:text-primary hover:bg-gray-50
 <header class="sticky top-0 z-50 bg-white text-secondary shadow-sm border-b border-gray-100 transition-all duration-300 h-20">
   <nav class="container mx-auto px-6 flex items-center h-full relative lg:justify-between">
 
-    <a href="/" class="block shrink-0 flex items-center mx-auto lg:mx-0 outline-none focus:outline-none focus:ring-0">
+    <a href={getUrl("/")} class="block shrink-0 flex items-center mx-auto lg:mx-0 outline-none focus:outline-none focus:ring-0">
       <Image
         loading="eager"
         src={logoText}
@@ -51,7 +61,7 @@ const navItemInactiveClass = "text-secondary hover:text-primary hover:bg-gray-50
 
     <ul class="hidden lg:flex items-center h-full gap-1">
       <li class="h-full">
-        <a href="/" class={`${navItemBaseClass} outline-none focus:outline-none focus:ring-0 ${isHome ? navItemActiveClass : navItemInactiveClass}`} data-i18n="nav.home">Inicio</a>
+        <a href={getUrl("/")} class={`${navItemBaseClass} outline-none focus:outline-none focus:ring-0 ${isHome ? navItemActiveClass : navItemInactiveClass}`} data-i18n="nav.home">Inicio</a>
       </li>
 
       <li class="relative group h-full">
@@ -63,40 +73,40 @@ const navItemInactiveClass = "text-secondary hover:text-primary hover:bg-gray-50
         </div>
         <div class="absolute top-full left-0 min-w-full w-max bg-white rounded-b-xl rounded-t-none shadow-xl border border-gray-100 border-t-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-0 p-0 z-50 -mt-[1px] overflow-hidden">
           <div class="flex flex-col">
-            <a href="/neurodivergence" class={`${dropdownItemClass} outline-none focus:outline-none ${isNeuro ? dropdownActiveItemClass : dropdownInactiveItemClass}`}>Neurodivergencia</a>
-            <a href="/rural-area" class={`${dropdownItemClass} outline-none focus:outline-none ${isRural ? dropdownActiveItemClass : dropdownInactiveItemClass}`}>Entorno Rural</a>
-            <a href="/migrant-talent" class={`${dropdownItemClass} outline-none focus:outline-none ${isMigrant ? dropdownActiveItemClass : dropdownInactiveItemClass}`}>Talento Migrante</a>
-            <a href="/social-impact" class={`${dropdownItemClass} outline-none focus:outline-none ${isSocial ? dropdownActiveItemClass : dropdownInactiveItemClass}`}>Riesgo de Exclusión</a>
+            <a href={getUrl("/neurodivergence")} class={`${dropdownItemClass} outline-none focus:outline-none ${isNeuro ? dropdownActiveItemClass : dropdownInactiveItemClass}`}>Neurodivergencia</a>
+            <a href={getUrl("/rural-area")} class={`${dropdownItemClass} outline-none focus:outline-none ${isRural ? dropdownActiveItemClass : dropdownInactiveItemClass}`}>Entorno Rural</a>
+            <a href={getUrl("/migrant-talent")} class={`${dropdownItemClass} outline-none focus:outline-none ${isMigrant ? dropdownActiveItemClass : dropdownInactiveItemClass}`}>Talento Migrante</a>
+            <a href={getUrl("/social-impact")} class={`${dropdownItemClass} outline-none focus:outline-none ${isSocial ? dropdownActiveItemClass : dropdownInactiveItemClass}`}>Riesgo de Exclusión</a>
           </div>
         </div>
       </li>
 
       <li class="relative group h-full">
-         <div class="h-full">
+          <div class="h-full">
             <button class={`outline-none focus:outline-none focus:ring-0 border-none cursor-pointer justify-center ${navItemBaseClass} ${isCoursesGroup ? navItemActiveClass : navItemInactiveClass}`}>
             <span class="mr-1">Reconversión Laboral</span>
             <span class="transform transition-transform duration-300 group-hover:rotate-180 text-[10px]">▼</span>
             </button>
-         </div>
+          </div>
         <div class="absolute top-full left-0 min-w-full w-max bg-white rounded-b-xl rounded-t-none shadow-xl border border-gray-100 border-t-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-0 p-0 z-50 -mt-[1px] overflow-hidden">
           <div class="flex flex-col">
-            <a href="/reskilling" class={`${dropdownItemClass} outline-none focus:outline-none ${isReskilling ? dropdownActiveItemClass : dropdownInactiveItemClass}`}>Nuestras Formaciones</a>
-            <a href="/corporate-training" class={`hidden ${dropdownItemClass} outline-none focus:outline-none ${isCorporate ? dropdownActiveItemClass : dropdownInactiveItemClass}`}>Formación Empresas</a>
+            <a href={getUrl("/reskilling")} class={`${dropdownItemClass} outline-none focus:outline-none ${isReskilling ? dropdownActiveItemClass : dropdownInactiveItemClass}`}>Nuestras Formaciones</a>
+            <a href={getUrl("/corporate-training")} class={`hidden ${dropdownItemClass} outline-none focus:outline-none ${isCorporate ? dropdownActiveItemClass : dropdownInactiveItemClass}`}>Formación Empresas</a>
           </div>
         </div>
       </li>
 
       <li class="h-full">
-        <a href="/partnership" class={`${navItemBaseClass} outline-none focus:outline-none focus:ring-0 ${isPartnership ? navItemActiveClass : navItemInactiveClass}`} data-i18n="nav.partnership">Partnership</a>
+        <a href={getUrl("/partnership")} class={`${navItemBaseClass} outline-none focus:outline-none focus:ring-0 ${isPartnership ? navItemActiveClass : navItemInactiveClass}`} data-i18n="nav.partnership">Partnership</a>
       </li>
 
       <li class="h-full">
-        <a href="/contact" class={`${navItemBaseClass} outline-none focus:outline-none focus:ring-0 ${isContact ? navItemActiveClass : navItemInactiveClass}`} data-i18n="nav.contact">Contacto</a>
+        <a href={getUrl("/contact")} class={`${navItemBaseClass} outline-none focus:outline-none focus:ring-0 ${isContact ? navItemActiveClass : navItemInactiveClass}`} data-i18n="nav.contact">Contacto</a>
       </li>
 
-      <li class="h-full hidden flex items-center ml-4 pl-4 border-l border-gray-200">
+      <li class="h-full  flex items-center ml-4 pl-4 border-l border-gray-200">
         <div class="text-secondary hover:text-primary font-medium h-full">
-            <LanguageSelector client:load />
+            <LanguageSelector client:load currentLang={currentLang} />
         </div>
       </li>
     </ul>
@@ -122,27 +132,27 @@ const navItemInactiveClass = "text-secondary hover:text-primary hover:bg-gray-50
     </div>
 
     <div class="p-6 flex flex-col space-y-1 pb-32">
-        <a href="/" class={`block py-3 px-4 rounded-xl hover:bg-gray-50 outline-none focus:outline-none ${isHome ? "text-primary font-bold bg-blue-50" : "text-secondary font-medium"}`}>Inicio</a>
+        <a href={getUrl("/")} class={`block py-3 px-4 rounded-xl hover:bg-gray-50 outline-none focus:outline-none ${isHome ? "text-primary font-bold bg-blue-50" : "text-secondary font-medium"}`}>Inicio</a>
 
         <div class="pt-6 pb-2 px-4 text-xs font-bold text-gray-400 uppercase tracking-wider">Programas Formativos</div>
-        <a href="/neurodivergence" class={`block py-3 px-4 rounded-xl pl-6 border-l-2 hover:bg-gray-50 outline-none focus:outline-none ${isNeuro ? "text-primary font-bold bg-blue-50 border-primary" : "text-gray-600 hover:text-primary border-transparent hover:border-primary/20"}`}>Neurodivergencia</a>
-        <a href="/rural-area" class={`block py-3 px-4 rounded-xl pl-6 border-l-2 hover:bg-gray-50 outline-none focus:outline-none ${isRural ? "text-primary font-bold bg-blue-50 border-primary" : "text-gray-600 hover:text-primary border-transparent hover:border-primary/20"}`}>Entorno Rural</a>
-        <a href="/migrant-talent" class={`block py-3 px-4 rounded-xl pl-6 border-l-2 hover:bg-gray-50 outline-none focus:outline-none ${isMigrant ? "text-primary font-bold bg-blue-50 border-primary" : "text-gray-600 hover:text-primary border-transparent hover:border-primary/20"}`}>Talento Migrante</a>
-        <a href="/social-impact" class={`block py-3 px-4 rounded-xl pl-6 border-l-2 hover:bg-gray-50 outline-none focus:outline-none ${isSocial ? "text-primary font-bold bg-blue-50 border-primary" : "text-gray-600 hover:text-primary border-transparent hover:border-primary/20"}`}>Riesgo de Exclusión</a>
+        <a href={getUrl("/neurodivergence")} class={`block py-3 px-4 rounded-xl pl-6 border-l-2 hover:bg-gray-50 outline-none focus:outline-none ${isNeuro ? "text-primary font-bold bg-blue-50 border-primary" : "text-gray-600 hover:text-primary border-transparent hover:border-primary/20"}`}>Neurodivergencia</a>
+        <a href={getUrl("/rural-area")} class={`block py-3 px-4 rounded-xl pl-6 border-l-2 hover:bg-gray-50 outline-none focus:outline-none ${isRural ? "text-primary font-bold bg-blue-50 border-primary" : "text-gray-600 hover:text-primary border-transparent hover:border-primary/20"}`}>Entorno Rural</a>
+        <a href={getUrl("/migrant-talent")} class={`block py-3 px-4 rounded-xl pl-6 border-l-2 hover:bg-gray-50 outline-none focus:outline-none ${isMigrant ? "text-primary font-bold bg-blue-50 border-primary" : "text-gray-600 hover:text-primary border-transparent hover:border-primary/20"}`}>Talento Migrante</a>
+        <a href={getUrl("/social-impact")} class={`block py-3 px-4 rounded-xl pl-6 border-l-2 hover:bg-gray-50 outline-none focus:outline-none ${isSocial ? "text-primary font-bold bg-blue-50 border-primary" : "text-gray-600 hover:text-primary border-transparent hover:border-primary/20"}`}>Riesgo de Exclusión</a>
 
         <div class="pt-6 pb-2 px-4 text-xs font-bold text-gray-400 uppercase tracking-wider">Nuestras Formaciones</div>
-        <a href="/reskilling" class={`block py-3 px-4 rounded-xl pl-6 border-l-2 hover:bg-gray-50 outline-none focus:outline-none ${isReskilling ? "text-primary font-bold bg-blue-50 border-primary" : "text-gray-600 hover:text-primary border-transparent hover:border-primary/20"}`}>Reconversión Laboral</a>
-        <a href="/corporate-training" class={`block hidden py-3 px-4 rounded-xl pl-6 border-l-2 hover:bg-gray-50 outline-none focus:outline-none ${isCorporate ? "text-primary font-bold bg-blue-50 border-primary" : "text-gray-600 hover:text-primary border-transparent hover:border-primary/20"}`}>Formación Empresas</a>
+        <a href={getUrl("/reskilling")} class={`block py-3 px-4 rounded-xl pl-6 border-l-2 hover:bg-gray-50 outline-none focus:outline-none ${isReskilling ? "text-primary font-bold bg-blue-50 border-primary" : "text-gray-600 hover:text-primary border-transparent hover:border-primary/20"}`}>Reconversión Laboral</a>
+        <a href={getUrl("/corporate-training")} class={`block hidden py-3 px-4 rounded-xl pl-6 border-l-2 hover:bg-gray-50 outline-none focus:outline-none ${isCorporate ? "text-primary font-bold bg-blue-50 border-primary" : "text-gray-600 hover:text-primary border-transparent hover:border-primary/20"}`}>Formación Empresas</a>
 
         <div class="my-4 border-t border-gray-100"></div>
 
-        <a href="/partnership" class={`block py-3 px-4 rounded-xl hover:bg-gray-50 outline-none focus:outline-none ${isPartnership ? "text-primary font-bold bg-blue-50" : "text-secondary font-medium"}`}>Partnership</a>
-        <a href="/contact" class={`block py-3 px-4 rounded-xl hover:bg-gray-50 outline-none focus:outline-none ${isContact ? "text-primary font-bold bg-blue-50" : "text-secondary font-medium"}`}>Contacto</a>
+        <a href={getUrl("/partnership")} class={`block py-3 px-4 rounded-xl hover:bg-gray-50 outline-none focus:outline-none ${isPartnership ? "text-primary font-bold bg-blue-50" : "text-secondary font-medium"}`}>Partnership</a>
+        <a href={getUrl("/contact")} class={`block py-3 px-4 rounded-xl hover:bg-gray-50 outline-none focus:outline-none ${isContact ? "text-primary font-bold bg-blue-50" : "text-secondary font-medium"}`}>Contacto</a>
 
-        <div class="hidden pt-6 mt-2 px-4">
-             <div class="text-secondary font-medium p-2 bg-gray-50 rounded-lg inline-block w-full text-center">
-                <LanguageSelector client:load />
-             </div>
+        <div class=" pt-6 mt-2 px-4">
+            <div class="text-secondary font-medium p-2 bg-gray-50 rounded-lg inline-block w-full text-center">
+                <LanguageSelector client:load currentLang={currentLang} />
+            </div>
         </div>
     </div>
   </aside>

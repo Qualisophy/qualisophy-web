@@ -1,0 +1,30 @@
+---
+// src/pages/[lang]/index.astro
+import Layout from "@/layouts/Layout.astro";
+
+// Le decimos a Astro qué idiomas tiene que generar
+export function getStaticPaths() {
+  return [ { params: { lang: 'es' } }, { params: { lang: 'fr' } } ];
+}
+const { lang } = Astro.params;
+
+// Componentes React
+import { HeroSection } from "@/components/react/home/HeroSection";
+import { AboutSection } from "@/components/react/home/AboutSection";
+import { MissionSection } from "@/components/react/home/MissionSection";
+import { InclusionPillars } from "@/components/react/home/InclusionPillars";
+import { ValuesSection } from "@/components/react/home/ValuesSection";
+import { Newsletter } from "@/components/react/shared/Newsletter";
+---
+
+<Layout 
+  title="Qualisophy - Inclusión Tecnológica" 
+  fullWidth={true} 
+>
+  <HeroSection client:load />
+  <AboutSection />
+  <MissionSection />
+  <ValuesSection />
+  <InclusionPillars client:visible />
+  <Newsletter client:visible variant="white" />
+</Layout>

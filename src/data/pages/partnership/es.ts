@@ -1,0 +1,74 @@
+export const es = {
+  meta: {
+    title: "Alianzas Corporativas (Partnership B2B) - Qualisophy",
+    description:
+      "Colabora con Qualisophy. Soluciones de talento diverso e impacto social para empresas tecnológicas líderes.",
+  },
+  valuePropData: {
+    title: "Hiring Partners IT",
+    description: [
+      "Las empresas líderes ya no buscan solo cubrir vacantes; buscan talento que aporte diversidad cognitiva y resiliencia. Qualisophy actúa como tu socio estratégico, no como un proveedor transaccional.",
+      "Te conectamos con perfiles altamente motivados y formados en las tecnologías que realmente necesitas, reduciendo drásticamente la rotación y mejorando el clima laboral.",
+    ],
+    checks: [
+      "Reducción del Coste de Rotación (Churn Rate)",
+      "Impacto Directo en Objetivos ESG y RSC",
+      "Talento con Soft Skills de Alta Resiliencia",
+    ],
+    imageSrc:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+  },
+  collaborationModelsTitle: "Modelos de Colaboración RSC",
+  collaborationModelsSubtitle:
+    "Adapta la alianza a tus necesidades de contratación, formación y estrategia de RSC.",
+  collaborationModels: [
+    {
+      icon: "person_search",
+      title: "Hiring Partner",
+      description:
+        "Acceso prioritario a nuestra bolsa de talento validado. Incorpora perfiles Junior/Mid con acompañamiento inicial incluido para garantizar el 'fit' cultural.",
+    },
+    {
+      icon: "corporate_fare",
+      title: "Upskilling Ad-hoc",
+      description:
+        "Diseñamos 'Bootcamps' a medida para tu stack tecnológico. Formamos a tus futuros empleados o reciclamos a tu plantilla actual según tus necesidades.",
+    },
+    {
+      icon: "volunteer_activism",
+      title: "Voluntariado Corporativo",
+      description:
+        "Involucra a tus equipos técnicos como mentores. Una potente herramienta de fidelización y 'team building' que conecta a tus seniors con nuestro propósito.",
+    },
+    {
+      icon: "domain",
+      title: "Sponsoring & Becas",
+      description:
+        "Financia becas para colectivos vulnerables o apadrina una promoción completa, posicionando tu marca empleadora como líder en impacto social.",
+    },
+  ],
+  roadmapTitle: "Roadmap de la Alianza Tech",
+  roadmapSubtitle:
+    "Un proceso estructurado, sencillo y eficaz para garantizar el éxito de la colaboración.",
+  partnershipProcess: [
+    {
+      stepNumber: 1,
+      title: "Diagnóstico y Cultura",
+      description:
+        "Nos reunimos para entender no solo tus vacantes técnicas, sino tu cultura de equipo y objetivos de negocio. Analizamos dónde el talento diverso aporta más valor.",
+    },
+    {
+      stepNumber: 2,
+      title: "Diseño de la Propuesta",
+      description:
+        "Definimos el modelo de colaboración ideal (Hiring directo, Formación o Voluntariado) y establecemos los KPIs de éxito y el cronograma de incorporación.",
+    },
+    {
+      stepNumber: 3,
+      title: "Selección y Acompañamiento",
+      description:
+        "Presentamos candidatos finalistas. Durante los primeros 3 meses, nuestros psicólogos acompañan tanto al talento como a tus managers para asegurar la integración.",
+    },
+  ],
+  ctaTitle: "Multiplica tu Impacto Social",
+};
