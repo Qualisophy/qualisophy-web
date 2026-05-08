@@ -1,0 +1,122 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+// Importación de Componentes
+import { ProgramHero } from "@/components/react/programs/ProgramHero";
+import { ProgramMethodology } from "@/components/react/programs/ProgramMethodology";
+import { ProgramFeatures } from "@/components/react/programs/ProgramFeatures";
+import { ProgramCurriculum } from "@/components/react/programs/ProgramCurriculum";
+import { ProgramCTA } from "@/components/react/programs/ProgramCTA";
+import { TalentReality } from "@/components/react/talent/TalentReality";
+import { TalentBarriers } from "@/components/react/talent/TalentBarriers";
+import { TalentImpact } from "@/components/react/talent/TalentImpact";
+import { LegalCompliance } from "@/components/react/talent/LegalCompliance";
+import { SocialImpactQuote } from "@/components/react/talent/SocialImpactQuote";
+
+// 1. IMPORTAMOS DATOS
+import { es } from "@/data/pages/migrant-talent/es";
+import { fr } from "@/data/pages/migrant-talent/fr";
+
+// 2. RUTAS DINÁMICAS
+export function getStaticPaths() {
+  return [ { params: { lang: 'es' } }, { params: { lang: 'fr' } } ];
+}
+
+// 3. IDIOMA ACTUAL Y DATOS
+const { lang } = Astro.params;
+const content = lang === 'fr' ? fr : es;
+
+const ctaButtons = [
+  { label: content.cta.btn1, href: "/contact?type=company", variant: "solid" as const },
+  { label: content.cta.btn2, href: "/contact?type=candidate", variant: "outline" as const }
+];
+---
+
+<Layout 
+  title={content.meta.title} 
+  description={content.meta.description} 
+  fullWidth={true}
+>
+  
+  <ProgramHero 
+    client:load
+    title={content.hero.title} 
+    highlight={content.hero.highlight}
+    subtitle={content.hero.subtitle}
+    backgroundImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+    ctaText={content.hero.ctaText}
+    scrollToId="itinerario"
+  />
+
+  <TalentReality 
+    client:load 
+    title={content.reality.title} 
+    subtitle={content.reality.subtitle}
+    description={content.reality.description}
+    stats={content.reality.stats}
+  />
+
+  <TalentBarriers 
+    client:load 
+    title={content.barriers.title} 
+    barriers={content.barriers.items} 
+  />
+
+  <TalentImpact 
+    client:load 
+    title={content.impact.title}
+    items={content.impact.items} 
+    imageSrc="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80"
+  />
+
+  <LegalCompliance 
+    client:load 
+    title={content.legal.title}
+    items={content.legal.items}
+    footerText={content.legal.footerText}
+  />
+
+  <ProgramMethodology 
+    client:visible
+    title={content.strategy1.title}
+    description={content.strategy1.description}
+    checks={content.strategy1.checks}
+    imageSrc="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80"
+    variant="white"
+  />
+
+  <ProgramFeatures 
+    client:visible
+    title={content.strategy2.title}
+    subtitle={content.strategy2.subtitle}
+    features={content.strategy2.features}
+    variant="dark"
+    layout="grid4"
+  />
+
+  <div id="itinerario" class="scroll-mt-32">
+    <ProgramCurriculum 
+      client:visible
+      title={content.curriculum.title}
+      subtitle={content.curriculum.subtitle}
+      steps={content.curriculum.steps}
+      variant="white"
+    />
+  </div>
+
+  <SocialImpactQuote 
+    client:load 
+    title={content.quote.title}
+  />
+
+  <div id="program-cta">
+    <ProgramCTA 
+      client:visible 
+      title={content.cta.title}
+      description={content.cta.description}
+      buttons={ctaButtons}
+      variant="white"
+    />
+  </div>
+
+</Layout>
