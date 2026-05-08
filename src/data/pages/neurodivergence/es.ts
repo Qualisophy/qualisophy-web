@@ -167,6 +167,31 @@ export const es = {
   },
   quote: {
     title: "Hacia la Inclusión Real",
+    subtitle: "Construimos un futuro donde el talento no tiene etiquetas.",
+    pillars: [
+      {
+        icon: "business",
+        title: "Compromiso Empresarial",
+        description:
+          "Cumplimiento efectivo de la legislación y creación de entornos verdaderamente inclusivos y productivos.",
+      },
+      {
+        icon: "handshake",
+        title: "Apoyo Institucional",
+        description:
+          "Políticas públicas que promuevan y faciliten activamente la inclusión laboral de personas con autismo.",
+      },
+      {
+        icon: "public",
+        title: "Transformación Social",
+        description:
+          "Una sociedad más justa, diversa y competitiva que aproveche todo el talento disponible.",
+      },
+    ],
+    quoteText:
+      "“La inclusión laboral de personas con autismo no es solo una obligación legal, es una ",
+    quoteHighlight: "oportunidad de crecimiento",
+    quoteEnd: " para nuestras organizaciones y nuestra sociedad.”",
   },
   cta: {
     title: "Contrata Talento Neurodiverso",

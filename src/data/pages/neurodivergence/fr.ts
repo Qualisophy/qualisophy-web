@@ -168,6 +168,32 @@ export const fr = {
   },
   quote: {
     title: "Vers l'Inclusion Réelle",
+    subtitle:
+      "Nous construisons un avenir où les talents n'ont pas d'étiquettes.",
+    pillars: [
+      {
+        icon: "business",
+        title: "Engagement des Entreprises",
+        description:
+          "Respect effectif de la législation et création d'environnements véritablement inclusifs et productifs.",
+      },
+      {
+        icon: "handshake",
+        title: "Soutien Institutionnel",
+        description:
+          "Politiques publiques qui promeuvent et facilitent activement l'inclusion professionnelle des personnes autistes.",
+      },
+      {
+        icon: "public",
+        title: "Transformation Sociale",
+        description:
+          "Une société plus juste, diversifiée et compétitive qui tire parti de tous les talents disponibles.",
+      },
+    ],
+    quoteText:
+      "« L'inclusion professionnelle des personnes autistes n'est pas seulement une obligation légale, c'est une ",
+    quoteHighlight: "opportunité de croissance",
+    quoteEnd: " pour nos organisations et notre société. »",
   },
   cta: {
     title: "Recrutez des Talents Neurodivers",

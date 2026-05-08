@@ -14,8 +14,8 @@ import { LegalCompliance } from "@/components/react/talent/LegalCompliance";
 import { SocialImpactQuote } from "@/components/react/talent/SocialImpactQuote";
 
 // 1. IMPORTAMOS DATOS
-import { es } from "@/data/pages/migrant-talent/es";
-import { fr } from "@/data/pages/migrant-talent/fr";
+import { es } from "@/data/pages/social-impact/es";
+import { fr } from "@/data/pages/social-impact/fr";
 
 // 2. RUTAS DINÁMICAS
 export function getStaticPaths() {
@@ -43,7 +43,7 @@ const ctaButtons = [
     title={content.hero.title} 
     highlight={content.hero.highlight}
     subtitle={content.hero.subtitle}
-    backgroundImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+    backgroundImage="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80"
     ctaText={content.hero.ctaText}
     scrollToId="itinerario"
   />
@@ -66,7 +66,7 @@ const ctaButtons = [
     client:load 
     title={content.impact.title}
     items={content.impact.items} 
-    imageSrc="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80"
+    imageSrc="https://images.unsplash.com/photo-1455849318743-b2233052fcff?auto=format&fit=crop&q=80"
   />
 
   <LegalCompliance 
@@ -81,7 +81,7 @@ const ctaButtons = [
     title={content.strategy1.title}
     description={content.strategy1.description}
     checks={content.strategy1.checks}
-    imageSrc="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80"
+    imageSrc="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80"
     variant="white"
   />
 
