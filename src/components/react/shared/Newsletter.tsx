@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 
-// NUEVO: Añadida prop 'variant' para controlar el color de fondo dinámicamente
+// NUEVO: Añadida prop 'data' para recibir las traducciones desde Astro
 interface NewsletterProps {
   variant?: "white" | "gray";
+  data: any;
 }
 
-export const Newsletter: React.FC<NewsletterProps> = ({ variant = "gray" }) => {
+export const Newsletter: React.FC<NewsletterProps> = ({
+  variant = "gray",
+  data,
+}) => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<
     "idle" | "loading" | "success" | "error"
@@ -26,23 +30,24 @@ export const Newsletter: React.FC<NewsletterProps> = ({ variant = "gray" }) => {
         body: JSON.stringify({ email }),
       });
 
-      const data = await response.json();
+      // Cambiamos el nombre de esta variable a 'resData' para no pisar la prop 'data'
+      const resData = await response.json();
 
       if (response.ok) {
         setStatus("success");
-        setMessage(data.message);
+        setMessage(resData.message);
         setEmail(""); // Limpiar el input
       } else {
         setStatus("error");
-        setMessage(data.message);
+        setMessage(resData.message);
       }
     } catch (error) {
       setStatus("error");
-      setMessage("Ocurrió un error inesperado. Por favor intenta más tarde.");
+      // Usamos el mensaje de error traducido que viene en data
+      setMessage(data.error);
     }
   };
 
-  // CAMBIO: Asignamos el fondo basado en la prop 'variant'
   const bgColor = variant === "white" ? "bg-white" : "bg-gray-50";
 
   return (
@@ -51,18 +56,17 @@ export const Newsletter: React.FC<NewsletterProps> = ({ variant = "gray" }) => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="md:w-1/2 text-center md:text-left">
             <h3 className="text-2xl md:text-3xl font-bold font-heading mb-2 text-secondary">
-              Novedades y Actualidad
+              {data.title}
             </h3>
-            <p className="text-slate-600 font-primary text-lg">
-              Recibe noticias sobre tecnología, inclusión y nuevas convocatorias
-              de cursos directamente en tu bandeja.
-            </p>
+            <p className="text-slate-600 font-primary text-lg">{data.desc}</p>
           </div>
 
           <div className="w-full md:w-1/2 max-w-md">
             {status === "success" ? (
               <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative text-center animate-fade-in">
-                <span className="block sm:inline font-bold">¡Genial! 🎉</span>
+                <span className="block sm:inline font-bold">
+                  {data.successTitle}
+                </span>
                 <span className="block sm:inline"> {message}</span>
               </div>
             ) : (
@@ -72,21 +76,16 @@ export const Newsletter: React.FC<NewsletterProps> = ({ variant = "gray" }) => {
               >
                 <input
                   type="email"
-                  placeholder="Tu correo electrónico"
+                  placeholder={data.placeholder}
                   value={email}
                   onChange={(event) => setEmail(event.target.value)}
                   required
                   disabled={status === "loading"}
-                  // CORRECCIÓN INPUT:
-                  // 1. Eliminado 'focus:ring-2 focus:ring-primary' para evitar el aumento de altura exterior.
-                  // 2. Se mantiene 'focus:border-primary focus:outline-none' para el estilo de foco interno y limpio.
                   className="flex-1 w-full px-4 py-3 rounded-lg sm:rounded-r-none sm:rounded-l-lg border border-gray-300 focus:border-primary focus:outline-none text-gray-800 transition-all disabled:bg-gray-100 disabled:text-gray-400 shadow-sm sm:shadow-none"
                 />
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  // CORRECCIÓN BOTÓN:
-                  // 1. Añadido 'border border-transparent'. Esto asegura que el botón tenga exactamente la misma altura física que el input (que tiene borde).
                   className="bg-secondary hover:bg-primary text-white font-bold px-6 py-3 rounded-lg sm:rounded-l-none sm:rounded-r-lg border border-transparent transition-colors shadow-md sm:shadow-none disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center w-full sm:w-auto sm:min-w-[140px]"
                 >
                   {status === "loading" ? (
@@ -111,10 +110,10 @@ export const Newsletter: React.FC<NewsletterProps> = ({ variant = "gray" }) => {
                           d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                         ></path>
                       </svg>
-                      Enviando...
+                      {data.sending}
                     </span>
                   ) : (
-                    "Suscribirse"
+                    data.subscribe
                   )}
                 </button>
               </form>
@@ -129,8 +128,7 @@ export const Newsletter: React.FC<NewsletterProps> = ({ variant = "gray" }) => {
 
             {status !== "success" && (
               <p className="text-xs text-gray-400 mt-3 text-center md:text-left">
-                Al suscribirte aceptas nuestra política de privacidad. Sin spam,
-                prometido. ✌️
+                {data.disclaimer}
               </p>
             )}
           </div>

@@ -15,16 +15,22 @@ import { MissionSection } from "@/components/react/home/MissionSection";
 import { InclusionPillars } from "@/components/react/home/InclusionPillars";
 import { ValuesSection } from "@/components/react/home/ValuesSection";
 import { Newsletter } from "@/components/react/shared/Newsletter";
+
+// Importamos los datos
+import { es } from "@/data/pages/index/es";
+import { fr } from "@/data/pages/index/fr";
+const content = lang === 'fr' ? fr : es;
 ---
 
 <Layout 
-  title="Qualisophy - Inclusión Tecnológica" 
+  title={content.meta.title}
+  description={content.meta.description}
   fullWidth={true} 
 >
-  <HeroSection client:load />
-  <AboutSection />
-  <MissionSection />
-  <ValuesSection />
-  <InclusionPillars client:visible />
-  <Newsletter client:visible variant="white" />
+  <HeroSection client:load data={content.hero} />
+  <AboutSection data={content.about} />
+  <MissionSection data={content.mission} />
+  <ValuesSection data={content.values} />
+  <InclusionPillars client:visible data={content.pillars} />
+  <Newsletter client:visible variant="white" data={content.newsletter} />
 </Layout>
