@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { ProgramsModal } from "@/components/react/shared/ProgramsModal";
+import CabeceraHome from "@/assets/pages/Home/cabecera.png";
 
 export const HeroSection: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Imagen de fondo
-  const bgImage =
-    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+  const bgImage = CabeceraHome.src;
 
   return (
     <>

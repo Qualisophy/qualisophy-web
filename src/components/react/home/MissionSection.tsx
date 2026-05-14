@@ -1,11 +1,12 @@
 import React from "react";
+import ObjetoSocial from "@/assets/pages/Home/objetoSocial.png";
 
 interface MissionSectionProps {
   imageSrc?: string;
 }
 
 export const MissionSection: React.FC<MissionSectionProps> = ({
-  imageSrc = "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
+  imageSrc = ObjetoSocial.src,
 }) => {
   return (
     <section className="bg-gray-50 py-12 md:py-20 w-full border-t border-gray-100">

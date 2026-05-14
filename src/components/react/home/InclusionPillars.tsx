@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import TalentoMigrante from "@/assets/pages/Home/TalentoMigrante.png";
+import NeuroDiv from "@/assets/pages/Home/neurodiv.png";
+import Rural from "@/assets/pages/Home/rural.png";
+import RiesgoExc from "@/assets/pages/Home/exclusion.png";
+import ReconLab from "@/assets/pages/Home/reconversion.png";
 
 const pillarsData = [
   {
@@ -8,8 +13,7 @@ const pillarsData = [
     description:
       "Potenciamos habilidades únicas en entornos donde el enfoque y el análisis brillan.",
     icon: "psychology",
-    image:
-      "https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80&w=1000",
+    image: NeuroDiv.src,
     link: "/neurodivergence",
   },
   {
@@ -19,8 +23,7 @@ const pillarsData = [
     description:
       "Llevamos la formación tecnológica a tu tierra para fijar población y fomentar el trabajo remoto.",
     icon: "nature_people",
-    image:
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000&auto=format&fit=crop",
+    image: Rural.src,
     link: "/rural-area",
   },
   {
@@ -30,8 +33,7 @@ const pillarsData = [
     description:
       "Validación de competencias y adaptación cultural para profesionales internacionales.",
     icon: "public",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000",
+    image: TalentoMigrante.src,
     link: "/migrant-talent",
   },
   {
@@ -41,8 +43,7 @@ const pillarsData = [
     description:
       "Oportunidades reales de carrera y capacitación digital para colectivos vulnerables.",
     icon: "volunteer_activism",
-    image:
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=1000",
+    image: RiesgoExc.src,
     link: "/social-impact",
   },
   {
@@ -52,8 +53,7 @@ const pillarsData = [
     description:
       "Transformación de perfiles profesionales para adaptarse a las demandas tecnológicas.",
     icon: "model_training",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1000",
+    image: ReconLab.src,
     link: "/reskilling",
   },
 ];
@@ -84,7 +84,7 @@ export const InclusionPillars: React.FC = () => {
                   bg-cover bg-center group
                   ${isActive ? "flex-[5] md:flex-[4]" : "flex-[1]"}
                 `}
-                style={{ backgroundImage: `url(${pillar.image})` }}
+                style={{ backgroundImage: `url("${pillar.image}")` }}
               >
                 {/* Overlay Oscuro */}
                 <div
