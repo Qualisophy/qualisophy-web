@@ -13,6 +13,11 @@ import { TalentImpact } from "@/components/react/talent/TalentImpact";
 import { LegalCompliance } from "@/components/react/talent/LegalCompliance";
 import { SocialImpactQuote } from "@/components/react/talent/SocialImpactQuote";
 
+//Imágenes
+import talentoMigranteCab from "@/assets/pages/migrant-talent/TalentoMigrante3.jpg";
+import talentoMigranteImpact from "@/assets/pages/migrant-talent/TalentoMigrante1.jpg";
+import talentoMigranteEstra from "@/assets/pages/migrant-talent/TalentoMigrante2.jpg";
+
 // --- DATOS: TALENTO MIGRANTE ---
 
 const realityStats = [
@@ -88,7 +93,7 @@ const strategyTraining = {
     "Competencias Transversales: Idioma y códigos.",
     "Prácticas Reales: Validación en entorno local."
   ],
-  imageSrc: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80"
+  imageSrc: talentoMigranteEstra.src
 };
 
 const strategyAccess = [
@@ -154,7 +159,7 @@ const ctaButtons = [
     title="Potenciando Habilidades Globales:" 
     highlight="Talento Migrante"
     subtitle="Una alianza estratégica para integrar perfiles internacionales y convertir la diversidad cultural en una ventaja competitiva para tu empresa."
-    backgroundImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+    backgroundImage={talentoMigranteCab.src}
     ctaText="Ver Itinerario"
     scrollToId="itinerario"
   />
@@ -177,7 +182,7 @@ const ctaButtons = [
     client:load 
     title="Impacto de la Diversidad Cultural"
     items={impactList} 
-    imageSrc="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80"
+    imageSrc={talentoMigranteImpact.src}
   />
 
   <LegalCompliance 
