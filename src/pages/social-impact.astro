@@ -13,6 +13,10 @@ import { TalentImpact } from "@/components/react/talent/TalentImpact";
 import { LegalCompliance } from "@/components/react/talent/LegalCompliance";
 import { SocialImpactQuote } from "@/components/react/talent/SocialImpactQuote";
 
+import cabeceraImg from "@/assets/pages/social-impact/SocialCab1.png";
+import socialImpact from "@/assets/pages/social-impact/SocialImpact2.png";
+import socialFase from "@/assets/pages/social-impact/SocialFase2.png";
+
 // --- DATOS: RIESGO DE EXCLUSIÓN ---
 
 const realityStats = [
@@ -88,7 +92,7 @@ const strategySkills = {
     "Soft Skills e Inteligencia Emocional",
     "Formación Dual Remunerada"
   ],
-  imageSrc: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80"
+  imageSrc: socialFase.src
 };
 
 const strategyAccess = [
@@ -154,7 +158,7 @@ const ctaButtons = [
     title="Transformando la Vulnerabilidad en Autonomía:" 
     highlight="Inclusión Laboral"
     subtitle="Facilitamos la reincorporación al mercado de colectivos desfavorecidos para romper el ciclo de la exclusión mediante el empleo digno."
-    backgroundImage="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80"
+    backgroundImage={cabeceraImg.src}
     ctaText="Ver Itinerario"
     scrollToId="itinerario"
   />
@@ -177,7 +181,7 @@ const ctaButtons = [
     client:load 
     title="Impacto Social Tecnológico"
     items={impactList} 
-    imageSrc="https://images.unsplash.com/photo-1455849318743-b2233052fcff?auto=format&fit=crop&q=80"
+    imageSrc={socialImpact.src}
   />
 
   <LegalCompliance 
