@@ -9,6 +9,10 @@ import { ProgramFeatures } from "@/components/react/programs/ProgramFeatures";
 // NUEVA IMPORTACIÓN
 import { ReskillingCourses } from "@/components/react/programs/ReskillingCourses";
 
+import cabeceraImg from "@/assets/pages/reskilling/ResImg.png";
+import fase1Img from "@/assets/pages/reskilling/ResFase1.png";
+import fase2Img from "@/assets/pages/reskilling/ResFase2.png";
+
 // --- DATOS: RESKILLING ---
 
 const experienceToInnovationData = {
@@ -22,7 +26,7 @@ const experienceToInnovationData = {
     "Plan de estudio personalizado",
     "Valoración de experiencia previa"
   ],
-  imageSrc: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80"
+  imageSrc: fase1Img.src
 };
 
 const transitionSupportData = {
@@ -36,7 +40,7 @@ const transitionSupportData = {
     "Rebranding Profesional (LinkedIn, CV)",
     "Simulacros de Entrevista Técnica"
   ],
-  imageSrc: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80"
+  imageSrc: fase2Img.src
 };
 
 const pillarsData = [
@@ -98,7 +102,7 @@ const transformationRoutes = [
     title={"Tu Reinvención Profesional"}
     highlight={"Comienza Aquí"}
     subtitle="Transformamos tu experiencia previa en nuevas competencias digitales para el mercado tecnológico actual."
-    backgroundImage="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80"
+    backgroundImage={cabeceraImg.src}
     ctaText="Ver Programas Formativos"
     hasCourseTree={true} 
   />
