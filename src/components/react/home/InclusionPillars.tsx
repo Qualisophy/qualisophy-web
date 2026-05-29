@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import TalentoMigrante from "@/assets/pages/Home/TalentoMigrante.png";
-import NeuroDiv from "@/assets/pages/Home/neurodiv.png";
-import Rural from "@/assets/pages/Home/rural.png";
-import RiesgoExc from "@/assets/pages/Home/exclusion.png";
-import ReconLab from "@/assets/pages/Home/reconversion.png";
+import TalentoMigrante from "@/assets/pages/home/talento-migrante.jpeg";
+import NeuroDiv from "@/assets/pages/home/neurodiv.jpeg";
+import Rural from "@/assets/pages/home/rural.jpeg";
+import RiesgoExc from "@/assets/pages/home/exclusion.jpeg";
+import ReconLab from "@/assets/pages/home/reconversion.jpeg";
 
 const pillarsData = [
   {

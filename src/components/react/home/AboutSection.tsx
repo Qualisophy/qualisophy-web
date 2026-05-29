@@ -1,5 +1,5 @@
 import React from "react";
-import IdentidadImg from "@/assets/pages/Home/identidad.png";
+import IdentidadImg from "@/assets/pages/home/identidad.jpeg";
 
 interface AboutSectionProps {
   imageSrc?: string;

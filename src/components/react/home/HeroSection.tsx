@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ProgramsModal } from "@/components/react/shared/ProgramsModal";
-import CabeceraHome from "@/assets/pages/Home/cabecera.png";
+import CabeceraHome from "@/assets/pages/home/cabecera.jpeg";
 
 export const HeroSection: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

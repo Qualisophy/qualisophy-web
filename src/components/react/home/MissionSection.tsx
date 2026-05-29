@@ -1,5 +1,5 @@
 import React from "react";
-import ObjetoSocial from "@/assets/pages/Home/objetoSocial.png";
+import ObjetoSocial from "@/assets/pages/home/objetivo-social.jpeg";
 
 interface MissionSectionProps {
   imageSrc?: string;
