@@ -1,6 +1,6 @@
 import React from "react";
 import { ProgramHero } from "../programs/ProgramHero";
-import PartnerCab from "@/assets/pages/partnership/partnerCab.png";
+import PartnerCab from "@/assets/pages/partnership/partner-cab.jpeg";
 
 export const PartnershipHero: React.FC = () => {
   return (
