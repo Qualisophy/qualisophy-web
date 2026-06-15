@@ -5,7 +5,8 @@ import { ParticleMeshBackground } from "@/components/react/shared/ParticleMeshBa
 export interface CTAButton {
   label: string;
   href: string;
-  variant: "solid" | "outline";
+  // 1. Añadimos la nueva variante a la interfaz
+  variant: "solid" | "outline" | "solid-secondary";
 }
 
 interface ProgramCTAProps {
@@ -30,6 +31,19 @@ export const ProgramCTA: React.FC<ProgramCTAProps> = ({
   ];
 
   const activeButtons = buttons || defaultButtons;
+
+  // 2. Función auxiliar para manejar las clases de cada variante de forma más limpia
+  const getVariantClasses = (btnVariant: CTAButton["variant"]) => {
+    switch (btnVariant) {
+      case "solid-secondary":
+        return "bg-secondary text-white shadow-lg hover:bg-secondary/90";
+      case "solid":
+        return "bg-primary text-white shadow-lg hover:bg-primary/90";
+      case "outline":
+      default:
+        return "border-2 border-gray-300 text-secondary hover:border-primary hover:text-primary bg-white/50 backdrop-blur-sm";
+    }
+  };
 
   return (
     <section
@@ -60,13 +74,8 @@ export const ProgramCTA: React.FC<ProgramCTAProps> = ({
               <button
                 key={idx}
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className={`flex items-center justify-center rounded-xl h-14 px-8 text-lg font-bold transition-all min-w-[200px]
-                  ${
-                    btn.variant === "solid"
-                      ? "bg-primary text-white shadow-lg hover:bg-primary/90"
-                      : "border-2 border-gray-300 text-secondary hover:border-primary hover:text-primary bg-white/50 backdrop-blur-sm" // Fondo sutil para el botón outline
-                  }
-                `}
+                // 3. Aplicamos la función auxiliar aquí
+                className={`flex items-center justify-center rounded-xl h-14 px-8 text-lg font-bold transition-all min-w-[200px] ${getVariantClasses(btn.variant)}`}
               >
                 {btn.label}
               </button>
@@ -74,13 +83,8 @@ export const ProgramCTA: React.FC<ProgramCTAProps> = ({
               <a
                 key={idx}
                 href={btn.href}
-                className={`flex items-center justify-center rounded-xl h-14 px-8 text-lg font-bold transition-all min-w-[200px]
-                  ${
-                    btn.variant === "solid"
-                      ? "bg-primary text-white shadow-lg hover:bg-primary/90"
-                      : "border-2 border-gray-300 text-secondary hover:border-primary hover:text-primary bg-white/50 backdrop-blur-sm"
-                  }
-                `}
+                // 4. Y aplicamos la función auxiliar también aquí
+                className={`flex items-center justify-center rounded-xl h-14 px-8 text-lg font-bold transition-all min-w-[200px] ${getVariantClasses(btn.variant)}`}
               >
                 {btn.label}
               </a>

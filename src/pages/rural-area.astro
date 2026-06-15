@@ -16,7 +16,6 @@ import { LegalCompliance } from "@/components/react/talent/LegalCompliance";
 import { SocialImpactQuote } from "@/components/react/talent/SocialImpactQuote";
 import { SpainMap } from "@/components/react/talent/SpainMap"; 
 
-
 // Importación de imágenes 
 import talentImactImg from "@/assets/pages/rural-area/talent-impact.jpeg";
 
@@ -202,7 +201,8 @@ const socialImpactPillars = [
 // --- 10. CTA BOTONES SOLICITADOS ---
 const ctaButtons = [
   { label: "Contrata Talento Rural", href: "/contact?type=company-rural", variant: "solid" as const },
-  { label: "Únete al Programa Talento Rural Tech", href: "/contact?type=candidate-rural", variant: "outline" as const }
+  // Aquí hemos aplicado el cambio a la nueva variante que creamos en React
+  { label: "Únete al Programa Talento Rural Tech", href: "/contact?type=candidate-rural", variant: "solid-secondary" as const }
 ];
 ---
 
@@ -284,7 +284,7 @@ const ctaButtons = [
   </div>
 
   {/* SECCIÓN 5: IMPACTO TRANSFORMADOR (Fondo Gris oscuro simulado - Variante 'gray') */}
-<TalentImpact 
+  <TalentImpact 
     client:load 
     title="Impacto del Teletrabajo Tech"
     subtitle="El empleo digital elimina fronteras y permite que el talento rural compita globalmente."
