@@ -114,7 +114,7 @@ export default {
   // Footer
   "footer.follow": "Síguenos",
   "footer.contact": "Contáctanos",
-  "footer.rights": "Marca registrada",
+  "footer.rights": "",
   "footer.slogan":
     "Formación práctica, personalizada y oportunidades reales para el crecimiento profesional.",
   "footer.navigation": "Navegación",
