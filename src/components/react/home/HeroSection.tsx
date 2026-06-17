@@ -10,7 +10,11 @@ export const HeroSection: React.FC = () => {
 
   return (
     <>
-      <section className="relative w-full overflow-hidden min-h-[600px] flex items-center">
+      {/* AÑADIDO: id="hero-section" */}
+      <section
+        id="hero-section"
+        className="relative w-full overflow-hidden min-h-[600px] flex items-center"
+      >
         {/* 1. Capa de Imagen de Fondo */}
         <div className="absolute inset-0 z-0">
           <img
@@ -32,10 +36,14 @@ export const HeroSection: React.FC = () => {
               Talento que <span className="text-primary">Transforma</span>
             </h1>
 
-           <p className="text-gray-100 text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto font-primary drop-shadow-sm">
-      Expertos en <span className="font-semibold text-white">inclusión laboral en tecnología</span>, 
-      conectando talento diverso con empresas innovadoras para construir puentes hacia el futuro.
-    </p>
+            <p className="text-gray-100 text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto font-primary drop-shadow-sm">
+              Expertos en{" "}
+              <span className="font-semibold text-white">
+                inclusión laboral en tecnología
+              </span>
+              , conectando talento diverso con empresas innovadoras para
+              construir puentes hacia el futuro.
+            </p>
 
             <div className="flex flex-wrap justify-center gap-4 mt-4 font-primary">
               <button
