@@ -2,12 +2,58 @@
 import Layout from "@/layouts/Layout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { Newsletter } from "@/components/react/shared/Newsletter";
+import top50Image from "@/assets/pages/blog/top50.png";
 
 // ⚠️ IMPORTANTE: Renderizado estático
 export const prerender = true;
 
 export async function getStaticPaths() {
   const posts = [
+    { 
+      slug: "qualisophy-top-50", 
+      title: "Qualisophy: En el top 50 de la innovación andaluza",
+      category: "Noticias",
+      date: "14 May, 2026",
+      image: top50Image.src,
+      content: {
+        intro: "En Qualisophy creemos que la innovación solo tiene sentido cuando mejora la vida de las personas. Por eso, formar parte del Top 50 de los XIII Premios Emprendemos de Andalucía supone mucho más que un reconocimiento empresarial: es la confirmación de que estamos avanzando en la dirección correcta.",
+        sections: [
+          {
+            title: "Un reconocimiento a la innovación con impacto",
+            paragraphs: [
+              "Los Premios Emprendemos, impulsados por la Consejería de Universidad, Investigación e Innovación de la Junta de Andalucía a través de Andalucía Emprende, tienen como objetivo identificar y visibilizar a las empresas con mayor capacidad de transformación económica y social, valorando especialmente la innovación, el potencial de crecimiento y el impacto generado en su entorno.",
+              "En esta XIII edición, Qualisophy ha sido una de las cinco empresas malagueñas seleccionadas para representar a la provincia en la fase regional, junto a otras iniciativas destacadas del ecosistema emprendedor. Gracias a ello, pasamos a formar parte del prestigioso ranking Top 50 de Andalucía, integrado por las empresas emergentes con mayor proyección e impacto de la comunidad."
+            ],
+          },
+          {
+        title: "Tecnología al servicio de las personas",
+        paragraphs: [
+          "En un contexto donde la diversidad cognitiva, el bienestar laboral y la gestión humana se han convertido en factores estratégicos, creemos que las organizaciones necesitan soluciones que vayan más allá de los indicadores tradicionales.",
+          "Por todo ello, desde nuestros inicios hemos trabajado con una visión clara: ayudar a las organizaciones a comprender mejor a las personas para construir entornos laborales más saludables, diversos y eficientes, permitiendo a las empresas identificar fortalezas, mejorar la comunicación interna y aprovechar el potencial de equipos diversos."
+          
+        
+        ],
+        keyFact: {
+          title: "Dato Clave",
+          text: "Los Premios Emprendemos no valoran únicamente la viabilidad económica de los proyectos, sino también su capacidad para generar impacto social y transformar positivamente su entorno."
+        }
+      },
+          {
+            title: "Mirando al futuro",
+            paragraphs: [
+              "Formar parte del Top 50 de los Premios Emprendemos nos anima a seguir creciendo sin perder de vista nuestros objetivos:"
+            ],
+            list: [
+              "<strong>Seguir innovando:</strong> Continuaremos desarrollando soluciones basadas en evidencia científica y tecnología que permitan a las organizaciones identificar fortalezas, potenciar el talento y construir entornos de trabajo más inclusivos y eficientes.",
+              "<strong>Impulsar la diversidad:</strong> Queremos ayudar a más empresas a convertir la diversidad cognitiva y humana en una ventaja estratégica, favoreciendo culturas organizativas donde cada persona pueda aportar su máximo potencial.",
+              "<strong>Ampliar nuestro impacto:</strong> Nuestro objetivo es llevar la propuesta de valor de Qualisophy a más empresas, instituciones y profesionales, contribuyendo a generar entornos laborales más saludables, innovadores y preparados para los desafíos del futuro."
+            ],
+            closingParagraph: "Este reconocimiento es un hito importante en nuestro camino, pero también es un punto de partida para continuar impulsando una innovación con propósito, centrada en las personas y orientada a generar impacto real."
+          }
+        ]
+      }
+    },
+
     { 
       slug: "impacto-ia-testing", 
       title: "El impacto de la IA en el testing de software moderno",

@@ -1,7 +1,17 @@
 import React, { useState, useMemo } from "react";
+import top50Image from "@/assets/pages/blog/top50.png";
 
 // Simulamos una base de datos más grande para el blog
 const allPosts = [
+  {
+    slug: "qualisophy-top-50",
+    category: "Noticias",
+    title: "Qualisophy: En el top 50 de la innovación andaluza",
+    excerpt:
+      "Qualisophy entra en el Top 50 andaluz de innovación con foco en impacto social, bienestar y diversidad en las organizaciones.",
+    image: top50Image.src,
+    date: "14 May, 2026",
+  },
   {
     slug: "impacto-ia-testing",
     category: "Tendencias",
@@ -56,6 +66,7 @@ const allPosts = [
 
 const categories = [
   "Todos",
+  "Noticias",
   "Tendencias",
   "Inclusión",
   "Casos de Éxito",
