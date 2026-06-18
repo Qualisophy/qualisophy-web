@@ -2,7 +2,9 @@
 import Layout from "@/layouts/Layout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { Newsletter } from "@/components/react/shared/Newsletter";
-import top50Image from "@/assets/pages/blog/top50.png";
+import top50Image from "@/assets/pages/blog/hero-top-50.jpg";
+import top50Logo from "@/assets/pages/blog/top50.png";
+
 
 // ⚠️ IMPORTANTE: Renderizado estático
 export const prerender = true;
@@ -13,10 +15,11 @@ export async function getStaticPaths() {
       slug: "qualisophy-top-50", 
       title: "Qualisophy: En el top 50 de la innovación andaluza",
       category: "Noticias",
-      date: "14 May, 2026",
+      date: "12 May, 2026",
       image: top50Image.src,
       content: {
         intro: "En Qualisophy creemos que la innovación solo tiene sentido cuando mejora la vida de las personas. Por eso, formar parte del Top 50 de los XIII Premios Emprendemos de Andalucía supone mucho más que un reconocimiento empresarial: es la confirmación de que estamos avanzando en la dirección correcta.",
+        badgeImage: top50Logo.src,
         sections: [
           {
             title: "Un reconocimiento a la innovación con impacto",
@@ -26,18 +29,16 @@ export async function getStaticPaths() {
             ],
           },
           {
-        title: "Tecnología al servicio de las personas",
-        paragraphs: [
-          "En un contexto donde la diversidad cognitiva, el bienestar laboral y la gestión humana se han convertido en factores estratégicos, creemos que las organizaciones necesitan soluciones que vayan más allá de los indicadores tradicionales.",
-          "Por todo ello, desde nuestros inicios hemos trabajado con una visión clara: ayudar a las organizaciones a comprender mejor a las personas para construir entornos laborales más saludables, diversos y eficientes, permitiendo a las empresas identificar fortalezas, mejorar la comunicación interna y aprovechar el potencial de equipos diversos."
-          
-        
-        ],
-        keyFact: {
-          title: "Dato Clave",
-          text: "Los Premios Emprendemos no valoran únicamente la viabilidad económica de los proyectos, sino también su capacidad para generar impacto social y transformar positivamente su entorno."
-        }
-      },
+            title: "Tecnología al servicio de las personas",
+            paragraphs: [
+              "En un contexto donde la diversidad cognitiva, el bienestar laboral y la gestión humana se han convertido en factores estratégicos, creemos que las organizaciones necesitan soluciones que vayan más allá de los indicadores tradicionales.",
+              "Por todo ello, desde nuestros inicios hemos trabajado con una visión clara: ayudar a las organizaciones a comprender mejor a las personas para construir entornos laborales más saludables, diversos y eficientes, permitiendo a las empresas identificar fortalezas, mejorar la comunicación interna y aprovechar el potencial de equipos diversos."
+            ],
+            keyFact: {
+              title: "Dato Clave",
+              text: "Los Premios Emprendemos no valoran únicamente la viabilidad económica de los proyectos, sino también su capacidad para generar impacto social y transformar positivamente su entorno."
+            }
+          },
           {
             title: "Mirando al futuro",
             paragraphs: [
@@ -46,7 +47,7 @@ export async function getStaticPaths() {
             list: [
               "<strong>Seguir innovando:</strong> Continuaremos desarrollando soluciones basadas en evidencia científica y tecnología que permitan a las organizaciones identificar fortalezas, potenciar el talento y construir entornos de trabajo más inclusivos y eficientes.",
               "<strong>Impulsar la diversidad:</strong> Queremos ayudar a más empresas a convertir la diversidad cognitiva y humana en una ventaja estratégica, favoreciendo culturas organizativas donde cada persona pueda aportar su máximo potencial.",
-              "<strong>Ampliar nuestro impacto:</strong> Nuestro objetivo es llevar la propuesta de valor de Qualisophy a más empresas, instituciones y profesionales, contribuyendo a generar entornos laborales más saludables, innovadores y preparados para los desafíos del futuro."
+              "<strong>Multiplicar las oportunidades:</strong> Nuestro objetivo es llevar la filosofía de Qualisophy a cada rincón donde haya talento esperando una oportunidad. Queremos demostrar que la neurodivergencia, el entorno rural, el talento migrante, el reciclaje laboral o estar en riesgo de exclusión no son barreras, sino auténticos motores de innovación. Trabajamos para que las empresas e instituciones no solo contraten tecnología, sino que se sumen a un cambio social real, transformando el mercado IT en un espacio más justo, humano y preparado para el futuro."
             ],
             closingParagraph: "Este reconocimiento es un hito importante en nuestro camino, pero también es un punto de partida para continuar impulsando una innovación con propósito, centrada en las personas y orientada a generar impacto real."
           }
@@ -255,10 +256,11 @@ if (!post) {
   fullWidth={true}
 >
   
-  {/* HERO ARTÍCULO */}
+{/* HERO ARTÍCULO */}
   <section class="relative w-full overflow-hidden min-h-[600px] flex items-center justify-center">
-    <div class="absolute inset-0 z-0">
-      <img src={post.image} alt={post.title} class="w-full h-full object-cover" />
+    <div class="absolute inset-0 z-0 overflow-hidden bg-secondary">
+      {/* Añadido object-right para móvil y md:object-center para escritorio */}
+      <img src={post.image} alt={post.title} class="w-full h-full object-cover object-right md:object-center" />
     </div>
     <div class="absolute inset-0 z-0 bg-secondary/90 mix-blend-multiply"></div>
 
@@ -303,6 +305,17 @@ if (!post) {
         <p class="lead text-xl md:text-2xl text-slate-600 font-light italic mb-10 leading-relaxed border-l-4 border-primary pl-6">
           {post.content.intro}
         </p>
+
+        {/* Renderizado de imagen del galardón (si existe) */}
+        {post.content.badgeImage && (
+          <div class="my-12 flex justify-center">
+            <img 
+              src={post.content.badgeImage} 
+              alt="Galardón o Insignia" 
+              class="w-100 md:w-100 h-auto object-contain drop-shadow-lg " 
+            />
+          </div>
+        )}
 
         {/* Mapeo de Secciones */}
         {post.content.sections.map((section) => (

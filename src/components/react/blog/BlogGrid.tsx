@@ -10,7 +10,7 @@ const allPosts = [
     excerpt:
       "Qualisophy entra en el Top 50 andaluz de innovación con foco en impacto social, bienestar y diversidad en las organizaciones.",
     image: top50Image.src,
-    date: "14 May, 2026",
+    date: "12 May, 2026",
   },
   {
     slug: "impacto-ia-testing",
@@ -175,7 +175,7 @@ export const BlogGrid = () => {
                       className="group inline-flex items-center text-primary font-bold text-sm no-underline mt-auto"
                     >
                       <span className="group-hover:underline">
-                      Leer artículo completo
+                        Leer artículo completo
                       </span>
                       <span className="material-symbols-outlined text-sm ml-1 inline-block !no-underline transition-transform group-hover:translate-x-1">
                         arrow_forward

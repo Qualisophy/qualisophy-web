@@ -1,7 +1,17 @@
 import React from "react";
+import top50Image from "@/assets/pages/blog/top50.png";
 
 // Datos unificados con slugs correctos
 const posts = [
+  {
+    slug: "qualisophy-top-50",
+    category: "Noticias",
+    title: "Qualisophy: En el top 50 de la innovación andaluza",
+    excerpt:
+      "Qualisophy entra en el top 50 andaluz de innovación con foco en impacto social, bienestar y diversidad en las organizaciones.",
+    image: top50Image.src,
+    date: "12 May, 2026",
+  },
   {
     slug: "impacto-ia-testing",
     category: "Tendencias",
@@ -50,7 +60,7 @@ export const BlogSection = () => {
 
         {/* Grid de 3 Post Destacados */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {posts.map((post, idx) => (
+          {posts.slice(0, 3).map((post, idx) => (
             <article
               key={idx}
               className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col h-full border border-gray-100"
@@ -101,7 +111,6 @@ export const BlogSection = () => {
                     arrow_forward
                   </span>
                 </a>
-
               </div>
             </article>
           ))}
