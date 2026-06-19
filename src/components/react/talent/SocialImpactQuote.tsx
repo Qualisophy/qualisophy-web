@@ -24,7 +24,7 @@ const defaultPillars: SocialPillar[] = [
       "Cumplimiento efectivo de la legislación y creación de entornos verdaderamente inclusivos y productivos.",
   },
   {
-    icon: "handshake",
+    icon: "inventory",
     title: "Apoyo Institucional",
     description:
       "Políticas públicas que promuevan y faciliten activamente la inclusión laboral de personas con autismo.",

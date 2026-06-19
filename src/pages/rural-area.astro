@@ -19,6 +19,8 @@ import { SpainMap } from "@/components/react/talent/SpainMap";
 
 // Importación de imágenes 
 import talentImactImg from "@/assets/pages/rural-area/talent-impact.jpeg";
+import cabeceraImg from "@/assets/pages/rural-area/rural.jpeg";
+import ruralWork from "@/assets/pages/rural-area/rural-work.jpeg";
 
 // --- 1. REALIDAD TERRITORIAL DESIGUAL ---
 const realityStats = [
@@ -129,7 +131,7 @@ const strategy1Data = {
     "Prácticas en empresas innovadoras.",
     "Inserción laboral en entornos remotos o híbridos."
   ],
-  imageSrc: "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?q=80&w=2000&auto=format&fit=crop"
+  imageSrc: ruralWork.src
 };
 
 // --- 7. ESTRATEGIA 2: CONECTAR TALENTO Y EMPRESA ---
@@ -188,7 +190,7 @@ const socialImpactPillars = [
     description: "Empresas que descubren y potencian nuevas fuentes de talento descentralizado."
   },
   {
-    icon: "public",
+    icon: "forest",
     title: "Territorios Vivos",
     description: "Comunidades rurales con oportunidades reales de desarrollo digital y económico."
   },
@@ -218,7 +220,7 @@ const ctaButtons = [
     title={"Tecnología que Une:"} 
     highlight={"Talento que Transforma"}
     subtitle="Edición Rural. Llevamos la formación tecnológica a tu tierra para que construyas tu futuro digital sin moverte de ella. El talento no tiene fronteras. Tú tampoco necesitas moverte."
-    backgroundImage="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000&auto=format&fit=crop"
+    backgroundImage={cabeceraImg.src}
     ctaText="Descubrir Programa"
     scrollToId="realidad-territorial"
   />

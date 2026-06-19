@@ -1,11 +1,12 @@
 import React from "react";
+import IdentidadImg from "@/assets/pages/home/identidad.jpeg";
 
 interface AboutSectionProps {
   imageSrc?: string;
 }
 
 export const AboutSection: React.FC<AboutSectionProps> = ({
-  imageSrc = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+  imageSrc = IdentidadImg.src,
 }) => {
   return (
     <section className="bg-white pt-16 md:pt-24 pb-8 md:pb-12 w-full">

@@ -47,6 +47,7 @@ export const TalentImpact: React.FC<TalentImpactProps> = ({
             <img
               src={imageSrc}
               alt={title} // Aprovechamos para el alt de la imagen
+              loading="lazy"
               className="rounded-3xl shadow-xl w-full object-cover h-[400px]"
             />
           </div>
