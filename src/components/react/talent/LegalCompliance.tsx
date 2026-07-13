@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 
-// Sub-componente (Sin cambios internos de lógica)
 const CircularProgress = ({
   percentage,
   label,
@@ -96,7 +95,8 @@ interface LegalComplianceProps {
   title?: string;
   items: LegalItem[];
   footerText?: string;
-  footerSize?: "normal" | "large"; // Nueva propiedad opcional
+  footerSize?: "normal" | "large";
+  variant?: "white" | "gray"; // Añadido
 }
 
 export const LegalCompliance: React.FC<LegalComplianceProps> = ({
@@ -104,8 +104,8 @@ export const LegalCompliance: React.FC<LegalComplianceProps> = ({
   items,
   footerText,
   footerSize = "normal",
+  variant = "gray", // Añadido
 }) => {
-  // Controlamos las clases del recuadro inferior según la propiedad
   const footerContainerClass =
     footerSize === "large"
       ? "mt-20 max-w-4xl mx-auto"
@@ -121,8 +121,10 @@ export const LegalCompliance: React.FC<LegalComplianceProps> = ({
       ? "text-slate-700 text-base md:text-lg leading-relaxed font-medium"
       : "text-slate-600 text-sm font-primary";
 
+  const bgClass = variant === "gray" ? "bg-slate-50" : "bg-white";
+
   return (
-    <section className="py-24 bg-gray-50">
+    <section className={`py-24 ${bgClass}`}>
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl font-heading sm:text-4xl font-bold text-secondary mb-16">
           {title}

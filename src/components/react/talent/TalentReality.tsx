@@ -15,6 +15,7 @@ interface TalentRealityProps {
   subtitle?: string;
   description?: string;
   stats?: StatItem[];
+  variant?: "white" | "gray"; // Añadido
 }
 
 export const TalentReality: React.FC<TalentRealityProps> = ({
@@ -22,9 +23,14 @@ export const TalentReality: React.FC<TalentRealityProps> = ({
   subtitle = "Contexto Actual",
   description,
   stats = [],
+  variant = "white", // Añadido
 }) => {
+  const bgClass = variant === "gray" ? "bg-slate-50" : "bg-white";
+
   return (
-    <section className="py-20 relative border-b border-gray-100 overflow-hidden bg-white">
+    <section
+      className={`py-20 relative border-b border-gray-100 overflow-hidden ${bgClass}`}
+    >
       {/* FONDO MESH ANIMADO */}
       <div className="absolute inset-0 z-0 opacity-60">
         <ParticleMeshBackground />
@@ -51,11 +57,6 @@ export const TalentReality: React.FC<TalentRealityProps> = ({
           {stats.map((stat, index) => (
             <div
               key={index}
-              // CAMBIOS APLICADOS:
-              // 1. bg-white/90: Más opacidad para tapar el mesh detrás del texto.
-              // 2. border-slate-200: Un borde gris suave pero visible para delimitar la tarjeta.
-              // 3. shadow-lg: Sombra más fuerte para elevar la tarjeta del fondo.
-              // 4. hover:border-primary/30: Un toque de color en el borde al pasar el mouse.
               className="p-8 rounded-3xl bg-white/90 backdrop-blur-md border border-slate-200 text-center transition-all duration-300 group shadow-lg hover:shadow-xl hover:border-primary/30"
             >
               <div

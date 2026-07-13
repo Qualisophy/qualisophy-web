@@ -14,6 +14,7 @@ import { TalentBarriers } from "@/components/react/talent/TalentBarriers";
 import { TalentImpact } from "@/components/react/talent/TalentImpact";
 import { LegalCompliance } from "@/components/react/talent/LegalCompliance";
 import { SocialImpactQuote } from "@/components/react/talent/SocialImpactQuote";
+import { TalentVideo } from "@/components/react/talent/TalentVideo";
 
 // --- DATOS: REALIDAD NEURODIVERGENTE ---
 
@@ -151,7 +152,7 @@ const ctaButtons = [
   fullWidth={true}
 >
   
-  {/* SECCIÓN 0: HERO (Pasamos el ID como string) */}
+  {/* SECCIÓN 0: HERO */}
   <ProgramHero 
     client:load
     title={"Potenciando Habilidades Únicas:"} 
@@ -162,42 +163,56 @@ const ctaButtons = [
     scrollToId="itinerario"
   />
 
-  {/* SECCIÓN 1: REALIDAD */}
+  {/* SECCIÓN 1: REALIDAD (Fondo Blanco) */}
   <TalentReality 
     client:load 
     title="El Talento Neurodivergente"
     subtitle="Una Realidad Preocupante"
     description="El autismo presenta la tasa más alta de desempleo entre todos los colectivos de discapacidad, a pesar de contar con las cualificaciones técnicas necesarias."
     stats={realityStats} 
+    variant="white"
   />
 
-  {/* SECCIÓN 2: BARRERAS */}
+  {/* SECCIÓN 1.5: VÍDEO PITCH (Fondo Gris) */}
+  <TalentVideo
+    client:visible
+    title="El Puente Hacia la Innovación"
+    subtitle="Por qué el talento neurodivergente no es un favor, sino una ventaja."
+    description="La formación tradicional deja fuera a mentes brillantes. En Qualisophy conectamos las capacidades únicas del talento neurodiverso con las vacantes tecnológicas mediante metodologías adaptadas e IA. Descubre nuestra visión en este pitch."
+    embedUrl="https://www.youtube.com/embed/yPB7TC3RTZs?si=AvTnNGHHfK6ZFSq-"
+    variant="gray"
+  />
+
+  {/* SECCIÓN 2: BARRERAS (Fondo Blanco) */}
   <TalentBarriers 
     client:load 
     barriers={barrierList} 
+    variant="white"
   />
 
-  {/* SECCIÓN 3: IMPACTO */}
+  {/* SECCIÓN 3: IMPACTO (Fondo Gris) */}
   <TalentImpact 
     client:load 
     items={impactList} 
+    variant="gray"
   />
 
-  {/* SECCIÓN 4: MARCO LEGAL */}
+  {/* SECCIÓN 4: MARCO LEGAL (Fondo Blanco) */}
   <LegalCompliance 
     client:load 
     items={legalItems} 
     footerText="La Ley General de Discapacidad (LGD) establece obligaciones claras, pero su cumplimiento sigue siendo un reto. En Qualisophy te ayudamos a convertir este requisito en una ventaja estratégica."
-  />
-
-  {/* SECCIÓN 5: ESTRATEGIA 1 */}
-  <ProgramMethodology 
-    client:visible
-    {...dualTrainingData}
     variant="white"
   />
 
-  {/* SECCIÓN 6: ESTRATEGIA 2 */}
+  {/* SECCIÓN 5: ESTRATEGIA 1 (Fondo Gris) */}
+  <ProgramMethodology 
+    client:visible
+    {...dualTrainingData}
+    variant="gray"
+  />
+
+  {/* SECCIÓN 6: ESTRATEGIA 2 (Fondo Oscuro/Dark) */}
   <ProgramFeatures 
     client:visible
     title="Estrategia 2: Inserción Laboral"
@@ -207,7 +222,7 @@ const ctaButtons = [
     layout="grid4" 
   />
 
-  {/* SECCIÓN 7: ITINERARIOS (Destino del scroll con margen superior) */}
+  {/* SECCIÓN 7: ITINERARIOS (Fondo Blanco) */}
   <div id="itinerario" class="scroll-mt-32">
     <ProgramCurriculum 
       client:visible
@@ -219,9 +234,9 @@ const ctaButtons = [
   </div>
 
   {/* SECCIÓN 8: INCLUSIÓN REAL + CITA */}
-  <SocialImpactQuote client:load />
+  <SocialImpactQuote client:load variant="gray" />
 
-  {/* SECCIÓN 9: CTA */}
+  {/* SECCIÓN 9: CTA (Fondo Blanco) */}
   <div id="program-cta">
     <ProgramCTA 
       client:visible 
