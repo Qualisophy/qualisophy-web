@@ -14,6 +14,7 @@ interface SocialImpactQuoteProps {
   quoteText?: string;
   quoteHighlight?: string;
   quoteEnd?: string;
+  variant?: "white" | "gray"; // Añadido
 }
 
 const defaultPillars: SocialPillar[] = [
@@ -44,9 +45,12 @@ export const SocialImpactQuote: React.FC<SocialImpactQuoteProps> = ({
   quoteText = "“La inclusión laboral de personas con autismo no es solo una obligación legal, es una ",
   quoteHighlight = "oportunidad de crecimiento",
   quoteEnd = " para nuestras organizaciones y nuestra sociedad.”",
+  variant = "gray", // Añadido
 }) => {
+  const bgClass = variant === "gray" ? "bg-slate-50" : "bg-white";
+
   return (
-    <AnimatedSection className="py-24 bg-gray-50">
+    <AnimatedSection className={`py-24 ${bgClass}`}>
       <div className="container mx-auto px-6">
         {/* 1. TÍTULO DE LA SECCIÓN */}
         <div className="text-center max-w-3xl mx-auto mb-16">

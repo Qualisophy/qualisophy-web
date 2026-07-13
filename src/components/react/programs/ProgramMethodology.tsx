@@ -2,13 +2,14 @@ import React from "react";
 // Importamos el fondo Mesh reutilizable
 import { ParticleMeshBackground } from "@/components/react/shared/ParticleMeshBackground";
 
-interface MethodologyProps {
+export interface MethodologyProps {
   title: string;
   description: string[];
   checks: string[];
   imageSrc: string;
   reverse?: boolean;
-  variant?: "white" | "blue";
+  // FIX: Añadimos 'gray' a los tipos permitidos para solventar el error TS 2322
+  variant?: "white" | "blue" | "gray";
 }
 
 export const ProgramMethodology: React.FC<MethodologyProps> = ({
@@ -19,8 +20,9 @@ export const ProgramMethodology: React.FC<MethodologyProps> = ({
   reverse = false,
   variant = "white",
 }) => {
-  // "isGrayVariant" true si es la variante gris (blue). False si es blanco.
-  const isGrayVariant = variant === "blue";
+  // "isGrayVariant" true si es la variante gris (blue o gray). False si es blanco.
+  // Así mantenemos compatibilidad con páginas antiguas que usaran "blue".
+  const isGrayVariant = variant === "blue" || variant === "gray";
 
   return (
     <section
@@ -101,7 +103,7 @@ export const ProgramMethodology: React.FC<MethodologyProps> = ({
             {checks.map((check, index) => (
               <div
                 key={index}
-                // FIX APLICADO AQUÍ: Cambiamos items-start por items-center para centrado vertical perfecto
+                // Centrado vertical perfecto
                 className={`
                   flex items-center gap-4 p-4 rounded-xl border transition-all duration-300 hover:shadow-md
                   ${
@@ -111,7 +113,6 @@ export const ProgramMethodology: React.FC<MethodologyProps> = ({
                   }
                 `}
               >
-                {/* FIX APLICADO AQUÍ: Quitamos el mt-0.5 innecesario y aseguramos que no se encoja (shrink-0) */}
                 <span className="material-symbols-outlined text-2xl text-primary shrink-0">
                   check_circle
                 </span>
