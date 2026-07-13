@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { AnimatedSection } from "@/components/react/shared/AnimatedSection";
 
 export interface SocialPillar {
@@ -14,7 +15,14 @@ interface SocialImpactQuoteProps {
   quoteText?: string;
   quoteHighlight?: string;
   quoteEnd?: string;
-  variant?: "white" | "gray"; // Añadido
+
+  // Vídeo opcional
+  videoTitle?: string;
+  videoSubtitle?: string;
+  videoDescription?: string;
+  embedUrl?: string;
+
+  variant?: "white" | "gray";
 }
 
 const defaultPillars: SocialPillar[] = [
@@ -42,19 +50,25 @@ export const SocialImpactQuote: React.FC<SocialImpactQuoteProps> = ({
   title = "Hacia la Inclusión Real",
   subtitle = "Construimos un futuro donde el talento no tiene etiquetas.",
   pillars = defaultPillars,
-  quoteText = "“La inclusión laboral de personas con autismo no es solo una obligación legal, es una ",
-  quoteHighlight = "oportunidad de crecimiento",
-  quoteEnd = " para nuestras organizaciones y nuestra sociedad.”",
-  variant = "gray", // Añadido
+  quoteText = "“La formación tradicional deja fuera a mentes brillantes. ",
+  quoteHighlight = "En Qualisophy conectamos las capacidades únicas del talento neurodiverso ",
+  quoteEnd = " con las vacantes tecnológicas mediante metodologías adaptadas e IA.”",
+
+  videoTitle,
+  videoSubtitle,
+  videoDescription,
+  embedUrl,
+
+  variant = "gray",
 }) => {
   const bgClass = variant === "gray" ? "bg-slate-50" : "bg-white";
 
   return (
     <AnimatedSection className={`py-24 ${bgClass}`}>
       <div className="container mx-auto px-6">
-        {/* 1. TÍTULO DE LA SECCIÓN */}
+        {/* 1. TÍTULO */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl font-heading sm:text-4xl font-bold text-secondary mb-6">
+          <h2 className="text-3xl sm:text-4xl font-heading font-bold text-secondary mb-6">
             {title}
           </h2>
           <p className="text-lg text-slate-600 font-primary">{subtitle}</p>
@@ -72,17 +86,50 @@ export const SocialImpactQuote: React.FC<SocialImpactQuoteProps> = ({
                   {pillar.icon}
                 </span>
               </div>
-              <h4 className="font-bold text-secondary text-xl mb-3 font-heading">
+
+              <h4 className="font-heading font-bold text-secondary text-xl mb-3">
                 {pillar.title}
               </h4>
+
               <p className="text-sm text-slate-600 leading-relaxed font-primary">
                 {pillar.description}
               </p>
             </div>
           ))}
         </div>
+        {/* 4. VÍDEO (Opcional) */}
+        {embedUrl && (
+          <div className="mt-24 mb-20">
+            {/* Cabecera */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            ></motion.div>
+            {/* Contenedor del vídeo */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative aspect-video max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-secondary"
+            >
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src={embedUrl}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </motion.div>
+          </div>
+        )}
 
-        {/* 3. CITA ESTILIZADA */}
+        {/* 3. CITA */}
         <div className="max-w-4xl mx-auto">
           <div className="relative pl-8 md:pl-12 border-l-4 border-primary">
             <blockquote className="text-xl md:text-2xl font-primary italic text-slate-700 leading-relaxed">
