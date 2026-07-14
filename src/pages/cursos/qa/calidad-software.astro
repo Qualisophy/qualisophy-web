@@ -12,6 +12,10 @@ const courseDescription = "El Testing es la parte del Desarrollo de Software que
 
 const prerequisites = "La formación está enfocada a personas con conocimientos básicos de herramientas de ofimática así como el uso del ordenador personal. El conocimiento de algún lenguaje de programación no es necesario pero sí recomendable. Especialmente dirigida a personas que quieren introducirse en el mundo del Testing o reciclar su profesión.";
 
+const job = "Las personas en los roles de Tester o QA (Quality Assurance) son los encargados de realizar las tareas relacionadas con el aseguramiento de la Calidad. Podrás acceder a nivel Junior de estos puestos de trabajo con la formación recibida."; 
+
+const whatIsAbout ="La formación se compone de cinco módulos donde aprenderás todo lo necesario para realizar tanto Testing Funcional Manual cómo Automático aplicando las últimas tendencias de metodologías así como herramientas de IA. Practicarás todos los conceptos y tendrás acceso a todas las herramientas para llevar a cabo el aprendizaje.";
+
 const modules = [
   {
     id: "1",
@@ -81,12 +85,12 @@ const instructor = {
   name: "Fran Guerrero",
   title: "Instructor Tech · Aseguramiento de Calidad",
   experience: "Más de 15 años de experiencia en QA",
-  description: "Especialista certificado en Agile ISTQB. Implementa procesos de prueba, estrategias de control de calidad y herramientas innovadoras para asegurar el éxito del software.",
+  description: "Especialista certificado en Agile y GenAI por el ISTQB, con más de 15 años de trayectoria en Calidad del Software. Experto en implementar procesos de prueba, estrategias de QA y herramientas innovadoras. Destaca por construir relaciones sólidas de trabajo, con el firme objetivo de convertir al área de Calidad en una pieza esencial y transversal en todo el ciclo de desarrollo.",
   image: instructorImg.src, 
   certifications: [
     "ISTQB Agile Tester",
     "ISTQB Foundation Level",
-    "Certified Scrum Master"
+    "GenAI ISTQB"
   ],
 };
 
@@ -121,6 +125,9 @@ const courseName = "Calidad de Software (QA) y Testing";
       courseId={courseId}
       courseDescription={courseDescription}
       prerequisites={prerequisites}
+      job={job}
+      whatIsAbout={whatIsAbout}
+      
     />
     <EnrollButton 
       client:load 
