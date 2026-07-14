@@ -14,12 +14,14 @@ import { useTranslations } from "@/hooks/useTranslations";
 
 export interface CourseProps {
   modules: Module[];
-  instructor?: Instructor | null; // Ahora es opcional
+  instructor?: Instructor | null;
   courseDetails: CourseDetails;
   courseId?: string;
   className?: string;
   courseDescription?: string;
   prerequisites?: string;
+  job?: string;
+  whatIsAbout?: string;
 }
 
 export const Course = ({
@@ -30,10 +32,11 @@ export const Course = ({
   className = "",
   courseDescription,
   prerequisites,
+  job,
+  whatIsAbout,
 }: CourseProps) => {
   const t = useTranslations();
 
-  // LOGICA: Si hay instructor usamos 3 columnas (2 izq, 1 der). Si NO hay, usamos 1 sola columna que ocupe todo.
   const gridClass = instructor
     ? "grid lg:grid-cols-3 gap-8"
     : "flex flex-col gap-8 max-w-4xl mx-auto";
@@ -48,15 +51,43 @@ export const Course = ({
         <div className={leftColumnClass}>
           <CourseInfo courseDetails={courseDetails} courseId={courseId} />
 
-          {courseDescription && (
+          {/* Caja unificada para Descripción y De qué trata */}
+          {(courseDescription || whatIsAbout) && (
             <div className="bg-white rounded-lg border border-gray-200 p-6 md:p-8 shadow-sm">
-              <p className="text-slate-700 text-base leading-relaxed">
-                {courseDescription}
-              </p>
+              <h3 className="text-lg font-bold text-slate-800 mb-3 flex items-center gap-2">
+                <span className="material-symbols-outlined text-primary">
+                  school
+                </span>
+                ¿De qué trata esta formación?
+              </h3>
+
+              {courseDescription && (
+                <p className="text-slate-700 text-base leading-relaxed mb-4">
+                  {courseDescription}
+                </p>
+              )}
+
+              {whatIsAbout && (
+                <p className="text-slate-700 text-base leading-relaxed">
+                  {whatIsAbout}
+                </p>
+              )}
             </div>
           )}
 
           <CourseItinerary modules={modules} />
+
+          {job && (
+            <div className="bg-white rounded-lg border border-gray-200 p-6 md:p-8 shadow-sm">
+              <h3 className="text-lg font-bold text-slate-800 mb-3 flex items-center gap-2">
+                <span className="material-symbols-outlined text-primary">
+                  work
+                </span>
+                Salidas Profesionales
+              </h3>
+              <p className="text-slate-700 text-base leading-relaxed">{job}</p>
+            </div>
+          )}
 
           {prerequisites && (
             <div className="bg-white rounded-lg border border-gray-200 p-6 md:p-8 shadow-sm">
@@ -73,7 +104,7 @@ export const Course = ({
           )}
         </div>
 
-        {/* Columna Derecha - Instructor y FAQ (Solo se pinta si hay instructor) */}
+        {/* Columna Derecha - Instructor y FAQ */}
         {instructor && (
           <div className="bg-white space-y-6">
             <InstructorCard instructor={instructor} />
