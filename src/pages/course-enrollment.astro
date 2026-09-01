@@ -14,6 +14,7 @@ import imgQaCypress from "@/assets/imagenes-cursos/qa/cypress-bootcamp.jpeg";
 import imgQaJunit from "@/assets/imagenes-cursos/qa/junit.jpeg";
 import imgQaAgile from "@/assets/imagenes-cursos/qa/agile-testing.jpeg";
 import imgQaGenai from "@/assets/imagenes-cursos/qa/testing-ia.jpeg";
+import imgQaClaude from "@/assets/imagenes-cursos/qa/claude.jpeg";
 // DATA
 import imgDataSql from "@/assets/imagenes-cursos/data/sql-powerbi.jpeg";
 import imgDataPowerbi from "@/assets/imagenes-cursos/data/powerbi.jpeg";
@@ -131,6 +132,18 @@ const courseCatalog: Record<
     price: "Por definir",
     categorySlug: "qa",
     courseSlug: "genai-testing",
+  },
+  "ia-claude": {
+    id: "ia-claude",
+    name: "Claude: IA para Desarrollo y QA", 
+    description: "Domina los modelos de Anthropic, uso de Artifacts, MCP y Claude Code en terminal.",
+    image: imgQaClaude.src,
+    startDate: "Por definir",
+    duration: "30 horas",
+    modality: "Online en vivo",
+    price: "Por definir",
+    categorySlug: "ia",
+    courseSlug: "claude",
   },
 
   // ==========================================
@@ -347,6 +360,7 @@ const courses = Object.values(courseCatalog).map((course) => ({
 
 // Formateamos la categoría para los breadcrumbs
 const formatCategoryName = (slug: string) => {
+  if (slug === 'ia') return 'Inteligencia Artificial';
   if (slug === 'qa') return 'QA & Testing';
   if (slug === 'dev') return 'Desarrollo';
   if (slug === 'pm') return 'Project Management';

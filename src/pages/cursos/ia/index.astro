@@ -1,0 +1,58 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { ProgramHero } from "@/components/react/programs/ProgramHero";
+import { CourseGridCard } from "@/components/react/course/CourseGridCard";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+
+import { courseCategories } from "@/data/courseCatalog";
+
+// Buscamos la categoría "ia" que hemos creado en courseCatalog.ts
+const categoryData = courseCategories.find(c => c.id === "ia");
+const courses = categoryData?.courses || [];
+---
+
+<Layout title="Cursos de Inteligencia Artificial - Qualisophy" fullWidth={true}>
+  <ProgramHero
+    client:load
+    title="Formación en"
+    highlight="Inteligencia Artificial"
+    subtitle="Impulsa tu productividad y desarrollo. Domina la IA generativa, prompting avanzado y flujos de trabajo con agentes autónomos para revolucionar tu sector."
+    backgroundImage="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80"
+    ctaText="Ver Itinerarios"
+    scrollToId="courses-grid"
+  />
+
+  <div class="bg-gray-50/50 min-h-screen">
+    <div class="container mx-auto px-6 pt-8 pb-4">
+        <Breadcrumbs />
+    </div>
+
+    <section id="courses-grid" class="py-12 pb-24">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4 border-b border-gray-200 pb-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-3xl font-bold font-heading text-secondary mb-2">IA Generativa y Agentes</h2>
+                    <p class="text-gray-600 font-primary">Herramientas de última generación para automatizar y escalar tus proyectos técnicos.</p>
+                </div>
+                <div class="hidden md:block text-sm text-gray-400 font-medium">Mostrando {courses.length} cursos</div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                {courses.map((course) => (
+                <CourseGridCard
+                    client:visible
+                    title={course.title}
+                    description={course.description}
+                    imageSrc={course.image}
+                    href={course.href}
+                    level={course.level as any}
+                    duration={course.duration}
+                    modality={course.modality as any}
+                    category={course.categoryName}
+                />
+                ))}
+            </div>
+        </div>
+    </section>
+  </div>
+</Layout>

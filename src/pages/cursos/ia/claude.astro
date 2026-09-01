@@ -1,0 +1,135 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Course } from "@/components/react/course/Course";
+import { EnrollButton } from "@/components/react/shared/EnrollButton";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+
+// Importamos la imagen del curso y la del instructor
+import courseImg from "@/assets/imagenes-cursos/qa/claude.jpeg";
+import instructorImg from "@/assets/instructor/instructor-fran.png";
+
+const courseDescription = "Claude y los modelos Sonnet y Opus de Anthropic han revolucionado el desarrollo de software y la gestión de proyectos técnicos. En esta formación práctica dominarás desde la formulación avanzada de prompts, gestión de contexto y uso de Artifacts, hasta la integración de Claude Code en terminal, protocolos MCP y flujos de trabajo autónomos para acelerar drásticamente tu ciclo de vida de desarrollo y testing.";
+
+const prerequisites = "La formación está enfocada a desarrolladores, perfiles de QA, consultores técnicos y gestores de proyectos que deseen integrar agentes y LLMs avanzados en su día a día. Se recomiendan conocimientos básicos de programación (JavaScript, Python o similar), uso de terminal y familiaridad con entornos Git.";
+
+const modules = [
+  {
+    id: "1",
+    number: 1,
+    title: "Fundamentos de Claude y el Ecosistema Anthropic",
+    description: "Conoce a fondo las capacidades de los modelos y el entorno de trabajo web.",
+    topics: [
+      "Arquitectura de Claude: modelos Haiku, Sonnet y Opus.",
+      "Ventajas competitivas: ventana de contexto extendida y control de sesgo.",
+      "Configuración del entorno de trabajo, interfaz web y Claude Projects.",
+      "Gestión de artefactos (Artifacts) y prototipado interactivo en tiempo real."
+    ],
+    icon: "Bot",
+  },
+  {
+    id: "2",
+    number: 2,
+    title: "Prompt Engineering Avanzado con Claude",
+    description: "Aprende a comunicarte eficazmente con los modelos de Anthropic.",
+    topics: [
+      "Técnicas de estructuración mediante XML tags (<context>, <instructions>, <examples>).",
+      "Chain-of-Thought prompting y razonamiento paso a paso.",
+      "Few-shot prompting aplicado a refactorización y depuración de código.",
+      "Control de formato, schemas JSON estrictos y reducción de alucinaciones."
+    ],
+    icon: "MessageSquare",
+  },
+  {
+    id: "3",
+    number: 3,
+    title: "Claude Code y Desarrollo en Línea de Comandos",
+    description: "Lleva la IA directamente a tu terminal y entorno local.",
+    topics: [
+      "Introducción a Claude Code: instalación, autenticación y configuración CLI.",
+      "Integración con repositorios Git y análisis semántico de bases de código enteras.",
+      "Automatización de tareas de desarrollo: refactorización, creación de tests y resolución de bugs.",
+      "Creación de flujos de trabajo, scripts interactivos y custom commands."
+    ],
+    icon: "Terminal",
+  },
+  {
+    id: "4",
+    number: 4,
+    title: "Model Context Protocol (MCP) e Integraciones",
+    description: "Conecta Claude con tus propias herramientas y bases de datos.",
+    topics: [
+      "Qué es Model Context Protocol (MCP) y por qué redefine la arquitectura con LLMs.",
+      "Conexión de Claude con fuentes de datos locales, APIs y bases de datos.",
+      "Configuración de servidores MCP (PostgreSQL, Git, sistemas de archivos).",
+      "Creación de agentes asistidos con acceso directo a herramientas del proyecto."
+    ],
+    icon: "Network",
+  },
+  {
+    id: "5",
+    number: 5,
+    title: "Automatización de Testing y Documentación",
+    description: "Aplica Claude a flujos CI/CD y aseguramiento de calidad.",
+    topics: [
+      "Generación automatizada de suites de pruebas (unitarias, integración y E2E).",
+      "Creación dinámica de documentación técnica, OpenAPI specs y diagramas.",
+      "Buenas prácticas de seguridad, manejo de secretos y gobernanza de código.",
+      "Proyecto final: construcción y refactorización guiada de un proyecto end-to-end con Claude Code."
+    ],
+    icon: "CheckCircle",
+  }
+];
+
+const instructor = {
+  name: "Fran Guerrero",
+  title: "Lead Instructor & AI Engineering Specialist",
+  experience: "Especialista en QA, arquitecturas modernas y adopción de IA generativa.",
+  description: "Especialista técnico en arquitecturas modernas de software, pruebas continuas y adopción de herramientas de inteligencia artificial generativa en equipos de ingeniería para maximizar la productividad y calidad del código.",
+  image: instructorImg.src, 
+  certifications: [
+    "Claude Certified Practitioner",
+    "Prompt Engineering Specialist",
+    "Certified Scrum Master"
+  ],
+};
+
+const courseDetails = {
+  startDate: "Por definir",
+  duration: "Por definir",
+  schedule: "Por definir",
+  regularPrice: "Por definir",
+  earlyBirdPrice: "-", 
+};
+
+const courseId = "ia-claude";
+const courseName = "Claude: IA para Desarrollo y QA";
+---
+
+<Layout 
+  title={`${courseName} - Qualisophy`}
+  description={courseDescription.substring(0, 160) + "..."}
+  image={courseImg.src}
+  fullWidth={true}
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="mb-6"><Breadcrumbs /></div>
+    <h1 class="text-center text-2xl md:text-3xl font-bold text-slate-800 mb-8 md:mb-16">
+      {courseName}
+    </h1>
+    <Course 
+      client:load 
+      modules={modules} 
+      instructor={instructor} 
+      courseDetails={courseDetails} 
+      courseId={courseId}
+      courseDescription={courseDescription}
+      prerequisites={prerequisites}
+    />
+    <EnrollButton 
+      client:load 
+      courseId={courseId} 
+      courseName={courseName} 
+      isComingSoon={courseDetails.startDate.toLowerCase().includes("por definir")}
+    />
+  </div>
+</Layout>

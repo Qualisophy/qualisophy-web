@@ -9,6 +9,7 @@ import imgQaCypress from "@/assets/imagenes-cursos/qa/cypress-bootcamp.jpeg";
 import imgQaJunit from "@/assets/imagenes-cursos/qa/junit.jpeg";
 import imgQaAgile from "@/assets/imagenes-cursos/qa/agile-testing.jpeg";
 import imgQaGenai from "@/assets/imagenes-cursos/qa/testing-ia.jpeg";
+import imgQaClaude from "@/assets/imagenes-cursos/qa/claude.jpeg";
 
 // DATA
 import imgDataSql from "@/assets/imagenes-cursos/data/sql-powerbi.jpeg";
@@ -32,6 +33,31 @@ import imgAgileScrum from "@/assets/imagenes-cursos/agile/agile-mastery.jpeg";
 // CATÁLOGO DE CURSOS
 // ==========================================
 export const courseCategories = [
+  {
+    id: "ia",
+    title: "Inteligencia Artificial",
+    subtitle: "IA GENERATIVA Y AGENTES",
+    icon: "smart_toy",
+    headerColor: "bg-[#9B62CE]",
+    textColor: "text-[#9B62CE]",
+    hoverBorder: "hover:border-[#9B62CE]",
+    hoverText: "group-hover:text-[#9B62CE]",
+    link: "/cursos/ia",
+    courses: [
+      {
+        id: "ia-claude",
+        title: "Claude: IA para Desarrollo y QA",
+        description:
+          "Domina los modelos de Anthropic, uso de Artifacts, MCP y Claude Code en terminal para desarrollo automatizado.",
+        image: imgQaClaude.src,
+        duration: "Por definir",
+        level: "Intermedio",
+        modality: "Online",
+        categoryName: "QA",
+        href: "/cursos/ia/claude",
+      },
+    ],
+  },
   {
     id: "qa",
     title: "QA & Automatización",
