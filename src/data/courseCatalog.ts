@@ -53,7 +53,7 @@ export const courseCategories = [
         duration: "Por definir",
         level: "Intermedio",
         modality: "Online",
-        categoryName: "QA",
+        categoryName: "IA",
         href: "/cursos/ia/claude",
       },
     ],
