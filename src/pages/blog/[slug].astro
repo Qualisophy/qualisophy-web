@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { Newsletter } from "@/components/react/shared/Newsletter";
 import top50Image from "@/assets/pages/blog/hero-top-50.jpg";
 import top50Logo from "@/assets/pages/blog/top50.png";
+import empresaSolidariaImage from "@/assets/blog/empresa-solidaria/empresa-solidaria-blog.png";
 
 
 // ⚠️ IMPORTANTE: Renderizado estático
@@ -11,6 +12,50 @@ export const prerender = true;
 
 export async function getStaticPaths() {
   const posts = [
+    { 
+      slug: "sello-empresa-solidaria", 
+      title: "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria",
+      category: "Noticias",
+      date: "13 Oct, 2026",
+      image: empresaSolidariaImage.src,
+      content: {
+        intro: "En Qualisophy siempre hemos defendido que una empresa no se mide solo por sus resultados, sino también por el impacto que genera a su alrededor. Hoy damos un paso más en ese compromiso: hemos obtenido el Sello Empresa Solidaria 2026, que concede la Plataforma del Tercer Sector a las empresas que marcan la Casilla Empresa Solidaria en el Impuesto de Sociedades.",
+        badgeImage: empresaSolidariaImage.src,
+        sections: [
+          {
+            title: "¿Qué es la Casilla Empresa Solidaria?",
+            paragraphs: [
+              "La Casilla Empresa Solidaria permite a las empresas destinar el 0,7 % de su Impuesto de Sociedades a financiar proyectos sociales. Es una decisión sencilla que se toma en el momento de presentar el impuesto y que no supone ningún coste adicional para la compañía: no se paga más ni se recibe menos devolución.",
+              "Ese 0,7 % se destina a programas de entidades del Tercer Sector que trabajan cada día con las personas y colectivos más vulnerables. El Sello Empresa Solidaria reconoce públicamente a las empresas que han dado ese paso."
+            ],
+            keyFact: {
+              title: "Dato Clave",
+              text: "En 2025, la Casilla Empresa Solidaria recaudó cerca de 125 millones de euros para contribuir a una sociedad más justa e inclusiva."
+            }
+          },
+          {
+            title: "Coherente con lo que somos",
+            paragraphs: [
+              "Marcar esta casilla encaja de forma natural con nuestra misión. En Qualisophy trabajamos para abrir el sector tecnológico a personas neurodivergentes, del entorno rural, con talento migrante o en riesgo de exclusión, porque creemos que el talento está en todas partes y solo necesita una oportunidad.",
+              "Sumarnos a esta iniciativa es otra forma de llevar esa convicción a la práctica: que una parte de nuestra contribución fiscal ayude a sostener proyectos sociales que comparten nuestro objetivo de construir una sociedad más justa."
+            ]
+          },
+          {
+            title: "Una invitación a otras empresas",
+            paragraphs: [
+              "Este sello no es solo un reconocimiento, también es una forma de dar visibilidad a una iniciativa que muchas empresas todavía no conocen. Si tu empresa quiere sumarse, estos son los motivos para hacerlo:"
+            ],
+            list: [
+              "<strong>No tiene coste:</strong> Destinar el 0,7 % a fines sociales no aumenta la cuota del impuesto ni reduce la devolución.",
+              "<strong>Genera impacto real:</strong> Los fondos financian proyectos sociales de entidades del Tercer Sector que trabajan directamente con las personas.",
+              "<strong>Hace visible tu compromiso:</strong> El Sello Empresa Solidaria permite mostrar a clientes, equipo y sociedad que tu empresa apuesta por la responsabilidad social. Puedes solicitarlo en <a href=\"https://www.casillaempresasolidaria.es/sello-empresa-solidaria/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary font-semibold underline\">casillaempresasolidaria.es</a>."
+            ],
+            closingParagraph: "Porque cada empresa puede ser la pieza que completa una sociedad más inclusiva. En Qualisophy ya hemos marcado la casilla, ¿te sumas?"
+          }
+        ]
+      }
+    },
+
     { 
       slug: "qualisophy-top-50", 
       title: "Qualisophy: En el top 50 de la innovación andaluza",

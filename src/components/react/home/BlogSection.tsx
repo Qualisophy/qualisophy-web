@@ -1,8 +1,18 @@
 import React from "react";
 import top50Image from "@/assets/pages/blog/top50.png";
+import empresaSolidariaImage from "@/assets/blog/empresa-solidaria/empresa-solidaria-blog.png";
 
 // Datos unificados con slugs correctos
 const posts = [
+  {
+    slug: "sello-empresa-solidaria",
+    category: "Noticias",
+    title: "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria",
+    excerpt:
+      "Hemos obtenido el Sello Empresa Solidaria 2026 por destinar el 0,7 % de nuestro Impuesto de Sociedades a proyectos sociales.",
+    image: empresaSolidariaImage.src,
+    date: "13 Oct, 2026",
+  },
   {
     slug: "qualisophy-top-50",
     category: "Noticias",
