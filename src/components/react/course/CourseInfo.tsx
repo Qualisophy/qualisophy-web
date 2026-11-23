@@ -1,4 +1,4 @@
-import { Calendar, Clock } from "lucide-react";
+import { Calendar, Clock, Globe } from "lucide-react";
 import { Button } from "@/components/react/shared/Button";
 import { useTranslations } from "@/hooks/useTranslations";
 
@@ -9,6 +9,12 @@ export interface CourseDetails {
   regularPrice: string;
   earlyBirdPrice: string;
   oldStudentsDiscount?: string;
+  /** Opcional: si se indica, la segunda tarjeta muestra la modalidad en vez del horario */
+  modality?: string;
+  /** Opcional: fila "Garantía" en Detalles del Curso */
+  guarantee?: string;
+  /** Opcional: línea destacada final (p. ej. "Oferta exclusiva por tiempo limitado") */
+  offerText?: string;
 }
 
 interface CourseInfoProps {
@@ -79,11 +85,23 @@ export const CourseInfo = ({
             </span>
           }
         />
-        <CourseInfoBar
-          className="bg-secondary"
-          icon={<Clock className="w-6 h-6 md:w-7 md:h-7 flex-shrink-0" />}
-          content={formatSchedule(courseDetails.schedule)}
-        />
+        {courseDetails.modality ? (
+          <CourseInfoBar
+            className="bg-secondary"
+            icon={<Globe className="w-6 h-6 md:w-7 md:h-7 flex-shrink-0" />}
+            content={
+              <span className="font-semibold text-xs xl:text-sm 2xl:text-base">
+                Modalidad: {courseDetails.modality}
+              </span>
+            }
+          />
+        ) : (
+          <CourseInfoBar
+            className="bg-secondary"
+            icon={<Clock className="w-6 h-6 md:w-7 md:h-7 flex-shrink-0" />}
+            content={formatSchedule(courseDetails.schedule)}
+          />
+        )}
       </div>
 
       <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
@@ -97,6 +115,16 @@ export const CourseInfo = ({
               {courseDetails.startDate}
             </span>
           </div>
+          {courseDetails.modality && (
+            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
+              <span className="text-slate-600 text-sm font-medium">
+                Modalidad:
+              </span>
+              <span className="font-semibold text-slate-800 text-sm">
+                {courseDetails.modality}
+              </span>
+            </div>
+          )}
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
             <span className="text-slate-600 text-sm font-medium">
               Duración:
@@ -117,22 +145,39 @@ export const CourseInfo = ({
               {courseDetails.regularPrice}
             </span>
           </div>
+          {courseDetails.guarantee && (
+            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-1 lg:gap-6">
+              <span className="text-slate-600 text-sm font-medium flex-shrink-0">
+                Garantía:
+              </span>
+              <span className="font-semibold text-slate-800 text-sm lg:text-right">
+                {courseDetails.guarantee}
+              </span>
+            </div>
+          )}
 
           {/* Ocultamos inscripción anticipada y descuento si está por definir */}
           {!isComingSoon && (
             <>
-              <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
-                <span className="text-slate-600 text-sm font-medium">
-                  Inscripción anticipada:
-                </span>
-                <span className="font-semibold text-green-700 text-sm">
-                  {courseDetails.earlyBirdPrice}
-                </span>
-              </div>
-              <div className="flex justify-center w-full pt-5 mt-3 border-t border-gray-100">
+              {courseDetails.earlyBirdPrice && (
+                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
+                  <span className="text-slate-600 text-sm font-medium">
+                    Inscripción anticipada:
+                  </span>
+                  <span className="font-semibold text-green-700 text-sm">
+                    {courseDetails.earlyBirdPrice}
+                  </span>
+                </div>
+              )}
+              <div className="flex flex-col items-center gap-1 w-full pt-5 mt-3 border-t border-gray-100">
                 <span className="font-bold text-green-700 text-sm text-center">
                   {discountMessage}
                 </span>
+                {courseDetails.offerText && (
+                  <span className="font-bold text-green-700 text-sm text-center">
+                    {courseDetails.offerText}
+                  </span>
+                )}
               </div>
             </>
           )}

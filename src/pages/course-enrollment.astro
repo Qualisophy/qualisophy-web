@@ -14,6 +14,8 @@ import imgQaCypress from "@/assets/imagenes-cursos/qa/cypress-bootcamp.jpeg";
 import imgQaJunit from "@/assets/imagenes-cursos/qa/junit.jpeg";
 import imgQaAgile from "@/assets/imagenes-cursos/qa/agile-testing.jpeg";
 import imgQaGenai from "@/assets/imagenes-cursos/qa/testing-ia.jpeg";
+// RECONVERSIÓN LABORAL
+import imgReconversionTriunfa from "@/assets/imagenes-cursos/reconversion/triunfa-en-tu-reconversion-laboral.jpeg";
 import imgQaClaude from "@/assets/imagenes-cursos/qa/claude.jpeg";
 // DATA
 import imgDataSql from "@/assets/imagenes-cursos/data/sql-powerbi.jpeg";
@@ -144,6 +146,24 @@ const courseCatalog: Record<
     price: "Por definir",
     categorySlug: "ia",
     courseSlug: "claude",
+  },
+
+  // ==========================================
+  // RECONVERSIÓN LABORAL
+  // ==========================================
+  "reconversion-triunfa": {
+    id: "reconversion-triunfa",
+    name: "Triunfa en tu reconversión laboral",
+    description: "Prepara tu CV, LinkedIn, portfolio y entrevistas para conseguir tu primer puesto en QA.",
+    image: imgReconversionTriunfa.src,
+    startDate: "15 de enero, 2027",
+    duration: "Clase intensiva (3 h) + mentoría 1 a 1 (1 h) + simulacro (1 h)",
+    modality: "Online",
+    price: "100 €",
+    priceSubtext: "precio de lanzamiento (valor real: 125 €). Oferta exclusiva por tiempo limitado",
+    formerStudentDiscount: "Antiguos alumnos: 80 € (20 % extra)",
+    categorySlug: "reconversion-laboral",
+    courseSlug: "triunfa-en-tu-reconversion-laboral",
   },
 
   // ==========================================
@@ -361,6 +381,7 @@ const courses = Object.values(courseCatalog).map((course) => ({
 // Formateamos la categoría para los breadcrumbs
 const formatCategoryName = (slug: string) => {
   if (slug === 'ia') return 'Inteligencia Artificial';
+  if (slug === 'reconversion-laboral') return 'Reconversión Laboral';
   if (slug === 'qa') return 'QA & Testing';
   if (slug === 'dev') return 'Desarrollo';
   if (slug === 'pm') return 'Project Management';
