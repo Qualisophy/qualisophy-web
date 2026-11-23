@@ -147,6 +147,8 @@ const ogImageURL = new URL(image, siteUrl).href;
             checkFooterCollision();
             window.addEventListener("scroll", checkFooterCollision, { passive: true });
             window.addEventListener("resize", checkFooterCollision, { passive: true });
+            // Recalcular también cuando cambia la altura de la página sin scroll (desplegables)
+            new ResizeObserver(checkFooterCollision).observe(document.body);
             clearInterval(waitForCookieBtn); // Paramos el vigilante
           }
         }, 300);

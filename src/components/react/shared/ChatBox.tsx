@@ -75,12 +75,18 @@ export const ChatBox = () => {
     });
     window.addEventListener("resize", handleLayoutCalculations);
 
+    // Recalcular también cuando cambia la altura de la página sin scroll
+    // (p. ej. al abrir/cerrar desplegables), para que el footer no tape el botón
+    const resizeObserver = new ResizeObserver(handleLayoutCalculations);
+    resizeObserver.observe(document.body);
+
     handleLayoutCalculations();
     setTimeout(handleLayoutCalculations, 500);
 
     return () => {
       window.removeEventListener("scroll", handleLayoutCalculations);
       window.removeEventListener("resize", handleLayoutCalculations);
+      resizeObserver.disconnect();
     };
   }, [isMobile]);
 

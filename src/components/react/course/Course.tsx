@@ -10,6 +10,7 @@ import {
   CourseItinerary,
   type Module,
 } from "@/components/react/course/CourseItinerary";
+import { CourseFaq, type CourseFaqItem } from "@/components/react/course/CourseFaq";
 import { useTranslations } from "@/hooks/useTranslations";
 
 export interface CourseProps {
@@ -22,6 +23,8 @@ export interface CourseProps {
   prerequisites?: string;
   job?: string;
   whatIsAbout?: string;
+  /** Opcional: preguntas frecuentes propias del curso, al final de la columna principal */
+  faqs?: CourseFaqItem[];
 }
 
 export const Course = ({
@@ -34,6 +37,7 @@ export const Course = ({
   prerequisites,
   job,
   whatIsAbout,
+  faqs,
 }: CourseProps) => {
   const t = useTranslations();
 
@@ -102,6 +106,8 @@ export const Course = ({
               </p>
             </div>
           )}
+
+          {faqs && faqs.length > 0 && <CourseFaq faqs={faqs} />}
         </div>
 
         {/* Columna Derecha - Instructor y FAQ */}
@@ -117,7 +123,7 @@ export const Course = ({
                 {t("course.faq.description")}
               </p>
               <a
-                href="/faq"
+                href={faqs && faqs.length > 0 ? "#faq" : "/faq"}
                 className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-[#16223f] hover:bg-primary transition-colors w-full"
               >
                 {t("course.faq.button")}

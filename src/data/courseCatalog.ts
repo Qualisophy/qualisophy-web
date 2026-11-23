@@ -11,6 +11,9 @@ import imgQaAgile from "@/assets/imagenes-cursos/qa/agile-testing.jpeg";
 import imgQaGenai from "@/assets/imagenes-cursos/qa/testing-ia.jpeg";
 import imgQaClaude from "@/assets/imagenes-cursos/qa/claude.jpeg";
 
+// RECONVERSIÓN LABORAL
+import imgReconversionTriunfa from "@/assets/imagenes-cursos/reconversion/triunfa-en-tu-reconversion-laboral.jpeg";
+
 // DATA
 import imgDataSql from "@/assets/imagenes-cursos/data/sql-powerbi.jpeg";
 import imgDataPowerbi from "@/assets/imagenes-cursos/data/powerbi.jpeg";
@@ -33,6 +36,31 @@ import imgAgileScrum from "@/assets/imagenes-cursos/agile/agile-mastery.jpeg";
 // CATÁLOGO DE CURSOS
 // ==========================================
 export const courseCategories = [
+  {
+    id: "reconversion-laboral",
+    title: "Reconversión Laboral",
+    subtitle: "IMPULSA TU CAMBIO PROFESIONAL",
+    icon: "trending_up",
+    headerColor: "bg-secondary",
+    textColor: "text-secondary",
+    hoverBorder: "hover:border-secondary",
+    hoverText: "group-hover:text-secondary",
+    link: "/cursos/reconversion-laboral",
+    courses: [
+      {
+        id: "reconversion-triunfa",
+        title: "Triunfa en tu reconversión laboral",
+        description:
+          "Prepara tu CV, LinkedIn, portfolio y entrevistas para conseguir tu primer puesto en QA, con mentoría 1 a 1.",
+        image: imgReconversionTriunfa.src,
+        duration: "5 h",
+        level: "Principiante",
+        modality: "Online",
+        categoryName: "Reconversión",
+        href: "/cursos/reconversion-laboral/triunfa-en-tu-reconversion-laboral",
+      },
+    ],
+  },
   {
     id: "ia",
     title: "Inteligencia Artificial",

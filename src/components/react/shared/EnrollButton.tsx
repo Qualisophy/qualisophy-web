@@ -33,11 +33,17 @@ export const EnrollButton = ({
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleScroll);
 
+    // Recalcular también cuando cambia la altura de la página sin scroll
+    // (p. ej. al abrir/cerrar desplegables), para que el footer no tape el botón
+    const resizeObserver = new ResizeObserver(handleScroll);
+    resizeObserver.observe(document.body);
+
     handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleScroll);
+      resizeObserver.disconnect();
     };
   }, []);
 
