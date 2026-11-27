@@ -1,0 +1,99 @@
+- main:
+  - img "Equipo Qualisophy trabajando"
+  - heading "Nuestro Equipo" [level=1]
+  - paragraph: Expertos en tecnología, psicología y educación trabajando juntos para construir puentes de oportunidades.
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem: / Equipo
+  - heading "Las personas detrás del cambio" [level=2]
+  - img "Elena Martín"
+  - heading "Elena Martín" [level=3]
+  - text: CEO and Founder
+  - list:
+    - listitem: • Operaciones y Cultura
+    - listitem: • Gestión de talento y personas
+    - listitem: • Alianzas de impacto social
+  - img "Patricia Beyet"
+  - heading "Patricia Beyet" [level=3]
+  - text: Project Manager & Agile Coach
+  - list:
+    - listitem: • Gestión de proyectos y Scrum
+    - listitem: • Formación especializada en TI
+    - listitem: • Metodologías ágiles
+  - img "Juan Pedro Gómez"
+  - heading "Juan Pedro Gómez" [level=3]
+  - text: Desarrollo Web Fullstack
+  - list:
+    - listitem: • Arquitectura de la plataforma
+    - listitem: • Desarrollo Fullstack (Web)
+    - listitem: • Experiencia de Usuario (UX/UI)
+  - img "Francisco Guerrero"
+  - heading "Francisco Guerrero" [level=3]
+  - text: Instructor Tech
+  - list:
+    - listitem: • Estrategia y Liderazgo Tech
+    - listitem: • Docencia especializada sector TI
+    - listitem: • Visión global de la plataforma
+  - img "Javier Flores"
+  - heading "Javier Flores" [level=3]
+  - text: INSTRUCTOR TECH · AUTOMATIZACIÓN QA
+  - list:
+    - listitem: /• Cypress Ambassador \(\d+\)/
+    - listitem: • Automatización eficiente
+    - listitem: • Frameworks mantenibles
+  - img "Enrique Román"
+  - heading "Enrique Román" [level=3]
+  - text: INSTRUCTOR TECH · POWER BI & ANALÍTICA
+  - list:
+    - listitem: • Modelado de datos
+    - listitem: • Analítica de negocio
+    - listitem: • Toma de decisiones
+  - heading "Nuestro Blog" [level=2]
+  - paragraph: Conoce las últimas tendencias en tecnología, inclusión y crecimiento profesional.
+  - article:
+    - 'link "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria Noticias"':
+      - /url: /blog/sello-empresa-solidaria
+      - 'img "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria"'
+      - text: ""
+    - text: /\d+ Oct, \d+/
+    - 'link "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria"':
+      - /url: /blog/sello-empresa-solidaria
+      - 'heading "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria" [level=3]'
+    - paragraph: /Hemos obtenido el Sello Empresa Solidaria \d+ por destinar el \d+,\d+ % de nuestro Impuesto de Sociedades a proyectos sociales\./
+    - link "Leer artículo completo arrow_forward":
+      - /url: /blog/sello-empresa-solidaria
+  - article:
+    - 'link /Qualisophy: En el top \d+ de la innovación andaluza Noticias/':
+      - /url: /blog/qualisophy-top-50
+      - 'img /Qualisophy: En el top \d+ de la innovación andaluza/'
+      - text: ""
+    - text: /\d+ May, \d+/
+    - 'link /Qualisophy: En el top \d+ de la innovación andaluza/':
+      - /url: /blog/qualisophy-top-50
+      - 'heading /Qualisophy: En el top \d+ de la innovación andaluza/ [level=3]'
+    - paragraph: /Qualisophy entra en el Top \d+ andaluz de innovación con foco en impacto social, bienestar y diversidad en las organizaciones\./
+    - link "Leer artículo completo arrow_forward":
+      - /url: /blog/qualisophy-top-50
+  - article:
+    - link "El impacto de la IA en el testing de software moderno Tendencias":
+      - /url: /blog/impacto-ia-testing
+      - img "El impacto de la IA en el testing de software moderno"
+      - text: ""
+    - text: /\d+ Feb, \d+/
+    - link "El impacto de la IA en el testing de software moderno":
+      - /url: /blog/impacto-ia-testing
+      - heading "El impacto de la IA en el testing de software moderno" [level=3]
+    - paragraph: Descubre cómo la inteligencia artificial está redefiniendo los roles de QA y qué habilidades son necesarias hoy.
+    - link "Leer artículo completo arrow_forward":
+      - /url: /blog/impacto-ia-testing
+  - link "Ver todos los artículos grid_view":
+    - /url: /blog
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

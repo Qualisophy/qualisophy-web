@@ -8,6 +8,10 @@ import { ProgramFeatures } from "@/components/react/programs/ProgramFeatures";
 // ELIMINADO: ProgramCTA (Ya no lo necesitamos aquí, ReskillingCourses hace de CTA)
 // NUEVA IMPORTACIÓN
 import { ReskillingCourses } from "@/components/react/programs/ReskillingCourses";
+import { getCatalogo } from "@/lib/cursos";
+
+// Catálogo para el modal "Ver programas formativos" del hero
+const catalogo = await getCatalogo();
 
 // --- DATOS: RESKILLING ---
 
@@ -100,7 +104,7 @@ const transformationRoutes = [
     subtitle="Transformamos tu experiencia previa en nuevas competencias digitales para el mercado tecnológico actual."
     backgroundImage="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80"
     ctaText="Ver Programas Formativos"
-    hasCourseTree={true} 
+    courseTree={catalogo}
   />
 
   {/* 2. FASE 1: Experiencia - Fondo BLANCO */}

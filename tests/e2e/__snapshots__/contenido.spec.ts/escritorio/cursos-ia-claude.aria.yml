@@ -1,0 +1,88 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Inteligencia Artificial":
+          - /url: /cursos/ia
+      - listitem: "/ Claude: IA para Desarrollo y QA"
+  - 'heading "Claude: IA para Desarrollo y QA" [level=1]'
+  - text: "Inicio: Por definir Horario: Por definir"
+  - heading "Detalles del Curso" [level=2]
+  - text: "Inicio: Por definir Duración: Por definir Horario: Por definir Coste: Por definir"
+  - link "Me interesa el curso":
+    - /url: /course-enrollment?course=ia-claude&type=interest
+    - button "Me interesa el curso"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: Claude y los modelos Sonnet y Opus de Anthropic han revolucionado el desarrollo de software y la gestión de proyectos técnicos. En esta formación práctica dominarás desde la formulación avanzada de prompts, gestión de contexto y uso de Artifacts, hasta la integración de Claude Code en terminal, protocolos MCP y flujos de trabajo autónomos para acelerar drásticamente tu ciclo de vida de desarrollo y testing.
+  - button "1 MÓDULO 1 Fundamentos de Claude y el Ecosistema Anthropic":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Fundamentos de Claude y el Ecosistema Anthropic
+  - paragraph: Conoce a fondo las capacidades de los modelos y el entorno de trabajo web.
+  - list:
+    - listitem: "Arquitectura de Claude: modelos Haiku, Sonnet y Opus."
+    - listitem: "Ventajas competitivas: ventana de contexto extendida y control de sesgo."
+    - listitem: Configuración del entorno de trabajo, interfaz web y Claude Projects.
+    - listitem: Gestión de artefactos (Artifacts) y prototipado interactivo en tiempo real.
+  - button "2 MÓDULO 2 Prompt Engineering Avanzado con Claude":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Prompt Engineering Avanzado con Claude
+  - paragraph: Aprende a comunicarte eficazmente con los modelos de Anthropic.
+  - list:
+    - listitem: Técnicas de estructuración mediante XML tags (<context>, <instructions>, <examples>).
+    - listitem: Chain-of-Thought prompting y razonamiento paso a paso.
+    - listitem: Few-shot prompting aplicado a refactorización y depuración de código.
+    - listitem: Control de formato, schemas JSON estrictos y reducción de alucinaciones.
+  - button "3 MÓDULO 3 Claude Code y Desarrollo en Línea de Comandos":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Claude Code y Desarrollo en Línea de Comandos
+  - paragraph: Lleva la IA directamente a tu terminal y entorno local.
+  - list:
+    - listitem: "Introducción a Claude Code: instalación, autenticación y configuración CLI."
+    - listitem: Integración con repositorios Git y análisis semántico de bases de código enteras.
+    - listitem: "Automatización de tareas de desarrollo: refactorización, creación de tests y resolución de bugs."
+    - listitem: Creación de flujos de trabajo, scripts interactivos y custom commands.
+  - button "4 MÓDULO 4 Model Context Protocol (MCP) e Integraciones":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Model Context Protocol (MCP) e Integraciones
+  - paragraph: Conecta Claude con tus propias herramientas y bases de datos.
+  - list:
+    - listitem: Qué es Model Context Protocol (MCP) y por qué redefine la arquitectura con LLMs.
+    - listitem: Conexión de Claude con fuentes de datos locales, APIs y bases de datos.
+    - listitem: Configuración de servidores MCP (PostgreSQL, Git, sistemas de archivos).
+    - listitem: Creación de agentes asistidos con acceso directo a herramientas del proyecto.
+  - button "5 MÓDULO 5 Automatización de Testing y Documentación":
+    - text: ""
+    - heading "MÓDULO 5" [level=3]
+    - paragraph: Automatización de Testing y Documentación
+  - paragraph: Aplica Claude a flujos CI/CD y aseguramiento de calidad.
+  - list:
+    - listitem: Generación automatizada de suites de pruebas (unitarias, integración y E2E).
+    - listitem: Creación dinámica de documentación técnica, OpenAPI specs y diagramas.
+    - listitem: Buenas prácticas de seguridad, manejo de secretos y gobernanza de código.
+    - listitem: "Proyecto final: construcción y refactorización guiada de un proyecto end-to-end con Claude Code."
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: La formación está enfocada a desarrolladores, perfiles de QA, consultores técnicos y gestores de proyectos que deseen integrar agentes y LLMs avanzados en su día a día. Se recomiendan conocimientos básicos de programación (JavaScript, Python o similar), uso de terminal y familiaridad con entornos Git.
+  - heading "Fran Guerrero" [level=3]
+  - img "Fran Guerrero"
+  - heading "Lead Instructor & AI Engineering Specialist" [level=4]
+  - paragraph: Especialista en QA, arquitecturas modernas y adopción de IA generativa.
+  - paragraph: Especialista técnico en arquitecturas modernas de software, pruebas continuas y adopción de herramientas de inteligencia artificial generativa en equipos de ingeniería para maximizar la productividad y calidad del código.
+  - text: Claude Certified Practitioner Prompt Engineering Specialist Certified Scrum Master
+  - heading "¿Tienes alguna duda?" [level=3]
+  - paragraph: Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+  - link "Ver Preguntas Frecuentes":
+    - /url: /faq
+  - button "Me interesa"

@@ -1,0 +1,56 @@
+# Backend con Node.js
+# URL: /cursos/desarrollo/backend-node · Esquema: src/content.config.ts
+
+id: dev-backend
+nombre: Backend con Node.js
+categoria: desarrollo
+slug: backend-node
+visible: false
+orden: 3
+imagen: https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80
+resumen: Aprende a construir APIs RESTful escalables, microservicios y gestión de bases de datos.
+nivel: Intermedio
+modalidad: Online
+inicio: 24 de Marzo de 2025
+duracion: 50 horas (6 semanas)
+duracionCorta: 50 Horas
+horario: Lunes y Miércoles / 18:30 - 21:30
+precio:
+  normal: 550 €
+  prontoPago:
+    precio: 495 €
+temario:
+  - titulo: Node.js a Fondo
+    descripcion: Entendiendo el runtime, el event loop y la asincronía.
+    temas:
+      - "Arquitectura de Node.js: V8 y Libuv"
+      - Event Loop y Non-blocking I/O
+      - Módulos (CommonJS vs ESM)
+      - Streams y Buffers
+    icono: Server
+  - titulo: API REST con Express
+    descripcion: Desarrollo de servicios web robustos y escalables.
+    temas:
+      - Routing avanzado y Controladores
+      - Middlewares personalizados
+      - Validación de datos (Joi/Zod)
+      - Manejo centralizado de errores
+    icono: Globe
+  - titulo: Persistencia y Seguridad
+    descripcion: Bases de datos y protección de la API.
+    temas:
+      - SQL con PostgreSQL y ORM (Prisma)
+      - NoSQL con MongoDB y Mongoose
+      - Autenticación (JWT, Cookies)
+      - "Seguridad: Helmet, Rate Limiting, CORS"
+    icono: Database
+  - titulo: Calidad y Despliegue
+    descripcion: Testing y puesta en producción.
+    temas:
+      - Unit & Integration Testing con Jest
+      - Documentación con Swagger/OpenAPI
+      - Docker para desarrollo
+      - CI/CD con GitHub Actions
+    icono: Shield
+instructor:
+  id: generico-backend-lead

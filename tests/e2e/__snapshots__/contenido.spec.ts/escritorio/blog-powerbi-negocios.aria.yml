@@ -1,0 +1,49 @@
+- main:
+  - 'img "Power BI: Transformando datos en decisiones estratégicas"'
+  - text: Tecnología
+  - 'heading "Power BI: Transformando datos en decisiones estratégicas" [level=1]'
+  - text: /calendar_today \d+ Nov, \d+ schedule 5 min de lectura/
+  - article:
+    - navigation "Breadcrumb":
+      - list:
+        - listitem:
+          - link "Ir al inicio":
+            - /url: /
+            - img
+        - listitem:
+          - text: /
+          - link "Blog":
+            - /url: /blog
+        - listitem: / PowerBI Negocios
+    - paragraph: Acumular gigabytes de datos no sirve de nada si no sabes qué historia cuentan. Power BI ha democratizado el análisis de datos, permitiendo a cualquier empresa transformar números fríos en decisiones estratégicas visuales.
+    - heading "Del Excel estático al Dashboard interactivo" [level=2]
+    - paragraph: Durante décadas, las hojas de cálculo fueron las reinas del análisis empresarial. Sin embargo, en un mundo donde los datos se generan a tiempo real desde múltiples plataformas (CRMs, ERPs, RRSS), el análisis estático es obsoleto.
+    - paragraph: Power BI permite conectar decenas de fuentes de datos de forma simultánea, limpiar la información automáticamente con Power Query y modelar relaciones complejas. El resultado son informes interactivos donde un directivo puede hacer clic en una región y ver cómo cambian todas las métricas al instante.
+    - paragraph: lightbulb Inteligencia de Negocio
+    - paragraph: Las empresas que implementan análisis de datos visuales e interactivos toman decisiones críticas hasta 5 veces más rápido que sus competidores directos.
+    - heading "Habilidades necesarias para dominarlo" [level=2]
+    - paragraph: Convertirse en un experto en Data Analytics con Power BI va más allá de saber crear gráficos bonitos. Requiere una combinación de conocimientos técnicos y visión de negocio.
+    - list:
+      - listitem:
+        - strong: "Modelado de Datos:"
+        - text: Entender cómo relacionar tablas mediante esquemas de estrella para optimizar el rendimiento.
+      - listitem:
+        - strong: "Lenguaje DAX:"
+        - text: Dominar Data Analysis Expressions para crear medidas complejas, cálculos temporales y KPIs personalizados.
+      - listitem:
+        - strong: "Storytelling Visual:"
+        - text: Saber elegir el gráfico adecuado para guiar la atención del usuario hacia el insight importante.
+    - paragraph: En la era de la información, dominar Power BI no es una habilidad exclusiva de los informáticos; es el nuevo idioma de los negocios.
+    - paragraph: "¿Te ha gustado? Compártelo:"
+    - button "Compartir en redes": share
+    - button "Copiar enlace": link ¡Copiado!
+    - navigation:
+      - link "arrow_back Anterior De la hostelería a Desarrollador Full Stack en 6 meses":
+        - /url: /blog/caso-exito-maria
+      - link "Siguiente arrow_forward Cómo gestionar la diversidad en equipos ágiles":
+        - /url: /blog/diversidad-equipos-agiles
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

@@ -1,0 +1,50 @@
+- main:
+  - img "Catálogo Formación Qualisophy"
+  - text: CATÁLOGO FORMATIVO
+  - heading "Formación Individual" [level=1]
+  - paragraph: Impulsa tu carrera con nuestros itinerarios especializados. Domina las herramientas de QA, Datos, DevOps y Gestión Ágil.
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem: / Cursos
+  - button "Todos"
+  - button "Reconversión Laboral"
+  - button "Inteligencia Artificial"
+  - button "QA & Automatización"
+  - button "Data & BI"
+  - button "Herramientas Empresariales"
+  - button "DevOps & Gestión"
+  - button "Agile & Scrum"
+  - text: search
+  - textbox "Buscar curso..."
+  - heading "DevOps & Gestión" [level=2]
+  - text: Mostrando 3 cursos
+  - 'link "Control de Versiones con Git DevOps Principiante Control de Versiones con Git Aprende Git desde cero: control de versiones, repositorios, ramas y trabajo colaborativo. schedule Por definir wifi Online Ver arrow_forward_ios"':
+    - /url: /cursos/devops/git
+    - img "Control de Versiones con Git"
+    - text: DevOps Principiante
+    - heading "Control de Versiones con Git" [level=3]
+    - paragraph: "Aprende Git desde cero: control de versiones, repositorios, ramas y trabajo colaborativo."
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios
+  - link "Gestión Avanzada y CI/CD con GitLab DevOps Avanzado Gestión Avanzada y CI/CD con GitLab Configura tableros, automatiza pruebas y despliegues seguros. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/devops/gitlab-cicd
+    - img "Gestión Avanzada y CI/CD con GitLab"
+    - text: DevOps Avanzado
+    - heading "Gestión Avanzada y CI/CD con GitLab" [level=3]
+    - paragraph: Configura tableros, automatiza pruebas y despliegues seguros.
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios
+  - link "DevOps, Continuous Testing y CI/CD DevOps Principiante DevOps, Continuous Testing y CI/CD Inmersión completa en la cultura, prácticas y herramientas de DevOps. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/devops/introduccion-devops
+    - img "DevOps, Continuous Testing y CI/CD"
+    - text: DevOps Principiante
+    - heading "DevOps, Continuous Testing y CI/CD" [level=3]
+    - paragraph: Inmersión completa en la cultura, prácticas y herramientas de DevOps.
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

@@ -1,0 +1,16 @@
+{
+  "firstName": "Ana",
+  "lastName": "Prueba",
+  "email": "ana.prueba@example.com",
+  "phone": "600000000",
+  "dni": "12345678Z",
+  "address": "Calle Prueba 1",
+  "zipCode": "29001",
+  "city": "Málaga",
+  "province": "Málaga",
+  "course": "qa-cypress",
+  "courseName": "Cypress Automation Bootcamp",
+  "discountCode": "",
+  "privacyAccepted": true,
+  "type": "enrollment"
+}

@@ -1,0 +1,47 @@
+- main:
+  - img "Hero background"
+  - heading "Formación en Desarrollo" [level=1]
+  - paragraph: "Construye el futuro digital. Programas intensivos en las tecnologías más demandadas del mercado: React, Node, Java y Cloud."
+  - button "Ver Itinerarios"
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem: / Desarrollo
+  - heading "Formación para Desarrolladores" [level=2]
+  - paragraph: Actualiza tu stack tecnológico o comienza tu carrera en programación.
+  - text: Mostrando 4 cursos
+  - link /Fullstack Developer Desarrollo Avanzado Fullstack Developer Domina el desarrollo web completo\. Desde la base de datos hasta el frontend con las tecnologías más modernas\. schedule \d+ Horas wifi Híbrido Ver arrow_forward_ios/:
+    - /url: /cursos/desarrollo/fullstack
+    - img "Fullstack Developer"
+    - text: Desarrollo Avanzado
+    - heading "Fullstack Developer" [level=3]
+    - paragraph: Domina el desarrollo web completo. Desde la base de datos hasta el frontend con las tecnologías más modernas.
+    - text: /schedule \d+ Horas wifi Híbrido Ver arrow_forward_ios/
+  - link /Frontend con React Desarrollo Intermedio Frontend con React Especialízate en la creación de interfaces dinámicas y SPA utilizando React, Redux y Next\.js\. schedule \d+ Horas wifi Online Ver arrow_forward_ios/:
+    - /url: /cursos/desarrollo/frontend-react
+    - img "Frontend con React"
+    - text: Desarrollo Intermedio
+    - heading "Frontend con React" [level=3]
+    - paragraph: Especialízate en la creación de interfaces dinámicas y SPA utilizando React, Redux y Next.js.
+    - text: /schedule \d+ Horas wifi Online Ver arrow_forward_ios/
+  - link /Backend con Node\.js Desarrollo Intermedio Backend con Node\.js Aprende a construir APIs RESTful escalables, microservicios y gestión de bases de datos\. schedule \d+ Horas wifi Online Ver arrow_forward_ios/:
+    - /url: /cursos/desarrollo/backend-node
+    - img "Backend con Node.js"
+    - text: Desarrollo Intermedio
+    - heading "Backend con Node.js" [level=3]
+    - paragraph: Aprende a construir APIs RESTful escalables, microservicios y gestión de bases de datos.
+    - text: /schedule \d+ Horas wifi Online Ver arrow_forward_ios/
+  - link /Java & Spring Boot Desarrollo Avanzado Java & Spring Boot El estándar empresarial\. Desarrolla aplicaciones robustas y seguras para grandes organizaciones\. schedule \d+ Horas wifi Online Ver arrow_forward_ios/:
+    - /url: /cursos/desarrollo/java-spring
+    - img "Java & Spring Boot"
+    - text: Desarrollo Avanzado
+    - heading "Java & Spring Boot" [level=3]
+    - paragraph: El estándar empresarial. Desarrolla aplicaciones robustas y seguras para grandes organizaciones.
+    - text: /schedule \d+ Horas wifi Online Ver arrow_forward_ios/

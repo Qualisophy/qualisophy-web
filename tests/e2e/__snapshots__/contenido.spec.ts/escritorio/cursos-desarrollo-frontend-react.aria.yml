@@ -1,0 +1,73 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Desarrollo":
+          - /url: /cursos/desarrollo
+      - listitem: / Frontend con React
+  - heading "Frontend con React" [level=1]
+  - text: "/Inicio: \\d+ de Marzo de \\d+ Días: Martes y Jueves Horario: \\d+:\\d+ - \\d+:\\d+ horas/"
+  - heading "Detalles del Curso" [level=2]
+  - text: "/Inicio: \\d+ de Marzo de \\d+ Duración: \\d+ horas \\(8 semanas\\) Horario: Martes y Jueves \\/ \\d+:\\d+ - \\d+:\\d+ Coste: \\d+ € Inscripción anticipada: \\d+ € \\d+% de descuento extra para antiguos alumnos/"
+  - link "Inscríbete":
+    - /url: /course-enrollment?course=dev-frontend
+    - button "Inscríbete"
+  - button "1 MÓDULO 1 React Core Concepts":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: React Core Concepts
+  - paragraph: Entendiendo la librería y su filosofía declarativa.
+  - list:
+    - listitem: JSX, Virtual DOM y Reconciliación
+    - listitem: Componentes Funcionales vs Clases
+    - listitem: Ciclo de vida y Efectos
+    - listitem: Reglas de los Hooks
+  - button "2 MÓDULO 2 Hooks Avanzados y Patrones":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Hooks Avanzados y Patrones
+  - paragraph: Escribe código React limpio, reutilizable y performante.
+  - list:
+    - listitem: useMemo, useCallback y optimización
+    - listitem: useReducer para lógica compleja
+    - listitem: "Custom Hooks: Abstraer lógica"
+    - listitem: "Patrones de diseño: Compound Components"
+  - button "3 MÓDULO 3 Ecosistema Profesional":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Ecosistema Profesional
+  - paragraph: Herramientas que usan los equipos top.
+  - list:
+    - listitem: Enrutamiento con React Router v6
+    - listitem: Formularios con React Hook Form
+    - listitem: Validación con Zod
+    - listitem: "Estilado: TailwindCSS vs Styled Components"
+  - button "4 MÓDULO 4 Next.js y Testing":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Next.js y Testing
+  - paragraph: Introducción al framework de producción y calidad de código.
+  - list:
+    - listitem: Introducción a Next.js (SSR/SSG)
+    - listitem: Unit Testing con Vitest y React Testing Library
+    - listitem: E2E Testing básico
+    - listitem: Buenas prácticas de arquitectura
+  - heading "Frontend Architect" [level=3]
+  - heading "React Specialist" [level=4]
+  - paragraph: 8+ años de experiencia
+  - paragraph: Arquitecto Frontend obsesionado con el rendimiento web y la experiencia de usuario. Contribuidor Open Source.
+  - text: Meta Frontend Developer Professional
+  - heading "¿Tienes alguna duda?" [level=3]
+  - paragraph: Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+  - link "Ver Preguntas Frecuentes":
+    - /url: /faq
+  - button "Inscríbete"

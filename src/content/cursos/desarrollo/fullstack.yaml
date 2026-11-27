@@ -1,0 +1,56 @@
+# Fullstack Developer
+# URL: /cursos/desarrollo/fullstack · Esquema: src/content.config.ts
+
+id: dev-fullstack
+nombre: Fullstack Developer
+categoria: desarrollo
+slug: fullstack
+visible: false
+orden: 1
+imagen: https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&q=80
+resumen: Domina el desarrollo web completo. Desde la base de datos hasta el frontend con las tecnologías más modernas.
+nivel: Avanzado
+modalidad: Híbrido
+inicio: 3 de Marzo de 2025
+duracion: 120 horas (Bootcamp)
+duracionCorta: 120 Horas
+horario: Lunes a Jueves / 18:00 - 21:00
+precio:
+  normal: 1.200 €
+  prontoPago:
+    precio: 995 €
+temario:
+  - titulo: Fundamentos Web Modernos
+    descripcion: Bases sólidas de HTML5, CSS3 avanzado y JavaScript ES6+.
+    temas:
+      - Semántica HTML y Accesibilidad (a11y)
+      - CSS Grid, Flexbox y TailwindCSS
+      - DOM Manipulation y Event Loop
+      - "Asincronía: Promises y Async/Await"
+    icono: Layout
+  - titulo: Frontend con React
+    descripcion: Construcción de interfaces interactivas y gestión de estado.
+    temas:
+      - Componentes, Props y JSX
+      - "Hooks: useState, useEffect, useContext"
+      - Gestión de estado global (Zustand/Redux)
+      - Consumo de APIs y React Query
+    icono: Code
+  - titulo: Backend con Node.js & Express
+    descripcion: Creación de servidores, APIs REST y seguridad.
+    temas:
+      - Arquitectura REST y Express.js
+      - Middlewares y Manejo de Errores
+      - Autenticación JWT y Seguridad
+      - "Bases de Datos: MongoDB (NoSQL) y PostgreSQL (SQL)"
+    icono: Server
+  - titulo: Despliegue y DevOps
+    descripcion: Llevando tu aplicación a producción.
+    temas:
+      - Control de versiones con Git y GitHub Flow
+      - Dockerización de aplicaciones
+      - Despliegue en la nube (Vercel/Render)
+      - Introducción a CI/CD
+    icono: Cloud
+instructor:
+  id: generico-tech-lead-fullstack

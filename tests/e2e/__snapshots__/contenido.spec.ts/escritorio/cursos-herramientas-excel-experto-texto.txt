@@ -1,0 +1,70 @@
+/
+Cursos
+/
+Herramientas Empresariales
+/
+Microsoft Excel Expert
+Microsoft Excel Expert
+Inicio: Por definir
+Horario: Por definir
+Detalles del Curso
+Inicio:
+Por definir
+Duración:
+Por definir
+Horario:
+Por definir
+Coste:
+Por definir
+Me interesa el curso
+school
+¿De qué trata esta formación?
+
+Eleva tus habilidades ofimáticas al nivel experto. Este curso está diseñado para profesionales financieros, analistas y gestores que necesitan manejar grandes volúmenes de datos. Los estudiantes dominarán desde fórmulas condicionales complejas y matrices, hasta la automatización de procesos mediante macros y la transición hacia el modelado de datos avanzado integrado en el propio Excel (Power Pivot).
+
+1
+MÓDULO 1
+
+Funciones Complejas y Manipulación Ágil
+
+Trabaja más rápido y resuelve problemas complejos con fórmulas.
+
+Atajos de teclado avanzados y técnicas de navegación exprés.
+Funciones lógicas anidadas, funciones de búsqueda dinámica (BUSCARX, ÍNDICE/COINCIDIR) y matrices dinámicas.
+Formato condicional formulado y validación de datos avanzada.
+2
+MÓDULO 2
+
+Tablas Dinámicas Nivel Experto
+
+Saca todo el partido a la herramienta más potente de Excel.
+
+Agrupación avanzada de campos, campos y elementos calculados.
+Conexión de múltiples tablas dinámicas con segmentos de datos (Slicers).
+Extracción de informes dinámicos y técnicas de diseño de dashboards estáticos en Excel.
+3
+MÓDULO 3
+
+Modelado de Datos con Power Pivot y DAX
+
+Supera el límite de filas de Excel con modelos de datos.
+
+Introducción al complemento Power Pivot para superar el límite del millón de filas.
+Relación entre múltiples tablas sin utilizar funciones de búsqueda.
+Creación de medidas (KPIs) directamente en Excel utilizando lenguaje DAX básico.
+4
+MÓDULO 4
+
+Automatización de Procesos (Macros)
+
+Haz que Excel trabaje por ti automatizando tareas repetitivas.
+
+Introducción a la grabadora de Macros: referencias relativas vs. absolutas.
+Principios básicos del entorno de Visual Basic for Applications (VBA).
+Asignación de macros a botones y automatización de tareas repetitivas diarias.
+info
+Requisitos previos
+
+Dominio sólido de funciones básicas/intermedias de Excel y manejo habitual de tablas de datos.
+
+Me interesa

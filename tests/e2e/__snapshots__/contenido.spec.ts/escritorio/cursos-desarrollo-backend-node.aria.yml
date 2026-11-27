@@ -1,0 +1,73 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Desarrollo":
+          - /url: /cursos/desarrollo
+      - listitem: / Backend con Node.js
+  - heading "Backend con Node.js" [level=1]
+  - text: "/Inicio: \\d+ de Marzo de \\d+ Días: Lunes y Miércoles Horario: \\d+:\\d+ - \\d+:\\d+ horas/"
+  - heading "Detalles del Curso" [level=2]
+  - text: "/Inicio: \\d+ de Marzo de \\d+ Duración: \\d+ horas \\(6 semanas\\) Horario: Lunes y Miércoles \\/ \\d+:\\d+ - \\d+:\\d+ Coste: \\d+ € Inscripción anticipada: \\d+ € \\d+% de descuento extra para antiguos alumnos/"
+  - link "Inscríbete":
+    - /url: /course-enrollment?course=dev-backend
+    - button "Inscríbete"
+  - button "1 MÓDULO 1 Node.js a Fondo":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Node.js a Fondo
+  - paragraph: Entendiendo el runtime, el event loop y la asincronía.
+  - list:
+    - listitem: "Arquitectura de Node.js: V8 y Libuv"
+    - listitem: Event Loop y Non-blocking I/O
+    - listitem: Módulos (CommonJS vs ESM)
+    - listitem: Streams y Buffers
+  - button "2 MÓDULO 2 API REST con Express":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: API REST con Express
+  - paragraph: Desarrollo de servicios web robustos y escalables.
+  - list:
+    - listitem: Routing avanzado y Controladores
+    - listitem: Middlewares personalizados
+    - listitem: Validación de datos (Joi/Zod)
+    - listitem: Manejo centralizado de errores
+  - button "3 MÓDULO 3 Persistencia y Seguridad":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Persistencia y Seguridad
+  - paragraph: Bases de datos y protección de la API.
+  - list:
+    - listitem: SQL con PostgreSQL y ORM (Prisma)
+    - listitem: NoSQL con MongoDB y Mongoose
+    - listitem: Autenticación (JWT, Cookies)
+    - listitem: "Seguridad: Helmet, Rate Limiting, CORS"
+  - button "4 MÓDULO 4 Calidad y Despliegue":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Calidad y Despliegue
+  - paragraph: Testing y puesta en producción.
+  - list:
+    - listitem: Unit & Integration Testing con Jest
+    - listitem: Documentación con Swagger/OpenAPI
+    - listitem: Docker para desarrollo
+    - listitem: CI/CD con GitHub Actions
+  - heading "Backend Lead" [level=3]
+  - heading "Node.js Expert" [level=4]
+  - paragraph: 9+ años de experiencia
+  - paragraph: Ingeniero de Software especializado en sistemas distribuidos y APIs de alto rendimiento.
+  - text: OpenJS Node.js Services Developer
+  - heading "¿Tienes alguna duda?" [level=3]
+  - paragraph: Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+  - link "Ver Preguntas Frecuentes":
+    - /url: /faq
+  - button "Inscríbete"

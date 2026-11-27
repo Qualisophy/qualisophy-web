@@ -1,0 +1,121 @@
+- main:
+  - navigation:
+    - link "Inicio":
+      - /url: /
+    - text: /
+    - link "Cursos":
+      - /url: /cursos
+    - text: /
+    - link "QA & Testing":
+      - /url: /cursos/qa
+    - text: /
+    - link "Cypress Automation Bootcamp":
+      - /url: /cursos/qa/bootcamp-cypress
+    - text: / Inscripción
+  - heading "Inscripción al Curso" [level=1]
+  - paragraph: Estás a un paso de comenzar tu aprendizaje. Completa tus datos para reservar tu plaza.
+  - text: Nombre *
+  - textbox "Nombre *":
+    - /placeholder: Introduce tu nombre
+  - text: Apellidos *
+  - textbox "Apellidos *":
+    - /placeholder: Introduce tus apellidos
+  - text: Email *
+  - textbox "Email *":
+    - /placeholder: tu@email.com
+  - text: Teléfono *
+  - textbox "Teléfono *":
+    - /placeholder: "Ej: 600111222"
+  - text: DNI / NIE *
+  - textbox "DNI / NIE *":
+    - /placeholder: "Ej: 12345678X"
+  - text: Código Postal *
+  - textbox "Código Postal *":
+    - /placeholder: "Ej: 29001"
+  - text: Dirección *
+  - textbox "Dirección *":
+    - /placeholder: "Ej: Calle Principal, 2, 1A"
+  - text: Municipio *
+  - textbox "Municipio *":
+    - /placeholder: "Ej: Málaga"
+  - text: Provincia *
+  - combobox "Provincia *":
+    - option "Selecciona una provincia" [disabled] [selected]
+    - option "Álava"
+    - option "Albacete"
+    - option "Alicante"
+    - option "Almería"
+    - option "Asturias"
+    - option "Ávila"
+    - option "Badajoz"
+    - option "Baleares"
+    - option "Barcelona"
+    - option "Bizkaia"
+    - option "Burgos"
+    - option "Cáceres"
+    - option "Cádiz"
+    - option "Cantabria"
+    - option "Castellón"
+    - option "Ceuta"
+    - option "Ciudad Real"
+    - option "Córdoba"
+    - option "Cuenca"
+    - option "Gerona"
+    - option "Gipuzkoa"
+    - option "Granada"
+    - option "Guadalajara"
+    - option "Huelva"
+    - option "Huesca"
+    - option "Jaén"
+    - option "La Coruña"
+    - option "La Rioja"
+    - option "Las Palmas"
+    - option "León"
+    - option "Lérida"
+    - option "Lugo"
+    - option "Madrid"
+    - option "Málaga"
+    - option "Melilla"
+    - option "Murcia"
+    - option "Navarra"
+    - option "Orense"
+    - option "Palencia"
+    - option "Pontevedra"
+    - option "Salamanca"
+    - option "Santa Cruz de Tenerife"
+    - option "Segovia"
+    - option "Sevilla"
+    - option "Soria"
+    - option "Tarragona"
+    - option "Teruel"
+    - option "Toledo"
+    - option "Valencia"
+    - option "Valladolid"
+    - option "Zamora"
+    - option "Zaragoza"
+  - text: Curso * Cypress Automation Bootcamp Código de descuento (Opcional)
+  - textbox "Código de descuento (Opcional)":
+    - /placeholder: Introduce el código de descuento si tienes uno
+  - checkbox "He leído y acepto la Política de protección de datos de Qualisophy. *"
+  - text: He leído y acepto la Política de protección de datos de Qualisophy. *
+  - button "Inscríbete" [disabled]
+  - paragraph: Política de Protección de Datos
+  - paragraph:
+    - text: Los datos de carácter personal facilitados serán tratados por
+    - strong: Qualisophy SL con CIF B16444960
+    - text: /de acuerdo con lo dispuesto en el Reglamento \(UE\) \d+\/\d+ del Parlamento Europeo y del Consejo, de \d+ de abril de \d+, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de los mismos\./
+  - paragraph: Los datos facilitados serán tratados por el tiempo necesario para el cumplimiento de las finalidades objeto de tratamiento, mientras no se oponga al mismo y por el tiempo necesario para el cumplimiento de las obligaciones legales del responsable.
+  - paragraph:
+    - text: "Le recordamos que tiene derecho a ejercer los derechos de acceso, rectificación, cancelación, limitación, oposición y portabilidad de manera gratuita mediante correo electrónico a:"
+    - strong: hello@qualisophy.com
+    - text: y de solicitar la tutela de la Agencia Española de Protección de Datos en
+    - strong: www.aepd.es
+    - text: .
+  - img "Cypress Automation Bootcamp"
+  - heading "Cypress Automation Bootcamp" [level=3]
+  - paragraph: Aprende automatización de pruebas web modernas con Cypress desde cero.
+  - text: "/Inicio: \\d+ de Octubre de \\d+ Duración: \\d+ horas \\(6 semanas\\) Modalidad: Online en vivo/"
+  - paragraph: Precio
+  - paragraph: /\d+ €/
+  - paragraph: "/reservando antes del \\d+ de octubre de \\d+ \\(precio original: \\d+ €\\)/"
+  - paragraph: /\d+% de descuento extra para antiguos alumnos/

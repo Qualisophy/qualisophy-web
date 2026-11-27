@@ -1,0 +1,49 @@
+- main:
+  - 'img "Neurodivergencia: La ventaja competitiva oculta"'
+  - text: Inclusión
+  - 'heading "Neurodivergencia: La ventaja competitiva oculta" [level=1]'
+  - text: /calendar_today 2 Ene, \d+ schedule 5 min de lectura/
+  - article:
+    - navigation "Breadcrumb":
+      - list:
+        - listitem:
+          - link "Ir al inicio":
+            - /url: /
+            - img
+        - listitem:
+          - text: /
+          - link "Blog":
+            - /url: /blog
+        - listitem: / Neurodivergencia Ventaja
+    - paragraph: Tradicionalmente vista desde una óptica de déficit, la neurodivergencia se está revelando como una de las mayores ventajas competitivas en el sector tecnológico. Así es como mentes diferentes construyen soluciones innovadoras.
+    - heading "El poder del pensamiento lateral" [level=2]
+    - paragraph: El autismo, el TDAH, la dislexia y otras condiciones neurodivergentes a menudo vienen acompañadas de habilidades cognitivas excepcionales. En el desarrollo de software y el análisis de datos, competencias como el reconocimiento de patrones, la atención extrema al detalle y el pensamiento lateral son invaluables.
+    - paragraph: Empresas pioneras ya han adaptado sus procesos de selección, sustituyendo las entrevistas tradicionales (basadas en habilidades sociales) por pruebas técnicas prácticas, permitiendo que el talento puro brille sin barreras artificiales.
+    - paragraph: lightbulb Impacto Real
+    - paragraph: /Equipos que incluyen profesionales neurodivergentes han demostrado ser hasta un \d+% más productivos en tareas técnicas complejas, según estudios de Harvard Business Review\./
+    - heading "Cómo crear un entorno realmente inclusivo" [level=2]
+    - paragraph: Integrar talento diverso no consiste en obligar a las personas a encajar en un molde rígido, sino en flexibilizar la estructura de la empresa para maximizar el potencial de todos.
+    - list:
+      - listitem:
+        - strong: "Comunicación explícita:"
+        - text: Evitar ambigüedades, sarcasmos o suposiciones en las tareas y objetivos.
+      - listitem:
+        - strong: "Flexibilidad sensorial:"
+        - text: Permitir el trabajo remoto o el uso de auriculares con cancelación de ruido en la oficina.
+      - listitem:
+        - strong: "Liderazgo empático:"
+        - text: Formar a los managers para que entiendan y gestionen diferentes estilos de trabajo.
+    - paragraph: La verdadera innovación no ocurre cuando todos en la sala piensan de la misma manera.
+    - paragraph: "¿Te ha gustado? Compártelo:"
+    - button "Compartir en redes": share
+    - button "Copiar enlace": link ¡Copiado!
+    - navigation:
+      - link "arrow_back Anterior El impacto de la IA en el testing de software moderno":
+        - /url: /blog/impacto-ia-testing
+      - link "Siguiente arrow_forward De la hostelería a Desarrollador Full Stack en 6 meses":
+        - /url: /blog/caso-exito-maria
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

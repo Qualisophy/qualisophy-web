@@ -1,0 +1,70 @@
+/
+Cursos
+/
+Data & BI
+/
+Introducción a SQL para Power BI
+Introducción a SQL para Power BI
+Inicio: Por definir
+Horario: Por definir
+Detalles del Curso
+Inicio:
+Por definir
+Duración:
+Por definir
+Horario:
+Por definir
+Coste:
+Por definir
+Me interesa el curso
+school
+¿De qué trata esta formación?
+
+Power BI es potente, pero enviar millones de filas de datos sucios o innecesarios ralentiza drásticamente los informes. Este curso enseña a los analistas a utilizar SQL para realizar el 'trabajo pesado' directamente en el servidor de bases de datos. Los alumnos aprenderán a extraer, filtrar, limpiar y agregar datos en el origen, dominando el concepto de 'Query Folding' (Plegado de Consultas) para que Power BI solo procese la información final, garantizando cuadros de mando ultrarrápidos y optimizados.
+
+1
+MÓDULO 1
+
+Bases de Datos Relacionales y Fundamentos SQL
+
+Conoce la arquitectura de bases de datos y el lenguaje de consultas.
+
+Entender la arquitectura de bases de datos relacionales y el lenguaje DML/DDL.
+Sentencias básicas: SELECT, FROM, y filtrado potente con la cláusula WHERE.
+Búsqueda de patrones (LIKE), operadores lógicos (AND, OR, NOT) y rangos (BETWEEN).
+2
+MÓDULO 2
+
+Análisis y Agregación de Datos en el Origen
+
+Aprende a agrupar y resumir información eficientemente.
+
+Funciones de agregación: SUM, AVG, COUNT, MIN, MAX.
+Agrupación de datos con GROUP BY y filtrado condicional de grupos con HAVING.
+Ordenación de resultados (ORDER BY) y limitación de registros (TOP/LIMIT).
+3
+MÓDULO 3
+
+Relacionando Información Compleja (JOINs)
+
+Cruza datos de múltiples tablas como un experto.
+
+Diferencias y usos estratégicos de INNER JOIN, LEFT JOIN, y RIGHT JOIN.
+Subconsultas (Subqueries) para cálculos dinámicos avanzados.
+Uso de DISTINCT y resolución de redundancias en grandes volúmenes.
+4
+MÓDULO 4
+
+Integración Optimizada con Power BI
+
+Conecta tu base de datos optimizada a Power BI.
+
+Configuración de conexiones y uso del Método de Consulta Nativa en Power BI.
+Entendiendo y forzando el Query Folding para maximizar el rendimiento.
+Casos prácticos: de un esquema SQL complejo a una tabla plana perfecta para análisis.
+info
+Requisitos previos
+
+Lógica matemática básica y experiencia previa manejando datos en hojas de cálculo.
+
+Me interesa

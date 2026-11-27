@@ -1,0 +1,64 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "DevOps & Gestión":
+          - /url: /cursos/devops
+      - listitem: / Gestión Avanzada y CI/CD con GitLab
+  - heading "Gestión Avanzada y CI/CD con GitLab" [level=1]
+  - text: "Inicio: Por definir Horario: Por definir"
+  - heading "Detalles del Curso" [level=2]
+  - text: "Inicio: Por definir Duración: Por definir Horario: Por definir Coste: Por definir"
+  - link "Me interesa el curso":
+    - /url: /course-enrollment?course=devops-gitlab&type=interest
+    - button "Me interesa el curso"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: El desarrollo moderno exige plataformas integrales. Este curso, basado en la filosofía learning by doing, capacita a usuarios avanzados, administradores y DevOps en el uso exhaustivo de GitLab. Lejos de ser un simple repositorio de código, los estudiantes configurarán tableros ágiles, automatizarán flujos de pruebas y despliegues, e implementarán estrictas políticas de seguridad y cumplimiento para proyectos a gran escala.
+  - button "1 MÓDULO 1 Gestión de Proyectos, Equipos y Planificación Ágil":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Gestión de Proyectos, Equipos y Planificación Ágil
+  - paragraph: Organiza el trabajo y los equipos dentro de GitLab.
+  - list:
+    - listitem: Uso avanzado de GitLab Boards, Milestones e Issues para seguimiento de trabajo.
+    - listitem: Configuración de repositorios, roles de acceso y ramificaciones estratégicas (Git Flow).
+    - listitem: Integración bidireccional con herramientas de comunicación como Slack o Microsoft Teams.
+  - button "2 MÓDULO 2 Integración y Despliegue Continuo (CI/CD)":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Integración y Despliegue Continuo (CI/CD)
+  - paragraph: Automatiza tu ciclo de vida de desarrollo.
+  - list:
+    - listitem: "Arquitectura del archivo .gitlab-ci.yml: stages, jobs y runners."
+    - listitem: Automatización de pruebas unitarias y de calidad integradas en cada commit.
+    - listitem: Estrategias de despliegue automatizado, manejo de entornos (staging/production) y simulaciones de rollback.
+  - button "3 MÓDULO 3 Seguridad, Auditoría y Compliance (DevSecOps)":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Seguridad, Auditoría y Compliance (DevSecOps)
+  - paragraph: Protege tu código y cumple las normativas.
+  - list:
+    - listitem: Configuración de análisis estático (SAST) y dinámico (DAST) del código fuente.
+    - listitem: Integración de escaneo de vulnerabilidades y revisión de dependencias.
+    - listitem: Implementación de políticas de compliance, auditorías de acciones y registros de actividad.
+  - button "4 MÓDULO 4 Monitorización, Mantenimiento y Casos Prácticos":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Monitorización, Mantenimiento y Casos Prácticos
+  - paragraph: Observabilidad y proyectos a gran escala.
+  - list:
+    - listitem: Integración de métricas de salud del proyecto con herramientas como Prometheus.
+    - listitem: Configuración de alertas de rendimiento y generación de reportes personalizados.
+    - listitem: "Taller Práctico Integrador: despliegue, securización y monitorización de un proyecto monolítico y su transición a microservicios."
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: Conocimientos sólidos de Git y control de versiones, fundamentos de metodologías ágiles y nociones básicas de integración continua.
+  - button "Me interesa"

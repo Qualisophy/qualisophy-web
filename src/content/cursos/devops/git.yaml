@@ -1,0 +1,50 @@
+# Control de Versiones con Git
+# URL: /cursos/devops/git · Esquema: src/content.config.ts
+
+id: devops-git
+nombre: Control de Versiones con Git
+categoria: devops
+slug: git
+visible: true
+orden: 1
+imagen: ../../../assets/imagenes-cursos/devops/git.jpeg
+resumen: "Aprende Git desde cero: control de versiones, repositorios, ramas y trabajo colaborativo."
+descripcion: El control de versiones es una habilidad esencial en el desarrollo moderno. Este curso básico de Git, basado en la filosofía learning by doing, introduce a los estudiantes en el uso práctico de Git para gestionar cambios en el código, trabajar con ramas, realizar commits efectivos y colaborar en equipo de forma profesional. Ideal para iniciarse en entornos de desarrollo reales y mejorar la productividad desde el primer día.
+requisitos: Estar familiarizado con la terminal y/o algún editor de código.
+nivel: Principiante
+modalidad: Online
+inicio: Por definir
+duracion: Por definir
+duracionCorta: Por definir
+horario: Por definir
+precio:
+  normal: Por definir
+temario:
+  - titulo: Introducción a Git y Control de Versiones
+    descripcion: Comprende los fundamentos de Git y cómo gestionar el historial de cambios.
+    temas:
+      - Qué es el control de versiones y por qué Git es el estándar en desarrollo moderno.
+      - Inicialización de repositorios, estructura básica y primeros commits.
+      - Configuración inicial de usuario, flujo básico de trabajo y uso de repositorios remotos.
+    icono: GitBranch
+  - titulo: Ramas, Fusiones y Trabajo Colaborativo
+    descripcion: Aprende a trabajar en paralelo con ramas y equipos.
+    temas:
+      - Creación y gestión de ramas para desarrollo de funcionalidades independientes.
+      - Estrategias de merge y resolución de conflictos entre cambios.
+      - Uso de repositorios remotos para colaboración y sincronización de cambios.
+    icono: GitMerge
+  - titulo: Historial, Deshacer Cambios y Control Avanzado
+    descripcion: Domina el control del historial y la recuperación de cambios.
+    temas:
+      - Exploración del historial de commits y navegación entre versiones.
+      - Uso de reset, revert y checkout para deshacer cambios de forma segura.
+      - Gestión de etiquetas (tags) y almacenamiento temporal con stash.
+    icono: History
+  - titulo: Flujos de Trabajo Avanzados y Proyecto Final
+    descripcion: Consolida tus conocimientos aplicando Git en proyectos reales.
+    temas:
+      - Modelos de trabajo como Git Flow y GitHub Flow aplicados a proyectos reales.
+      - Hooks de Git y automatización de tareas locales.
+      - Proyecto final integrador con flujo completo de desarrollo y colaboración.
+    icono: Workflow

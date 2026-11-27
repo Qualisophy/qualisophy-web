@@ -5,6 +5,10 @@ import { TeamGrid } from "@/components/react/team/TeamGrid";
 import { Newsletter } from "@/components/react/shared/Newsletter";
 import { TestimonialsSection } from "@/components/react/shared/TestimonialSection";
 import { BlogSection } from "@/components/react/home/BlogSection";
+import { getTarjetasPosts } from "@/lib/blog";
+
+// Últimos 3 posts de src/content/blog para la sección "Blog"
+const ultimosPosts = await getTarjetasPosts(3);
 
 const heroBg = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
 ---
@@ -48,7 +52,7 @@ const heroBg = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixl
   <TeamGrid client:load />
   
   {/* 4. BLOG (Fondo Gris) */}
-  <BlogSection client:visible />
+  <BlogSection client:visible posts={ultimosPosts} />
   
   {/* 5. TESTIMONIOS (Fondo Oscuro) */}
   <!-- <TestimonialsSection client:visible /> -->

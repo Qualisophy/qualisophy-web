@@ -7,6 +7,8 @@ export interface CourseDetails {
   duration: string;
   schedule: string;
   regularPrice: string;
+  /** Opcional: precio de oferta; si se indica, regularPrice se muestra tachado delante */
+  offerPrice?: string;
   earlyBirdPrice: string;
   oldStudentsDiscount?: string;
   /** Opcional: si se indica, la segunda tarjeta muestra la modalidad en vez del horario */
@@ -141,9 +143,20 @@ export const CourseInfo = ({
           </div>
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
             <span className="text-slate-600 text-sm font-medium">Coste:</span>
-            <span className="font-semibold text-slate-800 text-sm">
-              {courseDetails.regularPrice}
-            </span>
+            {courseDetails.offerPrice ? (
+              <span className="font-semibold text-sm">
+                <span className="sr-only">Antes </span>
+                <del className="text-slate-400 font-normal mr-2">
+                  {courseDetails.regularPrice}
+                </del>
+                <span className="sr-only">, ahora </span>
+                <span className="text-green-700">{courseDetails.offerPrice}</span>
+              </span>
+            ) : (
+              <span className="font-semibold text-slate-800 text-sm">
+                {courseDetails.regularPrice}
+              </span>
+            )}
           </div>
           {courseDetails.guarantee && (
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-1 lg:gap-6">

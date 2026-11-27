@@ -1,0 +1,54 @@
+- main:
+  - 'img "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria"'
+  - text: Noticias
+  - 'heading "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria" [level=1]'
+  - text: /calendar_today \d+ Oct, \d+ schedule 5 min de lectura/
+  - article:
+    - navigation "Breadcrumb":
+      - list:
+        - listitem:
+          - link "Ir al inicio":
+            - /url: /
+            - img
+        - listitem:
+          - text: /
+          - link "Blog":
+            - /url: /blog
+        - listitem: / Sello Empresa Solidaria
+    - paragraph: "/En Qualisophy siempre hemos defendido que una empresa no se mide solo por sus resultados, sino también por el impacto que genera a su alrededor\\. Hoy damos un paso más en ese compromiso: hemos obtenido el Sello Empresa Solidaria \\d+, que concede la Plataforma del Tercer Sector a las empresas que marcan la Casilla Empresa Solidaria en el Impuesto de Sociedades\\./"
+    - img "Galardón o Insignia"
+    - heading "¿Qué es la Casilla Empresa Solidaria?" [level=2]
+    - paragraph: "/La Casilla Empresa Solidaria permite a las empresas destinar el \\d+,\\d+ % de su Impuesto de Sociedades a financiar proyectos sociales\\. Es una decisión sencilla que se toma en el momento de presentar el impuesto y que no supone ningún coste adicional para la compañía: no se paga más ni se recibe menos devolución\\./"
+    - paragraph: /Ese \d+,\d+ % se destina a programas de entidades del Tercer Sector que trabajan cada día con las personas y colectivos más vulnerables\. El Sello Empresa Solidaria reconoce públicamente a las empresas que han dado ese paso\./
+    - paragraph: lightbulb Dato Clave
+    - paragraph: /En \d+, la Casilla Empresa Solidaria recaudó cerca de \d+ millones de euros para contribuir a una sociedad más justa e inclusiva\./
+    - heading "Coherente con lo que somos" [level=2]
+    - paragraph: Marcar esta casilla encaja de forma natural con nuestra misión. En Qualisophy trabajamos para abrir el sector tecnológico a personas neurodivergentes, del entorno rural, con talento migrante o en riesgo de exclusión, porque creemos que el talento está en todas partes y solo necesita una oportunidad.
+    - paragraph: "Sumarnos a esta iniciativa es otra forma de llevar esa convicción a la práctica: que una parte de nuestra contribución fiscal ayude a sostener proyectos sociales que comparten nuestro objetivo de construir una sociedad más justa."
+    - heading "Una invitación a otras empresas" [level=2]
+    - paragraph: "Este sello no es solo un reconocimiento, también es una forma de dar visibilidad a una iniciativa que muchas empresas todavía no conocen. Si tu empresa quiere sumarse, estos son los motivos para hacerlo:"
+    - list:
+      - listitem:
+        - strong: "No tiene coste:"
+        - text: /Destinar el \d+,\d+ % a fines sociales no aumenta la cuota del impuesto ni reduce la devolución\./
+      - listitem:
+        - strong: "Genera impacto real:"
+        - text: Los fondos financian proyectos sociales de entidades del Tercer Sector que trabajan directamente con las personas.
+      - listitem:
+        - strong: "Hace visible tu compromiso:"
+        - text: El Sello Empresa Solidaria permite mostrar a clientes, equipo y sociedad que tu empresa apuesta por la responsabilidad social. Puedes solicitarlo en
+        - link "casillaempresasolidaria.es":
+          - /url: https://www.casillaempresasolidaria.es/sello-empresa-solidaria/
+        - text: .
+    - paragraph: Porque cada empresa puede ser la pieza que completa una sociedad más inclusiva. En Qualisophy ya hemos marcado la casilla, ¿te sumas?
+    - paragraph: "¿Te ha gustado? Compártelo:"
+    - button "Compartir en redes": share
+    - button "Copiar enlace": link ¡Copiado!
+    - navigation:
+      - 'link /Siguiente arrow_forward Qualisophy: En el top \d+ de la innovación andaluza/':
+        - /url: /blog/qualisophy-top-50
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

@@ -1,0 +1,4 @@
+https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9 | Hero background
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/devops/git.jpeg | Control de Versiones con Git
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/devops/gitlab.jpeg | Gestión Avanzada y CI/CD con GitLab
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/devops/ci-cd.jpeg | DevOps, Continuous Testing y CI/CD

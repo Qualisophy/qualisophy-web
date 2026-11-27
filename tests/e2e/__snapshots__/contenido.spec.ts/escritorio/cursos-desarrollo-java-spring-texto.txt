@@ -1,0 +1,82 @@
+/
+Cursos
+/
+Desarrollo
+/
+Java & Spring Boot
+Java & Spring Boot
+Inicio: 7 de Abril de 2025
+Días: Martes y Jueves
+Horario: 18:30 - 21:30 horas
+Detalles del Curso
+Inicio:
+7 de Abril de 2025
+Duración:
+60 horas (8 semanas)
+Horario:
+Martes y Jueves / 18:30 - 21:30
+Coste:
+695 €
+Inscripción anticipada:
+625 €
+25% de descuento extra para antiguos alumnos
+Inscríbete
+1
+MÓDULO 1
+
+Java Moderno y POO
+
+Repaso avanzado de Java y las novedades de las últimas versiones.
+
+Principios SOLID y Patrones de Diseño
+Java 17/21: Records, Pattern Matching, Var
+Programación Funcional: Streams y Lambdas
+Gestión de dependencias con Maven/Gradle
+2
+MÓDULO 2
+
+Spring Boot Core
+
+Fundamentos del framework empresarial por excelencia.
+
+Inversión de Control e Inyección de Dependencias
+Configuración y Beans
+Spring Data JPA y Hibernate
+Spring Web MVC: Creación de APIs
+3
+MÓDULO 3
+
+Seguridad y Microservicios
+
+Construyendo sistemas seguros y distribuidos.
+
+Spring Security: Autenticación y Autorización (OAuth2/JWT)
+Introducción a Microservicios con Spring Cloud
+Comunicación entre servicios (Feign, RestTemplate)
+Service Discovery y Config Server
+4
+MÓDULO 4
+
+Testing y Observabilidad
+
+Calidad de software en el ecosistema Spring.
+
+Testing con JUnit 5 y Mockito
+Testcontainers para pruebas de integración
+Actuator y monitorización
+Dockerización de aplicaciones Spring Boot
+Java Architect
+Spring Certified Professional
+
+12+ años de experiencia
+
+Arquitecto de Software con experiencia en banca y seguros. Experto en migración de monolitos a microservicios.
+
+Oracle Certified Professional: Java SE
+Spring Certified Professional
+¿Tienes alguna duda?
+
+Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+
+Ver Preguntas Frecuentes
+Inscríbete

@@ -1,0 +1,5 @@
+https://images.unsplash.com/photo-1497215728101-856f4ea42174 | Hero background
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/tools/excel.jpeg | Microsoft Excel Expert
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/tools/ofimatica.jpeg | Ofimática Integral
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/tools/chatbots.jpeg | Chatbots para E-commerce
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/tools/make.jpeg | Productividad con Make

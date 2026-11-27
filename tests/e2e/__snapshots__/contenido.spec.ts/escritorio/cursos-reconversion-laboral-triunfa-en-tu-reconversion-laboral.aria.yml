@@ -1,0 +1,97 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Reconversión Laboral":
+          - /url: /cursos/reconversion-laboral
+      - listitem: / Triunfa en tu reconversión laboral
+  - heading "Triunfa en tu reconversión laboral" [level=1]
+  - text: "/Inicio: \\d+ de enero de \\d+ Modalidad: Online/"
+  - heading "Detalles del Curso" [level=2]
+  - text: "/Inicio: \\d+ de enero de \\d+ Modalidad: Online Duración: Clase online intensiva \\(3 h\\), mentoría 1 a 1 \\(1 h\\) y simulacro de entrevista \\(1 h\\) Horario: \\d+:\\d+ - \\d+:\\d+ Coste: Antes/"
+  - deletion: /\d+ €/
+  - text: "/, ahora \\d+ € Garantía: Devolución del \\d+ % de la matrícula si firmas un contrato como QA Precio para antiguos alumnos: \\d+ € \\(\\d+ % extra\\) Oferta exclusiva por tiempo limitado/"
+  - link "Inscríbete":
+    - /url: /course-enrollment?course=reconversion-triunfa
+    - button "Inscríbete"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: "Cambiar de sector no es fácil: muchas personas que saben testear o que vienen de otra área se quedan atascadas en los procesos de selección. El problema no suele ser la falta de capacidad, sino un CV que no destaca, un perfil de LinkedIn invisible para los reclutadores, la falta de un portfolio que demuestre lo que sabes y entrevistas para las que nadie te ha preparado."
+  - paragraph: "En esta formación trabajamos esos cuatro pilares (CV estratégico, LinkedIn SEO, Portfolio QA y Entrevistas) en tres fases: Estrategia, Optimización y Acción. Con una clase online intensiva, una mentoría 1 a 1 y un simulacro de entrevista, sales con tu candidatura lista para optar a tu primer puesto en QA."
+  - 'button "1 MÓDULO 1 Fase 1 · Estrategia: tu punto de partida"':
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: "Fase 1 · Estrategia: tu punto de partida"
+  - paragraph: Definimos hacia dónde vas antes de tocar tu candidatura.
+  - list:
+    - listitem: Análisis de tu perfil y de tus competencias transferibles.
+    - listitem: Qué buscan las empresas al contratar perfiles QA.
+    - listitem: "Elección del puesto objetivo: QA Tester o QA Junior."
+    - listitem: Plan de acción personalizado para tu reconversión.
+  - 'button "2 MÓDULO 2 Fase 2 · Optimización: CV estratégico"':
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: "Fase 2 · Optimización: CV estratégico"
+  - paragraph: Un CV que pone en valor tu experiencia previa.
+  - list:
+    - listitem: Estructura y enfoque de un CV para perfiles QA.
+    - listitem: Cómo traducir tu experiencia anterior a competencias de calidad.
+    - listitem: Palabras clave para superar los filtros de selección (ATS).
+    - listitem: Revisión de tu CV en la mentoría 1 a 1.
+  - 'button "3 MÓDULO 3 Fase 2 · Optimización: LinkedIn SEO"':
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: "Fase 2 · Optimización: LinkedIn SEO"
+  - paragraph: Que los reclutadores te encuentren.
+  - list:
+    - listitem: Titular, extracto y experiencia orientados a QA.
+    - listitem: Palabras clave que buscan los reclutadores.
+    - listitem: Aptitudes, recomendaciones y actividad en la red.
+    - listitem: Revisión de tu perfil en la mentoría 1 a 1.
+  - 'button "4 MÓDULO 4 Fase 2 · Optimización: Portfolio QA"':
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: "Fase 2 · Optimización: Portfolio QA"
+  - paragraph: Demuestra lo que sabes hacer con ejemplos reales.
+  - list:
+    - listitem: Qué incluir en un portfolio de QA.
+    - listitem: Casos de prueba, reportes de defectos y ejemplos prácticos.
+    - listitem: Cómo presentar tu portfolio en el CV y en LinkedIn.
+  - 'button "5 MÓDULO 5 Fase 3 · Acción: Entrevistas"':
+    - text: ""
+    - heading "MÓDULO 5" [level=3]
+    - paragraph: "Fase 3 · Acción: Entrevistas"
+  - paragraph: Llega preparado a los procesos de selección.
+  - list:
+    - listitem: Preguntas técnicas y de comportamiento más habituales en QA.
+    - listitem: Cómo contar tu historia de reconversión.
+    - listitem: Simulacro de entrevista de 1 h con feedback personalizado.
+    - listitem: Plan para lanzar tus candidaturas.
+  - heading "work Salidas Profesionales" [level=3]
+  - paragraph: La formación te prepara para optar a puestos de QA Tester o QA Junior con una candidatura sólida. Te damos herramientas y acompañamiento, pero no garantizamos un empleo.
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: Dirigido a personas que ya saben testear y buscan su primer puesto en QA, y a quienes vienen de otra área y quieren dar el salto a la tecnología. No hace falta experiencia previa en programación.
+  - heading "help Preguntas frecuentes" [level=3]
+  - group: ¿Cuánto cuesta?
+  - group: ¿Cuándo empieza?
+  - group: ¿Qué garantía tiene?
+  - group: ¿A quién va dirigido?
+  - heading "Fran Guerrero" [level=3]
+  - img "Fran Guerrero"
+  - heading "Instructor Tech · Aseguramiento de Calidad" [level=4]
+  - paragraph: /Más de \d+ años de experiencia en QA/
+  - paragraph: Especialista en aseguramiento de calidad que conoce de primera mano qué buscan las empresas al contratar perfiles de QA y cómo preparar una candidatura para conseguirlo.
+  - text: ISTQB Agile Tester ISTQB Foundation Level GenAI ISTQB
+  - heading "¿Tienes alguna duda?" [level=3]
+  - paragraph: Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+  - link "Ver Preguntas Frecuentes":
+    - /url: "#faq"
+  - button "Inscríbete"

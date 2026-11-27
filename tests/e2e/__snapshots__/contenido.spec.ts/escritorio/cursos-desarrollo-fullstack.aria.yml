@@ -1,0 +1,73 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Desarrollo":
+          - /url: /cursos/desarrollo
+      - listitem: / Fullstack Developer
+  - heading "Fullstack Developer" [level=1]
+  - text: "/Inicio: 3 de Marzo de \\d+ Días: Lunes a Jueves Horario: \\d+:\\d+ - \\d+:\\d+ horas/"
+  - heading "Detalles del Curso" [level=2]
+  - text: "/Inicio: 3 de Marzo de \\d+ Duración: \\d+ horas \\(Bootcamp\\) Horario: Lunes a Jueves \\/ \\d+:\\d+ - \\d+:\\d+ Coste: \\d+\\.\\d+ € Inscripción anticipada: \\d+ € \\d+% de descuento extra para antiguos alumnos/"
+  - link "Inscríbete":
+    - /url: /course-enrollment?course=dev-fullstack
+    - button "Inscríbete"
+  - button "1 MÓDULO 1 Fundamentos Web Modernos":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Fundamentos Web Modernos
+  - paragraph: Bases sólidas de HTML5, CSS3 avanzado y JavaScript ES6+.
+  - list:
+    - listitem: Semántica HTML y Accesibilidad (a11y)
+    - listitem: CSS Grid, Flexbox y TailwindCSS
+    - listitem: DOM Manipulation y Event Loop
+    - listitem: "Asincronía: Promises y Async/Await"
+  - button "2 MÓDULO 2 Frontend con React":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Frontend con React
+  - paragraph: Construcción de interfaces interactivas y gestión de estado.
+  - list:
+    - listitem: Componentes, Props y JSX
+    - listitem: "Hooks: useState, useEffect, useContext"
+    - listitem: Gestión de estado global (Zustand/Redux)
+    - listitem: Consumo de APIs y React Query
+  - button "3 MÓDULO 3 Backend con Node.js & Express":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Backend con Node.js & Express
+  - paragraph: Creación de servidores, APIs REST y seguridad.
+  - list:
+    - listitem: Arquitectura REST y Express.js
+    - listitem: Middlewares y Manejo de Errores
+    - listitem: Autenticación JWT y Seguridad
+    - listitem: "Bases de Datos: MongoDB (NoSQL) y PostgreSQL (SQL)"
+  - button "4 MÓDULO 4 Despliegue y DevOps":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Despliegue y DevOps
+  - paragraph: Llevando tu aplicación a producción.
+  - list:
+    - listitem: Control de versiones con Git y GitHub Flow
+    - listitem: Dockerización de aplicaciones
+    - listitem: Despliegue en la nube (Vercel/Render)
+    - listitem: Introducción a CI/CD
+  - heading "Tech Lead Fullstack" [level=3]
+  - heading "Senior Software Engineer" [level=4]
+  - paragraph: /\d+\+ años de experiencia/
+  - paragraph: Ingeniero Fullstack con experiencia en startups de alto crecimiento. Especialista en stack MERN y arquitecturas escalables.
+  - text: AWS Certified Developer MongoDB Certified Developer
+  - heading "¿Tienes alguna duda?" [level=3]
+  - paragraph: Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+  - link "Ver Preguntas Frecuentes":
+    - /url: /faq
+  - button "Inscríbete"

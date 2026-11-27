@@ -1,0 +1,5 @@
+https://images.unsplash.com/photo-1605379399642-870262d3d051 | Hero background
+https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2 | Fullstack Developer
+https://images.unsplash.com/photo-1633356122544-f134324a6cee | Frontend con React
+https://images.unsplash.com/photo-1627398242454-45a1465c2479 | Backend con Node.js
+https://images.unsplash.com/photo-1537884944318-390069bb8665 | Java & Spring Boot

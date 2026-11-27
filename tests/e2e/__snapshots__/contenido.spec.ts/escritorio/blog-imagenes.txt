@@ -1,0 +1,8 @@
+https://images.unsplash.com/photo-1522071820081-009f0129c71c | Blog Header
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/blog/empresa-solidaria/empresa-solidaria-blog.png | Nuestro compromiso social ya tiene sello: somos Empresa Solidaria
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/pages/blog/top50.png | Qualisophy: En el top 50 de la innovación andaluza
+https://images.unsplash.com/photo-1620712943543-bcc4688e7485 | El impacto de la IA en el testing de software moderno
+https://images.unsplash.com/photo-1531482615713-2afd69097998 | Neurodivergencia: La ventaja competitiva oculta
+https://images.unsplash.com/photo-1522202176988-66273c2fd55f | De la hostelería a Desarrollador Full Stack en 6 meses
+https://images.unsplash.com/photo-1551288049-bebda4e38f71 | Power BI: Transformando datos en decisiones estratégicas
+https://images.unsplash.com/photo-1522071820081-009f0129c71c | Cómo gestionar la diversidad en equipos ágiles

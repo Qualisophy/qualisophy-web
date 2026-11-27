@@ -1,0 +1,72 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "DevOps & Gestión":
+          - /url: /cursos/devops
+      - listitem: / DevOps, Continuous Testing y CI/CD
+  - heading "DevOps, Continuous Testing y CI/CD" [level=1]
+  - text: "Inicio: Por definir Horario: Por definir"
+  - heading "Detalles del Curso" [level=2]
+  - text: "Inicio: Por definir Duración: Por definir Horario: Por definir Coste: Por definir"
+  - link "Me interesa el curso":
+    - /url: /course-enrollment?course=devops-intro&type=interest
+    - button "Me interesa el curso"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: La filosofía DevOps ha transformado la manera en que se construye, prueba y despliega el software, rompiendo los silos tradicionales entre desarrollo y operaciones. Este curso proporciona una inmersión completa en la cultura, prácticas y herramientas de DevOps. Los alumnos aprenderán a automatizar procesos clave mediante pipelines de Integración y Despliegue Continuo (CI/CD), asegurando la calidad del producto en cada etapa gracias al Testing Continuo y la monitorización activa.
+  - button "1 MÓDULO 1 Fundamentos de DevOps":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Fundamentos de DevOps
+  - paragraph: Descubre la cultura que une desarrollo y operaciones.
+  - list:
+    - listitem: "Introducción a la cultura DevOps: integración de procesos, prácticas y herramientas clave."
+    - listitem: Beneficios tangibles de adoptar DevOps en el ciclo de vida del desarrollo de software (SDLC).
+    - listitem: El rol crítico del Continuous Testing (Pruebas Continuas) dentro del ecosistema DevOps.
+  - button "2 MÓDULO 2 Herramientas de Gestión y Configuración":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Herramientas de Gestión y Configuración
+  - paragraph: Domina las bases del control de versiones y entornos.
+  - list:
+    - listitem: "Sistemas de Control de Versiones: dominio fundamental de Git."
+    - listitem: Gestión de la configuración para estandarizar y automatizar la infraestructura y los entornos de desarrollo.
+  - button "3 MÓDULO 3 Integración Continua (CI)":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Integración Continua (CI)
+  - paragraph: Automatiza la construcción y pruebas de tu código.
+  - list:
+    - listitem: Conceptos básicos y arquitectura de la Integración Continua.
+    - listitem: Exploración de las herramientas de CI más demandadas del mercado (Jenkins, GitLab CI, entre otras).
+    - listitem: Creación y configuración paso a paso de pipelines de CI efectivos.
+  - button "4 MÓDULO 4 Entrega y Despliegue Continuo (CD)":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Entrega y Despliegue Continuo (CD)
+  - paragraph: Lleva tu código a producción de forma segura.
+  - list:
+    - listitem: Diferencias estructurales y estratégicas entre Entrega Continua y Despliegue Continuo.
+    - listitem: Técnicas para la automatización segura de despliegues en distintos entornos.
+    - listitem: Implementación de estrategias avanzadas de despliegue para mitigar riesgos (Despliegues Blue/Green, Canary Releases).
+  - button "5 MÓDULO 5 Testing Continuo y Monitorización":
+    - text: ""
+    - heading "MÓDULO 5" [level=3]
+    - paragraph: Testing Continuo y Monitorización
+  - paragraph: Cierra el ciclo asegurando calidad y observabilidad.
+  - list:
+    - listitem: Integración estratégica de pruebas automatizadas directamente en los pipelines de CI/CD.
+    - listitem: Implementación de herramientas de monitorización y logging para lograr una observabilidad total.
+    - listitem: Gestión del ciclo de retroalimentación (Feedback Loop) para asegurar la mejora continua.
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: Conocimientos básicos sobre el ciclo de vida del desarrollo de software (SDLC) y familiaridad general con conceptos de testing. Es recomendable tener nociones básicas de navegación por línea de comandos.
+  - button "Me interesa"

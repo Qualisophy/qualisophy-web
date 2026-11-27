@@ -1,0 +1,7 @@
+https://images.unsplash.com/photo-1618401471353-b98afee0b2eb | Hero background
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/qa-curso.jpeg | Calidad de Software (QA) y Testing
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/postman.jpeg | API Testing con Postman
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/cypress-bootcamp.jpeg | Cypress Automation Bootcamp
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/junit.jpeg | Tests Unitarios con JUnit
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/agile-testing.jpeg | Agile Testing
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/testing-ia.jpeg | Generative AI para Software Testing

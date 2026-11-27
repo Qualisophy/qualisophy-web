@@ -1,0 +1,107 @@
+# Categorías de cursos B2C. El id es el tramo de la URL (/cursos/<id>).
+# Esquema y significado de cada campo: src/content.config.ts
+
+- id: reconversion-laboral
+  nombre: Reconversión Laboral
+  migas: Reconversión Laboral
+  etiqueta: Reconversión
+  subtitulo: IMPULSA TU CAMBIO PROFESIONAL
+  icono: trending_up
+  colores:
+    cabecera: bg-secondary
+    texto: text-secondary
+    bordeHover: hover:border-secondary
+    textoHover: group-hover:text-secondary
+  orden: 1
+  visible: true
+- id: ia
+  nombre: Inteligencia Artificial
+  migas: Inteligencia Artificial
+  etiqueta: IA
+  subtitulo: IA GENERATIVA Y AGENTES
+  icono: smart_toy
+  colores:
+    cabecera: bg-[#9B62CE]
+    texto: text-[#9B62CE]
+    bordeHover: hover:border-[#9B62CE]
+    textoHover: group-hover:text-[#9B62CE]
+  orden: 2
+  visible: true
+- id: qa
+  nombre: QA & Automatización
+  migas: QA & Testing
+  etiqueta: QA
+  subtitulo: ASEGURAMIENTO DE CALIDAD
+  icono: bug_report
+  colores:
+    cabecera: bg-[#6296CE]
+    texto: text-[#6296CE]
+    bordeHover: hover:border-[#6296CE]
+    textoHover: group-hover:text-[#6296CE]
+  orden: 3
+  visible: true
+- id: data
+  nombre: Data & BI
+  migas: Data & BI
+  etiqueta: Data & BI
+  subtitulo: BUSINESS INTELLIGENCE
+  icono: bar_chart
+  colores:
+    cabecera: bg-[#6296CE]
+    texto: text-[#6296CE]
+    bordeHover: hover:border-[#6296CE]
+    textoHover: group-hover:text-[#6296CE]
+  orden: 4
+  visible: true
+- id: herramientas
+  nombre: Herramientas Empresariales
+  migas: Herramientas Empresariales
+  etiqueta: Herramientas
+  subtitulo: OFIMÁTICA Y AUTOMATIZACIÓN
+  icono: business_center
+  colores:
+    cabecera: bg-[#6296CE]
+    texto: text-[#6296CE]
+    bordeHover: hover:border-[#6296CE]
+    textoHover: group-hover:text-[#6296CE]
+  orden: 5
+  visible: true
+- id: devops
+  nombre: DevOps & Gestión
+  migas: DevOps & Gestión
+  etiqueta: DevOps
+  subtitulo: INTEGRACIÓN CONTINUA
+  icono: terminal
+  colores:
+    cabecera: bg-[#70A0D2]
+    texto: text-[#70A0D2]
+    bordeHover: hover:border-[#70A0D2]
+    textoHover: group-hover:text-[#70A0D2]
+  orden: 6
+  visible: true
+- id: agile
+  nombre: Agile & Scrum
+  migas: Agile & Scrum
+  etiqueta: Agile
+  subtitulo: LIDERAZGO Y METODOLOGÍAS
+  icono: groups
+  colores:
+    cabecera: bg-[#8CAED8]
+    texto: text-[#8CAED8]
+    bordeHover: hover:border-[#8CAED8]
+    textoHover: group-hover:text-[#8CAED8]
+  orden: 7
+  visible: true
+- id: desarrollo
+  nombre: Desarrollo
+  migas: Desarrollo
+  etiqueta: Desarrollo
+  subtitulo: DESARROLLO DE SOFTWARE
+  icono: code
+  colores:
+    cabecera: bg-secondary
+    texto: text-secondary
+    bordeHover: hover:border-secondary
+    textoHover: group-hover:text-secondary
+  orden: 8
+  visible: false

@@ -3,49 +3,10 @@ import Layout from "@/layouts/Layout.astro";
 import { ProgramHero } from "@/components/react/programs/ProgramHero";
 import { CourseGridCard } from "@/components/react/course/CourseGridCard";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { getTarjetasCategoria } from "@/lib/cursos";
 
-const courses = [
-  {
-    title: "Fullstack Developer",
-    description: "Domina el desarrollo web completo. Desde la base de datos hasta el frontend con las tecnologías más modernas.",
-    imageUrl: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&q=80",
-    href: "/cursos/desarrollo/fullstack",
-    level: "Avanzado",
-    duration: "120 Horas",
-    modality: "Híbrido",
-    category: "Fullstack"
-  },
-  {
-    title: "Frontend con React",
-    description: "Especialízate en la creación de interfaces dinámicas y SPA utilizando React, Redux y Next.js.",
-    imageUrl: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80",
-    href: "/cursos/desarrollo/frontend-react",
-    level: "Intermedio",
-    duration: "60 Horas",
-    modality: "Online",
-    category: "Frontend"
-  },
-  {
-    title: "Backend con Node.js",
-    description: "Aprende a construir APIs RESTful escalables, microservicios y gestión de bases de datos.",
-    imageUrl: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80",
-    href: "/cursos/desarrollo/backend-node",
-    level: "Intermedio",
-    duration: "50 Horas",
-    modality: "Online",
-    category: "Backend"
-  },
-  {
-    title: "Java & Spring Boot",
-    description: "El estándar empresarial. Desarrolla aplicaciones robustas y seguras para grandes organizaciones.",
-    imageUrl: "https://images.unsplash.com/photo-1537884944318-390069bb8665?auto=format&fit=crop&q=80",
-    href: "/cursos/desarrollo/java-spring",
-    level: "Avanzado",
-    duration: "80 Horas",
-    modality: "Online",
-    category: "Enterprise"
-  }
-];
+// Cursos de esta categoría (src/content/cursos/desarrollo/). Están ocultos en el catálogo y el modal.
+const courses = await getTarjetasCategoria("desarrollo");
 ---
 
 <Layout title="Cursos de Desarrollo Web - Qualisophy" fullWidth={true}>
@@ -80,12 +41,12 @@ const courses = [
                     client:visible
                     title={course.title}
                     description={course.description}
-                    imageSrc={course.imageUrl}
+                    imageSrc={course.image}
                     href={course.href}
-                    level={course.level as "Principiante" | "Intermedio" | "Avanzado"}
+                    level={course.level}
                     duration={course.duration}
-                    modality={course.modality as "Online" | "Presencial" | "Híbrido"}
-                    category={course.category}
+                    modality={course.modality}
+                    category={course.categoryName}
                 />
                 ))}
             </div>

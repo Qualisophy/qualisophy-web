@@ -1,0 +1,68 @@
+# Agile Mastery: El Camino del Scrum Master
+# URL: /cursos/agile/scrum-master · Esquema: src/content.config.ts
+
+id: agile-scrum
+nombre: "Agile Mastery: El Camino del Scrum Master"
+categoria: agile
+slug: scrum-master
+visible: true
+orden: 1
+imagen: ../../../assets/imagenes-cursos/agile/agile-mastery.jpeg
+resumen: Facilita, asesora y mentoriza a los equipos de desarrollo para maximizar valor.
+descripcion: "La figura del Scrum Master hace referencia a un profesional especializado que facilita, asesora y mentoriza a los equipos de desarrollo de un producto o proyecto. Colabora estrechamente con la empresa para que mejoren de forma constante, consiguiendo así una entrega de valor sólida. Con este curso, los alumnos aprenderán el marco de trabajo de Scrum, junto con las herramientas y prácticas que harán al equipo y a la organización expertos en su objetivo principal: entregar valor."
+requisitos: No es necesario ningún conocimiento técnico, lenguaje de programación o experiencia previa en puestos de management o gestión. Scrum puede aplicarse en cualquier entorno de trabajo complejo.
+nivel: Intermedio
+modalidad: Online
+inicio: Por definir
+duracion: Por definir
+duracionCorta: Por definir
+horario: Por definir
+precio:
+  normal: Por definir
+temario:
+  - titulo: Introducción a Agile y Scrum
+    descripcion: Comprende por qué la agilidad es vital hoy en día.
+    temas:
+      - Entender las bases de la agilidad y por qué surge en el desarrollo de proyectos complejos.
+    icono: Compass
+  - titulo: Marco Scrum
+    descripcion: Las reglas del juego del framework más usado.
+    temas:
+      - Definición del marco de trabajo.
+      - Pilares y valores fundamentales.
+      - Roles, artefactos y eventos de Scrum.
+    icono: Target
+  - titulo: Herramientas Ágiles
+    descripcion: Lleva la teoría a la práctica visual.
+    temas:
+      - Uso de herramientas de gestión que facilitan la transparencia y la inspección.
+      - Jira y Trello.
+      - Conjunto de herramientas complementarias para el equipo Scrum.
+    icono: Trello
+  - titulo: Conociendo el Product Backlog
+    descripcion: Gestión efectiva de los requisitos del producto.
+    temas:
+      - Apoyo activo al Product Owner.
+      - Estrategias para ordenar, desglosar y refinar el Product Backlog.
+    icono: List
+  - titulo: Métodos de Planificación
+    descripcion: Organiza los Sprints con éxito.
+    temas:
+      - Ayudar al equipo a planificar el trabajo de forma iterativa y aumentar la predictibilidad.
+      - Sistemas de puntuación y estimación.
+      - Prácticas efectivas de Sprint Planning.
+    icono: Calendar
+  - titulo: "Base de Mejoras Constantes: Retrospectivas"
+    descripcion: El corazón de la mejora continua.
+    temas:
+      - Bases para realizar una retrospectiva sana y adecuada.
+      - Métodos de facilitación de una retrospectiva.
+      - Soft skills de inspección para asegurar que el equipo mejore realmente.
+    icono: RefreshCcw
+  - titulo: Apoyo a la Organización
+    descripcion: Escalando la agilidad en la empresa.
+    temas:
+      - El papel del Scrum Master no solo como líder servicial, sino como agente del cambio.
+      - "Las 3 bandas: Pods, bottom to top, top to bottom."
+      - Conceptos básicos de Scrum Escalado.
+    icono: Users

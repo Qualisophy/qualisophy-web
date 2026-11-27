@@ -1,0 +1,57 @@
+# Cypress Automation Bootcamp
+# URL: /cursos/qa/bootcamp-cypress · Esquema: src/content.config.ts
+
+id: qa-cypress
+nombre: Cypress Automation Bootcamp
+categoria: qa
+slug: bootcamp-cypress
+visible: true
+orden: 3
+imagen: ../../../assets/imagenes-cursos/qa/cypress-bootcamp.jpeg
+resumen: Aprende automatización de pruebas web modernas con Cypress desde cero.
+descripcion: El Automation Testing permite a los equipos de QA mejorar radicalmente la eficiencia, la precisión y la velocidad de sus pruebas, reduciendo el time-to-market. Cypress se ha consolidado como la herramienta del momento gracias a su arquitectura moderna. En este bootcamp, los alumnos aprenderán Cypress desde cero, dominando desde los conceptos básicos hasta las técnicas de automatización y patrones de diseño más avanzados del mercado.
+requisitos: Se recomienda contar con nociones básicas de pruebas de software manuales (como las impartidas en el curso base de QA) y conocimientos fundamentales de tecnologías web (HTML/CSS) y JavaScript.
+nivel: Intermedio
+modalidad: Online
+inicio: 27 de Octubre de 2026
+duracion: 36 horas (6 semanas)
+duracionCorta: 36h
+horario: Martes y Jueves / 18:00 - 21:00
+precio:
+  normal: 547 €
+  prontoPago:
+    precio: 497 €
+    hasta: 13 de octubre de 2026
+temario:
+  - titulo: Introducción a Cypress
+    descripcion: Análisis de la arquitectura de Cypress, instalación y configuración inicial.
+    temas:
+      - Estructura de carpetas y archivos de un proyecto estándar.
+      - Estrategias de identificación de elementos (Localizadores).
+      - Implementación de aserciones (Asserts) nativas de la herramienta.
+    icono: Terminal
+  - titulo: Comandos Básicos e Interacción con UI
+    descripcion: Domina la navegación y manipulación del DOM.
+    temas:
+      - Simulación de acciones del usuario (clic, escritura, selección).
+      - Interacción avanzada con Checkboxes, Radio Buttons y Dropdowns.
+      - Manejo e intercepción de alertas, ventanas emergentes y tablas dinámicas.
+    icono: Layout
+  - titulo: Buenas Prácticas y Patrones de Diseño
+    descripcion: Escribe código limpio y frameworks mantenibles.
+    temas:
+      - Uso estratégico de Fixtures para la gestión de datos de prueba externos.
+      - Creación y mantenimiento de Custom Commands.
+      - Implementación del Patrón de Diseño Page Object Model (POM).
+      - Configuración de variables globales y manejo de Retries (flaky tests).
+    icono: Code
+  - titulo: Otras Funcionalidades
+    descripcion: Lleva Cypress al siguiente nivel validando APIs y BDD.
+    temas:
+      - Validación integral de APIs (Backend) utilizando Cypress.
+      - Estrategias de ejecución de pruebas multiplataforma.
+      - Configuración y análisis de métricas usando Cypress Dashboard.
+      - Introducción a la integración de Cucumber (BDD).
+    icono: Database
+instructor:
+  id: javier-flores

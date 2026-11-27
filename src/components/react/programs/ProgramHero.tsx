@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CourseTreeModal } from "./CourseTreeModal";
+import type { CategoriaCatalogo } from "@/lib/cursos";
 
 interface ProgramHeroProps {
   title: string;
@@ -7,7 +8,8 @@ interface ProgramHeroProps {
   subtitle: string;
   ctaText?: string;
   backgroundImage?: string;
-  hasCourseTree?: boolean;
+  /** Si se pasa, el botón abre el modal "Ver programas formativos" con estas categorías (getCatalogo()) */
+  courseTree?: CategoriaCatalogo[];
   onCtaClick?: () => void;
   scrollToId?: string;
 }
@@ -18,7 +20,7 @@ export const ProgramHero: React.FC<ProgramHeroProps> = ({
   subtitle,
   ctaText = "Ver detalles del programa",
   backgroundImage = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2069&auto=format&fit=crop",
-  hasCourseTree = false,
+  courseTree,
   onCtaClick,
   scrollToId,
 }) => {
@@ -30,7 +32,7 @@ export const ProgramHero: React.FC<ProgramHeroProps> = ({
       onCtaClick();
     }
     // Si tiene modal de árbol de cursos
-    else if (hasCourseTree) {
+    else if (courseTree) {
       setIsTreeModalOpen(true);
     }
     // Si le pasamos un ID para hacer scroll suave (Perfecto para Astro)
@@ -87,10 +89,11 @@ export const ProgramHero: React.FC<ProgramHeroProps> = ({
       </section>
 
       {/* Renderizado del Modal si está activo */}
-      {hasCourseTree && (
+      {courseTree && (
         <CourseTreeModal
           isOpen={isTreeModalOpen}
           onClose={() => setIsTreeModalOpen(false)}
+          courseCategories={courseTree}
         />
       )}
     </>

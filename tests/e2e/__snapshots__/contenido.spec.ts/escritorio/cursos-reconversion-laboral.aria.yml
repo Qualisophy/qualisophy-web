@@ -1,0 +1,26 @@
+- main:
+  - img "Hero background"
+  - heading "Formación en Reconversión Laboral" [level=1]
+  - paragraph: Da el salto al sector tecnológico. Te ayudamos a preparar tu candidatura y a afrontar los procesos de selección para tu primer puesto en QA.
+  - button "Ver cursos"
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem: / Reconversión Laboral
+  - heading "Impulsa tu cambio profesional" [level=2]
+  - paragraph: Formaciones prácticas y con acompañamiento para convertir tu experiencia en una nueva carrera tecnológica.
+  - text: Mostrando 1 cursos
+  - link "Triunfa en tu reconversión laboral Reconversión Principiante Triunfa en tu reconversión laboral Prepara tu CV, LinkedIn, portfolio y entrevistas para conseguir tu primer puesto en QA, con mentoría 1 a 1. schedule 5 h wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/reconversion-laboral/triunfa-en-tu-reconversion-laboral
+    - img "Triunfa en tu reconversión laboral"
+    - text: Reconversión Principiante
+    - heading "Triunfa en tu reconversión laboral" [level=3]
+    - paragraph: Prepara tu CV, LinkedIn, portfolio y entrevistas para conseguir tu primer puesto en QA, con mentoría 1 a 1.
+    - text: schedule 5 h wifi Online Ver arrow_forward_ios

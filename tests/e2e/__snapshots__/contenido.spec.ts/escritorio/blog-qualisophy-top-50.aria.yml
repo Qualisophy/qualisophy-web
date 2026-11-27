@@ -1,0 +1,53 @@
+- main:
+  - 'img /Qualisophy: En el top \d+ de la innovación andaluza/'
+  - text: Noticias
+  - 'heading /Qualisophy: En el top \d+ de la innovación andaluza/ [level=1]'
+  - text: /calendar_today \d+ May, \d+ schedule 5 min de lectura/
+  - article:
+    - navigation "Breadcrumb":
+      - list:
+        - listitem:
+          - link "Ir al inicio":
+            - /url: /
+            - img
+        - listitem:
+          - text: /
+          - link "Blog":
+            - /url: /blog
+        - listitem: /\/ Qualisophy Top \d+/
+    - paragraph: "/En Qualisophy creemos que la innovación solo tiene sentido cuando mejora la vida de las personas\\. Por eso, formar parte del Top \\d+ de los XIII Premios Emprendemos de Andalucía supone mucho más que un reconocimiento empresarial: es la confirmación de que estamos avanzando en la dirección correcta\\./"
+    - img "Galardón o Insignia"
+    - heading "Un reconocimiento a la innovación con impacto" [level=2]
+    - paragraph: Los Premios Emprendemos, impulsados por la Consejería de Universidad, Investigación e Innovación de la Junta de Andalucía a través de Andalucía Emprende, tienen como objetivo identificar y visibilizar a las empresas con mayor capacidad de transformación económica y social, valorando especialmente la innovación, el potencial de crecimiento y el impacto generado en su entorno.
+    - paragraph: /En esta XIII edición, Qualisophy ha sido una de las cinco empresas malagueñas seleccionadas para representar a la provincia en la fase regional, junto a otras iniciativas destacadas del ecosistema emprendedor\. Gracias a ello, pasamos a formar parte del prestigioso ranking Top \d+ de Andalucía, integrado por las empresas emergentes con mayor proyección e impacto de la comunidad\./
+    - heading "Tecnología al servicio de las personas" [level=2]
+    - paragraph: En un contexto donde la diversidad cognitiva, el bienestar laboral y la gestión humana se han convertido en factores estratégicos, creemos que las organizaciones necesitan soluciones que vayan más allá de los indicadores tradicionales.
+    - paragraph: "Por todo ello, desde nuestros inicios hemos trabajado con una visión clara: ayudar a las organizaciones a comprender mejor a las personas para construir entornos laborales más saludables, diversos y eficientes, permitiendo a las empresas identificar fortalezas, mejorar la comunicación interna y aprovechar el potencial de equipos diversos."
+    - paragraph: lightbulb Dato Clave
+    - paragraph: Los Premios Emprendemos no valoran únicamente la viabilidad económica de los proyectos, sino también su capacidad para generar impacto social y transformar positivamente su entorno.
+    - heading "Mirando al futuro" [level=2]
+    - paragraph: /Formar parte del Top \d+ de los Premios Emprendemos nos anima a seguir creciendo sin perder de vista nuestros objetivos:/
+    - list:
+      - listitem:
+        - strong: "Seguir innovando:"
+        - text: Continuaremos desarrollando soluciones basadas en evidencia científica y tecnología que permitan a las organizaciones identificar fortalezas, potenciar el talento y construir entornos de trabajo más inclusivos y eficientes.
+      - listitem:
+        - strong: "Impulsar la diversidad:"
+        - text: Queremos ayudar a más empresas a convertir la diversidad cognitiva y humana en una ventaja estratégica, favoreciendo culturas organizativas donde cada persona pueda aportar su máximo potencial.
+      - listitem:
+        - strong: "Multiplicar las oportunidades:"
+        - text: Nuestro objetivo es llevar la filosofía de Qualisophy a cada rincón donde haya talento esperando una oportunidad. Queremos demostrar que la neurodivergencia, el entorno rural, el talento migrante, el reciclaje laboral o estar en riesgo de exclusión no son barreras, sino auténticos motores de innovación. Trabajamos para que las empresas e instituciones no solo contraten tecnología, sino que se sumen a un cambio social real, transformando el mercado IT en un espacio más justo, humano y preparado para el futuro.
+    - paragraph: Este reconocimiento es un hito importante en nuestro camino, pero también es un punto de partida para continuar impulsando una innovación con propósito, centrada en las personas y orientada a generar impacto real.
+    - paragraph: "¿Te ha gustado? Compártelo:"
+    - button "Compartir en redes": share
+    - button "Copiar enlace": link ¡Copiado!
+    - navigation:
+      - 'link "arrow_back Anterior Nuestro compromiso social ya tiene sello: somos Empresa Solidaria"':
+        - /url: /blog/sello-empresa-solidaria
+      - link "Siguiente arrow_forward El impacto de la IA en el testing de software moderno":
+        - /url: /blog/impacto-ia-testing
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

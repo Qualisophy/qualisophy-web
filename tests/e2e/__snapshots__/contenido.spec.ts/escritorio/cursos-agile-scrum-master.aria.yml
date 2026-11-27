@@ -1,0 +1,88 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Agile & Scrum":
+          - /url: /cursos/agile
+      - listitem: "/ Agile Mastery: El Camino del Scrum Master"
+  - 'heading "Agile Mastery: El Camino del Scrum Master" [level=1]'
+  - text: "Inicio: Por definir Horario: Por definir"
+  - heading "Detalles del Curso" [level=2]
+  - text: "Inicio: Por definir Duración: Por definir Horario: Por definir Coste: Por definir"
+  - link "Me interesa el curso":
+    - /url: /course-enrollment?course=agile-scrum&type=interest
+    - button "Me interesa el curso"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: "La figura del Scrum Master hace referencia a un profesional especializado que facilita, asesora y mentoriza a los equipos de desarrollo de un producto o proyecto. Colabora estrechamente con la empresa para que mejoren de forma constante, consiguiendo así una entrega de valor sólida. Con este curso, los alumnos aprenderán el marco de trabajo de Scrum, junto con las herramientas y prácticas que harán al equipo y a la organización expertos en su objetivo principal: entregar valor."
+  - button "1 MÓDULO 1 Introducción a Agile y Scrum":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Introducción a Agile y Scrum
+  - paragraph: Comprende por qué la agilidad es vital hoy en día.
+  - list:
+    - listitem: Entender las bases de la agilidad y por qué surge en el desarrollo de proyectos complejos.
+  - button "2 MÓDULO 2 Marco Scrum":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Marco Scrum
+  - paragraph: Las reglas del juego del framework más usado.
+  - list:
+    - listitem: Definición del marco de trabajo.
+    - listitem: Pilares y valores fundamentales.
+    - listitem: Roles, artefactos y eventos de Scrum.
+  - button "3 MÓDULO 3 Herramientas Ágiles":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Herramientas Ágiles
+  - paragraph: Lleva la teoría a la práctica visual.
+  - list:
+    - listitem: Uso de herramientas de gestión que facilitan la transparencia y la inspección.
+    - listitem: Jira y Trello.
+    - listitem: Conjunto de herramientas complementarias para el equipo Scrum.
+  - button "4 MÓDULO 4 Conociendo el Product Backlog":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Conociendo el Product Backlog
+  - paragraph: Gestión efectiva de los requisitos del producto.
+  - list:
+    - listitem: Apoyo activo al Product Owner.
+    - listitem: Estrategias para ordenar, desglosar y refinar el Product Backlog.
+  - button "5 MÓDULO 5 Métodos de Planificación":
+    - text: ""
+    - heading "MÓDULO 5" [level=3]
+    - paragraph: Métodos de Planificación
+  - paragraph: Organiza los Sprints con éxito.
+  - list:
+    - listitem: Ayudar al equipo a planificar el trabajo de forma iterativa y aumentar la predictibilidad.
+    - listitem: Sistemas de puntuación y estimación.
+    - listitem: Prácticas efectivas de Sprint Planning.
+  - 'button "6 MÓDULO 6 Base de Mejoras Constantes: Retrospectivas"':
+    - text: ""
+    - heading "MÓDULO 6" [level=3]
+    - paragraph: "Base de Mejoras Constantes: Retrospectivas"
+  - paragraph: El corazón de la mejora continua.
+  - list:
+    - listitem: Bases para realizar una retrospectiva sana y adecuada.
+    - listitem: Métodos de facilitación de una retrospectiva.
+    - listitem: Soft skills de inspección para asegurar que el equipo mejore realmente.
+  - button "7 MÓDULO 7 Apoyo a la Organización":
+    - text: ""
+    - heading "MÓDULO 7" [level=3]
+    - paragraph: Apoyo a la Organización
+  - paragraph: Escalando la agilidad en la empresa.
+  - list:
+    - listitem: El papel del Scrum Master no solo como líder servicial, sino como agente del cambio.
+    - listitem: "Las 3 bandas: Pods, bottom to top, top to bottom."
+    - listitem: Conceptos básicos de Scrum Escalado.
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: No es necesario ningún conocimiento técnico, lenguaje de programación o experiencia previa en puestos de management o gestión. Scrum puede aplicarse en cualquier entorno de trabajo complejo.
+  - button "Me interesa"

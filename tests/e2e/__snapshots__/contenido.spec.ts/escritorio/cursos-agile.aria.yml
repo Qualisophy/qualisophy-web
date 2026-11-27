@@ -1,0 +1,26 @@
+- main:
+  - img "Hero background"
+  - heading "Formación en Agile & Scrum" [level=1]
+  - paragraph: Lidera equipos hacia el éxito. Domina los frameworks Scrum, Kanban y asume roles clave para la entrega de valor constante.
+  - button "Ver Itinerarios"
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem: / Agile & Scrum
+  - heading "Metodologías Ágiles y Liderazgo" [level=2]
+  - paragraph: Facilita, gestiona y mentoriza equipos de alto rendimiento.
+  - text: Mostrando 1 cursos
+  - 'link "Agile Mastery: El Camino del Scrum Master Agile Intermedio Agile Mastery: El Camino del Scrum Master Facilita, asesora y mentoriza a los equipos de desarrollo para maximizar valor. schedule Por definir wifi Online Ver arrow_forward_ios"':
+    - /url: /cursos/agile/scrum-master
+    - 'img "Agile Mastery: El Camino del Scrum Master"'
+    - text: Agile Intermedio
+    - 'heading "Agile Mastery: El Camino del Scrum Master" [level=3]'
+    - paragraph: Facilita, asesora y mentoriza a los equipos de desarrollo para maximizar valor.
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios

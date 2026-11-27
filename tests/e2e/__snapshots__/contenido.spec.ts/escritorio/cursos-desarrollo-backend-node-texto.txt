@@ -1,0 +1,81 @@
+/
+Cursos
+/
+Desarrollo
+/
+Backend con Node.js
+Backend con Node.js
+Inicio: 24 de Marzo de 2025
+Días: Lunes y Miércoles
+Horario: 18:30 - 21:30 horas
+Detalles del Curso
+Inicio:
+24 de Marzo de 2025
+Duración:
+50 horas (6 semanas)
+Horario:
+Lunes y Miércoles / 18:30 - 21:30
+Coste:
+550 €
+Inscripción anticipada:
+495 €
+25% de descuento extra para antiguos alumnos
+Inscríbete
+1
+MÓDULO 1
+
+Node.js a Fondo
+
+Entendiendo el runtime, el event loop y la asincronía.
+
+Arquitectura de Node.js: V8 y Libuv
+Event Loop y Non-blocking I/O
+Módulos (CommonJS vs ESM)
+Streams y Buffers
+2
+MÓDULO 2
+
+API REST con Express
+
+Desarrollo de servicios web robustos y escalables.
+
+Routing avanzado y Controladores
+Middlewares personalizados
+Validación de datos (Joi/Zod)
+Manejo centralizado de errores
+3
+MÓDULO 3
+
+Persistencia y Seguridad
+
+Bases de datos y protección de la API.
+
+SQL con PostgreSQL y ORM (Prisma)
+NoSQL con MongoDB y Mongoose
+Autenticación (JWT, Cookies)
+Seguridad: Helmet, Rate Limiting, CORS
+4
+MÓDULO 4
+
+Calidad y Despliegue
+
+Testing y puesta en producción.
+
+Unit & Integration Testing con Jest
+Documentación con Swagger/OpenAPI
+Docker para desarrollo
+CI/CD con GitHub Actions
+Backend Lead
+Node.js Expert
+
+9+ años de experiencia
+
+Ingeniero de Software especializado en sistemas distribuidos y APIs de alto rendimiento.
+
+OpenJS Node.js Services Developer
+¿Tienes alguna duda?
+
+Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+
+Ver Preguntas Frecuentes
+Inscríbete

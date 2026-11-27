@@ -1,0 +1,73 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Herramientas Empresariales":
+          - /url: /cursos/herramientas
+      - listitem: / Excel Advanced
+  - heading "Curso Excel Avanzado" [level=1]
+  - text: "Inicio: A demanda (Online) Horario: Flexible"
+  - heading "Detalles del Curso" [level=2]
+  - text: "/Inicio: A demanda \\(Online\\) Duración: \\d+ horas Horario: Flexible Coste: \\d+ € Inscripción anticipada: \\d+ € \\d+% de descuento extra para antiguos alumnos/"
+  - link "Inscríbete":
+    - /url: /course-enrollment?course=individual-excel
+    - button "Inscríbete"
+  - button "1 MÓDULO 1 Fórmulas Avanzadas y Lógica":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Fórmulas Avanzadas y Lógica
+  - paragraph: Domina las funciones más potentes para automatizar cálculos complejos.
+  - list:
+    - listitem: BUSCARX, INDICE y COINCIDIR (Index-Match)
+    - listitem: Funciones lógicas anidadas (SI, Y, O, SI.CONJUNTO)
+    - listitem: Funciones de Texto y Fecha para limpieza
+    - listitem: Gestión de errores y validación de datos
+  - button "2 MÓDULO 2 Tablas Dinámicas Profesionales":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Tablas Dinámicas Profesionales
+  - paragraph: Analiza grandes volúmenes de datos en segundos.
+  - list:
+    - listitem: Diseño y formato de Tablas Dinámicas
+    - listitem: Campos calculados y Elementos calculados
+    - listitem: Segmentación de datos y Escalas de tiempo
+    - listitem: Gráficos dinámicos vinculados
+  - button "3 MÓDULO 3 Power Query y Power Pivot":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Power Query y Power Pivot
+  - paragraph: "La revolución de Excel: ETL y Modelado de datos sin salir de la hoja."
+  - list:
+    - listitem: "Introducción a Power Query: Importar y Transformar"
+    - listitem: Combinar y Anexar consultas
+    - listitem: Introducción al Modelo de Datos (Power Pivot)
+    - listitem: Medidas DAX básicas en Excel
+  - button "4 MÓDULO 4 Introducción a Macros (VBA)":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Introducción a Macros (VBA)
+  - paragraph: Automatiza tareas repetitivas con la grabadora y código simple.
+  - list:
+    - listitem: Uso eficaz de la Grabadora de Macros
+    - listitem: Entorno VBE y edición básica de código
+    - listitem: Asignar macros a botones y eventos
+    - listitem: Automatización de informes mensuales
+  - heading "Microsoft MVP" [level=3]
+  - heading "Experto en Excel Financiero" [level=4]
+  - paragraph: /\d+\+ años de experiencia/
+  - paragraph: /Consultor financiero y MVP de Microsoft con \d+ años optimizando departamentos financieros mediante Excel avanzado y VBA\./
+  - text: "Microsoft Office Specialist: Excel Expert Financial Modeling Analyst"
+  - heading "¿Tienes alguna duda?" [level=3]
+  - paragraph: Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+  - link "Ver Preguntas Frecuentes":
+    - /url: /faq
+  - button "Inscríbete"

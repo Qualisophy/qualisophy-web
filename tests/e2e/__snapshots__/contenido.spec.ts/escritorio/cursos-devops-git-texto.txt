@@ -1,0 +1,70 @@
+/
+Cursos
+/
+DevOps & Gestión
+/
+Control de Versiones con Git
+Control de Versiones con Git
+Inicio: Por definir
+Horario: Por definir
+Detalles del Curso
+Inicio:
+Por definir
+Duración:
+Por definir
+Horario:
+Por definir
+Coste:
+Por definir
+Me interesa el curso
+school
+¿De qué trata esta formación?
+
+El control de versiones es una habilidad esencial en el desarrollo moderno. Este curso básico de Git, basado en la filosofía learning by doing, introduce a los estudiantes en el uso práctico de Git para gestionar cambios en el código, trabajar con ramas, realizar commits efectivos y colaborar en equipo de forma profesional. Ideal para iniciarse en entornos de desarrollo reales y mejorar la productividad desde el primer día.
+
+1
+MÓDULO 1
+
+Introducción a Git y Control de Versiones
+
+Comprende los fundamentos de Git y cómo gestionar el historial de cambios.
+
+Qué es el control de versiones y por qué Git es el estándar en desarrollo moderno.
+Inicialización de repositorios, estructura básica y primeros commits.
+Configuración inicial de usuario, flujo básico de trabajo y uso de repositorios remotos.
+2
+MÓDULO 2
+
+Ramas, Fusiones y Trabajo Colaborativo
+
+Aprende a trabajar en paralelo con ramas y equipos.
+
+Creación y gestión de ramas para desarrollo de funcionalidades independientes.
+Estrategias de merge y resolución de conflictos entre cambios.
+Uso de repositorios remotos para colaboración y sincronización de cambios.
+3
+MÓDULO 3
+
+Historial, Deshacer Cambios y Control Avanzado
+
+Domina el control del historial y la recuperación de cambios.
+
+Exploración del historial de commits y navegación entre versiones.
+Uso de reset, revert y checkout para deshacer cambios de forma segura.
+Gestión de etiquetas (tags) y almacenamiento temporal con stash.
+4
+MÓDULO 4
+
+Flujos de Trabajo Avanzados y Proyecto Final
+
+Consolida tus conocimientos aplicando Git en proyectos reales.
+
+Modelos de trabajo como Git Flow y GitHub Flow aplicados a proyectos reales.
+Hooks de Git y automatización de tareas locales.
+Proyecto final integrador con flujo completo de desarrollo y colaboración.
+info
+Requisitos previos
+
+Estar familiarizado con la terminal y/o algún editor de código.
+
+Me interesa

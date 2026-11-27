@@ -1,0 +1,28 @@
+- heading "Áreas de Formación" [level=2]
+- paragraph: Selecciona una rama para ver todos los itinerarios disponibles
+- button "close"
+- button "trending_up Reconversión Laboral chevron_right"
+- button "smart_toy Inteligencia Artificial chevron_right"
+- button "bug_report QA & Automatización chevron_right"
+- button "bar_chart Data & BI chevron_right"
+- button "business_center Herramientas Empresariales chevron_right"
+- button "terminal DevOps & Gestión chevron_right"
+- button "groups Agile & Scrum chevron_right"
+- text: QA & Automatización
+- link "Ir a la sección completa arrow_forward":
+  - /url: /cursos/qa
+- heading "Cursos Disponibles" [level=3]
+- link "menu_book Calidad de Software (QA) y Testing Ver temario y detalles →":
+  - /url: /cursos/qa/calidad-software
+- link "menu_book API Testing con Postman Ver temario y detalles →":
+  - /url: /cursos/qa/pruebas-api
+- link "menu_book Cypress Automation Bootcamp Ver temario y detalles →":
+  - /url: /cursos/qa/bootcamp-cypress
+- link "menu_book Tests Unitarios con JUnit Ver temario y detalles →":
+  - /url: /cursos/qa/pruebas-junit
+- link "menu_book Agile Testing Ver temario y detalles →":
+  - /url: /cursos/qa/pruebas-agiles
+- link "menu_book Generative AI para Software Testing Ver temario y detalles →":
+  - /url: /cursos/qa/pruebas-ia-generativa
+- link "Ver Catálogo Completo arrow_forward":
+  - /url: /cursos

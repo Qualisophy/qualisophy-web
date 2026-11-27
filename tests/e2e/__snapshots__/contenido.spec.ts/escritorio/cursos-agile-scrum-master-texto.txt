@@ -1,0 +1,97 @@
+/
+Cursos
+/
+Agile & Scrum
+/
+Agile Mastery: El Camino del Scrum Master
+Agile Mastery: El Camino del Scrum Master
+Inicio: Por definir
+Horario: Por definir
+Detalles del Curso
+Inicio:
+Por definir
+Duración:
+Por definir
+Horario:
+Por definir
+Coste:
+Por definir
+Me interesa el curso
+school
+¿De qué trata esta formación?
+
+La figura del Scrum Master hace referencia a un profesional especializado que facilita, asesora y mentoriza a los equipos de desarrollo de un producto o proyecto. Colabora estrechamente con la empresa para que mejoren de forma constante, consiguiendo así una entrega de valor sólida. Con este curso, los alumnos aprenderán el marco de trabajo de Scrum, junto con las herramientas y prácticas que harán al equipo y a la organización expertos en su objetivo principal: entregar valor.
+
+1
+MÓDULO 1
+
+Introducción a Agile y Scrum
+
+Comprende por qué la agilidad es vital hoy en día.
+
+Entender las bases de la agilidad y por qué surge en el desarrollo de proyectos complejos.
+2
+MÓDULO 2
+
+Marco Scrum
+
+Las reglas del juego del framework más usado.
+
+Definición del marco de trabajo.
+Pilares y valores fundamentales.
+Roles, artefactos y eventos de Scrum.
+3
+MÓDULO 3
+
+Herramientas Ágiles
+
+Lleva la teoría a la práctica visual.
+
+Uso de herramientas de gestión que facilitan la transparencia y la inspección.
+Jira y Trello.
+Conjunto de herramientas complementarias para el equipo Scrum.
+4
+MÓDULO 4
+
+Conociendo el Product Backlog
+
+Gestión efectiva de los requisitos del producto.
+
+Apoyo activo al Product Owner.
+Estrategias para ordenar, desglosar y refinar el Product Backlog.
+5
+MÓDULO 5
+
+Métodos de Planificación
+
+Organiza los Sprints con éxito.
+
+Ayudar al equipo a planificar el trabajo de forma iterativa y aumentar la predictibilidad.
+Sistemas de puntuación y estimación.
+Prácticas efectivas de Sprint Planning.
+6
+MÓDULO 6
+
+Base de Mejoras Constantes: Retrospectivas
+
+El corazón de la mejora continua.
+
+Bases para realizar una retrospectiva sana y adecuada.
+Métodos de facilitación de una retrospectiva.
+Soft skills de inspección para asegurar que el equipo mejore realmente.
+7
+MÓDULO 7
+
+Apoyo a la Organización
+
+Escalando la agilidad en la empresa.
+
+El papel del Scrum Master no solo como líder servicial, sino como agente del cambio.
+Las 3 bandas: Pods, bottom to top, top to bottom.
+Conceptos básicos de Scrum Escalado.
+info
+Requisitos previos
+
+No es necesario ningún conocimiento técnico, lenguaje de programación o experiencia previa en puestos de management o gestión. Scrum puede aplicarse en cualquier entorno de trabajo complejo.
+
+Me interesa

@@ -1,89 +1,16 @@
 import React, { useState, useMemo } from "react";
-import top50Image from "@/assets/pages/blog/top50.png";
-import empresaSolidariaImage from "@/assets/blog/empresa-solidaria/empresa-solidaria-blog.png";
+import type { TarjetaPost } from "@/lib/blog";
+import { CATEGORIAS_BLOG } from "@/lib/blog-categorias";
 
-// Simulamos una base de datos más grande para el blog
-const allPosts = [
-  {
-    slug: "sello-empresa-solidaria",
-    category: "Noticias",
-    title: "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria",
-    excerpt:
-      "Hemos obtenido el Sello Empresa Solidaria 2026 por destinar el 0,7 % de nuestro Impuesto de Sociedades a proyectos sociales.",
-    image: empresaSolidariaImage.src,
-    date: "13 Oct, 2026",
-  },
-  {
-    slug: "qualisophy-top-50",
-    category: "Noticias",
-    title: "Qualisophy: En el top 50 de la innovación andaluza",
-    excerpt:
-      "Qualisophy entra en el Top 50 andaluz de innovación con foco en impacto social, bienestar y diversidad en las organizaciones.",
-    image: top50Image.src,
-    date: "12 May, 2026",
-  },
-  {
-    slug: "impacto-ia-testing",
-    category: "Tendencias",
-    title: "El impacto de la IA en el testing de software moderno",
-    excerpt:
-      "Descubre cómo la inteligencia artificial está redefiniendo los roles de QA y qué habilidades son necesarias hoy.",
-    image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=600",
-    date: "12 Feb, 2026",
-  },
-  {
-    slug: "neurodivergencia-ventaja",
-    category: "Inclusión",
-    title: "Neurodivergencia: La ventaja competitiva oculta",
-    excerpt:
-      "Las empresas que apuestan por la neurodiversidad reportan un aumento del 30% en productividad e innovación.",
-    image:
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
-    date: "2 Ene, 2026",
-  },
-  {
-    slug: "caso-exito-maria",
-    category: "Casos de Éxito",
-    title: "De la hostelería a Desarrollador Full Stack en 6 meses",
-    excerpt:
-      "La historia de María y cómo el reskilling transformó su vida profesional gracias a la metodología Qualisophy.",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600",
-    date: "23 Dic, 2025",
-  },
-  {
-    slug: "powerbi-negocios",
-    category: "Tecnología",
-    title: "Power BI: Transformando datos en decisiones estratégicas",
-    excerpt:
-      "Aprende por qué el análisis de datos es la habilidad más demandada por las empresas en 2025.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600",
-    date: "10 Nov, 2025",
-  },
-  {
-    slug: "diversidad-equipos-agiles",
-    category: "Inclusión",
-    title: "Cómo gestionar la diversidad en equipos ágiles",
-    excerpt:
-      "Guía para Scrum Masters: integrando diferentes perfiles cognitivos en ceremonias ágiles.",
-    image:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600",
-    date: "21 Oct, 2025",
-  },
-];
 
-const categories = [
-  "Todos",
-  "Noticias",
-  "Tendencias",
-  "Inclusión",
-  "Casos de Éxito",
-  "Tecnología",
-];
+const categories = ["Todos", ...CATEGORIAS_BLOG];
 
-export const BlogGrid = () => {
+interface BlogGridProps {
+  /** Posts del más reciente al más antiguo (getTarjetasPosts() de src/lib/blog.ts) */
+  posts: TarjetaPost[];
+}
+
+export const BlogGrid: React.FC<BlogGridProps> = ({ posts: allPosts }) => {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -97,7 +24,7 @@ export const BlogGrid = () => {
         post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
       return matchesCategory && matchesSearch;
     });
-  }, [selectedCategory, searchQuery]);
+  }, [allPosts, selectedCategory, searchQuery]);
 
   return (
     <section className="py-12 min-h-screen">

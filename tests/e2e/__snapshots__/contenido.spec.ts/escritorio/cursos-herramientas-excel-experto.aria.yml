@@ -1,0 +1,64 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Herramientas Empresariales":
+          - /url: /cursos/herramientas
+      - listitem: / Microsoft Excel Expert
+  - heading "Microsoft Excel Expert" [level=1]
+  - text: "Inicio: Por definir Horario: Por definir"
+  - heading "Detalles del Curso" [level=2]
+  - text: "Inicio: Por definir Duración: Por definir Horario: Por definir Coste: Por definir"
+  - link "Me interesa el curso":
+    - /url: /course-enrollment?course=tools-excel&type=interest
+    - button "Me interesa el curso"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: Eleva tus habilidades ofimáticas al nivel experto. Este curso está diseñado para profesionales financieros, analistas y gestores que necesitan manejar grandes volúmenes de datos. Los estudiantes dominarán desde fórmulas condicionales complejas y matrices, hasta la automatización de procesos mediante macros y la transición hacia el modelado de datos avanzado integrado en el propio Excel (Power Pivot).
+  - button "1 MÓDULO 1 Funciones Complejas y Manipulación Ágil":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Funciones Complejas y Manipulación Ágil
+  - paragraph: Trabaja más rápido y resuelve problemas complejos con fórmulas.
+  - list:
+    - listitem: Atajos de teclado avanzados y técnicas de navegación exprés.
+    - listitem: Funciones lógicas anidadas, funciones de búsqueda dinámica (BUSCARX, ÍNDICE/COINCIDIR) y matrices dinámicas.
+    - listitem: Formato condicional formulado y validación de datos avanzada.
+  - button "2 MÓDULO 2 Tablas Dinámicas Nivel Experto":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Tablas Dinámicas Nivel Experto
+  - paragraph: Saca todo el partido a la herramienta más potente de Excel.
+  - list:
+    - listitem: Agrupación avanzada de campos, campos y elementos calculados.
+    - listitem: Conexión de múltiples tablas dinámicas con segmentos de datos (Slicers).
+    - listitem: Extracción de informes dinámicos y técnicas de diseño de dashboards estáticos en Excel.
+  - button "3 MÓDULO 3 Modelado de Datos con Power Pivot y DAX":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Modelado de Datos con Power Pivot y DAX
+  - paragraph: Supera el límite de filas de Excel con modelos de datos.
+  - list:
+    - listitem: Introducción al complemento Power Pivot para superar el límite del millón de filas.
+    - listitem: Relación entre múltiples tablas sin utilizar funciones de búsqueda.
+    - listitem: Creación de medidas (KPIs) directamente en Excel utilizando lenguaje DAX básico.
+  - button "4 MÓDULO 4 Automatización de Procesos (Macros)":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Automatización de Procesos (Macros)
+  - paragraph: Haz que Excel trabaje por ti automatizando tareas repetitivas.
+  - list:
+    - listitem: "Introducción a la grabadora de Macros: referencias relativas vs. absolutas."
+    - listitem: Principios básicos del entorno de Visual Basic for Applications (VBA).
+    - listitem: Asignación de macros a botones y automatización de tareas repetitivas diarias.
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: Dominio sólido de funciones básicas/intermedias de Excel y manejo habitual de tablas de datos.
+  - button "Me interesa"

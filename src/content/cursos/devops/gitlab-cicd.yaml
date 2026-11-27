@@ -1,0 +1,50 @@
+# Gestión Avanzada y CI/CD con GitLab
+# URL: /cursos/devops/gitlab-cicd · Esquema: src/content.config.ts
+
+id: devops-gitlab
+nombre: Gestión Avanzada y CI/CD con GitLab
+categoria: devops
+slug: gitlab-cicd
+visible: true
+orden: 2
+imagen: ../../../assets/imagenes-cursos/devops/gitlab.jpeg
+resumen: Configura tableros, automatiza pruebas y despliegues seguros.
+descripcion: El desarrollo moderno exige plataformas integrales. Este curso, basado en la filosofía learning by doing, capacita a usuarios avanzados, administradores y DevOps en el uso exhaustivo de GitLab. Lejos de ser un simple repositorio de código, los estudiantes configurarán tableros ágiles, automatizarán flujos de pruebas y despliegues, e implementarán estrictas políticas de seguridad y cumplimiento para proyectos a gran escala.
+requisitos: Conocimientos sólidos de Git y control de versiones, fundamentos de metodologías ágiles y nociones básicas de integración continua.
+nivel: Avanzado
+modalidad: Online
+inicio: Por definir
+duracion: Por definir
+duracionCorta: Por definir
+horario: Por definir
+precio:
+  normal: Por definir
+temario:
+  - titulo: Gestión de Proyectos, Equipos y Planificación Ágil
+    descripcion: Organiza el trabajo y los equipos dentro de GitLab.
+    temas:
+      - Uso avanzado de GitLab Boards, Milestones e Issues para seguimiento de trabajo.
+      - Configuración de repositorios, roles de acceso y ramificaciones estratégicas (Git Flow).
+      - Integración bidireccional con herramientas de comunicación como Slack o Microsoft Teams.
+    icono: Layout
+  - titulo: Integración y Despliegue Continuo (CI/CD)
+    descripcion: Automatiza tu ciclo de vida de desarrollo.
+    temas:
+      - "Arquitectura del archivo .gitlab-ci.yml: stages, jobs y runners."
+      - Automatización de pruebas unitarias y de calidad integradas en cada commit.
+      - Estrategias de despliegue automatizado, manejo de entornos (staging/production) y simulaciones de rollback.
+    icono: RefreshCw
+  - titulo: Seguridad, Auditoría y Compliance (DevSecOps)
+    descripcion: Protege tu código y cumple las normativas.
+    temas:
+      - Configuración de análisis estático (SAST) y dinámico (DAST) del código fuente.
+      - Integración de escaneo de vulnerabilidades y revisión de dependencias.
+      - Implementación de políticas de compliance, auditorías de acciones y registros de actividad.
+    icono: Shield
+  - titulo: Monitorización, Mantenimiento y Casos Prácticos
+    descripcion: Observabilidad y proyectos a gran escala.
+    temas:
+      - Integración de métricas de salud del proyecto con herramientas como Prometheus.
+      - Configuración de alertas de rendimiento y generación de reportes personalizados.
+      - "Taller Práctico Integrador: despliegue, securización y monitorización de un proyecto monolítico y su transición a microservicios."
+    icono: Activity

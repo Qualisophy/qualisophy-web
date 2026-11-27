@@ -1,0 +1,85 @@
+# Triunfa en tu reconversión laboral
+# URL: /cursos/reconversion-laboral/triunfa-en-tu-reconversion-laboral · Esquema: src/content.config.ts
+
+id: reconversion-triunfa
+nombre: Triunfa en tu reconversión laboral
+categoria: reconversion-laboral
+slug: triunfa-en-tu-reconversion-laboral
+visible: true
+orden: 1
+imagen: ../../../assets/imagenes-cursos/reconversion/triunfa-en-tu-reconversion-laboral.jpeg
+resumen: Prepara tu CV, LinkedIn, portfolio y entrevistas para conseguir tu primer puesto en QA, con mentoría 1 a 1.
+descripcion: "Cambiar de sector no es fácil: muchas personas que saben testear o que vienen de otra área se quedan atascadas en los procesos de selección. El problema no suele ser la falta de capacidad, sino un CV que no destaca, un perfil de LinkedIn invisible para los reclutadores, la falta de un portfolio que demuestre lo que sabes y entrevistas para las que nadie te ha preparado."
+descripcionSeo: "Curso online para dar el salto a QA: CV estratégico, LinkedIn, portfolio y entrevistas con mentoría 1 a 1. Empieza el 15 de enero de 2027."
+deQueTrata: "En esta formación trabajamos esos cuatro pilares (CV estratégico, LinkedIn SEO, Portfolio QA y Entrevistas) en tres fases: Estrategia, Optimización y Acción. Con una clase online intensiva, una mentoría 1 a 1 y un simulacro de entrevista, sales con tu candidatura lista para optar a tu primer puesto en QA."
+salidasProfesionales: La formación te prepara para optar a puestos de QA Tester o QA Junior con una candidatura sólida. Te damos herramientas y acompañamiento, pero no garantizamos un empleo.
+requisitos: Dirigido a personas que ya saben testear y buscan su primer puesto en QA, y a quienes vienen de otra área y quieren dar el salto a la tecnología. No hace falta experiencia previa en programación.
+nivel: Principiante
+modalidad: Online
+modalidadEnFicha: true
+inicio: 15 de enero de 2027
+# TODO: duraciones provisionales (placeholder) hasta confirmarlas
+duracion: Clase online intensiva (3 h), mentoría 1 a 1 (1 h) y simulacro de entrevista (1 h)
+duracionCorta: 5 h
+horario: 18:00 - 21:00
+# [Pendiente de revisión legal] textos de precio y garantía
+precio:
+  normal: 125 €
+  oferta:
+    precio: 100 €
+    texto: Oferta exclusiva por tiempo limitado
+  antiguosAlumnos: "Precio para antiguos alumnos: 80 € (20 % extra)"
+  garantia: Devolución del 100 % de la matrícula si firmas un contrato como QA
+temario:
+  - titulo: "Fase 1 · Estrategia: tu punto de partida"
+    descripcion: Definimos hacia dónde vas antes de tocar tu candidatura.
+    temas:
+      - Análisis de tu perfil y de tus competencias transferibles.
+      - Qué buscan las empresas al contratar perfiles QA.
+      - "Elección del puesto objetivo: QA Tester o QA Junior."
+      - Plan de acción personalizado para tu reconversión.
+    icono: BookOpen
+  - titulo: "Fase 2 · Optimización: CV estratégico"
+    descripcion: Un CV que pone en valor tu experiencia previa.
+    temas:
+      - Estructura y enfoque de un CV para perfiles QA.
+      - Cómo traducir tu experiencia anterior a competencias de calidad.
+      - Palabras clave para superar los filtros de selección (ATS).
+      - Revisión de tu CV en la mentoría 1 a 1.
+    icono: BookOpen
+  - titulo: "Fase 2 · Optimización: LinkedIn SEO"
+    descripcion: Que los reclutadores te encuentren.
+    temas:
+      - Titular, extracto y experiencia orientados a QA.
+      - Palabras clave que buscan los reclutadores.
+      - Aptitudes, recomendaciones y actividad en la red.
+      - Revisión de tu perfil en la mentoría 1 a 1.
+    icono: BookOpen
+  - titulo: "Fase 2 · Optimización: Portfolio QA"
+    descripcion: Demuestra lo que sabes hacer con ejemplos reales.
+    temas:
+      - Qué incluir en un portfolio de QA.
+      - Casos de prueba, reportes de defectos y ejemplos prácticos.
+      - Cómo presentar tu portfolio en el CV y en LinkedIn.
+    icono: Code
+  - titulo: "Fase 3 · Acción: Entrevistas"
+    descripcion: Llega preparado a los procesos de selección.
+    temas:
+      - Preguntas técnicas y de comportamiento más habituales en QA.
+      - Cómo contar tu historia de reconversión.
+      - Simulacro de entrevista de 1 h con feedback personalizado.
+      - Plan para lanzar tus candidaturas.
+    icono: Zap
+instructor:
+  id: fran-guerrero
+  descripcion: Especialista en aseguramiento de calidad que conoce de primera mano qué buscan las empresas al contratar perfiles de QA y cómo preparar una candidatura para conseguirlo.
+# [Pendiente de revisión legal] respuesta sobre la garantía
+faqs:
+  - pregunta: ¿Cuánto cuesta?
+    respuesta: 100 € en lugar de 125 €, una oferta exclusiva por tiempo limitado. Los antiguos alumnos pagan 80 €, con un 20 % extra.
+  - pregunta: ¿Cuándo empieza?
+    respuesta: El 15 de enero de 2027, en modalidad online.
+  - pregunta: ¿Qué garantía tiene?
+    respuesta: Si firmas un contrato como QA, devolvemos el 100 % de tu matrícula. Para tenerla debes asistir a las clases y mentorías, aplicar las mejoras en tu CV y LinkedIn, y enviarnos la confirmación del contrato.
+  - pregunta: ¿A quién va dirigido?
+    respuesta: A personas que ya saben testear y buscan su primer puesto en QA, y a quienes vienen de otra área y quieren dar el salto a la tecnología. La formación ofrece herramientas y acompañamiento; no garantiza un empleo.

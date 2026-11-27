@@ -1,0 +1,76 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "QA & Testing":
+          - /url: /cursos/qa
+      - listitem: / Cypress Automation Bootcamp
+  - heading "Cypress Automation Bootcamp" [level=1]
+  - text: "/Inicio: \\d+ de Octubre de \\d+ Días: Martes y Jueves Horario: \\d+:\\d+ - \\d+:\\d+ horas/"
+  - heading "Detalles del Curso" [level=2]
+  - text: "/Inicio: \\d+ de Octubre de \\d+ Duración: \\d+ horas \\(6 semanas\\) Horario: Martes y Jueves \\/ \\d+:\\d+ - \\d+:\\d+ Coste: \\d+ € Inscripción anticipada: \\d+ € \\(antes del \\d+ de octubre de \\d+\\) \\d+% de descuento extra para antiguos alumnos/"
+  - link "Inscríbete":
+    - /url: /course-enrollment?course=qa-cypress
+    - button "Inscríbete"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: El Automation Testing permite a los equipos de QA mejorar radicalmente la eficiencia, la precisión y la velocidad de sus pruebas, reduciendo el time-to-market. Cypress se ha consolidado como la herramienta del momento gracias a su arquitectura moderna. En este bootcamp, los alumnos aprenderán Cypress desde cero, dominando desde los conceptos básicos hasta las técnicas de automatización y patrones de diseño más avanzados del mercado.
+  - button "1 MÓDULO 1 Introducción a Cypress":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Introducción a Cypress
+  - paragraph: Análisis de la arquitectura de Cypress, instalación y configuración inicial.
+  - list:
+    - listitem: Estructura de carpetas y archivos de un proyecto estándar.
+    - listitem: Estrategias de identificación de elementos (Localizadores).
+    - listitem: Implementación de aserciones (Asserts) nativas de la herramienta.
+  - button "2 MÓDULO 2 Comandos Básicos e Interacción con UI":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Comandos Básicos e Interacción con UI
+  - paragraph: Domina la navegación y manipulación del DOM.
+  - list:
+    - listitem: Simulación de acciones del usuario (clic, escritura, selección).
+    - listitem: Interacción avanzada con Checkboxes, Radio Buttons y Dropdowns.
+    - listitem: Manejo e intercepción de alertas, ventanas emergentes y tablas dinámicas.
+  - button "3 MÓDULO 3 Buenas Prácticas y Patrones de Diseño":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Buenas Prácticas y Patrones de Diseño
+  - paragraph: Escribe código limpio y frameworks mantenibles.
+  - list:
+    - listitem: Uso estratégico de Fixtures para la gestión de datos de prueba externos.
+    - listitem: Creación y mantenimiento de Custom Commands.
+    - listitem: Implementación del Patrón de Diseño Page Object Model (POM).
+    - listitem: Configuración de variables globales y manejo de Retries (flaky tests).
+  - button "4 MÓDULO 4 Otras Funcionalidades":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Otras Funcionalidades
+  - paragraph: Lleva Cypress al siguiente nivel validando APIs y BDD.
+  - list:
+    - listitem: Validación integral de APIs (Backend) utilizando Cypress.
+    - listitem: Estrategias de ejecución de pruebas multiplataforma.
+    - listitem: Configuración y análisis de métricas usando Cypress Dashboard.
+    - listitem: Introducción a la integración de Cucumber (BDD).
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: Se recomienda contar con nociones básicas de pruebas de software manuales (como las impartidas en el curso base de QA) y conocimientos fundamentales de tecnologías web (HTML/CSS) y JavaScript.
+  - heading "Javier Flores" [level=3]
+  - img "Javier Flores"
+  - heading "Instructor Tech · Automatización QA" [level=4]
+  - paragraph: Experiencia en entornos Agile y CI/CD
+  - paragraph: QA Lead y Cypress Ambassador comprometido con la implementación de la calidad mediante automatización y diseño de frameworks mantenibles.
+  - text: /Cypress Ambassador \d+ ISTQB Foundation Level/
+  - heading "¿Tienes alguna duda?" [level=3]
+  - paragraph: Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+  - link "Ver Preguntas Frecuentes":
+    - /url: /faq
+  - button "Inscríbete"

@@ -1,16 +1,22 @@
 import React, { useState, useMemo } from "react";
-import { courseCategories, allCoursesList } from "@/data/courseCatalog";
+import type { CategoriaCatalogo } from "@/lib/cursos";
 import { CourseGridCard } from "./CourseGridCard";
 
-export const CourseCatalogGrid = () => {
+interface CourseCatalogGridProps {
+  /** Categorías visibles con sus cursos (getCatalogo() de src/lib/cursos.ts) */
+  categories: CategoriaCatalogo[];
+}
+
+export const CourseCatalogGrid: React.FC<CourseCatalogGridProps> = ({ categories }) => {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
   const [searchQuery, setSearchQuery] = useState("");
 
-  const categoryNames = ["Todos", ...courseCategories.map((cat) => cat.title)];
+  const categoryNames = ["Todos", ...categories.map((cat) => cat.title)];
+  const allCoursesList = useMemo(() => categories.flatMap((cat) => cat.courses), [categories]);
 
   const filteredCourses = useMemo(() => {
     return allCoursesList.filter((course) => {
-      const parentCategory = courseCategories.find((c) =>
+      const parentCategory = categories.find((c) =>
         c.courses.some((cc) => cc.id === course.id),
       );
       const matchesCategory =
@@ -23,7 +29,7 @@ export const CourseCatalogGrid = () => {
 
       return matchesCategory && matchesSearch;
     });
-  }, [selectedCategory, searchQuery]);
+  }, [categories, allCoursesList, selectedCategory, searchQuery]);
 
   return (
     <section className="py-12 min-h-screen bg-gray-50/30">
@@ -85,9 +91,9 @@ export const CourseCatalogGrid = () => {
                 description={course.description}
                 imageSrc={course.image}
                 href={course.href}
-                level={course.level as any}
+                level={course.level}
                 duration={course.duration}
-                modality={course.modality as any}
+                modality={course.modality}
                 category={course.categoryName}
               />
             ))}

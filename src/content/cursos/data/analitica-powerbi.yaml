@@ -1,0 +1,49 @@
+# Analítica de Datos con Power BI
+# URL: /cursos/data/analitica-powerbi · Esquema: src/content.config.ts
+
+id: data-powerbi
+nombre: Analítica de Datos con Power BI
+categoria: data
+slug: analitica-powerbi
+visible: true
+orden: 2
+imagen: ../../../assets/imagenes-cursos/data/powerbi.jpeg
+resumen: Transforma, modela y visualiza datos para la toma de decisiones empresariales.
+descripcion: Este curso abarca el ciclo de vida completo del Business Intelligence moderno. Sin necesidad de tocar SQL, los estudiantes aprenderán a conectar Power BI a diversas fuentes, transformar datos mediante la interfaz de Power Query, crear modelos de datos relacionales precisos (Modelo Estrella), y generar métricas de negocio con lenguaje DAX. Todo esto culminará en el diseño de informes visuales interactivos y de alto impacto para la toma de decisiones.
+requisitos: Nivel avanzado de Excel (tablas dinámicas, fórmulas buscarv) y una fuerte orientación analítica y de negocio.
+nivel: Intermedio
+modalidad: Online
+inicio: Inicio de Octubre
+duracion: 50 horas
+duracionCorta: 50h
+horario: Martes y Jueves / 18:00 - 21:00
+precio:
+  normal: 450 €
+temario:
+  - titulo: Introducción (2h)
+    descripcion: Este módulo sentará las bases para entender la relevancia del análisis de datos en el entorno empresarial. Se abordará el papel que desempeña el analista de datos en la toma de decisiones, así como los tipos de informes más utilizados en las organizaciones modernas. Además, se presentará Power BI como una herramienta clave. Estudiaremos su propósito y cómo se integra en el flujo de trabajo del análisis de datos.
+    temas:
+      - Importancia del análisis de datos en las compañías y el Rol del analista de Datos
+      - Tipos de informes más utilizados en la actualidad.
+      - Introducción a la herramienta Power BI
+    icono: BookOpen
+  - titulo: Toma de contacto con Power BI (40h)
+    descripcion: "En este módulo se recorre el proceso completo de trabajo con Power BI: desde la conexión e importación de datos, su transformación y modelado, hasta la creación de informes visuales y su publicación. También se introduce el lenguaje DAX para realizar análisis más avanzados. El objetivo es proporcionar una visión práctica y estructurada del proceso de análisis de datos con esta herramienta."
+    temas:
+      - Configurar Orígenes de datos
+      - Importar datos
+      - Transformación de datos (Básica, Intermedia y Avanzada)
+      - Modelado de datos.
+      - Expresiones para el análisis de datos con DAX
+      - Visualización de datos y creación de informes
+      - Publicación de informes
+      - Configuraciones avanzadas y buenas prácticas
+    icono: Database
+  - titulo: Caso Práctico (8h)
+    descripcion: Este módulo está dedicado a aplicar todo lo aprendido mediante la creación de un informe completo en Power BI, abordando desde la conexión de datos hasta la visualización final. Los participantes trabajarán en un caso práctico guiado, resolviendo dudas en tiempo real y consolidando conocimientos. Al final, se realizará una sesión de cierre para repasar conceptos clave y resolver preguntas finales.
+    temas:
+      - "Caso práctico: Creación de informe"
+      - Dudas y cierre
+    icono: PieChart
+instructor:
+  id: enrique-roman

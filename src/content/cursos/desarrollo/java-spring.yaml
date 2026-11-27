@@ -1,0 +1,56 @@
+# Java & Spring Boot
+# URL: /cursos/desarrollo/java-spring · Esquema: src/content.config.ts
+
+id: dev-java
+nombre: Java & Spring Boot
+categoria: desarrollo
+slug: java-spring
+visible: false
+orden: 4
+imagen: https://images.unsplash.com/photo-1537884944318-390069bb8665?auto=format&fit=crop&q=80
+resumen: El estándar empresarial. Desarrolla aplicaciones robustas y seguras para grandes organizaciones.
+nivel: Avanzado
+modalidad: Online
+inicio: 7 de Abril de 2025
+duracion: 60 horas (8 semanas)
+duracionCorta: 80 Horas
+horario: Martes y Jueves / 18:30 - 21:30
+precio:
+  normal: 695 €
+  prontoPago:
+    precio: 625 €
+temario:
+  - titulo: Java Moderno y POO
+    descripcion: Repaso avanzado de Java y las novedades de las últimas versiones.
+    temas:
+      - Principios SOLID y Patrones de Diseño
+      - "Java 17/21: Records, Pattern Matching, Var"
+      - "Programación Funcional: Streams y Lambdas"
+      - Gestión de dependencias con Maven/Gradle
+    icono: Coffee
+  - titulo: Spring Boot Core
+    descripcion: Fundamentos del framework empresarial por excelencia.
+    temas:
+      - Inversión de Control e Inyección de Dependencias
+      - Configuración y Beans
+      - Spring Data JPA y Hibernate
+      - "Spring Web MVC: Creación de APIs"
+    icono: Layers
+  - titulo: Seguridad y Microservicios
+    descripcion: Construyendo sistemas seguros y distribuidos.
+    temas:
+      - "Spring Security: Autenticación y Autorización (OAuth2/JWT)"
+      - Introducción a Microservicios con Spring Cloud
+      - Comunicación entre servicios (Feign, RestTemplate)
+      - Service Discovery y Config Server
+    icono: Shield
+  - titulo: Testing y Observabilidad
+    descripcion: Calidad de software en el ecosistema Spring.
+    temas:
+      - Testing con JUnit 5 y Mockito
+      - Testcontainers para pruebas de integración
+      - Actuator y monitorización
+      - Dockerización de aplicaciones Spring Boot
+    icono: Activity
+instructor:
+  id: generico-java-architect

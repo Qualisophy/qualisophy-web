@@ -1,0 +1,60 @@
+/
+Cursos
+/
+Herramientas Empresariales
+/
+Productividad con Make
+Productividad con Make
+Inicio: Por definir
+Horario: Por definir
+Detalles del Curso
+Inicio:
+Por definir
+Duración:
+Por definir
+Horario:
+Por definir
+Coste:
+Por definir
+Me interesa el curso
+school
+¿De qué trata esta formación?
+
+Imagina tener una herramienta mágica que conecte tus aplicaciones favoritas y actúe como un asistente personal que trabaja 24/7 para que seas más productivo. Ese es el poder de Make. Este curso eminentemente práctico enseñará a los alumnos a crear flujos de trabajo automatizados para gestionar bandejas de correo, clasificar mensajes y generar respuestas automáticas apoyadas en Inteligencia Artificial.
+
+1
+MÓDULO 1
+
+Introducción a Make
+
+Adéntrate en el mundo de la automatización No-Code.
+
+¿Qué es Make? Conceptos básicos de la automatización visual sin código (No-Code).
+Cómo la automatización transforma el trabajo diario y ahorra horas de tareas repetitivas.
+2
+MÓDULO 2
+
+Configuración de Make con Gmail y otras Apps
+
+Conecta tus aplicaciones principales para que hablen entre sí.
+
+Configuración inicial del entorno y conexión de cuentas.
+Vinculación de Make con Gmail para la lectura ('Watch Emails') y gestión de la bandeja de entrada.
+Integración con herramientas de entrada de datos como Google Forms.
+3
+MÓDULO 3
+
+Automatización Avanzada e IA (Ejercicio de Prueba)
+
+Crea tu primer asistente de correo impulsado por IA.
+
+Mapeo de datos: conectando los campos de un formulario con los campos de envío.
+Programación de escenarios (ejecución por horas, días o minutos).
+Integración con IA: Uso de modelos como GPT-3.5 o GPT-4 para obtener clasificaciones de correos y generar respuestas.
+Movimiento automático de correos a carpetas específicas y validación de salidas.
+info
+Requisitos previos
+
+Manejo fluido de correo electrónico (Gmail) y herramientas ofimáticas en la nube (Google Forms). Nociones básicas sobre herramientas de Inteligencia Artificial como ChatGPT.
+
+Me interesa

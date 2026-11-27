@@ -1,0 +1,88 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "QA & Testing":
+          - /url: /cursos/qa
+      - listitem: / Calidad de Software (QA) y Testing
+  - heading "Calidad de Software (QA) y Testing" [level=1]
+  - text: "/Inicio: \\d+ de septiembre de \\d+ Días: Lunes y Miércoles Horario: \\d+:\\d+ - \\d+:\\d+ horas/"
+  - heading "Detalles del Curso" [level=2]
+  - text: "/Inicio: \\d+ de septiembre de \\d+ Duración: \\d+ horas Horario: Lunes y Miércoles \\/ \\d+:\\d+ - \\d+:\\d+ Coste: \\d+ € Inscripción anticipada: \\d+ € \\(antes del 7 de Septiembre de \\d+\\) \\d+% de descuento extra para antiguos alumnos/"
+  - link "Inscríbete":
+    - /url: /course-enrollment?course=qa-software
+    - button "Inscríbete"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: El Testing es la parte del Desarrollo de Software que se encarga de verificar que las aplicaciones, servicios y soluciones informáticas funcionan correctamente, y validar que su cometido es el que requieren los usuarios. El Testing se engloba como una de las actividades principales dentro de la Calidad del Software, y con esta formación recibirás todo lo necesario para llevar a cabo esta actividad vital.
+  - paragraph: La formación se compone de cinco módulos donde aprenderás todo lo necesario para realizar tanto Testing Funcional Manual cómo Automático aplicando las últimas tendencias de metodologías así como herramientas de IA. Practicarás todos los conceptos y tendrás acceso a todas las herramientas para llevar a cabo el aprendizaje.
+  - button "1 MÓDULO 1 Introducción a la Calidad del Software":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Introducción a la Calidad del Software
+  - paragraph: Conocerás los conceptos básicos del Testing.
+  - list:
+    - listitem: Testing y Pruebas.
+    - listitem: El rol de QA.
+    - listitem: Tipos y Niveles de Pruebas.
+  - button "2 MÓDULO 2 Testing dentro del Ciclo de Vida de un Desarrollo":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Testing dentro del Ciclo de Vida de un Desarrollo
+  - paragraph: Aprende cómo se integra el testing en las distintas fases del desarrollo de software.
+  - list:
+    - listitem: Tareas relacionadas con el Testing durante el desarrollo, desde la planificación hasta el uso final.
+    - listitem: Diseño y Ejecución de Pruebas.
+    - listitem: Reporte de Errores o Defectos.
+    - listitem: Herramientas para la gestión del Testing.
+  - button "3 MÓDULO 3 Automatización de Pruebas":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Automatización de Pruebas
+  - paragraph: Da el salto a las pruebas automáticas.
+  - list:
+    - listitem: Importancia de automatizar las pruebas manuales y profundización en diferentes frameworks.
+    - listitem: Control de Versiones y Repositorios de Pruebas Automáticas.
+    - listitem: Pruebas Unitarias con Jest y Pruebas de API con Postman/Newman.
+    - listitem: Pruebas de UI con Cypress usando entornos de programación con IA integrada.
+  - button "4 MÓDULO 4 Inteligencia Artificial Generativa para Testing":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Inteligencia Artificial Generativa para Testing
+  - paragraph: Aplica la revolución de la IA a tu trabajo diario como QA.
+  - list:
+    - listitem: Mejora de la productividad del tester mediante el uso de Modelos de Lenguaje (LLMs).
+    - listitem: "Creación de activos: Generación automática de planes de prueba, casos de uso, scripts de automatización y datos sintéticos."
+  - button "5 MÓDULO 5 DevOps y Testing Continuo":
+    - text: ""
+    - heading "MÓDULO 5" [level=3]
+    - paragraph: DevOps y Testing Continuo
+  - paragraph: Asegura la calidad en entornos de entrega continua.
+  - list:
+    - listitem: Integración de pruebas automáticas en un sistema de CI/CD para mantener un estado de Testing Continuo.
+    - listitem: Conceptos de DevOps, Integración Continua y Entrega Continua.
+    - listitem: Herramientas de CI/CD.
+    - listitem: Reportes y Métricas.
+  - heading "work Salidas Profesionales" [level=3]
+  - paragraph: Las personas en los roles de Tester o QA (Quality Assurance) son los encargados de realizar las tareas relacionadas con el aseguramiento de la Calidad. Podrás acceder a nivel Junior de estos puestos de trabajo con la formación recibida.
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: La formación está enfocada a personas con conocimientos básicos de herramientas de ofimática así como el uso del ordenador personal. El conocimiento de algún lenguaje de programación no es necesario pero sí recomendable. Especialmente dirigida a personas que quieren introducirse en el mundo del Testing o reciclar su profesión.
+  - heading "Fran Guerrero" [level=3]
+  - img "Fran Guerrero"
+  - heading "Instructor Tech · Aseguramiento de Calidad" [level=4]
+  - paragraph: /Más de \d+ años de experiencia en QA/
+  - paragraph: /Especialista certificado en Agile y GenAI por el ISTQB, con más de \d+ años de trayectoria en Calidad del Software\. Experto en implementar procesos de prueba, estrategias de QA y herramientas innovadoras\. Destaca por construir relaciones sólidas de trabajo, con el firme objetivo de convertir al área de Calidad en una pieza esencial y transversal en todo el ciclo de desarrollo\./
+  - text: ISTQB Agile Tester ISTQB Foundation Level GenAI ISTQB
+  - heading "¿Tienes alguna duda?" [level=3]
+  - paragraph: Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+  - link "Ver Preguntas Frecuentes":
+    - /url: /faq
+  - button "Inscríbete"

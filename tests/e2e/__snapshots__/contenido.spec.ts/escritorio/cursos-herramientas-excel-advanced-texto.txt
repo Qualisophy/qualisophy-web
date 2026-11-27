@@ -1,0 +1,81 @@
+/
+Cursos
+/
+Herramientas Empresariales
+/
+Excel Advanced
+Curso Excel Avanzado
+Inicio: A demanda (Online)
+Horario: Flexible
+Detalles del Curso
+Inicio:
+A demanda (Online)
+Duración:
+25 horas
+Horario:
+Flexible
+Coste:
+350 €
+Inscripción anticipada:
+299 €
+25% de descuento extra para antiguos alumnos
+Inscríbete
+1
+MÓDULO 1
+
+Fórmulas Avanzadas y Lógica
+
+Domina las funciones más potentes para automatizar cálculos complejos.
+
+BUSCARX, INDICE y COINCIDIR (Index-Match)
+Funciones lógicas anidadas (SI, Y, O, SI.CONJUNTO)
+Funciones de Texto y Fecha para limpieza
+Gestión de errores y validación de datos
+2
+MÓDULO 2
+
+Tablas Dinámicas Profesionales
+
+Analiza grandes volúmenes de datos en segundos.
+
+Diseño y formato de Tablas Dinámicas
+Campos calculados y Elementos calculados
+Segmentación de datos y Escalas de tiempo
+Gráficos dinámicos vinculados
+3
+MÓDULO 3
+
+Power Query y Power Pivot
+
+La revolución de Excel: ETL y Modelado de datos sin salir de la hoja.
+
+Introducción a Power Query: Importar y Transformar
+Combinar y Anexar consultas
+Introducción al Modelo de Datos (Power Pivot)
+Medidas DAX básicas en Excel
+4
+MÓDULO 4
+
+Introducción a Macros (VBA)
+
+Automatiza tareas repetitivas con la grabadora y código simple.
+
+Uso eficaz de la Grabadora de Macros
+Entorno VBE y edición básica de código
+Asignar macros a botones y eventos
+Automatización de informes mensuales
+Microsoft MVP
+Experto en Excel Financiero
+
+15+ años de experiencia
+
+Consultor financiero y MVP de Microsoft con 15 años optimizando departamentos financieros mediante Excel avanzado y VBA.
+
+Microsoft Office Specialist: Excel Expert
+Financial Modeling Analyst
+¿Tienes alguna duda?
+
+Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+
+Ver Preguntas Frecuentes
+Inscríbete

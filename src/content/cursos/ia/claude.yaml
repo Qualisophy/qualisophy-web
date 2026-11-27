@@ -1,0 +1,71 @@
+# Claude: IA para Desarrollo y QA
+# URL: /cursos/ia/claude · Esquema: src/content.config.ts
+
+id: ia-claude
+nombre: "Claude: IA para Desarrollo y QA"
+categoria: ia
+slug: claude
+visible: true
+orden: 1
+imagen: ../../../assets/imagenes-cursos/qa/claude.jpeg
+resumen: Domina los modelos de Anthropic, uso de Artifacts, MCP y Claude Code en terminal para desarrollo automatizado.
+descripcion: Claude y los modelos Sonnet y Opus de Anthropic han revolucionado el desarrollo de software y la gestión de proyectos técnicos. En esta formación práctica dominarás desde la formulación avanzada de prompts, gestión de contexto y uso de Artifacts, hasta la integración de Claude Code en terminal, protocolos MCP y flujos de trabajo autónomos para acelerar drásticamente tu ciclo de vida de desarrollo y testing.
+requisitos: La formación está enfocada a desarrolladores, perfiles de QA, consultores técnicos y gestores de proyectos que deseen integrar agentes y LLMs avanzados en su día a día. Se recomiendan conocimientos básicos de programación (JavaScript, Python o similar), uso de terminal y familiaridad con entornos Git.
+nivel: Intermedio
+modalidad: Online
+inicio: Por definir
+duracion: Por definir
+duracionCorta: Por definir
+horario: Por definir
+precio:
+  normal: Por definir
+temario:
+  - titulo: Fundamentos de Claude y el Ecosistema Anthropic
+    descripcion: Conoce a fondo las capacidades de los modelos y el entorno de trabajo web.
+    temas:
+      - "Arquitectura de Claude: modelos Haiku, Sonnet y Opus."
+      - "Ventajas competitivas: ventana de contexto extendida y control de sesgo."
+      - Configuración del entorno de trabajo, interfaz web y Claude Projects.
+      - Gestión de artefactos (Artifacts) y prototipado interactivo en tiempo real.
+    icono: Bot
+  - titulo: Prompt Engineering Avanzado con Claude
+    descripcion: Aprende a comunicarte eficazmente con los modelos de Anthropic.
+    temas:
+      - Técnicas de estructuración mediante XML tags (<context>, <instructions>, <examples>).
+      - Chain-of-Thought prompting y razonamiento paso a paso.
+      - Few-shot prompting aplicado a refactorización y depuración de código.
+      - Control de formato, schemas JSON estrictos y reducción de alucinaciones.
+    icono: MessageSquare
+  - titulo: Claude Code y Desarrollo en Línea de Comandos
+    descripcion: Lleva la IA directamente a tu terminal y entorno local.
+    temas:
+      - "Introducción a Claude Code: instalación, autenticación y configuración CLI."
+      - Integración con repositorios Git y análisis semántico de bases de código enteras.
+      - "Automatización de tareas de desarrollo: refactorización, creación de tests y resolución de bugs."
+      - Creación de flujos de trabajo, scripts interactivos y custom commands.
+    icono: Terminal
+  - titulo: Model Context Protocol (MCP) e Integraciones
+    descripcion: Conecta Claude con tus propias herramientas y bases de datos.
+    temas:
+      - Qué es Model Context Protocol (MCP) y por qué redefine la arquitectura con LLMs.
+      - Conexión de Claude con fuentes de datos locales, APIs y bases de datos.
+      - Configuración de servidores MCP (PostgreSQL, Git, sistemas de archivos).
+      - Creación de agentes asistidos con acceso directo a herramientas del proyecto.
+    icono: Network
+  - titulo: Automatización de Testing y Documentación
+    descripcion: Aplica Claude a flujos CI/CD y aseguramiento de calidad.
+    temas:
+      - Generación automatizada de suites de pruebas (unitarias, integración y E2E).
+      - Creación dinámica de documentación técnica, OpenAPI specs y diagramas.
+      - Buenas prácticas de seguridad, manejo de secretos y gobernanza de código.
+      - "Proyecto final: construcción y refactorización guiada de un proyecto end-to-end con Claude Code."
+    icono: CheckCircle
+instructor:
+  id: fran-guerrero
+  cargo: Lead Instructor & AI Engineering Specialist
+  experiencia: Especialista en QA, arquitecturas modernas y adopción de IA generativa.
+  descripcion: Especialista técnico en arquitecturas modernas de software, pruebas continuas y adopción de herramientas de inteligencia artificial generativa en equipos de ingeniería para maximizar la productividad y calidad del código.
+  certificaciones:
+    - Claude Certified Practitioner
+    - Prompt Engineering Specialist
+    - Certified Scrum Master

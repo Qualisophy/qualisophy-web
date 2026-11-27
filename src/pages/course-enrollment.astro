@@ -4,361 +4,31 @@ import { CourseEnrollmentForm } from "@/components/react/course/CourseEnrollment
 import { InstructorCard } from "@/components/react/course/InstructorCard";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 
-// ==========================================
-// IMPORTACIÓN DE IMÁGENES LOCALES
-// ==========================================
-// QA
-import imgQaSoftware from "@/assets/imagenes-cursos/qa/qa-curso.jpeg";
-import imgQaApi from "@/assets/imagenes-cursos/qa/postman.jpeg";
-import imgQaCypress from "@/assets/imagenes-cursos/qa/cypress-bootcamp.jpeg";
-import imgQaJunit from "@/assets/imagenes-cursos/qa/junit.jpeg";
-import imgQaAgile from "@/assets/imagenes-cursos/qa/agile-testing.jpeg";
-import imgQaGenai from "@/assets/imagenes-cursos/qa/testing-ia.jpeg";
-// RECONVERSIÓN LABORAL
-import imgReconversionTriunfa from "@/assets/imagenes-cursos/reconversion/triunfa-en-tu-reconversion-laboral.jpeg";
-import imgQaClaude from "@/assets/imagenes-cursos/qa/claude.jpeg";
-// DATA
-import imgDataSql from "@/assets/imagenes-cursos/data/sql-powerbi.jpeg";
-import imgDataPowerbi from "@/assets/imagenes-cursos/data/powerbi.jpeg";
-// HERRAMIENTAS
-import imgToolsExcel from "@/assets/imagenes-cursos/tools/excel.jpeg";
-import imgToolsOffice from "@/assets/imagenes-cursos/tools/ofimatica.jpeg";
-import imgToolsChatbots from "@/assets/imagenes-cursos/tools/chatbots.jpeg";
-import imgToolsMake from "@/assets/imagenes-cursos/tools/make.jpeg";
-// DEVOPS
-import imgDevopsGit from "@/assets/imagenes-cursos/devops/git.jpeg";
-import imgDevopsGitlab from "@/assets/imagenes-cursos/devops/gitlab.jpeg";
-import imgDevopsIntro from "@/assets/imagenes-cursos/devops/ci-cd.jpeg";
-// AGILE
-import imgAgileScrum from "@/assets/imagenes-cursos/agile/agile-mastery.jpeg";
-
+import { getCursos, getCurso, datosInscripcion } from "@/lib/cursos";
 
 // Obtener ID del curso y TIPO de la URL
 const url = new URL(Astro.request.url);
 const courseId = url.searchParams.get("course") || "";
 const enrollmentType = url.searchParams.get("type") || "enrollment"; // 'enrollment' o 'interest'
 
-// DICCIONARIO COMPLETO DE CURSOS
-const courseCatalog: Record<
-  string,
-  {
-    id: string;
-    name: string;
-    description: string;
-    image: string;
-    startDate: string;
-    duration: string;
-    modality: string;
-    price: string;
-    priceSubtext?: string; 
-    formerStudentDiscount?: string;
-    categorySlug?: string; 
-    courseSlug?: string;   
-  }
-> = {
-  // ==========================================
-  // QA & TESTING
-  // ==========================================
-  "qa-software": {
-    id: "qa-software",
-    name: "Calidad de Software (QA) y Testing",
-    description: "Verifica que las aplicaciones funcionan correctamente y valida requerimientos.",
-    image: imgQaSoftware.src, 
-    startDate: "28 de septiembre, 2026",
-    duration: "40 horas (7 semanas)",
-    modality: "Online en vivo",
-    price: "347 €",
-    priceSubtext: "reservando antes del 7 de Septiembre de 2026 (precio original: 397 €)",
-    formerStudentDiscount: "25% de descuento extra para antiguos alumnos",
-    categorySlug: "qa",
-    courseSlug: "software-quality",
-  },
-  "qa-cypress": {
-    id: "qa-cypress",
-    name: "Cypress Automation Bootcamp",
-    description: "Aprende automatización de pruebas web modernas con Cypress desde cero.",
-    image: imgQaCypress.src, 
-    startDate: "27 de Octubre, 2026",
-    duration: "36 horas (6 semanas)",
-    modality: "Online en vivo",
-    price: "497 €",
-    priceSubtext: "reservando antes del 13 de octubre de 2026 (precio original: 547 €)",
-    formerStudentDiscount: "25% de descuento extra para antiguos alumnos",
-    categorySlug: "qa",
-    courseSlug: "cypress-bootcamp",
-  },
-  "qa-api": {
-    id: "qa-api",
-    name: "API Testing con Postman",
-    description: "Domina la validación del backend integrándola en procesos CI/CD.",
-    image: imgQaApi.src,
-    startDate: "Por definir",
-    duration: "Por definir",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "qa",
-    courseSlug: "api-testing",
-  },
-  "qa-junit": {
-    id: "qa-junit",
-    name: "Tests Unitarios con JUnit",
-    description: "Creación de pruebas robustas usando el estándar de la industria para Java.",
-    image: imgQaJunit.src,
-    startDate: "Por definir",
-    duration: "Por definir",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "qa",
-    courseSlug: "junit-testing",
-  },
-  "qa-agile": {
-    id: "qa-agile",
-    name: "Agile Testing",
-    description: "Técnicas y mentalidad para integrarse en equipos ágiles Scrum/Kanban.",
-    image: imgQaAgile.src,
-    startDate: "Por definir",
-    duration: "Por definir",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "qa",
-    courseSlug: "agile-testing",
-  },
-  "qa-genai": {
-    id: "qa-genai",
-    name: "Generative AI para Software Testing",
-    description: "Acelera tus labores diarias de QA utilizando Inteligencia Artificial Generativa.",
-    image: imgQaGenai.src,
-    startDate: "Por definir",
-    duration: "Por definir",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "qa",
-    courseSlug: "genai-testing",
-  },
-  "ia-claude": {
-    id: "ia-claude",
-    name: "Claude: IA para Desarrollo y QA", 
-    description: "Domina los modelos de Anthropic, uso de Artifacts, MCP y Claude Code en terminal.",
-    image: imgQaClaude.src,
-    startDate: "Por definir",
-    duration: "30 horas",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "ia",
-    courseSlug: "claude",
-  },
-
-  // ==========================================
-  // RECONVERSIÓN LABORAL
-  // ==========================================
-  "reconversion-triunfa": {
-    id: "reconversion-triunfa",
-    name: "Triunfa en tu reconversión laboral",
-    description: "Prepara tu CV, LinkedIn, portfolio y entrevistas para conseguir tu primer puesto en QA.",
-    image: imgReconversionTriunfa.src,
-    startDate: "15 de enero, 2027",
-    duration: "Clase intensiva (3 h) + mentoría 1 a 1 (1 h) + simulacro (1 h)",
-    modality: "Online",
-    price: "100 €",
-    priceSubtext: "precio de lanzamiento (valor real: 125 €). Oferta exclusiva por tiempo limitado",
-    formerStudentDiscount: "Antiguos alumnos: 80 € (20 % extra)",
-    categorySlug: "reconversion-laboral",
-    courseSlug: "triunfa-en-tu-reconversion-laboral",
-  },
-
-  // ==========================================
-  // DATA & BI
-  // ==========================================
-  "data-powerbi": {
-    id: "data-powerbi",
-    name: "Analítica de Datos con Power BI",
-    description: "Transforma, modela y visualiza datos para la toma de decisiones.",
-    image: imgDataPowerbi.src,
-    startDate: "Inicio de Octubre",
-    duration: "50 horas",
-    modality: "Online en vivo",
-    formerStudentDiscount: "25% de descuento extra para antiguos alumnos",
-    price: "450 €",
-    categorySlug: "data",
-    courseSlug: "powerbi",
-  },
-  "data-sql": {
-    id: "data-sql",
-    name: "Introducción a SQL para Power BI",
-    description: "Extrae, filtra y limpia datos en el origen optimizando el rendimiento.",
-    image: imgDataSql.src,
-    startDate: "Por definir",
-    duration: "Por definir",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "data",
-    courseSlug: "sql-powerbi",
-  },
-
-  // ==========================================
-  // HERRAMIENTAS
-  // ==========================================
-  "tools-excel": {
-    id: "tools-excel",
-    name: "Microsoft Excel Expert",
-    description: "Maneja grandes volúmenes de datos, macros y Power Pivot.",
-    image: imgToolsExcel.src,
-    startDate: "Por definir",
-    duration: "Por definir",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "tools",
-    courseSlug: "excel-expert",
-  },
-  "tools-office": {
-    id: "tools-office",
-    name: "Ofimática Integral",
-    description: "Mejora radicalmente tu velocidad y organización corporativa diaria.",
-    image: imgToolsOffice.src,
-    startDate: "Por definir",
-    duration: "Por definir",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "tools",
-    courseSlug: "office-tools",
-  },
-  "tools-chatbots": {
-    id: "tools-chatbots",
-    name: "Chatbots para E-commerce",
-    description: "Diseña e integra asistentes virtuales conversacionales automatizados.",
-    image: imgToolsChatbots.src,
-    startDate: "Por definir",
-    duration: "Por definir",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "tools",
-    courseSlug: "chatbots",
-  },
-  "tools-make": {
-    id: "tools-make",
-    name: "Productividad con Make",
-    description: "Crea flujos de trabajo automatizados para gestionar correos e integrar IA.",
-    image: imgToolsMake.src,
-    startDate: "Por definir",
-    duration: "Por definir",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "tools",
-    courseSlug: "make-productivity",
-  },
-
-  // ==========================================
-  // DEVOPS
-  // ==========================================
-  "devops-git":{
-    id: "devops-git",
-    name: "Control de Versiones con Git",
-    description:
-      "Aprende Git desde cero: control de versiones, repositorios, ramas y trabajo colaborativo.",
-    image: imgDevopsGit.src,
-    startDate: "Por definir",
-    duration: "Por definir",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "devops",
-    courseSlug: "git",
-  },
-  "devops-gitlab": {
-    id: "devops-gitlab",
-    name: "Gestión Avanzada y CI/CD con GitLab",
-    description: "Configura tableros, automatiza pruebas y despliegues seguros.",
-    image: imgDevopsGitlab.src,
-    startDate: "Por definir",
-    duration: "Por definir",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "devops",
-    courseSlug: "gitlab-cicd",
-  },
-  "devops-intro": {
-    id: "devops-intro",
-    name: "DevOps, Continuous Testing y CI/CD",
-    description: "Inmersión completa en la cultura, prácticas y herramientas de DevOps.",
-    image: imgDevopsIntro.src,
-    startDate: "Por definir",
-    duration: "Por definir",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "devops",
-    courseSlug: "intro-devops",
-  },
-
-  // ==========================================
-  // AGILE
-  // ==========================================
-  "agile-scrum": {
-    id: "agile-scrum",
-    name: "Agile Mastery: El Camino del Scrum Master",
-    description: "Facilita, asesora y mentoriza a los equipos de desarrollo.",
-    image: imgAgileScrum.src,
-    startDate: "Por definir",
-    duration: "Por definir",
-    modality: "Online en vivo",
-    price: "Por definir",
-    categorySlug: "agile",
-    courseSlug: "scrum-master",
-  },
-
-  // ==========================================
-  // DESARROLLO (Mantenidos con Unsplash)
-  // ==========================================
-  "dev-fullstack": {
-    id: "dev-fullstack",
-    name: "Fullstack Development",
-    description: "Conviértete en desarrollador Full Stack desde cero a profesional.",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1470&auto=format&fit=crop",
-    startDate: "A consultar",
-    duration: "120 horas",
-    modality: "Online en vivo",
-    price: "1200 €",
-    categorySlug: "dev",
-    courseSlug: "fullstack",
-  },
-  "dev-frontend": {
-    id: "dev-frontend",
-    name: "Frontend (React/Vue)",
-    description: "Crea interfaces de usuario dinámicas y modernas.",
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1470&auto=format&fit=crop",
-    startDate: "A consultar",
-    duration: "60 horas",
-    modality: "Online en vivo",
-    price: "650 €",
-    categorySlug: "dev",
-    courseSlug: "frontend-react",
-  },
-  "dev-backend": {
-    id: "dev-backend",
-    name: "Backend (Node.js/Java)",
-    description: "Aprende a construir la lógica y bases de datos del servidor.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1470&auto=format&fit=crop",
-    startDate: "A consultar",
-    duration: "60 horas",
-    modality: "Online en vivo",
-    price: "650 €",
-    categorySlug: "dev",
-    courseSlug: "backend-node",
-  },
-  "dev-java": {
-    id: "dev-java",
-    name: "Java & Spring Boot",
-    description: "Desarrolla aplicaciones robustas y seguras para grandes organizaciones.",
-    image: "https://images.unsplash.com/photo-1537884944318-390069bb8665?q=80&w=1470&auto=format&fit=crop",
-    startDate: "A consultar",
-    duration: "80 horas",
-    modality: "Online en vivo",
-    price: "695 €",
-    categorySlug: "dev",
-    courseSlug: "java-spring",
-  },
-
-  // ==========================================
-  // EMPRESAS (B2B Mantenidos con Unsplash)
-  // ==========================================
+// Cursos B2B (corporate-training): fuera de la fuente única de cursos B2C (ver QUAL-523)
+interface CursoB2B {
+  id: string;
+  name: string;
+  description: string;
+  image: string;
+  startDate: string;
+  duration: string;
+  modality: string;
+  price: string;
+  priceSubtext?: string;
+  previousPrice?: string;
+  formerStudentDiscount?: string;
+  categoryUrl?: string;
+  categoryName?: string;
+  courseUrl?: string;
+}
+const cursosB2B: Record<string, CursoB2B> = {
   "enterprise-frontend": { id: "enterprise-frontend", name: "Curso Frontend Moderno", description: "Domina React, Vue y las últimas tecnologías frontend.", image: "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?auto=format&fit=crop&w=1470&q=80", startDate: "A consultar", duration: "Personalizable", modality: "Online / Presencial", price: "447 €" },
   "enterprise-backend": { id: "enterprise-backend", name: "Curso Backend Escalable", description: "Aprende a construir APIs robustas y escalables.", image: "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1470&q=80", startDate: "A consultar", duration: "Personalizable", modality: "Online / Presencial", price: "525 €" },
   "enterprise-fullstack": { id: "enterprise-fullstack", name: "Curso Full Stack Development", description: "Conviértete en desarrollador Full Stack completo.", image: "https://images.unsplash.com/photo-1519241047957-be31d7379a5d?auto=format&fit=crop&w=1470&q=80", startDate: "A consultar", duration: "Personalizable", modality: "Online / Presencial", price: "597 €" },
@@ -369,28 +39,19 @@ const courseCatalog: Record<
   "enterprise-analytics": { id: "enterprise-analytics", name: "Data Analytics Fundamentals", description: "Fundamentos de análisis de datos empresariales.", image: "https://images.unsplash.com/photo-1640158615573-cd28feb1bf4e?auto=format&fit=crop&w=1470&q=80", startDate: "A consultar", duration: "Personalizable", modality: "Online / Presencial", price: "450 €" },
 };
 
-// Get selected course or null
-const selectedCourse = courseId && courseCatalog[courseId] ? courseCatalog[courseId] : null;
+// Curso seleccionado: primero los B2C de src/content/cursos, después los B2B
+const cursoB2C = courseId ? await getCurso(courseId) : undefined;
+const selectedCourse: CursoB2B | null = cursoB2C
+  ? await datosInscripcion(cursoB2C)
+  : (cursosB2B[courseId] ?? null);
 
-// Prepare course list for dropdown
-const courses = Object.values(courseCatalog).map((course) => ({
-  id: course.id,
-  name: course.name,
-}));
-
-// Formateamos la categoría para los breadcrumbs
-const formatCategoryName = (slug: string) => {
-  if (slug === 'ia') return 'Inteligencia Artificial';
-  if (slug === 'reconversion-laboral') return 'Reconversión Laboral';
-  if (slug === 'qa') return 'QA & Testing';
-  if (slug === 'dev') return 'Desarrollo';
-  if (slug === 'pm') return 'Project Management';
-  if (slug === 'microsoft' || slug === 'data') return 'Data & BI';
-  if (slug === 'tools') return 'Herramientas';
-  if (slug === 'devops') return 'DevOps & CI/CD';
-  if (slug === 'agile') return 'Agile & Scrum';
-  return 'Formación';
-};
+// Desplegable: cursos B2C visibles (y el seleccionado aunque esté oculto) + B2B
+const cursosVisibles = await getCursos();
+if (cursoB2C && !cursoB2C.visible) cursosVisibles.push(cursoB2C);
+const courses = [
+  ...cursosVisibles.map((c) => ({ id: c.id, name: c.nombre })),
+  ...Object.values(cursosB2B).map((c) => ({ id: c.id, name: c.name })),
+];
 
 // Course card data (only if course is selected)
 const courseCardData = selectedCourse
@@ -419,6 +80,7 @@ const courseCardData = selectedCourse
         label: "Precio",
         subValue: selectedCourse.priceSubtext, 
         value: selectedCourse.price,
+        previousValue: selectedCourse.previousPrice,
         discountText: selectedCourse.formerStudentDiscount, 
       },
     }
@@ -435,19 +97,19 @@ const courseCardData = selectedCourse
         <span class="mx-2 text-slate-400">/</span>
         <a href="/cursos" class="hover:text-primary transition-colors">Cursos</a>
         
-        {selectedCourse?.categorySlug && (
+        {selectedCourse?.categoryUrl && (
           <>
             <span class="mx-2 text-slate-400">/</span>
-            <a href={`/cursos/${selectedCourse.categorySlug}`} class="hover:text-primary transition-colors">
-              {formatCategoryName(selectedCourse.categorySlug)}
+            <a href={selectedCourse.categoryUrl} class="hover:text-primary transition-colors">
+              {selectedCourse.categoryName}
             </a>
           </>
         )}
         
-        {selectedCourse?.courseSlug && (
+        {selectedCourse?.courseUrl && (
           <>
             <span class="mx-2 text-slate-400">/</span>
-            <a href={`/cursos/${selectedCourse.categorySlug}/${selectedCourse.courseSlug}`} class="hover:text-primary transition-colors truncate max-w-[200px] sm:max-w-xs">
+            <a href={selectedCourse.courseUrl} class="hover:text-primary transition-colors truncate max-w-[200px] sm:max-w-xs">
               {selectedCourse.name}
             </a>
           </>

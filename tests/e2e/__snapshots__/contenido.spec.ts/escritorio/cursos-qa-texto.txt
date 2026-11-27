@@ -1,0 +1,86 @@
+Formación en QA & Testing
+
+Formación especializada para asegurar la calidad del software. Desde fundamentos manuales hasta automatización avanzada e IA.
+
+Ver Itinerarios
+/
+Cursos
+/
+QA & Testing
+Formación en Aseguramiento de Calidad
+
+Especialízate en una de las áreas más demandadas del desarrollo de software.
+
+Mostrando 6 cursos
+QA
+Principiante
+Calidad de Software (QA) y Testing
+
+Verifica que las aplicaciones funcionan correctamente y valida requerimientos.
+
+schedule
+40h
+wifi
+Online
+Ver
+arrow_forward_ios
+QA
+Intermedio
+API Testing con Postman
+
+Domina la validación del backend integrándola en procesos CI/CD.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+QA
+Intermedio
+Cypress Automation Bootcamp
+
+Aprende automatización de pruebas web modernas con Cypress desde cero.
+
+schedule
+36h
+wifi
+Online
+Ver
+arrow_forward_ios
+QA
+Avanzado
+Tests Unitarios con JUnit
+
+Creación de pruebas robustas usando el estándar de la industria para Java.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+QA
+Intermedio
+Agile Testing
+
+Técnicas y mentalidad para integrarse en equipos ágiles Scrum/Kanban.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+QA
+Avanzado
+Generative AI para Software Testing
+
+Acelera tus labores diarias de QA utilizando Inteligencia Artificial Generativa.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
