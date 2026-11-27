@@ -1,60 +1,13 @@
 import React from "react";
-import top50Image from "@/assets/pages/blog/top50.png";
-import empresaSolidariaImage from "@/assets/blog/empresa-solidaria/empresa-solidaria-blog.png";
+import type { TarjetaPost } from "@/lib/blog";
 
-// Datos unificados con slugs correctos
-const posts = [
-  {
-    slug: "sello-empresa-solidaria",
-    category: "Noticias",
-    title: "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria",
-    excerpt:
-      "Hemos obtenido el Sello Empresa Solidaria 2026 por destinar el 0,7 % de nuestro Impuesto de Sociedades a proyectos sociales.",
-    image: empresaSolidariaImage.src,
-    date: "13 Oct, 2026",
-  },
-  {
-    slug: "qualisophy-top-50",
-    category: "Noticias",
-    title: "Qualisophy: En el top 50 de la innovación andaluza",
-    excerpt:
-      "Qualisophy entra en el top 50 andaluz de innovación con foco en impacto social, bienestar y diversidad en las organizaciones.",
-    image: top50Image.src,
-    date: "12 May, 2026",
-  },
-  {
-    slug: "impacto-ia-testing",
-    category: "Tendencias",
-    title: "El impacto de la IA en el testing de software moderno",
-    excerpt:
-      "Descubre cómo la inteligencia artificial está redefiniendo los roles de QA y qué habilidades son necesarias hoy.",
-    image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=600",
-    date: "12 Feb, 2026",
-  },
-  {
-    slug: "neurodivergencia-ventaja",
-    category: "Inclusión",
-    title: "Neurodivergencia: La ventaja competitiva oculta",
-    excerpt:
-      "Las empresas que apuestan por la neurodiversidad reportan un aumento del 30% en productividad e innovación.",
-    image:
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
-    date: "2 Ene, 2026",
-  },
-  {
-    slug: "caso-exito-maria",
-    category: "Casos de Éxito",
-    title: "De la hostelería a Desarrollador Full Stack en 6 meses",
-    excerpt:
-      "La historia de María y cómo el reskilling transformó su vida profesional gracias a la metodología Qualisophy.",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600",
-    date: "23 Dic, 2025",
-  },
-];
 
-export const BlogSection = () => {
+interface BlogSectionProps {
+  /** Últimos posts, del más reciente al más antiguo (getTarjetasPosts(3) de src/lib/blog.ts) */
+  posts: TarjetaPost[];
+}
+
+export const BlogSection: React.FC<BlogSectionProps> = ({ posts }) => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 max-w-7xl">

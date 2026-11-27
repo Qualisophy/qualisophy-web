@@ -1,0 +1,64 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "QA & Testing":
+          - /url: /cursos/qa
+      - listitem: / Tests Unitarios con JUnit
+  - heading "Tests Unitarios con JUnit" [level=1]
+  - text: "Inicio: Por definir Horario: Por definir"
+  - heading "Detalles del Curso" [level=2]
+  - text: "Inicio: Por definir Duración: Por definir Horario: Por definir Coste: Por definir"
+  - link "Me interesa el curso":
+    - /url: /course-enrollment?course=qa-junit&type=interest
+    - button "Me interesa el curso"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: "La calidad del software comienza desde la línea de código más pequeña. Este curso profundiza en la creación de pruebas unitarias robustas utilizando el estándar de la industria para Java: JUnit. Los desarrolladores y QA técnicos aprenderán a crear código testeable, aplicar dobles de prueba y asegurar que los cambios de código futuros no rompan la funcionalidad existente, adoptando una cultura de Shift-Left Testing."
+  - button "1 MÓDULO 1 Introducción a la Calidad del Código":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Introducción a la Calidad del Código
+  - paragraph: Fundamentos del testing a nivel de código.
+  - list:
+    - listitem: Diferencia entre pruebas unitarias, de integración y E2E.
+    - listitem: Los principios FIRST (Fast, Independent, Repeatable, Self-Validating, Timely).
+    - listitem: Configuración del entorno, dependencias (Maven/Gradle) y ciclo de vida de JUnit.
+  - button "2 MÓDULO 2 Fundamentos de JUnit y Aserciones":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Fundamentos de JUnit y Aserciones
+  - paragraph: Dominando la validación de estados y comportamientos.
+  - list:
+    - listitem: Uso de anotaciones clave (@Test, @BeforeEach, @AfterAll, etc.).
+    - listitem: Tipos de aserciones para validación de estados.
+    - listitem: Agrupación, filtrado de pruebas mediante etiquetas (@Tag) y ejecución selectiva.
+  - button "3 MÓDULO 3 Pruebas Avanzadas y Aislamiento":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Pruebas Avanzadas y Aislamiento
+  - paragraph: Uso de dobles de prueba para aislar el código.
+  - list:
+    - listitem: Pruebas parametrizadas para validación de múltiples conjuntos de datos.
+    - listitem: Uso de Mocks, Stubs y Spies para aislar componentes (integración con Mockito).
+    - listitem: Gestión de excepciones, timeouts y asunciones (Assumptions).
+  - button "4 MÓDULO 4 TDD, BDD y Cultura DevOps":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: TDD, BDD y Cultura DevOps
+  - paragraph: Integrando las pruebas en el ciclo de vida moderno.
+  - list:
+    - listitem: "Desarrollo guiado por pruebas (TDD): Red-Green-Refactor."
+    - listitem: Generación de informes de cobertura de código (ej. JaCoCo).
+    - listitem: Automatización de ejecución en entornos de Integración Continua.
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: Experiencia sólida en Programación Orientada a Objetos, preferiblemente en Java o lenguajes similares (C#, C++).
+  - button "Me interesa"

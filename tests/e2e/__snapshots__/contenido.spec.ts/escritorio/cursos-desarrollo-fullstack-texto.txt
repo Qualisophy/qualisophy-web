@@ -1,0 +1,82 @@
+/
+Cursos
+/
+Desarrollo
+/
+Fullstack Developer
+Fullstack Developer
+Inicio: 3 de Marzo de 2025
+Días: Lunes a Jueves
+Horario: 18:00 - 21:00 horas
+Detalles del Curso
+Inicio:
+3 de Marzo de 2025
+Duración:
+120 horas (Bootcamp)
+Horario:
+Lunes a Jueves / 18:00 - 21:00
+Coste:
+1.200 €
+Inscripción anticipada:
+995 €
+25% de descuento extra para antiguos alumnos
+Inscríbete
+1
+MÓDULO 1
+
+Fundamentos Web Modernos
+
+Bases sólidas de HTML5, CSS3 avanzado y JavaScript ES6+.
+
+Semántica HTML y Accesibilidad (a11y)
+CSS Grid, Flexbox y TailwindCSS
+DOM Manipulation y Event Loop
+Asincronía: Promises y Async/Await
+2
+MÓDULO 2
+
+Frontend con React
+
+Construcción de interfaces interactivas y gestión de estado.
+
+Componentes, Props y JSX
+Hooks: useState, useEffect, useContext
+Gestión de estado global (Zustand/Redux)
+Consumo de APIs y React Query
+3
+MÓDULO 3
+
+Backend con Node.js & Express
+
+Creación de servidores, APIs REST y seguridad.
+
+Arquitectura REST y Express.js
+Middlewares y Manejo de Errores
+Autenticación JWT y Seguridad
+Bases de Datos: MongoDB (NoSQL) y PostgreSQL (SQL)
+4
+MÓDULO 4
+
+Despliegue y DevOps
+
+Llevando tu aplicación a producción.
+
+Control de versiones con Git y GitHub Flow
+Dockerización de aplicaciones
+Despliegue en la nube (Vercel/Render)
+Introducción a CI/CD
+Tech Lead Fullstack
+Senior Software Engineer
+
+10+ años de experiencia
+
+Ingeniero Fullstack con experiencia en startups de alto crecimiento. Especialista en stack MERN y arquitecturas escalables.
+
+AWS Certified Developer
+MongoDB Certified Developer
+¿Tienes alguna duda?
+
+Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+
+Ver Preguntas Frecuentes
+Inscríbete

@@ -1,0 +1,241 @@
+CATÁLOGO FORMATIVO
+Formación Individual
+
+Impulsa tu carrera con nuestros itinerarios especializados. Domina las herramientas de QA, Datos, DevOps y Gestión Ágil.
+
+/
+Cursos
+Todos
+Reconversión Laboral
+Inteligencia Artificial
+QA & Automatización
+Data & BI
+Herramientas Empresariales
+DevOps & Gestión
+Agile & Scrum
+search
+Todos los cursos
+Mostrando 18 cursos
+RECONVERSIÓN
+Principiante
+Triunfa en tu reconversión laboral
+
+Prepara tu CV, LinkedIn, portfolio y entrevistas para conseguir tu primer puesto en QA, con mentoría 1 a 1.
+
+schedule
+5 h
+wifi
+Online
+Ver
+arrow_forward_ios
+IA
+Intermedio
+Claude: IA para Desarrollo y QA
+
+Domina los modelos de Anthropic, uso de Artifacts, MCP y Claude Code en terminal para desarrollo automatizado.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+QA
+Principiante
+Calidad de Software (QA) y Testing
+
+Verifica que las aplicaciones funcionan correctamente y valida requerimientos.
+
+schedule
+40h
+wifi
+Online
+Ver
+arrow_forward_ios
+QA
+Intermedio
+API Testing con Postman
+
+Domina la validación del backend integrándola en procesos CI/CD.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+QA
+Intermedio
+Cypress Automation Bootcamp
+
+Aprende automatización de pruebas web modernas con Cypress desde cero.
+
+schedule
+36h
+wifi
+Online
+Ver
+arrow_forward_ios
+QA
+Avanzado
+Tests Unitarios con JUnit
+
+Creación de pruebas robustas usando el estándar de la industria para Java.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+QA
+Intermedio
+Agile Testing
+
+Técnicas y mentalidad para integrarse en equipos ágiles Scrum/Kanban.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+QA
+Avanzado
+Generative AI para Software Testing
+
+Acelera tus labores diarias de QA utilizando Inteligencia Artificial Generativa.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+DATA & BI
+Principiante
+Introducción a SQL para Power BI
+
+Extrae, filtra y limpia datos en el origen optimizando el rendimiento.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+DATA & BI
+Intermedio
+Analítica de Datos con Power BI
+
+Transforma, modela y visualiza datos para la toma de decisiones empresariales.
+
+schedule
+50h
+wifi
+Online
+Ver
+arrow_forward_ios
+HERRAMIENTAS
+Avanzado
+Microsoft Excel Expert
+
+Maneja grandes volúmenes de datos, macros y Power Pivot.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+HERRAMIENTAS
+Principiante
+Ofimática Integral
+
+Mejora radicalmente tu velocidad y organización corporativa diaria.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+HERRAMIENTAS
+Intermedio
+Chatbots para E-commerce
+
+Diseña e integra asistentes virtuales conversacionales automatizados.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+HERRAMIENTAS
+Intermedio
+Productividad con Make
+
+Crea flujos de trabajo automatizados para gestionar correos e integrar IA.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+DEVOPS
+Principiante
+Control de Versiones con Git
+
+Aprende Git desde cero: control de versiones, repositorios, ramas y trabajo colaborativo.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+DEVOPS
+Avanzado
+Gestión Avanzada y CI/CD con GitLab
+
+Configura tableros, automatiza pruebas y despliegues seguros.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+DEVOPS
+Principiante
+DevOps, Continuous Testing y CI/CD
+
+Inmersión completa en la cultura, prácticas y herramientas de DevOps.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+AGILE
+Intermedio
+Agile Mastery: El Camino del Scrum Master
+
+Facilita, asesora y mentoriza a los equipos de desarrollo para maximizar valor.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+Novedades y Actualidad
+
+Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+
+Suscribirse
+
+Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

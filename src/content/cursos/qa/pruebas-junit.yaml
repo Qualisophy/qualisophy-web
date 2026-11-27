@@ -1,0 +1,50 @@
+# Tests Unitarios con JUnit
+# URL: /cursos/qa/pruebas-junit · Esquema: src/content.config.ts
+
+id: qa-junit
+nombre: Tests Unitarios con JUnit
+categoria: qa
+slug: pruebas-junit
+visible: true
+orden: 4
+imagen: ../../../assets/imagenes-cursos/qa/junit.jpeg
+resumen: Creación de pruebas robustas usando el estándar de la industria para Java.
+descripcion: "La calidad del software comienza desde la línea de código más pequeña. Este curso profundiza en la creación de pruebas unitarias robustas utilizando el estándar de la industria para Java: JUnit. Los desarrolladores y QA técnicos aprenderán a crear código testeable, aplicar dobles de prueba y asegurar que los cambios de código futuros no rompan la funcionalidad existente, adoptando una cultura de Shift-Left Testing."
+requisitos: Experiencia sólida en Programación Orientada a Objetos, preferiblemente en Java o lenguajes similares (C#, C++).
+nivel: Avanzado
+modalidad: Online
+inicio: Por definir
+duracion: Por definir
+duracionCorta: Por definir
+horario: Por definir
+precio:
+  normal: Por definir
+temario:
+  - titulo: Introducción a la Calidad del Código
+    descripcion: Fundamentos del testing a nivel de código.
+    temas:
+      - Diferencia entre pruebas unitarias, de integración y E2E.
+      - Los principios FIRST (Fast, Independent, Repeatable, Self-Validating, Timely).
+      - Configuración del entorno, dependencias (Maven/Gradle) y ciclo de vida de JUnit.
+    icono: BookOpen
+  - titulo: Fundamentos de JUnit y Aserciones
+    descripcion: Dominando la validación de estados y comportamientos.
+    temas:
+      - Uso de anotaciones clave (@Test, @BeforeEach, @AfterAll, etc.).
+      - Tipos de aserciones para validación de estados.
+      - Agrupación, filtrado de pruebas mediante etiquetas (@Tag) y ejecución selectiva.
+    icono: CheckCircle
+  - titulo: Pruebas Avanzadas y Aislamiento
+    descripcion: Uso de dobles de prueba para aislar el código.
+    temas:
+      - Pruebas parametrizadas para validación de múltiples conjuntos de datos.
+      - Uso de Mocks, Stubs y Spies para aislar componentes (integración con Mockito).
+      - Gestión de excepciones, timeouts y asunciones (Assumptions).
+    icono: Box
+  - titulo: TDD, BDD y Cultura DevOps
+    descripcion: Integrando las pruebas en el ciclo de vida moderno.
+    temas:
+      - "Desarrollo guiado por pruebas (TDD): Red-Green-Refactor."
+      - Generación de informes de cobertura de código (ej. JaCoCo).
+      - Automatización de ejecución en entornos de Integración Continua.
+    icono: RefreshCw

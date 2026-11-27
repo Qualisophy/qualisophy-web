@@ -1,0 +1,43 @@
+# Chatbots para E-commerce
+# URL: /cursos/herramientas/chatbots · Esquema: src/content.config.ts
+
+id: tools-chatbots
+nombre: Chatbots para E-commerce
+categoria: herramientas
+slug: chatbots
+visible: true
+orden: 3
+imagen: ../../../assets/imagenes-cursos/tools/chatbots.jpeg
+resumen: Diseña e integra asistentes virtuales conversacionales automatizados.
+descripcion: En la era digital actual, la inmediatez es clave. Los chatbots son una herramienta poderosa que permite a los comercios automatizar tareas repetitivas, mejorar drásticamente la atención al cliente y optimizar la experiencia general del usuario. En este curso, los alumnos aprenderán a diseñar, crear e integrar asistentes virtuales conversacionales para aumentar la eficiencia de su negocio.
+requisitos: Conocimientos básicos de manejo de redes sociales a nivel corporativo y familiaridad con el entorno de comercio electrónico. No es necesario saber programar.
+nivel: Intermedio
+modalidad: Online
+inicio: Por definir
+duracion: Por definir
+duracionCorta: Por definir
+horario: Por definir
+precio:
+  normal: Por definir
+temario:
+  - titulo: ¿Qué son los Chatbots?
+    descripcion: Comprende el impacto y funcionamiento de los asistentes virtuales.
+    temas:
+      - Definición y funcionamiento básico de un chatbot en la era digital.
+      - Beneficios principales para el comercio electrónico y la atención al cliente.
+      - Casos de uso más habituales en redes sociales y tiendas online.
+    icono: MessageSquare
+  - titulo: Creando Chatbots
+    descripcion: Aprende a diseñar flujos conversacionales sin código.
+    temas:
+      - Pasos fundamentales para diseñar el flujo de conversación.
+      - Análisis de las herramientas disponibles en el mercado para la creación de chatbots.
+      - Uso de bloques de contenido (como la 'Galería' para mostrar imágenes con enlaces a la web).
+    icono: GitMerge
+  - titulo: Integrando Chatbots
+    descripcion: Despliega tu chatbot en entornos reales de producción.
+    temas:
+      - Plataformas de integración y canales de despliegue.
+      - Paso a paso práctico de integración utilizando ManyChat.
+      - Pruebas de funcionamiento (función de 'Vista previa'), promoción mediante códigos QR y análisis de rendimiento para optimización.
+    icono: Share2

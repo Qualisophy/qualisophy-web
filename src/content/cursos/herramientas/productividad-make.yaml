@@ -1,0 +1,43 @@
+# Productividad con Make
+# URL: /cursos/herramientas/productividad-make · Esquema: src/content.config.ts
+
+id: tools-make
+nombre: Productividad con Make
+categoria: herramientas
+slug: productividad-make
+visible: true
+orden: 4
+imagen: ../../../assets/imagenes-cursos/tools/make.jpeg
+resumen: Crea flujos de trabajo automatizados para gestionar correos e integrar IA.
+descripcion: Imagina tener una herramienta mágica que conecte tus aplicaciones favoritas y actúe como un asistente personal que trabaja 24/7 para que seas más productivo. Ese es el poder de Make. Este curso eminentemente práctico enseñará a los alumnos a crear flujos de trabajo automatizados para gestionar bandejas de correo, clasificar mensajes y generar respuestas automáticas apoyadas en Inteligencia Artificial.
+requisitos: Manejo fluido de correo electrónico (Gmail) y herramientas ofimáticas en la nube (Google Forms). Nociones básicas sobre herramientas de Inteligencia Artificial como ChatGPT.
+nivel: Intermedio
+modalidad: Online
+inicio: Por definir
+duracion: Por definir
+duracionCorta: Por definir
+horario: Por definir
+precio:
+  normal: Por definir
+temario:
+  - titulo: Introducción a Make
+    descripcion: Adéntrate en el mundo de la automatización No-Code.
+    temas:
+      - ¿Qué es Make? Conceptos básicos de la automatización visual sin código (No-Code).
+      - Cómo la automatización transforma el trabajo diario y ahorra horas de tareas repetitivas.
+    icono: Zap
+  - titulo: Configuración de Make con Gmail y otras Apps
+    descripcion: Conecta tus aplicaciones principales para que hablen entre sí.
+    temas:
+      - Configuración inicial del entorno y conexión de cuentas.
+      - Vinculación de Make con Gmail para la lectura ('Watch Emails') y gestión de la bandeja de entrada.
+      - Integración con herramientas de entrada de datos como Google Forms.
+    icono: Mail
+  - titulo: Automatización Avanzada e IA (Ejercicio de Prueba)
+    descripcion: Crea tu primer asistente de correo impulsado por IA.
+    temas:
+      - "Mapeo de datos: conectando los campos de un formulario con los campos de envío."
+      - Programación de escenarios (ejecución por horas, días o minutos).
+      - "Integración con IA: Uso de modelos como GPT-3.5 o GPT-4 para obtener clasificaciones de correos y generar respuestas."
+      - Movimiento automático de correos a carpetas específicas y validación de salidas.
+    icono: Bot

@@ -1,0 +1,50 @@
+# Microsoft Excel Expert
+# URL: /cursos/herramientas/excel-experto · Esquema: src/content.config.ts
+
+id: tools-excel
+nombre: Microsoft Excel Expert
+categoria: herramientas
+slug: excel-experto
+visible: true
+orden: 1
+imagen: ../../../assets/imagenes-cursos/tools/excel.jpeg
+resumen: Maneja grandes volúmenes de datos, macros y Power Pivot.
+descripcion: Eleva tus habilidades ofimáticas al nivel experto. Este curso está diseñado para profesionales financieros, analistas y gestores que necesitan manejar grandes volúmenes de datos. Los estudiantes dominarán desde fórmulas condicionales complejas y matrices, hasta la automatización de procesos mediante macros y la transición hacia el modelado de datos avanzado integrado en el propio Excel (Power Pivot).
+requisitos: Dominio sólido de funciones básicas/intermedias de Excel y manejo habitual de tablas de datos.
+nivel: Avanzado
+modalidad: Online
+inicio: Por definir
+duracion: Por definir
+duracionCorta: Por definir
+horario: Por definir
+precio:
+  normal: Por definir
+temario:
+  - titulo: Funciones Complejas y Manipulación Ágil
+    descripcion: Trabaja más rápido y resuelve problemas complejos con fórmulas.
+    temas:
+      - Atajos de teclado avanzados y técnicas de navegación exprés.
+      - Funciones lógicas anidadas, funciones de búsqueda dinámica (BUSCARX, ÍNDICE/COINCIDIR) y matrices dinámicas.
+      - Formato condicional formulado y validación de datos avanzada.
+    icono: Command
+  - titulo: Tablas Dinámicas Nivel Experto
+    descripcion: Saca todo el partido a la herramienta más potente de Excel.
+    temas:
+      - Agrupación avanzada de campos, campos y elementos calculados.
+      - Conexión de múltiples tablas dinámicas con segmentos de datos (Slicers).
+      - Extracción de informes dinámicos y técnicas de diseño de dashboards estáticos en Excel.
+    icono: Table
+  - titulo: Modelado de Datos con Power Pivot y DAX
+    descripcion: Supera el límite de filas de Excel con modelos de datos.
+    temas:
+      - Introducción al complemento Power Pivot para superar el límite del millón de filas.
+      - Relación entre múltiples tablas sin utilizar funciones de búsqueda.
+      - Creación de medidas (KPIs) directamente en Excel utilizando lenguaje DAX básico.
+    icono: Database
+  - titulo: Automatización de Procesos (Macros)
+    descripcion: Haz que Excel trabaje por ti automatizando tareas repetitivas.
+    temas:
+      - "Introducción a la grabadora de Macros: referencias relativas vs. absolutas."
+      - Principios básicos del entorno de Visual Basic for Applications (VBA).
+      - Asignación de macros a botones y automatización de tareas repetitivas diarias.
+    icono: Settings

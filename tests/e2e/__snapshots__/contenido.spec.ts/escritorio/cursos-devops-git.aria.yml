@@ -1,0 +1,64 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "DevOps & Gestión":
+          - /url: /cursos/devops
+      - listitem: / Control de Versiones con Git
+  - heading "Control de Versiones con Git" [level=1]
+  - text: "Inicio: Por definir Horario: Por definir"
+  - heading "Detalles del Curso" [level=2]
+  - text: "Inicio: Por definir Duración: Por definir Horario: Por definir Coste: Por definir"
+  - link "Me interesa el curso":
+    - /url: /course-enrollment?course=devops-git&type=interest
+    - button "Me interesa el curso"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: El control de versiones es una habilidad esencial en el desarrollo moderno. Este curso básico de Git, basado en la filosofía learning by doing, introduce a los estudiantes en el uso práctico de Git para gestionar cambios en el código, trabajar con ramas, realizar commits efectivos y colaborar en equipo de forma profesional. Ideal para iniciarse en entornos de desarrollo reales y mejorar la productividad desde el primer día.
+  - button "1 MÓDULO 1 Introducción a Git y Control de Versiones":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Introducción a Git y Control de Versiones
+  - paragraph: Comprende los fundamentos de Git y cómo gestionar el historial de cambios.
+  - list:
+    - listitem: Qué es el control de versiones y por qué Git es el estándar en desarrollo moderno.
+    - listitem: Inicialización de repositorios, estructura básica y primeros commits.
+    - listitem: Configuración inicial de usuario, flujo básico de trabajo y uso de repositorios remotos.
+  - button "2 MÓDULO 2 Ramas, Fusiones y Trabajo Colaborativo":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Ramas, Fusiones y Trabajo Colaborativo
+  - paragraph: Aprende a trabajar en paralelo con ramas y equipos.
+  - list:
+    - listitem: Creación y gestión de ramas para desarrollo de funcionalidades independientes.
+    - listitem: Estrategias de merge y resolución de conflictos entre cambios.
+    - listitem: Uso de repositorios remotos para colaboración y sincronización de cambios.
+  - button "3 MÓDULO 3 Historial, Deshacer Cambios y Control Avanzado":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Historial, Deshacer Cambios y Control Avanzado
+  - paragraph: Domina el control del historial y la recuperación de cambios.
+  - list:
+    - listitem: Exploración del historial de commits y navegación entre versiones.
+    - listitem: Uso de reset, revert y checkout para deshacer cambios de forma segura.
+    - listitem: Gestión de etiquetas (tags) y almacenamiento temporal con stash.
+  - button "4 MÓDULO 4 Flujos de Trabajo Avanzados y Proyecto Final":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Flujos de Trabajo Avanzados y Proyecto Final
+  - paragraph: Consolida tus conocimientos aplicando Git en proyectos reales.
+  - list:
+    - listitem: Modelos de trabajo como Git Flow y GitHub Flow aplicados a proyectos reales.
+    - listitem: Hooks de Git y automatización de tareas locales.
+    - listitem: Proyecto final integrador con flujo completo de desarrollo y colaboración.
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: Estar familiarizado con la terminal y/o algún editor de código.
+  - button "Me interesa"

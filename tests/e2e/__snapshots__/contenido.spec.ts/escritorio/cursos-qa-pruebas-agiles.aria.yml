@@ -1,0 +1,64 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "QA & Testing":
+          - /url: /cursos/qa
+      - listitem: / Agile Testing
+  - heading "Agile Testing" [level=1]
+  - text: "Inicio: Por definir Horario: Por definir"
+  - heading "Detalles del Curso" [level=2]
+  - text: "Inicio: Por definir Duración: Por definir Horario: Por definir Coste: Por definir"
+  - link "Me interesa el curso":
+    - /url: /course-enrollment?course=qa-agile&type=interest
+    - button "Me interesa el curso"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: En los entornos ágiles modernos, el testing ya no es una fase al final del proyecto, sino una actividad continua en la que participa todo el equipo. Este curso dota a los profesionales de QA de las técnicas y la mentalidad necesarias para integrarse en equipos Scrum/Kanban, aportando valor desde la creación de historias de usuario, automatizando estratégicamente y garantizando entregas rápidas y seguras.
+  - button "1 MÓDULO 1 El Rol del Tester en el Entorno Ágil":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: El Rol del Tester en el Entorno Ágil
+  - paragraph: Transición del modelo tradicional al ágil.
+  - list:
+    - listitem: Valores y principios del Manifiesto Ágil aplicados a QA.
+    - listitem: Transición del enfoque tradicional (Cascada) al enfoque colaborativo (Whole Team).
+    - listitem: El modelo de los Cuadrantes del Testing Ágil.
+  - button "2 MÓDULO 2 Prácticas y Enfoques de Testing Ágil":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Prácticas y Enfoques de Testing Ágil
+  - paragraph: Aplicación de técnicas colaborativas y exploratorias.
+  - list:
+    - listitem: Desarrollo Guiado por Comportamiento (BDD) y Criterios de Aceptación.
+    - listitem: "La Pirámide de Automatización: equilibrar pruebas unitarias, de API y UI."
+    - listitem: Testing Exploratorio y enfoques basados en heurísticas y sesiones (Session-Based).
+  - button "3 MÓDULO 3 Planificación, Estimación y Gestión del Riesgo":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Planificación, Estimación y Gestión del Riesgo
+  - paragraph: Cómo estimar historias orientadas a la calidad.
+  - list:
+    - listitem: Participación del QA en Refinamientos y Sprint Plannings.
+    - listitem: Estrategias de estimación ágil (Planning Poker, T-Shirt sizing) orientadas a calidad.
+    - listitem: Identificación temprana de riesgos y diseño de pruebas enfocadas al valor del negocio.
+  - button "4 MÓDULO 4 Entrega Continua y Métricas de Calidad":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Entrega Continua y Métricas de Calidad
+  - paragraph: Midiendo el éxito y mejorando los procesos.
+  - list:
+    - listitem: Conceptos de Integración Continua (CI) y Entrega Continua (CD).
+    - listitem: Uso de métricas ágiles útiles (Lead Time, Cycle Time, Densidad de Defectos).
+    - listitem: Retroalimentación continua y mejora de procesos en las retrospectivas.
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: Experiencia en pruebas de software tradicionales y comprensión básica de marcos de trabajo ágiles (Scrum/Kanban).
+  - button "Me interesa"

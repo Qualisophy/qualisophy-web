@@ -1,0 +1,3 @@
+https://images.unsplash.com/photo-1551288049-bebda4e38f71 | Hero background
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/data/sql-powerbi.jpeg | Introducción a SQL para Power BI
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/data/powerbi.jpeg | Analítica de Datos con Power BI

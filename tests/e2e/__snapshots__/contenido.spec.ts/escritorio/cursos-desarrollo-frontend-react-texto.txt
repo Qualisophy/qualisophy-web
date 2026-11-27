@@ -1,0 +1,81 @@
+/
+Cursos
+/
+Desarrollo
+/
+Frontend con React
+Frontend con React
+Inicio: 10 de Marzo de 2025
+Días: Martes y Jueves
+Horario: 18:30 - 21:30 horas
+Detalles del Curso
+Inicio:
+10 de Marzo de 2025
+Duración:
+60 horas (8 semanas)
+Horario:
+Martes y Jueves / 18:30 - 21:30
+Coste:
+650 €
+Inscripción anticipada:
+595 €
+25% de descuento extra para antiguos alumnos
+Inscríbete
+1
+MÓDULO 1
+
+React Core Concepts
+
+Entendiendo la librería y su filosofía declarativa.
+
+JSX, Virtual DOM y Reconciliación
+Componentes Funcionales vs Clases
+Ciclo de vida y Efectos
+Reglas de los Hooks
+2
+MÓDULO 2
+
+Hooks Avanzados y Patrones
+
+Escribe código React limpio, reutilizable y performante.
+
+useMemo, useCallback y optimización
+useReducer para lógica compleja
+Custom Hooks: Abstraer lógica
+Patrones de diseño: Compound Components
+3
+MÓDULO 3
+
+Ecosistema Profesional
+
+Herramientas que usan los equipos top.
+
+Enrutamiento con React Router v6
+Formularios con React Hook Form
+Validación con Zod
+Estilado: TailwindCSS vs Styled Components
+4
+MÓDULO 4
+
+Next.js y Testing
+
+Introducción al framework de producción y calidad de código.
+
+Introducción a Next.js (SSR/SSG)
+Unit Testing con Vitest y React Testing Library
+E2E Testing básico
+Buenas prácticas de arquitectura
+Frontend Architect
+React Specialist
+
+8+ años de experiencia
+
+Arquitecto Frontend obsesionado con el rendimiento web y la experiencia de usuario. Contribuidor Open Source.
+
+Meta Frontend Developer Professional
+¿Tienes alguna duda?
+
+Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+
+Ver Preguntas Frecuentes
+Inscríbete

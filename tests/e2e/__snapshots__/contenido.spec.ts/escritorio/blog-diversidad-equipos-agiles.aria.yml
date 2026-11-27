@@ -1,0 +1,47 @@
+- main:
+  - img "Cómo gestionar la diversidad en equipos ágiles"
+  - text: Inclusión
+  - heading "Cómo gestionar la diversidad en equipos ágiles" [level=1]
+  - text: /calendar_today \d+ Oct, \d+ schedule 5 min de lectura/
+  - article:
+    - navigation "Breadcrumb":
+      - list:
+        - listitem:
+          - link "Ir al inicio":
+            - /url: /
+            - img
+        - listitem:
+          - text: /
+          - link "Blog":
+            - /url: /blog
+        - listitem: / Diversidad Equipos Ágiles
+    - paragraph: Un equipo ágil donde todos piensan igual es un equipo condenado a la mediocridad. La verdadera agilidad nace de la fricción constructiva, y gestionar esa diversidad es el mayor reto de un Scrum Master moderno.
+    - 'heading "Más allá del código: Scrum y las personas" [level=2]'
+    - paragraph: Los marcos de trabajo ágiles como Scrum se basan en la colaboración constante y la adaptación. Cuando un equipo cuenta con perfiles de diferentes culturas, géneros, edades o neurotipos, el abanico de soluciones a un mismo problema se multiplica.
+    - paragraph: Sin embargo, la diversidad también trae consigo diferentes estilos de comunicación y resolución de conflictos. El trabajo del líder ágil es asegurar que todas las voces sean escuchadas durante las ceremonias (Dailies, Retrospectivas), evitando que las personalidades más extrovertidas monopolicen las decisiones.
+    - paragraph: lightbulb Decisiones superiores
+    - paragraph: /Estudios sobre comportamiento organizacional revelan que los equipos diversos e inclusivos toman decisiones empresariales superiores en el \d+% de los casos en comparación con equipos homogéneos\./
+    - heading "Estrategias para líderes ágiles" [level=2]
+    - paragraph: La inclusión no ocurre por arte de magia al juntar a personas diferentes en una sala. Requiere metodologías activas y facilitación.
+    - list:
+      - listitem:
+        - strong: "Fomentar la seguridad psicológica:"
+        - text: Crear un entorno donde cometer un error o proponer una idea inusual no sea motivo de burla o castigo.
+      - listitem:
+        - strong: "Adaptar dinámicas:"
+        - text: Usar herramientas asíncronas o de brainstorming silencioso en las retrospectivas para que los perfiles más introvertidos aporten su valor.
+      - listitem:
+        - strong: "Evitar el 'pensamiento de grupo':"
+        - text: Promover el rol del abogado del diablo constructivo para asegurar que se exploran todas las aristas de una funcionalidad.
+    - paragraph: Al final del día, el software lo construyen personas para personas. Un equipo diverso es simplemente el reflejo de los usuarios finales.
+    - paragraph: "¿Te ha gustado? Compártelo:"
+    - button "Compartir en redes": share
+    - button "Copiar enlace": link ¡Copiado!
+    - navigation:
+      - 'link "arrow_back Anterior Power BI: Transformando datos en decisiones estratégicas"':
+        - /url: /blog/powerbi-negocios
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

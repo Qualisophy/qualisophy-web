@@ -1,0 +1,43 @@
+- main:
+  - img "Catálogo Formación Qualisophy"
+  - text: CATÁLOGO FORMATIVO
+  - heading "Formación Individual" [level=1]
+  - paragraph: Impulsa tu carrera con nuestros itinerarios especializados. Domina las herramientas de QA, Datos, DevOps y Gestión Ágil.
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem: / Cursos
+  - button "Todos"
+  - button "Reconversión Laboral"
+  - button "Inteligencia Artificial"
+  - button "QA & Automatización"
+  - button "Data & BI"
+  - button "Herramientas Empresariales"
+  - button "DevOps & Gestión"
+  - button "Agile & Scrum"
+  - text: search
+  - textbox "Buscar curso..."
+  - heading "Data & BI" [level=2]
+  - text: Mostrando 2 cursos
+  - link "Introducción a SQL para Power BI Data & BI Principiante Introducción a SQL para Power BI Extrae, filtra y limpia datos en el origen optimizando el rendimiento. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/data/sql-powerbi
+    - img "Introducción a SQL para Power BI"
+    - text: Data & BI Principiante
+    - heading "Introducción a SQL para Power BI" [level=3]
+    - paragraph: Extrae, filtra y limpia datos en el origen optimizando el rendimiento.
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios
+  - link /Analítica de Datos con Power BI Data & BI Intermedio Analítica de Datos con Power BI Transforma, modela y visualiza datos para la toma de decisiones empresariales\. schedule \d+[hmsp]+ wifi Online Ver arrow_forward_ios/:
+    - /url: /cursos/data/analitica-powerbi
+    - img "Analítica de Datos con Power BI"
+    - text: Data & BI Intermedio
+    - heading "Analítica de Datos con Power BI" [level=3]
+    - paragraph: Transforma, modela y visualiza datos para la toma de decisiones empresariales.
+    - text: /schedule \d+[hmsp]+ wifi Online Ver arrow_forward_ios/
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

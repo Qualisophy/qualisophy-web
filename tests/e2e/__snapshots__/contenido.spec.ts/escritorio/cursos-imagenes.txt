@@ -1,0 +1,19 @@
+https://images.unsplash.com/photo-1522202176988-66273c2fd55f | Catálogo Formación Qualisophy
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/reconversion/triunfa-en-tu-reconversion-laboral.jpeg | Triunfa en tu reconversión laboral
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/claude.jpeg | Claude: IA para Desarrollo y QA
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/qa-curso.jpeg | Calidad de Software (QA) y Testing
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/postman.jpeg | API Testing con Postman
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/cypress-bootcamp.jpeg | Cypress Automation Bootcamp
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/junit.jpeg | Tests Unitarios con JUnit
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/agile-testing.jpeg | Agile Testing
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/testing-ia.jpeg | Generative AI para Software Testing
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/data/sql-powerbi.jpeg | Introducción a SQL para Power BI
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/data/powerbi.jpeg | Analítica de Datos con Power BI
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/tools/excel.jpeg | Microsoft Excel Expert
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/tools/ofimatica.jpeg | Ofimática Integral
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/tools/chatbots.jpeg | Chatbots para E-commerce
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/tools/make.jpeg | Productividad con Make
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/devops/git.jpeg | Control de Versiones con Git
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/devops/gitlab.jpeg | Gestión Avanzada y CI/CD con GitLab
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/devops/ci-cd.jpeg | DevOps, Continuous Testing y CI/CD
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/agile/agile-mastery.jpeg | Agile Mastery: El Camino del Scrum Master

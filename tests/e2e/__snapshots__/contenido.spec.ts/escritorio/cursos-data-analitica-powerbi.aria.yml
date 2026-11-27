@@ -1,0 +1,69 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Data & BI":
+          - /url: /cursos/data
+      - listitem: / Analítica de Datos con Power BI
+  - heading "Analítica de Datos con Power BI" [level=1]
+  - text: "/Inicio: Inicio de Octubre Días: Martes y Jueves Horario: \\d+:\\d+ - \\d+:\\d+ horas/"
+  - heading "Detalles del Curso" [level=2]
+  - text: "/Inicio: Inicio de Octubre Duración: \\d+ horas Horario: Martes y Jueves \\/ \\d+:\\d+ - \\d+:\\d+ Coste: \\d+ € \\d+% de descuento extra para antiguos alumnos/"
+  - link "Inscríbete":
+    - /url: /course-enrollment?course=data-powerbi
+    - button "Inscríbete"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: Este curso abarca el ciclo de vida completo del Business Intelligence moderno. Sin necesidad de tocar SQL, los estudiantes aprenderán a conectar Power BI a diversas fuentes, transformar datos mediante la interfaz de Power Query, crear modelos de datos relacionales precisos (Modelo Estrella), y generar métricas de negocio con lenguaje DAX. Todo esto culminará en el diseño de informes visuales interactivos y de alto impacto para la toma de decisiones.
+  - button /1 MÓDULO 1 Introducción \(\d+[hmsp]+\)/:
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: /Introducción \(\d+[hmsp]+\)/
+  - paragraph: Este módulo sentará las bases para entender la relevancia del análisis de datos en el entorno empresarial. Se abordará el papel que desempeña el analista de datos en la toma de decisiones, así como los tipos de informes más utilizados en las organizaciones modernas. Además, se presentará Power BI como una herramienta clave. Estudiaremos su propósito y cómo se integra en el flujo de trabajo del análisis de datos.
+  - list:
+    - listitem: Importancia del análisis de datos en las compañías y el Rol del analista de Datos
+    - listitem: Tipos de informes más utilizados en la actualidad.
+    - listitem: Introducción a la herramienta Power BI
+  - button /2 MÓDULO 2 Toma de contacto con Power BI \(\d+[hmsp]+\)/:
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: /Toma de contacto con Power BI \(\d+[hmsp]+\)/
+  - paragraph: "En este módulo se recorre el proceso completo de trabajo con Power BI: desde la conexión e importación de datos, su transformación y modelado, hasta la creación de informes visuales y su publicación. También se introduce el lenguaje DAX para realizar análisis más avanzados. El objetivo es proporcionar una visión práctica y estructurada del proceso de análisis de datos con esta herramienta."
+  - list:
+    - listitem: Configurar Orígenes de datos
+    - listitem: Importar datos
+    - listitem: Transformación de datos (Básica, Intermedia y Avanzada)
+    - listitem: Modelado de datos.
+    - listitem: Expresiones para el análisis de datos con DAX
+    - listitem: Visualización de datos y creación de informes
+    - listitem: Publicación de informes
+    - listitem: Configuraciones avanzadas y buenas prácticas
+  - button /3 MÓDULO 3 Caso Práctico \(\d+[hmsp]+\)/:
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: /Caso Práctico \(\d+[hmsp]+\)/
+  - paragraph: Este módulo está dedicado a aplicar todo lo aprendido mediante la creación de un informe completo en Power BI, abordando desde la conexión de datos hasta la visualización final. Los participantes trabajarán en un caso práctico guiado, resolviendo dudas en tiempo real y consolidando conocimientos. Al final, se realizará una sesión de cierre para repasar conceptos clave y resolver preguntas finales.
+  - list:
+    - listitem: "Caso práctico: Creación de informe"
+    - listitem: Dudas y cierre
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: Nivel avanzado de Excel (tablas dinámicas, fórmulas buscarv) y una fuerte orientación analítica y de negocio.
+  - heading "Enrique Román Peláez" [level=3]
+  - img "Enrique Román Peláez"
+  - heading "Especialista en Power BI y Analítica de Datos" [level=4]
+  - paragraph: Más de 8 años de experiencia en Business Intelligence
+  - paragraph: Enrique es un consultor experto que ofrece una formación práctica orientada al negocio. Es especialista en la transformación, modelado y visualización de datos, aportando a los alumnos una visión integral de Power BI para la correcta toma de decisiones empresariales.
+  - text: Microsoft Data Analyst Associate Microsoft Certified Trainer (MCT)
+  - heading "¿Tienes alguna duda?" [level=3]
+  - paragraph: Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+  - link "Ver Preguntas Frecuentes":
+    - /url: /faq
+  - button "Inscríbete"

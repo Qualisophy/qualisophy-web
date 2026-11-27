@@ -1,14 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
-import { courseCategories } from "@/data/courseCatalog"; // Importamos la fuente de verdad
+import type { CategoriaCatalogo } from "@/lib/cursos";
 
 interface CourseTreeModalProps {
   isOpen: boolean;
   onClose: () => void;
+  /** Categorías visibles con sus cursos (getCatalogo() de src/lib/cursos.ts) */
+  courseCategories: CategoriaCatalogo[];
 }
 
 export const CourseTreeModal: React.FC<CourseTreeModalProps> = ({
   isOpen,
   onClose,
+  courseCategories,
 }) => {
   const [selectedBranchId, setSelectedBranchId] = useState<string | null>("qa");
   const coursesContainerRef = useRef<HTMLDivElement>(null);

@@ -1,0 +1,73 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Desarrollo":
+          - /url: /cursos/desarrollo
+      - listitem: / Java & Spring Boot
+  - heading "Java & Spring Boot" [level=1]
+  - text: "/Inicio: 7 de Abril de \\d+ Días: Martes y Jueves Horario: \\d+:\\d+ - \\d+:\\d+ horas/"
+  - heading "Detalles del Curso" [level=2]
+  - text: "/Inicio: 7 de Abril de \\d+ Duración: \\d+ horas \\(8 semanas\\) Horario: Martes y Jueves \\/ \\d+:\\d+ - \\d+:\\d+ Coste: \\d+ € Inscripción anticipada: \\d+ € \\d+% de descuento extra para antiguos alumnos/"
+  - link "Inscríbete":
+    - /url: /course-enrollment?course=dev-java
+    - button "Inscríbete"
+  - button "1 MÓDULO 1 Java Moderno y POO":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Java Moderno y POO
+  - paragraph: Repaso avanzado de Java y las novedades de las últimas versiones.
+  - list:
+    - listitem: Principios SOLID y Patrones de Diseño
+    - listitem: "/Java \\d+\\/\\d+: Records, Pattern Matching, Var/"
+    - listitem: "Programación Funcional: Streams y Lambdas"
+    - listitem: Gestión de dependencias con Maven/Gradle
+  - button "2 MÓDULO 2 Spring Boot Core":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Spring Boot Core
+  - paragraph: Fundamentos del framework empresarial por excelencia.
+  - list:
+    - listitem: Inversión de Control e Inyección de Dependencias
+    - listitem: Configuración y Beans
+    - listitem: Spring Data JPA y Hibernate
+    - listitem: "Spring Web MVC: Creación de APIs"
+  - button "3 MÓDULO 3 Seguridad y Microservicios":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Seguridad y Microservicios
+  - paragraph: Construyendo sistemas seguros y distribuidos.
+  - list:
+    - listitem: "Spring Security: Autenticación y Autorización (OAuth2/JWT)"
+    - listitem: Introducción a Microservicios con Spring Cloud
+    - listitem: Comunicación entre servicios (Feign, RestTemplate)
+    - listitem: Service Discovery y Config Server
+  - button "4 MÓDULO 4 Testing y Observabilidad":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Testing y Observabilidad
+  - paragraph: Calidad de software en el ecosistema Spring.
+  - list:
+    - listitem: Testing con JUnit 5 y Mockito
+    - listitem: Testcontainers para pruebas de integración
+    - listitem: Actuator y monitorización
+    - listitem: Dockerización de aplicaciones Spring Boot
+  - heading "Java Architect" [level=3]
+  - heading "Spring Certified Professional" [level=4]
+  - paragraph: /\d+\+ años de experiencia/
+  - paragraph: Arquitecto de Software con experiencia en banca y seguros. Experto en migración de monolitos a microservicios.
+  - text: "Oracle Certified Professional: Java SE Spring Certified Professional"
+  - heading "¿Tienes alguna duda?" [level=3]
+  - paragraph: Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+  - link "Ver Preguntas Frecuentes":
+    - /url: /faq
+  - button "Inscríbete"

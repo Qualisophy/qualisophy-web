@@ -28,6 +28,8 @@ interface InstructorCardProps {
     value: string;
     subValue?: string;
     discountText?: string;
+    /** Opcional: precio anterior, se muestra tachado junto a value (ofertas) */
+    previousValue?: string;
   };
   className?: string;
 }
@@ -157,6 +159,15 @@ export const InstructorCard = ({
               {footer.label}
             </p>
             <p className="text-3xl font-bold text-slate-800 text-center">
+              {footer.previousValue && (
+                <>
+                  <span className="sr-only">Antes </span>
+                  <del className="text-xl font-medium text-slate-400 mr-2">
+                    {footer.previousValue}
+                  </del>
+                  <span className="sr-only">, ahora </span>
+                </>
+              )}
               {footer.value}
             </p>
             {footer.subValue && (

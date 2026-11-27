@@ -1,0 +1,18 @@
+- heading "Áreas de Formación" [level=2]
+- paragraph: Selecciona una rama para ver todos los itinerarios disponibles
+- button "close"
+- button "trending_up Reconversión Laboral chevron_right"
+- button "smart_toy Inteligencia Artificial chevron_right"
+- button "bug_report QA & Automatización chevron_right"
+- button "bar_chart Data & BI chevron_right"
+- button "business_center Herramientas Empresariales chevron_right"
+- button "terminal DevOps & Gestión chevron_right"
+- button "groups Agile & Scrum chevron_right"
+- text: Agile & Scrum
+- link "Ir a la sección completa arrow_forward":
+  - /url: /cursos/agile
+- heading "Cursos Disponibles" [level=3]
+- 'link "menu_book Agile Mastery: El Camino del Scrum Master Ver temario y detalles →"':
+  - /url: /cursos/agile/scrum-master
+- link "Ver Catálogo Completo arrow_forward":
+  - /url: /cursos

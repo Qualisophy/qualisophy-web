@@ -1,0 +1,55 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Herramientas Empresariales":
+          - /url: /cursos/herramientas
+      - listitem: / Chatbots para E-commerce
+  - heading "Chatbots para E-commerce" [level=1]
+  - text: "Inicio: Por definir Horario: Por definir"
+  - heading "Detalles del Curso" [level=2]
+  - text: "Inicio: Por definir Duración: Por definir Horario: Por definir Coste: Por definir"
+  - link "Me interesa el curso":
+    - /url: /course-enrollment?course=tools-chatbots&type=interest
+    - button "Me interesa el curso"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: En la era digital actual, la inmediatez es clave. Los chatbots son una herramienta poderosa que permite a los comercios automatizar tareas repetitivas, mejorar drásticamente la atención al cliente y optimizar la experiencia general del usuario. En este curso, los alumnos aprenderán a diseñar, crear e integrar asistentes virtuales conversacionales para aumentar la eficiencia de su negocio.
+  - button "1 MÓDULO 1 ¿Qué son los Chatbots?":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: ¿Qué son los Chatbots?
+  - paragraph: Comprende el impacto y funcionamiento de los asistentes virtuales.
+  - list:
+    - listitem: Definición y funcionamiento básico de un chatbot en la era digital.
+    - listitem: Beneficios principales para el comercio electrónico y la atención al cliente.
+    - listitem: Casos de uso más habituales en redes sociales y tiendas online.
+  - button "2 MÓDULO 2 Creando Chatbots":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Creando Chatbots
+  - paragraph: Aprende a diseñar flujos conversacionales sin código.
+  - list:
+    - listitem: Pasos fundamentales para diseñar el flujo de conversación.
+    - listitem: Análisis de las herramientas disponibles en el mercado para la creación de chatbots.
+    - listitem: Uso de bloques de contenido (como la 'Galería' para mostrar imágenes con enlaces a la web).
+  - button "3 MÓDULO 3 Integrando Chatbots":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Integrando Chatbots
+  - paragraph: Despliega tu chatbot en entornos reales de producción.
+  - list:
+    - listitem: Plataformas de integración y canales de despliegue.
+    - listitem: Paso a paso práctico de integración utilizando ManyChat.
+    - listitem: Pruebas de funcionamiento (función de 'Vista previa'), promoción mediante códigos QR y análisis de rendimiento para optimización.
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: Conocimientos básicos de manejo de redes sociales a nivel corporativo y familiaridad con el entorno de comercio electrónico. No es necesario saber programar.
+  - button "Me interesa"

@@ -1,0 +1,55 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Herramientas Empresariales":
+          - /url: /cursos/herramientas
+      - listitem: / Productividad con Make
+  - heading "Productividad con Make" [level=1]
+  - text: "Inicio: Por definir Horario: Por definir"
+  - heading "Detalles del Curso" [level=2]
+  - text: "Inicio: Por definir Duración: Por definir Horario: Por definir Coste: Por definir"
+  - link "Me interesa el curso":
+    - /url: /course-enrollment?course=tools-make&type=interest
+    - button "Me interesa el curso"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: /Imagina tener una herramienta mágica que conecte tus aplicaciones favoritas y actúe como un asistente personal que trabaja \d+\/7 para que seas más productivo\. Ese es el poder de Make\. Este curso eminentemente práctico enseñará a los alumnos a crear flujos de trabajo automatizados para gestionar bandejas de correo, clasificar mensajes y generar respuestas automáticas apoyadas en Inteligencia Artificial\./
+  - button "1 MÓDULO 1 Introducción a Make":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Introducción a Make
+  - paragraph: Adéntrate en el mundo de la automatización No-Code.
+  - list:
+    - listitem: ¿Qué es Make? Conceptos básicos de la automatización visual sin código (No-Code).
+    - listitem: Cómo la automatización transforma el trabajo diario y ahorra horas de tareas repetitivas.
+  - button "2 MÓDULO 2 Configuración de Make con Gmail y otras Apps":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Configuración de Make con Gmail y otras Apps
+  - paragraph: Conecta tus aplicaciones principales para que hablen entre sí.
+  - list:
+    - listitem: Configuración inicial del entorno y conexión de cuentas.
+    - listitem: Vinculación de Make con Gmail para la lectura ('Watch Emails') y gestión de la bandeja de entrada.
+    - listitem: Integración con herramientas de entrada de datos como Google Forms.
+  - button "3 MÓDULO 3 Automatización Avanzada e IA (Ejercicio de Prueba)":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Automatización Avanzada e IA (Ejercicio de Prueba)
+  - paragraph: Crea tu primer asistente de correo impulsado por IA.
+  - list:
+    - listitem: "Mapeo de datos: conectando los campos de un formulario con los campos de envío."
+    - listitem: Programación de escenarios (ejecución por horas, días o minutos).
+    - listitem: "Integración con IA: Uso de modelos como GPT-3.5 o GPT-4 para obtener clasificaciones de correos y generar respuestas."
+    - listitem: Movimiento automático de correos a carpetas específicas y validación de salidas.
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: Manejo fluido de correo electrónico (Gmail) y herramientas ofimáticas en la nube (Google Forms). Nociones básicas sobre herramientas de Inteligencia Artificial como ChatGPT.
+  - button "Me interesa"

@@ -1,0 +1,49 @@
+- main:
+  - img "El impacto de la IA en el testing de software moderno"
+  - text: Tendencias
+  - heading "El impacto de la IA en el testing de software moderno" [level=1]
+  - text: /calendar_today \d+ Feb, \d+ schedule 5 min de lectura/
+  - article:
+    - navigation "Breadcrumb":
+      - list:
+        - listitem:
+          - link "Ir al inicio":
+            - /url: /
+            - img
+        - listitem:
+          - text: /
+          - link "Blog":
+            - /url: /blog
+        - listitem: / Impacto IA Testing
+    - paragraph: La Inteligencia Artificial ya no es ciencia ficción; es una herramienta diaria que está redefiniendo cómo aseguramos la calidad del software. Descubre cómo los equipos de QA están integrando algoritmos para predecir fallos antes de que ocurran.
+    - heading "De la ejecución manual a la automatización inteligente" [level=2]
+    - paragraph: El testing de software ha evolucionado drásticamente. Lo que antes requería horas de ejecución de casos de prueba manuales y repetitivos, hoy se optimiza mediante herramientas impulsadas por IA que pueden generar scripts de prueba, mantener selectores dinámicos y analizar resultados masivos en segundos.
+    - paragraph: Herramientas modernas no solo ejecutan, sino que aprenden. Al analizar el historial de fallos y el código fuente, la IA es capaz de identificar las áreas de mayor riesgo (Risk-based testing) y priorizar las pruebas que realmente importan, ahorrando tiempo y costes de infraestructura.
+    - paragraph: lightbulb Dato Clave
+    - paragraph: /Según informes recientes de la industria tecnológica, el \d+% de los equipos de QA de alto rendimiento utilizarán herramientas integradas con IA para el año \d+, transformando el rol del tester\./
+    - heading "El toque humano sigue siendo indispensable" [level=2]
+    - paragraph: "A pesar de la revolución automatizada, la IA carece de algo fundamental: el sentido común y la empatía del usuario final. El rol del especialista en QA evoluciona de 'buscador de bugs' a 'ingeniero de calidad' estratégico."
+    - list:
+      - listitem:
+        - strong: "Pensamiento crítico:"
+        - text: Evaluar si el software no solo funciona, sino si resuelve el problema del usuario.
+      - listitem:
+        - strong: "Pruebas exploratorias:"
+        - text: La creatividad humana para encontrar casos límite que la IA no puede predecir.
+      - listitem:
+        - strong: "Ética y Sesgos:"
+        - text: Auditar que los propios algoritmos de la aplicación no contengan sesgos discriminatorios.
+    - paragraph: La sinergia entre la velocidad computacional de la IA y el análisis crítico del talento humano es la verdadera clave del testing del futuro.
+    - paragraph: "¿Te ha gustado? Compártelo:"
+    - button "Compartir en redes": share
+    - button "Copiar enlace": link ¡Copiado!
+    - navigation:
+      - 'link /arrow_back Anterior Qualisophy: En el top \d+ de la innovación andaluza/':
+        - /url: /blog/qualisophy-top-50
+      - 'link "Siguiente arrow_forward Neurodivergencia: La ventaja competitiva oculta"':
+        - /url: /blog/neurodivergencia-ventaja
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

@@ -1,0 +1,2 @@
+https://images.unsplash.com/photo-1552664730-d307ca884978 | Hero background
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/agile/agile-mastery.jpeg | Agile Mastery: El Camino del Scrum Master

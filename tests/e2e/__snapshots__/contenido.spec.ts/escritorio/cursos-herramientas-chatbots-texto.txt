@@ -1,0 +1,60 @@
+/
+Cursos
+/
+Herramientas Empresariales
+/
+Chatbots para E-commerce
+Chatbots para E-commerce
+Inicio: Por definir
+Horario: Por definir
+Detalles del Curso
+Inicio:
+Por definir
+Duración:
+Por definir
+Horario:
+Por definir
+Coste:
+Por definir
+Me interesa el curso
+school
+¿De qué trata esta formación?
+
+En la era digital actual, la inmediatez es clave. Los chatbots son una herramienta poderosa que permite a los comercios automatizar tareas repetitivas, mejorar drásticamente la atención al cliente y optimizar la experiencia general del usuario. En este curso, los alumnos aprenderán a diseñar, crear e integrar asistentes virtuales conversacionales para aumentar la eficiencia de su negocio.
+
+1
+MÓDULO 1
+
+¿Qué son los Chatbots?
+
+Comprende el impacto y funcionamiento de los asistentes virtuales.
+
+Definición y funcionamiento básico de un chatbot en la era digital.
+Beneficios principales para el comercio electrónico y la atención al cliente.
+Casos de uso más habituales en redes sociales y tiendas online.
+2
+MÓDULO 2
+
+Creando Chatbots
+
+Aprende a diseñar flujos conversacionales sin código.
+
+Pasos fundamentales para diseñar el flujo de conversación.
+Análisis de las herramientas disponibles en el mercado para la creación de chatbots.
+Uso de bloques de contenido (como la 'Galería' para mostrar imágenes con enlaces a la web).
+3
+MÓDULO 3
+
+Integrando Chatbots
+
+Despliega tu chatbot en entornos reales de producción.
+
+Plataformas de integración y canales de despliegue.
+Paso a paso práctico de integración utilizando ManyChat.
+Pruebas de funcionamiento (función de 'Vista previa'), promoción mediante códigos QR y análisis de rendimiento para optimización.
+info
+Requisitos previos
+
+Conocimientos básicos de manejo de redes sociales a nivel corporativo y familiaridad con el entorno de comercio electrónico. No es necesario saber programar.
+
+Me interesa

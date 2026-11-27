@@ -1,0 +1,22 @@
+- heading "Áreas de Formación" [level=2]
+- paragraph: Selecciona una rama para ver todos los itinerarios disponibles
+- button "close"
+- button "trending_up Reconversión Laboral chevron_right"
+- button "smart_toy Inteligencia Artificial chevron_right"
+- button "bug_report QA & Automatización chevron_right"
+- button "bar_chart Data & BI chevron_right"
+- button "business_center Herramientas Empresariales chevron_right"
+- button "terminal DevOps & Gestión chevron_right"
+- button "groups Agile & Scrum chevron_right"
+- text: DevOps & Gestión
+- link "Ir a la sección completa arrow_forward":
+  - /url: /cursos/devops
+- heading "Cursos Disponibles" [level=3]
+- link "menu_book Control de Versiones con Git Ver temario y detalles →":
+  - /url: /cursos/devops/git
+- link "menu_book Gestión Avanzada y CI/CD con GitLab Ver temario y detalles →":
+  - /url: /cursos/devops/gitlab-cicd
+- link "menu_book DevOps, Continuous Testing y CI/CD Ver temario y detalles →":
+  - /url: /cursos/devops/introduccion-devops
+- link "Ver Catálogo Completo arrow_forward":
+  - /url: /cursos

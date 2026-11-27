@@ -1,0 +1,56 @@
+# DevOps, Continuous Testing y CI/CD
+# URL: /cursos/devops/introduccion-devops · Esquema: src/content.config.ts
+
+id: devops-intro
+nombre: DevOps, Continuous Testing y CI/CD
+categoria: devops
+slug: introduccion-devops
+visible: true
+orden: 3
+imagen: ../../../assets/imagenes-cursos/devops/ci-cd.jpeg
+resumen: Inmersión completa en la cultura, prácticas y herramientas de DevOps.
+descripcion: La filosofía DevOps ha transformado la manera en que se construye, prueba y despliega el software, rompiendo los silos tradicionales entre desarrollo y operaciones. Este curso proporciona una inmersión completa en la cultura, prácticas y herramientas de DevOps. Los alumnos aprenderán a automatizar procesos clave mediante pipelines de Integración y Despliegue Continuo (CI/CD), asegurando la calidad del producto en cada etapa gracias al Testing Continuo y la monitorización activa.
+requisitos: Conocimientos básicos sobre el ciclo de vida del desarrollo de software (SDLC) y familiaridad general con conceptos de testing. Es recomendable tener nociones básicas de navegación por línea de comandos.
+nivel: Principiante
+modalidad: Online
+inicio: Por definir
+duracion: Por definir
+duracionCorta: Por definir
+horario: Por definir
+precio:
+  normal: Por definir
+temario:
+  - titulo: Fundamentos de DevOps
+    descripcion: Descubre la cultura que une desarrollo y operaciones.
+    temas:
+      - "Introducción a la cultura DevOps: integración de procesos, prácticas y herramientas clave."
+      - Beneficios tangibles de adoptar DevOps en el ciclo de vida del desarrollo de software (SDLC).
+      - El rol crítico del Continuous Testing (Pruebas Continuas) dentro del ecosistema DevOps.
+    icono: Users
+  - titulo: Herramientas de Gestión y Configuración
+    descripcion: Domina las bases del control de versiones y entornos.
+    temas:
+      - "Sistemas de Control de Versiones: dominio fundamental de Git."
+      - Gestión de la configuración para estandarizar y automatizar la infraestructura y los entornos de desarrollo.
+    icono: Settings
+  - titulo: Integración Continua (CI)
+    descripcion: Automatiza la construcción y pruebas de tu código.
+    temas:
+      - Conceptos básicos y arquitectura de la Integración Continua.
+      - Exploración de las herramientas de CI más demandadas del mercado (Jenkins, GitLab CI, entre otras).
+      - Creación y configuración paso a paso de pipelines de CI efectivos.
+    icono: GitMerge
+  - titulo: Entrega y Despliegue Continuo (CD)
+    descripcion: Lleva tu código a producción de forma segura.
+    temas:
+      - Diferencias estructurales y estratégicas entre Entrega Continua y Despliegue Continuo.
+      - Técnicas para la automatización segura de despliegues en distintos entornos.
+      - Implementación de estrategias avanzadas de despliegue para mitigar riesgos (Despliegues Blue/Green, Canary Releases).
+    icono: Send
+  - titulo: Testing Continuo y Monitorización
+    descripcion: Cierra el ciclo asegurando calidad y observabilidad.
+    temas:
+      - Integración estratégica de pruebas automatizadas directamente en los pipelines de CI/CD.
+      - Implementación de herramientas de monitorización y logging para lograr una observabilidad total.
+      - Gestión del ciclo de retroalimentación (Feedback Loop) para asegurar la mejora continua.
+    icono: Activity

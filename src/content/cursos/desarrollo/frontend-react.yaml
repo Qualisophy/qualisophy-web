@@ -1,0 +1,56 @@
+# Frontend con React
+# URL: /cursos/desarrollo/frontend-react · Esquema: src/content.config.ts
+
+id: dev-frontend
+nombre: Frontend con React
+categoria: desarrollo
+slug: frontend-react
+visible: false
+orden: 2
+imagen: https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80
+resumen: Especialízate en la creación de interfaces dinámicas y SPA utilizando React, Redux y Next.js.
+nivel: Intermedio
+modalidad: Online
+inicio: 10 de Marzo de 2025
+duracion: 60 horas (8 semanas)
+duracionCorta: 60 Horas
+horario: Martes y Jueves / 18:30 - 21:30
+precio:
+  normal: 650 €
+  prontoPago:
+    precio: 595 €
+temario:
+  - titulo: React Core Concepts
+    descripcion: Entendiendo la librería y su filosofía declarativa.
+    temas:
+      - JSX, Virtual DOM y Reconciliación
+      - Componentes Funcionales vs Clases
+      - Ciclo de vida y Efectos
+      - Reglas de los Hooks
+    icono: Code
+  - titulo: Hooks Avanzados y Patrones
+    descripcion: Escribe código React limpio, reutilizable y performante.
+    temas:
+      - useMemo, useCallback y optimización
+      - useReducer para lógica compleja
+      - "Custom Hooks: Abstraer lógica"
+      - "Patrones de diseño: Compound Components"
+    icono: Zap
+  - titulo: Ecosistema Profesional
+    descripcion: Herramientas que usan los equipos top.
+    temas:
+      - Enrutamiento con React Router v6
+      - Formularios con React Hook Form
+      - Validación con Zod
+      - "Estilado: TailwindCSS vs Styled Components"
+    icono: Globe
+  - titulo: Next.js y Testing
+    descripcion: Introducción al framework de producción y calidad de código.
+    temas:
+      - Introducción a Next.js (SSR/SSG)
+      - Unit Testing con Vitest y React Testing Library
+      - E2E Testing básico
+      - Buenas prácticas de arquitectura
+    icono: Layers
+instructor:
+  id: generico-frontend-architect

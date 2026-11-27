@@ -1,0 +1,74 @@
+- main:
+  - img "Equipo colaborando en tecnología"
+  - heading "Tecnología que Une, Talento que Transforma" [level=1]
+  - paragraph: Expertos en inclusión laboral en tecnología, conectando talento diverso con empresas innovadoras para construir puentes hacia el futuro.
+  - button "Ver Programas"
+  - link "Contactar":
+    - /url: /contact
+  - link /Reconocimiento Top \d+ Emprendedores Andalucía/:
+    - /url: /blog/qualisophy-top-50
+    - img /Reconocimiento Top \d+ Emprendedores Andalucía/
+  - img "Equipo diverso trabajando"
+  - text: Identidad
+  - heading "Escuela de Inclusión Tecnológica" [level=2]
+  - paragraph: /Somos el nexo estratégico entre el talento diverso y el sector tecnológico\. Ayudamos a profesionales en transición y a empresas innovadoras a conectar, eliminando la escasez de talento especializado y las barreras de exclusión\. A través de una formación tecnológica \d+% personalizada y un acompañamiento, garantizamos un empleo de calidad y un impacto social medible\./
+  - link "Conoce a nuestro equipo arrow_forward":
+    - /url: /team
+  - text: Objeto social
+  - 'heading "Misión: Diversidad en el Sector IT" [level=2]'
+  - paragraph: Nuestra misión es democratizar el acceso a la tecnología. Diseñamos e impartimos programas formativos adaptados para la integración sociolaboral de personas neurodivergentes, talento rural y colectivos vulnerables. A través de nuestra investigación (I+D+i) en Inteligencia Artificial, personalizamos el aprendizaje y ofrecemos Consultoría de Talento como Servicio (TaaS) para impulsar la competitividad corporativa.
+  - text: check_circle Innovación Educativa (I+D+i) check_circle Talento como Servicio (TaaS)
+  - img "Formación inclusiva"
+  - heading "Filosofía de Formación Tech" [level=2]
+  - paragraph: Más allá de la formación técnica, cultivamos un ecosistema donde la calidad profesional y el valor humano convergen para redefinir el sector tecnológico.
+  - text: psychology_alt
+  - heading "Diversidad Cognitiva" [level=3]
+  - paragraph: No vemos la inclusión como caridad, sino como ventaja competitiva. Las mentes diferentes aportan soluciones disruptivas a problemas complejos.
+  - text: engineering
+  - heading "Excelencia Pragmática" [level=3]
+  - paragraph: Formamos con el máximo rigor técnico. Garantizamos que nuestro talento no solo se integre, sino que eleve el estándar de los equipos de desarrollo.
+  - text: handshake
+  - heading "Conexión Integral" [level=3]
+  - paragraph: Somos el nexo de confianza. Acompañamos en todo el ciclo, asegurando que la cultura corporativa y el profesional crezcan juntos.
+  - text: trending_up
+  - heading "Impacto Sostenible" [level=3]
+  - paragraph: Buscamos resultados a largo plazo. No solo cubrimos vacantes, construimos trayectorias sólidas que generan un retorno social y económico medible.
+  - heading "Compromiso con el Talento Diverso" [level=3]
+  - paragraph: No nos conformamos con llenar vacantes. Nuestro objetivo es elevar los estándares de la industria, demostrando que los equipos diversos e inclusivos no solo son éticamente necesarios, sino técnicamente superiores.
+  - text: workspace_premium
+  - heading "Pilares de Inclusión Laboral" [level=2]
+  - text: psychology TDAH / Autismo
+  - heading "Neurodivergencia" [level=3]
+  - paragraph: Potenciamos habilidades únicas en entornos donde el enfoque y el análisis brillan.
+  - link "Saber más arrow_forward":
+    - /url: /neurodivergence
+  - heading "Neurodivergencia" [level=3]
+  - text: nature_people Talento Local
+  - heading "Entorno Rural" [level=3]
+  - paragraph: Llevamos la formación tecnológica a tu tierra para fijar población y fomentar el trabajo remoto.
+  - link "Saber más arrow_forward":
+    - /url: /rural-area
+  - heading "Entorno Rural" [level=3]
+  - text: public Integración Global
+  - heading "Talento Migrante" [level=3]
+  - paragraph: Validación de competencias y adaptación cultural para profesionales internacionales.
+  - link "Saber más arrow_forward":
+    - /url: /migrant-talent
+  - heading "Talento Migrante" [level=3]
+  - text: volunteer_activism Impacto Social
+  - heading "Riesgo de Exclusión" [level=3]
+  - paragraph: Oportunidades reales de carrera y capacitación digital para colectivos vulnerables.
+  - link "Saber más arrow_forward":
+    - /url: /social-impact
+  - heading "Riesgo de Exclusión" [level=3]
+  - text: model_training Reskilling
+  - heading "Reconversión Laboral" [level=3]
+  - paragraph: Transformación de perfiles profesionales para adaptarse a las demandas tecnológicas.
+  - link "Saber más arrow_forward":
+    - /url: /reskilling
+  - heading "Reconversión Laboral" [level=3]
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

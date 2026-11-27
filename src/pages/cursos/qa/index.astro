@@ -4,11 +4,10 @@ import { ProgramHero } from "@/components/react/programs/ProgramHero";
 import { CourseGridCard } from "@/components/react/course/CourseGridCard";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 
-import { courseCategories } from "@/data/courseCatalog";
+import { getTarjetasCategoria } from "@/lib/cursos";
 
-// Buscamos automáticamente los cursos de esta categoría
-const categoryData = courseCategories.find(c => c.id === "qa");
-const courses = categoryData?.courses || [];
+// Cursos de esta categoría (src/content/cursos/qa/)
+const courses = await getTarjetasCategoria("qa");
 ---
 
 <Layout title="Cursos de QA & Testing - Qualisophy" fullWidth={true}>
@@ -45,9 +44,9 @@ const courses = categoryData?.courses || [];
                     description={course.description}
                     imageSrc={course.image}
                     href={course.href}
-                    level={course.level as any}
+                    level={course.level}
                     duration={course.duration}
-                    modality={course.modality as any}
+                    modality={course.modality}
                     category={course.categoryName}
                 />
                 ))}

@@ -1,0 +1,33 @@
+- main:
+  - img "Hero background"
+  - heading "Formación en Microsoft & Data" [level=1]
+  - paragraph: Domina el ecosistema de datos. Herramientas de Business Intelligence y SQL para potenciar tu perfil analítico y toma de decisiones.
+  - button "Ver Itinerarios"
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem: / Data & BI
+  - heading "Inteligencia de Negocio" [level=2]
+  - paragraph: Herramientas esenciales para el análisis y la gestión de la información.
+  - text: Mostrando 2 cursos
+  - link "Introducción a SQL para Power BI Data & BI Principiante Introducción a SQL para Power BI Extrae, filtra y limpia datos en el origen optimizando el rendimiento. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/data/sql-powerbi
+    - img "Introducción a SQL para Power BI"
+    - text: Data & BI Principiante
+    - heading "Introducción a SQL para Power BI" [level=3]
+    - paragraph: Extrae, filtra y limpia datos en el origen optimizando el rendimiento.
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios
+  - link /Analítica de Datos con Power BI Data & BI Intermedio Analítica de Datos con Power BI Transforma, modela y visualiza datos para la toma de decisiones empresariales\. schedule \d+[hmsp]+ wifi Online Ver arrow_forward_ios/:
+    - /url: /cursos/data/analitica-powerbi
+    - img "Analítica de Datos con Power BI"
+    - text: Data & BI Intermedio
+    - heading "Analítica de Datos con Power BI" [level=3]
+    - paragraph: Transforma, modela y visualiza datos para la toma de decisiones empresariales.
+    - text: /schedule \d+[hmsp]+ wifi Online Ver arrow_forward_ios/

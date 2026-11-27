@@ -6,11 +6,10 @@ import Breadcrumbs from "@/components/Breadcrumbs.astro";
 
 // Imagen propia del curso para compartir en redes (OG). El hero usa Unsplash como placeholder.
 import heroImg from "@/assets/imagenes-cursos/reconversion/triunfa-en-tu-reconversion-laboral.jpeg";
-import { courseCategories } from "@/data/courseCatalog";
+import { getTarjetasCategoria } from "@/lib/cursos";
 
-// Buscamos automáticamente los cursos de esta categoría
-const categoryData = courseCategories.find(c => c.id === "reconversion-laboral");
-const courses = categoryData?.courses || [];
+// Cursos de esta categoría (src/content/cursos/reconversion-laboral/)
+const courses = await getTarjetasCategoria("reconversion-laboral");
 ---
 
 <Layout
@@ -52,9 +51,9 @@ const courses = categoryData?.courses || [];
                     description={course.description}
                     imageSrc={course.image}
                     href={course.href}
-                    level={course.level as any}
+                    level={course.level}
                     duration={course.duration}
-                    modality={course.modality as any}
+                    modality={course.modality}
                     category={course.categoryName}
                 />
                 ))}

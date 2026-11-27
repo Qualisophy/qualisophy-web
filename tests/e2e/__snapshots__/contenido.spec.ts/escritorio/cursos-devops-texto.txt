@@ -1,0 +1,50 @@
+Formación en DevOps & Gestión
+
+Rompe los silos entre desarrollo y operaciones. Aprende integración continua, automatización de despliegues y observabilidad.
+
+Ver Itinerarios
+/
+Cursos
+/
+DevOps & Gestión
+Cultura e Integración Continua
+
+Domina las herramientas que aceleran la entrega de software de alta calidad.
+
+Mostrando 3 cursos
+DEVOPS
+Principiante
+Control de Versiones con Git
+
+Aprende Git desde cero: control de versiones, repositorios, ramas y trabajo colaborativo.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+DEVOPS
+Avanzado
+Gestión Avanzada y CI/CD con GitLab
+
+Configura tableros, automatiza pruebas y despliegues seguros.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios
+DEVOPS
+Principiante
+DevOps, Continuous Testing y CI/CD
+
+Inmersión completa en la cultura, prácticas y herramientas de DevOps.
+
+schedule
+Por definir
+wifi
+Online
+Ver
+arrow_forward_ios

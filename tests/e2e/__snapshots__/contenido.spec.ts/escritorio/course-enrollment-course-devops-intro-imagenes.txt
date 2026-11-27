@@ -1,0 +1,1 @@
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/devops/ci-cd.jpeg | DevOps, Continuous Testing y CI/CD

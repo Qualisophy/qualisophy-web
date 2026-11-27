@@ -1,0 +1,49 @@
+- main:
+  - img "De la hostelería a Desarrollador Full Stack en 6 meses"
+  - text: Casos de Éxito
+  - heading "De la hostelería a Desarrollador Full Stack en 6 meses" [level=1]
+  - text: /calendar_today \d+ Dic, \d+ schedule 5 min de lectura/
+  - article:
+    - navigation "Breadcrumb":
+      - list:
+        - listitem:
+          - link "Ir al inicio":
+            - /url: /
+            - img
+        - listitem:
+          - text: /
+          - link "Blog":
+            - /url: /blog
+        - listitem: / Caso Éxito María
+    - paragraph: /María trabajaba turnos de \d+ horas en un restaurante\. Hoy, diseña arquitecturas web para una startup internacional\. Este es el viaje de resiliencia y reskilling que cambió su vida profesional\./
+    - heading "El punto de inflexión y el reskilling" [level=2]
+    - paragraph: El agotamiento físico y la falta de proyección a largo plazo en el sector servicios llevaron a María a buscar alternativas. Sin conocimientos previos de programación, decidió dar el salto al sector tecnológico a través de un programa de formación intensivo (bootcamp).
+    - paragraph: "Aprender a programar desde cero requiere frustración, errores de sintaxis y horas frente a la pantalla. Sin embargo, María contaba con una ventaja invisible: la tolerancia al estrés y la capacidad de gestionar problemas bajo presión que había adquirido en la hostelería."
+    - paragraph: lightbulb El auge del Reskilling
+    - paragraph: /Más del \d+% de los nuevos desarrolladores junior en España provienen de sectores no tecnológicos, demostrando que la actitud y la formación intensiva superan a los títulos tradicionales\./
+    - heading "Las claves de su éxito" [level=2]
+    - paragraph: Para lograr una transición tan radical, la motivación debe ir acompañada de una estrategia clara y un entorno que apoye el proceso de aprendizaje continuo.
+    - list:
+      - listitem:
+        - strong: "Práctica basada en proyectos:"
+        - text: Aprender haciendo (learning by doing) en lugar de memorizar teoría.
+      - listitem:
+        - strong: "Soft Skills transferibles:"
+        - text: Su habilidad para comunicarse con el cliente en el restaurante se tradujo en una excelente comunicación con el equipo de producto.
+      - listitem:
+        - strong: "Comunidad:"
+        - text: Apoyarse en mentores y compañeros para superar el síndrome del impostor.
+    - paragraph: La historia de María es la prueba de que el talento está en todas partes; a veces solo necesita la oportunidad tecnológica adecuada.
+    - paragraph: "¿Te ha gustado? Compártelo:"
+    - button "Compartir en redes": share
+    - button "Copiar enlace": link ¡Copiado!
+    - navigation:
+      - 'link "arrow_back Anterior Neurodivergencia: La ventaja competitiva oculta"':
+        - /url: /blog/neurodivergencia-ventaja
+      - 'link "Siguiente arrow_forward Power BI: Transformando datos en decisiones estratégicas"':
+        - /url: /blog/powerbi-negocios
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

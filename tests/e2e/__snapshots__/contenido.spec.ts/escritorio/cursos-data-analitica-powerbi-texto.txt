@@ -1,0 +1,80 @@
+/
+Cursos
+/
+Data & BI
+/
+Analítica de Datos con Power BI
+Analítica de Datos con Power BI
+Inicio: Inicio de Octubre
+Días: Martes y Jueves
+Horario: 18:00 - 21:00 horas
+Detalles del Curso
+Inicio:
+Inicio de Octubre
+Duración:
+50 horas
+Horario:
+Martes y Jueves / 18:00 - 21:00
+Coste:
+450 €
+25% de descuento extra para antiguos alumnos
+Inscríbete
+school
+¿De qué trata esta formación?
+
+Este curso abarca el ciclo de vida completo del Business Intelligence moderno. Sin necesidad de tocar SQL, los estudiantes aprenderán a conectar Power BI a diversas fuentes, transformar datos mediante la interfaz de Power Query, crear modelos de datos relacionales precisos (Modelo Estrella), y generar métricas de negocio con lenguaje DAX. Todo esto culminará en el diseño de informes visuales interactivos y de alto impacto para la toma de decisiones.
+
+1
+MÓDULO 1
+
+Introducción (2h)
+
+Este módulo sentará las bases para entender la relevancia del análisis de datos en el entorno empresarial. Se abordará el papel que desempeña el analista de datos en la toma de decisiones, así como los tipos de informes más utilizados en las organizaciones modernas. Además, se presentará Power BI como una herramienta clave. Estudiaremos su propósito y cómo se integra en el flujo de trabajo del análisis de datos.
+
+Importancia del análisis de datos en las compañías y el Rol del analista de Datos
+Tipos de informes más utilizados en la actualidad.
+Introducción a la herramienta Power BI
+2
+MÓDULO 2
+
+Toma de contacto con Power BI (40h)
+
+En este módulo se recorre el proceso completo de trabajo con Power BI: desde la conexión e importación de datos, su transformación y modelado, hasta la creación de informes visuales y su publicación. También se introduce el lenguaje DAX para realizar análisis más avanzados. El objetivo es proporcionar una visión práctica y estructurada del proceso de análisis de datos con esta herramienta.
+
+Configurar Orígenes de datos
+Importar datos
+Transformación de datos (Básica, Intermedia y Avanzada)
+Modelado de datos.
+Expresiones para el análisis de datos con DAX
+Visualización de datos y creación de informes
+Publicación de informes
+Configuraciones avanzadas y buenas prácticas
+3
+MÓDULO 3
+
+Caso Práctico (8h)
+
+Este módulo está dedicado a aplicar todo lo aprendido mediante la creación de un informe completo en Power BI, abordando desde la conexión de datos hasta la visualización final. Los participantes trabajarán en un caso práctico guiado, resolviendo dudas en tiempo real y consolidando conocimientos. Al final, se realizará una sesión de cierre para repasar conceptos clave y resolver preguntas finales.
+
+Caso práctico: Creación de informe
+Dudas y cierre
+info
+Requisitos previos
+
+Nivel avanzado de Excel (tablas dinámicas, fórmulas buscarv) y una fuerte orientación analítica y de negocio.
+
+Enrique Román Peláez
+Especialista en Power BI y Analítica de Datos
+
+Más de 8 años de experiencia en Business Intelligence
+
+Enrique es un consultor experto que ofrece una formación práctica orientada al negocio. Es especialista en la transformación, modelado y visualización de datos, aportando a los alumnos una visión integral de Power BI para la correcta toma de decisiones empresariales.
+
+Microsoft Data Analyst Associate
+Microsoft Certified Trainer (MCT)
+¿Tienes alguna duda?
+
+Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+
+Ver Preguntas Frecuentes
+Inscríbete

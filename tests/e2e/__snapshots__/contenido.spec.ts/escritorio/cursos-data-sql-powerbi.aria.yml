@@ -1,0 +1,64 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Data & BI":
+          - /url: /cursos/data
+      - listitem: / Introducción a SQL para Power BI
+  - heading "Introducción a SQL para Power BI" [level=1]
+  - text: "Inicio: Por definir Horario: Por definir"
+  - heading "Detalles del Curso" [level=2]
+  - text: "Inicio: Por definir Duración: Por definir Horario: Por definir Coste: Por definir"
+  - link "Me interesa el curso":
+    - /url: /course-enrollment?course=data-sql&type=interest
+    - button "Me interesa el curso"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: Power BI es potente, pero enviar millones de filas de datos sucios o innecesarios ralentiza drásticamente los informes. Este curso enseña a los analistas a utilizar SQL para realizar el 'trabajo pesado' directamente en el servidor de bases de datos. Los alumnos aprenderán a extraer, filtrar, limpiar y agregar datos en el origen, dominando el concepto de 'Query Folding' (Plegado de Consultas) para que Power BI solo procese la información final, garantizando cuadros de mando ultrarrápidos y optimizados.
+  - button "1 MÓDULO 1 Bases de Datos Relacionales y Fundamentos SQL":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Bases de Datos Relacionales y Fundamentos SQL
+  - paragraph: Conoce la arquitectura de bases de datos y el lenguaje de consultas.
+  - list:
+    - listitem: Entender la arquitectura de bases de datos relacionales y el lenguaje DML/DDL.
+    - listitem: "Sentencias básicas: SELECT, FROM, y filtrado potente con la cláusula WHERE."
+    - listitem: Búsqueda de patrones (LIKE), operadores lógicos (AND, OR, NOT) y rangos (BETWEEN).
+  - button "2 MÓDULO 2 Análisis y Agregación de Datos en el Origen":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Análisis y Agregación de Datos en el Origen
+  - paragraph: Aprende a agrupar y resumir información eficientemente.
+  - list:
+    - listitem: "Funciones de agregación: SUM, AVG, COUNT, MIN, MAX."
+    - listitem: Agrupación de datos con GROUP BY y filtrado condicional de grupos con HAVING.
+    - listitem: Ordenación de resultados (ORDER BY) y limitación de registros (TOP/LIMIT).
+  - button "3 MÓDULO 3 Relacionando Información Compleja (JOINs)":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Relacionando Información Compleja (JOINs)
+  - paragraph: Cruza datos de múltiples tablas como un experto.
+  - list:
+    - listitem: Diferencias y usos estratégicos de INNER JOIN, LEFT JOIN, y RIGHT JOIN.
+    - listitem: Subconsultas (Subqueries) para cálculos dinámicos avanzados.
+    - listitem: Uso de DISTINCT y resolución de redundancias en grandes volúmenes.
+  - button "4 MÓDULO 4 Integración Optimizada con Power BI":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Integración Optimizada con Power BI
+  - paragraph: Conecta tu base de datos optimizada a Power BI.
+  - list:
+    - listitem: Configuración de conexiones y uso del Método de Consulta Nativa en Power BI.
+    - listitem: Entendiendo y forzando el Query Folding para maximizar el rendimiento.
+    - listitem: "Casos prácticos: de un esquema SQL complejo a una tabla plana perfecta para análisis."
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: Lógica matemática básica y experiencia previa manejando datos en hojas de cálculo.
+  - button "Me interesa"

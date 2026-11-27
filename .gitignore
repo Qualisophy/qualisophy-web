@@ -23,3 +23,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Playwright
+test-results/
+playwright-report/
+# Capturas de Playwright: solo en local (ver QUAL-523)
+tests/e2e/__snapshots__/**/*.png

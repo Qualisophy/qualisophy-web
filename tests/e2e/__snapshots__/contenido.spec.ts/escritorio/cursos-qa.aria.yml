@@ -1,0 +1,61 @@
+- main:
+  - img "Hero background"
+  - heading "Formación en QA & Testing" [level=1]
+  - paragraph: Formación especializada para asegurar la calidad del software. Desde fundamentos manuales hasta automatización avanzada e IA.
+  - button "Ver Itinerarios"
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem: / QA & Testing
+  - heading "Formación en Aseguramiento de Calidad" [level=2]
+  - paragraph: Especialízate en una de las áreas más demandadas del desarrollo de software.
+  - text: Mostrando 6 cursos
+  - link /Calidad de Software \(QA\) y Testing QA Principiante Calidad de Software \(QA\) y Testing Verifica que las aplicaciones funcionan correctamente y valida requerimientos\. schedule \d+[hmsp]+ wifi Online Ver arrow_forward_ios/:
+    - /url: /cursos/qa/calidad-software
+    - img "Calidad de Software (QA) y Testing"
+    - text: QA Principiante
+    - heading "Calidad de Software (QA) y Testing" [level=3]
+    - paragraph: Verifica que las aplicaciones funcionan correctamente y valida requerimientos.
+    - text: /schedule \d+[hmsp]+ wifi Online Ver arrow_forward_ios/
+  - link "API Testing con Postman QA Intermedio API Testing con Postman Domina la validación del backend integrándola en procesos CI/CD. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/qa/pruebas-api
+    - img "API Testing con Postman"
+    - text: ""
+    - heading "API Testing con Postman" [level=3]
+    - paragraph: Domina la validación del backend integrándola en procesos CI/CD.
+    - text: ""
+  - link /Cypress Automation Bootcamp QA Intermedio Cypress Automation Bootcamp Aprende automatización de pruebas web modernas con Cypress desde cero\. schedule \d+[hmsp]+ wifi Online Ver arrow_forward_ios/:
+    - /url: /cursos/qa/bootcamp-cypress
+    - img "Cypress Automation Bootcamp"
+    - text: ""
+    - heading "Cypress Automation Bootcamp" [level=3]
+    - paragraph: Aprende automatización de pruebas web modernas con Cypress desde cero.
+    - text: ""
+  - link "Tests Unitarios con JUnit QA Avanzado Tests Unitarios con JUnit Creación de pruebas robustas usando el estándar de la industria para Java. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/qa/pruebas-junit
+    - img "Tests Unitarios con JUnit"
+    - text: ""
+    - heading "Tests Unitarios con JUnit" [level=3]
+    - paragraph: Creación de pruebas robustas usando el estándar de la industria para Java.
+    - text: ""
+  - link "Agile Testing QA Intermedio Agile Testing Técnicas y mentalidad para integrarse en equipos ágiles Scrum/Kanban. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/qa/pruebas-agiles
+    - img "Agile Testing"
+    - text: ""
+    - heading "Agile Testing" [level=3]
+    - paragraph: Técnicas y mentalidad para integrarse en equipos ágiles Scrum/Kanban.
+    - text: ""
+  - link "Generative AI para Software Testing QA Avanzado Generative AI para Software Testing Acelera tus labores diarias de QA utilizando Inteligencia Artificial Generativa. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/qa/pruebas-ia-generativa
+    - img "Generative AI para Software Testing"
+    - text: QA Avanzado
+    - heading "Generative AI para Software Testing" [level=3]
+    - paragraph: Acelera tus labores diarias de QA utilizando Inteligencia Artificial Generativa.
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios

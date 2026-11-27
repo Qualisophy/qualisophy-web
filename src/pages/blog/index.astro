@@ -3,6 +3,10 @@ import Layout from "@/layouts/Layout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { BlogGrid } from "@/components/react/blog/BlogGrid";
 import { Newsletter } from "@/components/react/shared/Newsletter";
+import { getTarjetasPosts } from "@/lib/blog";
+
+// Posts de src/content/blog, del más reciente al más antiguo
+const posts = await getTarjetasPosts();
 
 const heroBg = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070";
 ---
@@ -43,7 +47,7 @@ const heroBg = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?aut
   </div>
 
   {/* GRID INTERACTIVO */}
-  <BlogGrid client:load />
+  <BlogGrid client:load posts={posts} />
 
   {/* Newsletter */}
   <Newsletter client:visible />

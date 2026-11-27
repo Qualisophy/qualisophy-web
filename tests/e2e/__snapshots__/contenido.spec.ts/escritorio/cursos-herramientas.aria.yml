@@ -1,0 +1,47 @@
+- main:
+  - img "Hero background"
+  - heading "Formación en Herramientas Empresariales" [level=1]
+  - paragraph: Aumenta tu productividad. Domina la ofimática nivel experto, automatización con Make y chatbots para tu día a día corporativo.
+  - button "Ver Itinerarios"
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem: / Herramientas Empresariales
+  - heading "Ofimática y Automatización" [level=2]
+  - paragraph: Elimina tareas repetitivas y potencia tu eficiencia profesional.
+  - text: Mostrando 4 cursos
+  - link "Microsoft Excel Expert Herramientas Avanzado Microsoft Excel Expert Maneja grandes volúmenes de datos, macros y Power Pivot. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/herramientas/excel-experto
+    - img "Microsoft Excel Expert"
+    - text: ""
+    - heading "Microsoft Excel Expert" [level=3]
+    - paragraph: Maneja grandes volúmenes de datos, macros y Power Pivot.
+    - text: ""
+  - link "Ofimática Integral Herramientas Principiante Ofimática Integral Mejora radicalmente tu velocidad y organización corporativa diaria. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/herramientas/ofimatica-integral
+    - img "Ofimática Integral"
+    - text: ""
+    - heading "Ofimática Integral" [level=3]
+    - paragraph: Mejora radicalmente tu velocidad y organización corporativa diaria.
+    - text: ""
+  - link "Chatbots para E-commerce Herramientas Intermedio Chatbots para E-commerce Diseña e integra asistentes virtuales conversacionales automatizados. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/herramientas/chatbots
+    - img "Chatbots para E-commerce"
+    - text: ""
+    - heading "Chatbots para E-commerce" [level=3]
+    - paragraph: Diseña e integra asistentes virtuales conversacionales automatizados.
+    - text: ""
+  - link "Productividad con Make Herramientas Intermedio Productividad con Make Crea flujos de trabajo automatizados para gestionar correos e integrar IA. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/herramientas/productividad-make
+    - img "Productividad con Make"
+    - text: ""
+    - heading "Productividad con Make" [level=3]
+    - paragraph: Crea flujos de trabajo automatizados para gestionar correos e integrar IA.
+    - text: ""

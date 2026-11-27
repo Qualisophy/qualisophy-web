@@ -1,0 +1,2 @@
+https://images.unsplash.com/photo-1677442136019-21780ecad995 | Hero background
+/@fs/Users/juanpe/developer/proyectos/qualisophy/nuevaWeb/qualisophy-web/src/assets/imagenes-cursos/qa/claude.jpeg | Claude: IA para Desarrollo y QA

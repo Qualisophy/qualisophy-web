@@ -1,0 +1,62 @@
+Formación en Desarrollo
+
+Construye el futuro digital. Programas intensivos en las tecnologías más demandadas del mercado: React, Node, Java y Cloud.
+
+Ver Itinerarios
+/
+Cursos
+/
+Desarrollo
+Formación para Desarrolladores
+
+Actualiza tu stack tecnológico o comienza tu carrera en programación.
+
+Mostrando 4 cursos
+DESARROLLO
+Avanzado
+Fullstack Developer
+
+Domina el desarrollo web completo. Desde la base de datos hasta el frontend con las tecnologías más modernas.
+
+schedule
+120 Horas
+wifi
+Híbrido
+Ver
+arrow_forward_ios
+DESARROLLO
+Intermedio
+Frontend con React
+
+Especialízate en la creación de interfaces dinámicas y SPA utilizando React, Redux y Next.js.
+
+schedule
+60 Horas
+wifi
+Online
+Ver
+arrow_forward_ios
+DESARROLLO
+Intermedio
+Backend con Node.js
+
+Aprende a construir APIs RESTful escalables, microservicios y gestión de bases de datos.
+
+schedule
+50 Horas
+wifi
+Online
+Ver
+arrow_forward_ios
+DESARROLLO
+Avanzado
+Java & Spring Boot
+
+El estándar empresarial. Desarrolla aplicaciones robustas y seguras para grandes organizaciones.
+
+schedule
+80 Horas
+wifi
+Online
+Ver
+arrow_forward_ios

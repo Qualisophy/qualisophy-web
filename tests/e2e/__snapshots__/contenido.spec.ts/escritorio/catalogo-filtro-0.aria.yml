@@ -1,0 +1,155 @@
+- main:
+  - img "Catálogo Formación Qualisophy"
+  - text: CATÁLOGO FORMATIVO
+  - heading "Formación Individual" [level=1]
+  - paragraph: Impulsa tu carrera con nuestros itinerarios especializados. Domina las herramientas de QA, Datos, DevOps y Gestión Ágil.
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem: / Cursos
+  - button "Todos"
+  - button "Reconversión Laboral"
+  - button "Inteligencia Artificial"
+  - button "QA & Automatización"
+  - button "Data & BI"
+  - button "Herramientas Empresariales"
+  - button "DevOps & Gestión"
+  - button "Agile & Scrum"
+  - text: search
+  - textbox "Buscar curso..."
+  - heading "Todos los cursos" [level=2]
+  - text: /Mostrando \d+ cursos/
+  - link "Triunfa en tu reconversión laboral Reconversión Principiante Triunfa en tu reconversión laboral Prepara tu CV, LinkedIn, portfolio y entrevistas para conseguir tu primer puesto en QA, con mentoría 1 a 1. schedule 5 h wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/reconversion-laboral/triunfa-en-tu-reconversion-laboral
+    - img "Triunfa en tu reconversión laboral"
+    - text: Reconversión Principiante
+    - heading "Triunfa en tu reconversión laboral" [level=3]
+    - paragraph: Prepara tu CV, LinkedIn, portfolio y entrevistas para conseguir tu primer puesto en QA, con mentoría 1 a 1.
+    - text: schedule 5 h wifi Online Ver arrow_forward_ios
+  - 'link "Claude: IA para Desarrollo y QA IA Intermedio Claude: IA para Desarrollo y QA Domina los modelos de Anthropic, uso de Artifacts, MCP y Claude Code en terminal para desarrollo automatizado. schedule Por definir wifi Online Ver arrow_forward_ios"':
+    - /url: /cursos/ia/claude
+    - 'img "Claude: IA para Desarrollo y QA"'
+    - text: IA Intermedio
+    - 'heading "Claude: IA para Desarrollo y QA" [level=3]'
+    - paragraph: Domina los modelos de Anthropic, uso de Artifacts, MCP y Claude Code en terminal para desarrollo automatizado.
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios
+  - link /Calidad de Software \(QA\) y Testing QA Principiante Calidad de Software \(QA\) y Testing Verifica que las aplicaciones funcionan correctamente y valida requerimientos\. schedule \d+[hmsp]+ wifi Online Ver arrow_forward_ios/:
+    - /url: /cursos/qa/calidad-software
+    - img "Calidad de Software (QA) y Testing"
+    - text: QA Principiante
+    - heading "Calidad de Software (QA) y Testing" [level=3]
+    - paragraph: Verifica que las aplicaciones funcionan correctamente y valida requerimientos.
+    - text: /schedule \d+[hmsp]+ wifi Online Ver arrow_forward_ios/
+  - link "API Testing con Postman QA Intermedio API Testing con Postman Domina la validación del backend integrándola en procesos CI/CD. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/qa/pruebas-api
+    - img "API Testing con Postman"
+    - text: ""
+    - heading "API Testing con Postman" [level=3]
+    - paragraph: Domina la validación del backend integrándola en procesos CI/CD.
+    - text: ""
+  - link /Cypress Automation Bootcamp QA Intermedio Cypress Automation Bootcamp Aprende automatización de pruebas web modernas con Cypress desde cero\. schedule \d+[hmsp]+ wifi Online Ver arrow_forward_ios/:
+    - /url: /cursos/qa/bootcamp-cypress
+    - img "Cypress Automation Bootcamp"
+    - text: ""
+    - heading "Cypress Automation Bootcamp" [level=3]
+    - paragraph: Aprende automatización de pruebas web modernas con Cypress desde cero.
+    - text: ""
+  - link "Tests Unitarios con JUnit QA Avanzado Tests Unitarios con JUnit Creación de pruebas robustas usando el estándar de la industria para Java. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/qa/pruebas-junit
+    - img "Tests Unitarios con JUnit"
+    - text: ""
+    - heading "Tests Unitarios con JUnit" [level=3]
+    - paragraph: Creación de pruebas robustas usando el estándar de la industria para Java.
+    - text: ""
+  - link "Agile Testing QA Intermedio Agile Testing Técnicas y mentalidad para integrarse en equipos ágiles Scrum/Kanban. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/qa/pruebas-agiles
+    - img "Agile Testing"
+    - text: ""
+    - heading "Agile Testing" [level=3]
+    - paragraph: Técnicas y mentalidad para integrarse en equipos ágiles Scrum/Kanban.
+    - text: ""
+  - link "Generative AI para Software Testing QA Avanzado Generative AI para Software Testing Acelera tus labores diarias de QA utilizando Inteligencia Artificial Generativa. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/qa/pruebas-ia-generativa
+    - img "Generative AI para Software Testing"
+    - text: QA Avanzado
+    - heading "Generative AI para Software Testing" [level=3]
+    - paragraph: Acelera tus labores diarias de QA utilizando Inteligencia Artificial Generativa.
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios
+  - link "Introducción a SQL para Power BI Data & BI Principiante Introducción a SQL para Power BI Extrae, filtra y limpia datos en el origen optimizando el rendimiento. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/data/sql-powerbi
+    - img "Introducción a SQL para Power BI"
+    - text: Data & BI Principiante
+    - heading "Introducción a SQL para Power BI" [level=3]
+    - paragraph: Extrae, filtra y limpia datos en el origen optimizando el rendimiento.
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios
+  - link /Analítica de Datos con Power BI Data & BI Intermedio Analítica de Datos con Power BI Transforma, modela y visualiza datos para la toma de decisiones empresariales\. schedule \d+[hmsp]+ wifi Online Ver arrow_forward_ios/:
+    - /url: /cursos/data/analitica-powerbi
+    - img "Analítica de Datos con Power BI"
+    - text: Data & BI Intermedio
+    - heading "Analítica de Datos con Power BI" [level=3]
+    - paragraph: Transforma, modela y visualiza datos para la toma de decisiones empresariales.
+    - text: /schedule \d+[hmsp]+ wifi Online Ver arrow_forward_ios/
+  - link "Microsoft Excel Expert Herramientas Avanzado Microsoft Excel Expert Maneja grandes volúmenes de datos, macros y Power Pivot. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/herramientas/excel-experto
+    - img "Microsoft Excel Expert"
+    - text: ""
+    - heading "Microsoft Excel Expert" [level=3]
+    - paragraph: Maneja grandes volúmenes de datos, macros y Power Pivot.
+    - text: ""
+  - link "Ofimática Integral Herramientas Principiante Ofimática Integral Mejora radicalmente tu velocidad y organización corporativa diaria. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/herramientas/ofimatica-integral
+    - img "Ofimática Integral"
+    - text: ""
+    - heading "Ofimática Integral" [level=3]
+    - paragraph: Mejora radicalmente tu velocidad y organización corporativa diaria.
+    - text: ""
+  - link "Chatbots para E-commerce Herramientas Intermedio Chatbots para E-commerce Diseña e integra asistentes virtuales conversacionales automatizados. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/herramientas/chatbots
+    - img "Chatbots para E-commerce"
+    - text: ""
+    - heading "Chatbots para E-commerce" [level=3]
+    - paragraph: Diseña e integra asistentes virtuales conversacionales automatizados.
+    - text: ""
+  - link "Productividad con Make Herramientas Intermedio Productividad con Make Crea flujos de trabajo automatizados para gestionar correos e integrar IA. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/herramientas/productividad-make
+    - img "Productividad con Make"
+    - text: ""
+    - heading "Productividad con Make" [level=3]
+    - paragraph: Crea flujos de trabajo automatizados para gestionar correos e integrar IA.
+    - text: ""
+  - 'link "Control de Versiones con Git DevOps Principiante Control de Versiones con Git Aprende Git desde cero: control de versiones, repositorios, ramas y trabajo colaborativo. schedule Por definir wifi Online Ver arrow_forward_ios"':
+    - /url: /cursos/devops/git
+    - img "Control de Versiones con Git"
+    - text: DevOps Principiante
+    - heading "Control de Versiones con Git" [level=3]
+    - paragraph: "Aprende Git desde cero: control de versiones, repositorios, ramas y trabajo colaborativo."
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios
+  - link "Gestión Avanzada y CI/CD con GitLab DevOps Avanzado Gestión Avanzada y CI/CD con GitLab Configura tableros, automatiza pruebas y despliegues seguros. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/devops/gitlab-cicd
+    - img "Gestión Avanzada y CI/CD con GitLab"
+    - text: DevOps Avanzado
+    - heading "Gestión Avanzada y CI/CD con GitLab" [level=3]
+    - paragraph: Configura tableros, automatiza pruebas y despliegues seguros.
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios
+  - link "DevOps, Continuous Testing y CI/CD DevOps Principiante DevOps, Continuous Testing y CI/CD Inmersión completa en la cultura, prácticas y herramientas de DevOps. schedule Por definir wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/devops/introduccion-devops
+    - img "DevOps, Continuous Testing y CI/CD"
+    - text: DevOps Principiante
+    - heading "DevOps, Continuous Testing y CI/CD" [level=3]
+    - paragraph: Inmersión completa en la cultura, prácticas y herramientas de DevOps.
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios
+  - 'link "Agile Mastery: El Camino del Scrum Master Agile Intermedio Agile Mastery: El Camino del Scrum Master Facilita, asesora y mentoriza a los equipos de desarrollo para maximizar valor. schedule Por definir wifi Online Ver arrow_forward_ios"':
+    - /url: /cursos/agile/scrum-master
+    - 'img "Agile Mastery: El Camino del Scrum Master"'
+    - text: Agile Intermedio
+    - 'heading "Agile Mastery: El Camino del Scrum Master" [level=3]'
+    - paragraph: Facilita, asesora y mentoriza a los equipos de desarrollo para maximizar valor.
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

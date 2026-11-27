@@ -1,0 +1,108 @@
+- main:
+  - img "Blog Header"
+  - heading "Blog & Actualidad" [level=1]
+  - paragraph: Insights, historias de éxito y las últimas tendencias del sector.
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem: / Blog
+  - button "Todos"
+  - button "Noticias"
+  - button "Tendencias"
+  - button "Inclusión"
+  - button "Casos de Éxito"
+  - button "Tecnología"
+  - text: search
+  - textbox "Buscar artículos..."
+  - article:
+    - 'link "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria Noticias"':
+      - /url: /blog/sello-empresa-solidaria
+      - 'img "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria"'
+      - text: ""
+    - text: /calendar_today \d+ Oct, \d+/
+    - 'link "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria"':
+      - /url: /blog/sello-empresa-solidaria
+      - 'heading "Nuestro compromiso social ya tiene sello: somos Empresa Solidaria" [level=3]'
+    - paragraph: /Hemos obtenido el Sello Empresa Solidaria \d+ por destinar el \d+,\d+ % de nuestro Impuesto de Sociedades a proyectos sociales\./
+    - link "Leer artículo completo arrow_forward":
+      - /url: /blog/sello-empresa-solidaria
+  - article:
+    - 'link /Qualisophy: En el top \d+ de la innovación andaluza Noticias/':
+      - /url: /blog/qualisophy-top-50
+      - 'img /Qualisophy: En el top \d+ de la innovación andaluza/'
+      - text: ""
+    - text: /calendar_today \d+ May, \d+/
+    - 'link /Qualisophy: En el top \d+ de la innovación andaluza/':
+      - /url: /blog/qualisophy-top-50
+      - 'heading /Qualisophy: En el top \d+ de la innovación andaluza/ [level=3]'
+    - paragraph: /Qualisophy entra en el Top \d+ andaluz de innovación con foco en impacto social, bienestar y diversidad en las organizaciones\./
+    - link "Leer artículo completo arrow_forward":
+      - /url: /blog/qualisophy-top-50
+  - article:
+    - link "El impacto de la IA en el testing de software moderno Tendencias":
+      - /url: /blog/impacto-ia-testing
+      - img "El impacto de la IA en el testing de software moderno"
+      - text: ""
+    - text: /calendar_today \d+ Feb, \d+/
+    - link "El impacto de la IA en el testing de software moderno":
+      - /url: /blog/impacto-ia-testing
+      - heading "El impacto de la IA en el testing de software moderno" [level=3]
+    - paragraph: Descubre cómo la inteligencia artificial está redefiniendo los roles de QA y qué habilidades son necesarias hoy.
+    - link "Leer artículo completo arrow_forward":
+      - /url: /blog/impacto-ia-testing
+  - article:
+    - 'link "Neurodivergencia: La ventaja competitiva oculta Inclusión"':
+      - /url: /blog/neurodivergencia-ventaja
+      - 'img "Neurodivergencia: La ventaja competitiva oculta"'
+      - text: ""
+    - text: /calendar_today 2 Ene, \d+/
+    - 'link "Neurodivergencia: La ventaja competitiva oculta"':
+      - /url: /blog/neurodivergencia-ventaja
+      - 'heading "Neurodivergencia: La ventaja competitiva oculta" [level=3]'
+    - paragraph: /Las empresas que apuestan por la neurodiversidad reportan un aumento del \d+% en productividad e innovación\./
+    - link "Leer artículo completo arrow_forward":
+      - /url: /blog/neurodivergencia-ventaja
+  - article:
+    - link "De la hostelería a Desarrollador Full Stack en 6 meses Casos de Éxito":
+      - /url: /blog/caso-exito-maria
+      - img "De la hostelería a Desarrollador Full Stack en 6 meses"
+      - text: ""
+    - text: /calendar_today \d+ Dic, \d+/
+    - link "De la hostelería a Desarrollador Full Stack en 6 meses":
+      - /url: /blog/caso-exito-maria
+      - heading "De la hostelería a Desarrollador Full Stack en 6 meses" [level=3]
+    - paragraph: La historia de María y cómo el reskilling transformó su vida profesional gracias a la metodología Qualisophy.
+    - link "Leer artículo completo arrow_forward":
+      - /url: /blog/caso-exito-maria
+  - article:
+    - 'link "Power BI: Transformando datos en decisiones estratégicas Tecnología"':
+      - /url: /blog/powerbi-negocios
+      - 'img "Power BI: Transformando datos en decisiones estratégicas"'
+      - text: ""
+    - text: /calendar_today \d+ Nov, \d+/
+    - 'link "Power BI: Transformando datos en decisiones estratégicas"':
+      - /url: /blog/powerbi-negocios
+      - 'heading "Power BI: Transformando datos en decisiones estratégicas" [level=3]'
+    - paragraph: /Aprende por qué el análisis de datos es la habilidad más demandada por las empresas en \d+\./
+    - link "Leer artículo completo arrow_forward":
+      - /url: /blog/powerbi-negocios
+  - article:
+    - link "Cómo gestionar la diversidad en equipos ágiles Inclusión":
+      - /url: /blog/diversidad-equipos-agiles
+      - img "Cómo gestionar la diversidad en equipos ágiles"
+      - text: ""
+    - text: /calendar_today \d+ Oct, \d+/
+    - link "Cómo gestionar la diversidad en equipos ágiles":
+      - /url: /blog/diversidad-equipos-agiles
+      - heading "Cómo gestionar la diversidad en equipos ágiles" [level=3]
+    - paragraph: "Guía para Scrum Masters: integrando diferentes perfiles cognitivos en ceremonias ágiles."
+    - link "Leer artículo completo arrow_forward":
+      - /url: /blog/diversidad-equipos-agiles
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

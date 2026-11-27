@@ -1,0 +1,28 @@
+# Neurodivergencia: La ventaja competitiva oculta
+# URL: /blog/neurodivergencia-ventaja (el nombre del fichero es la URL) · Esquema: src/content.config.ts
+
+titulo: "Neurodivergencia: La ventaja competitiva oculta"
+categoria: Inclusión
+fecha: 2026-01-02
+imagen: https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=2070
+imagenTarjeta: https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600
+resumen: Las empresas que apuestan por la neurodiversidad reportan un aumento del 30% en productividad e innovación.
+migas: Neurodivergencia Ventaja
+contenido:
+  intro: Tradicionalmente vista desde una óptica de déficit, la neurodivergencia se está revelando como una de las mayores ventajas competitivas en el sector tecnológico. Así es como mentes diferentes construyen soluciones innovadoras.
+  secciones:
+    - titulo: El poder del pensamiento lateral
+      parrafos:
+        - El autismo, el TDAH, la dislexia y otras condiciones neurodivergentes a menudo vienen acompañadas de habilidades cognitivas excepcionales. En el desarrollo de software y el análisis de datos, competencias como el reconocimiento de patrones, la atención extrema al detalle y el pensamiento lateral son invaluables.
+        - Empresas pioneras ya han adaptado sus procesos de selección, sustituyendo las entrevistas tradicionales (basadas en habilidades sociales) por pruebas técnicas prácticas, permitiendo que el talento puro brille sin barreras artificiales.
+      datoClave:
+        titulo: Impacto Real
+        texto: Equipos que incluyen profesionales neurodivergentes han demostrado ser hasta un 30% más productivos en tareas técnicas complejas, según estudios de Harvard Business Review.
+    - titulo: Cómo crear un entorno realmente inclusivo
+      parrafos:
+        - Integrar talento diverso no consiste en obligar a las personas a encajar en un molde rígido, sino en flexibilizar la estructura de la empresa para maximizar el potencial de todos.
+      lista:
+        - <strong>Comunicación explícita:</strong> Evitar ambigüedades, sarcasmos o suposiciones en las tareas y objetivos.
+        - <strong>Flexibilidad sensorial:</strong> Permitir el trabajo remoto o el uso de auriculares con cancelación de ruido en la oficina.
+        - <strong>Liderazgo empático:</strong> Formar a los managers para que entiendan y gestionen diferentes estilos de trabajo.
+      cierre: La verdadera innovación no ocurre cuando todos en la sala piensan de la misma manera.

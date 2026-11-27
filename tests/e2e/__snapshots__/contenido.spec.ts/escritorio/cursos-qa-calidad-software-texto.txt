@@ -1,0 +1,108 @@
+/
+Cursos
+/
+QA & Testing
+/
+Calidad de Software (QA) y Testing
+Calidad de Software (QA) y Testing
+Inicio: 28 de septiembre de 2026
+Días: Lunes y Miércoles
+Horario: 18:00 - 21:00 horas
+Detalles del Curso
+Inicio:
+28 de septiembre de 2026
+Duración:
+40 horas
+Horario:
+Lunes y Miércoles / 18:00 - 21:00
+Coste:
+397 €
+Inscripción anticipada:
+347 € (antes del 7 de Septiembre de 2026)
+25% de descuento extra para antiguos alumnos
+Inscríbete
+school
+¿De qué trata esta formación?
+
+El Testing es la parte del Desarrollo de Software que se encarga de verificar que las aplicaciones, servicios y soluciones informáticas funcionan correctamente, y validar que su cometido es el que requieren los usuarios. El Testing se engloba como una de las actividades principales dentro de la Calidad del Software, y con esta formación recibirás todo lo necesario para llevar a cabo esta actividad vital.
+
+La formación se compone de cinco módulos donde aprenderás todo lo necesario para realizar tanto Testing Funcional Manual cómo Automático aplicando las últimas tendencias de metodologías así como herramientas de IA. Practicarás todos los conceptos y tendrás acceso a todas las herramientas para llevar a cabo el aprendizaje.
+
+1
+MÓDULO 1
+
+Introducción a la Calidad del Software
+
+Conocerás los conceptos básicos del Testing.
+
+Testing y Pruebas.
+El rol de QA.
+Tipos y Niveles de Pruebas.
+2
+MÓDULO 2
+
+Testing dentro del Ciclo de Vida de un Desarrollo
+
+Aprende cómo se integra el testing en las distintas fases del desarrollo de software.
+
+Tareas relacionadas con el Testing durante el desarrollo, desde la planificación hasta el uso final.
+Diseño y Ejecución de Pruebas.
+Reporte de Errores o Defectos.
+Herramientas para la gestión del Testing.
+3
+MÓDULO 3
+
+Automatización de Pruebas
+
+Da el salto a las pruebas automáticas.
+
+Importancia de automatizar las pruebas manuales y profundización en diferentes frameworks.
+Control de Versiones y Repositorios de Pruebas Automáticas.
+Pruebas Unitarias con Jest y Pruebas de API con Postman/Newman.
+Pruebas de UI con Cypress usando entornos de programación con IA integrada.
+4
+MÓDULO 4
+
+Inteligencia Artificial Generativa para Testing
+
+Aplica la revolución de la IA a tu trabajo diario como QA.
+
+Mejora de la productividad del tester mediante el uso de Modelos de Lenguaje (LLMs).
+Creación de activos: Generación automática de planes de prueba, casos de uso, scripts de automatización y datos sintéticos.
+5
+MÓDULO 5
+
+DevOps y Testing Continuo
+
+Asegura la calidad en entornos de entrega continua.
+
+Integración de pruebas automáticas en un sistema de CI/CD para mantener un estado de Testing Continuo.
+Conceptos de DevOps, Integración Continua y Entrega Continua.
+Herramientas de CI/CD.
+Reportes y Métricas.
+work
+Salidas Profesionales
+
+Las personas en los roles de Tester o QA (Quality Assurance) son los encargados de realizar las tareas relacionadas con el aseguramiento de la Calidad. Podrás acceder a nivel Junior de estos puestos de trabajo con la formación recibida.
+
+info
+Requisitos previos
+
+La formación está enfocada a personas con conocimientos básicos de herramientas de ofimática así como el uso del ordenador personal. El conocimiento de algún lenguaje de programación no es necesario pero sí recomendable. Especialmente dirigida a personas que quieren introducirse en el mundo del Testing o reciclar su profesión.
+
+Fran Guerrero
+Instructor Tech · Aseguramiento de Calidad
+
+Más de 15 años de experiencia en QA
+
+Especialista certificado en Agile y GenAI por el ISTQB, con más de 15 años de trayectoria en Calidad del Software. Experto en implementar procesos de prueba, estrategias de QA y herramientas innovadoras. Destaca por construir relaciones sólidas de trabajo, con el firme objetivo de convertir al área de Calidad en una pieza esencial y transversal en todo el ciclo de desarrollo.
+
+ISTQB Agile Tester
+ISTQB Foundation Level
+GenAI ISTQB
+¿Tienes alguna duda?
+
+Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+
+Ver Preguntas Frecuentes
+Inscríbete

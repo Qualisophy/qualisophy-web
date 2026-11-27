@@ -1,0 +1,36 @@
+- main:
+  - img "Catálogo Formación Qualisophy"
+  - text: CATÁLOGO FORMATIVO
+  - heading "Formación Individual" [level=1]
+  - paragraph: Impulsa tu carrera con nuestros itinerarios especializados. Domina las herramientas de QA, Datos, DevOps y Gestión Ágil.
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem: / Cursos
+  - button "Todos"
+  - button "Reconversión Laboral"
+  - button "Inteligencia Artificial"
+  - button "QA & Automatización"
+  - button "Data & BI"
+  - button "Herramientas Empresariales"
+  - button "DevOps & Gestión"
+  - button "Agile & Scrum"
+  - text: search
+  - textbox "Buscar curso..."
+  - heading "Reconversión Laboral" [level=2]
+  - text: Mostrando 1 curso
+  - link "Triunfa en tu reconversión laboral Reconversión Principiante Triunfa en tu reconversión laboral Prepara tu CV, LinkedIn, portfolio y entrevistas para conseguir tu primer puesto en QA, con mentoría 1 a 1. schedule 5 h wifi Online Ver arrow_forward_ios":
+    - /url: /cursos/reconversion-laboral/triunfa-en-tu-reconversion-laboral
+    - img "Triunfa en tu reconversión laboral"
+    - text: Reconversión Principiante
+    - heading "Triunfa en tu reconversión laboral" [level=3]
+    - paragraph: Prepara tu CV, LinkedIn, portfolio y entrevistas para conseguir tu primer puesto en QA, con mentoría 1 a 1.
+    - text: schedule 5 h wifi Online Ver arrow_forward_ios
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

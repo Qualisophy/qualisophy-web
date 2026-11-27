@@ -1,0 +1,51 @@
+---
+/**
+ * Ficha de curso B2C. Los datos salen de src/content/cursos/<categoria>/<slug>.yaml
+ * (ver src/content.config.ts y src/lib/cursos.ts). Para crear o cambiar un curso no se toca este fichero.
+ */
+import Layout from "@/layouts/Layout.astro";
+import { Course } from "@/components/react/course/Course";
+import { EnrollButton } from "@/components/react/shared/EnrollButton";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { getCursos, fichaCurso, type Curso } from "@/lib/cursos";
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const cursos = await getCursos({ incluirOcultos: true });
+  return cursos.map((curso) => ({
+    params: { categoria: curso.categoria.id, slug: curso.slug },
+    props: { curso },
+  }));
+}
+
+const { curso } = Astro.props as { curso: Curso };
+const ficha = await fichaCurso(curso);
+---
+
+<Layout title={ficha.seo.title} description={ficha.seo.description} image={ficha.seo.image} fullWidth={true}>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="mb-6"><Breadcrumbs /></div>
+    <h1 class="text-center text-2xl md:text-3xl font-bold text-slate-800 mb-8 md:mb-16">
+      {ficha.courseName}
+    </h1>
+    <Course
+      client:load
+      modules={ficha.modules}
+      instructor={ficha.instructor}
+      courseDetails={ficha.courseDetails}
+      courseId={ficha.courseId}
+      courseDescription={ficha.courseDescription}
+      whatIsAbout={ficha.whatIsAbout}
+      job={ficha.job}
+      prerequisites={ficha.prerequisites}
+      faqs={ficha.faqs}
+    />
+    <EnrollButton
+      client:load
+      courseId={ficha.courseId}
+      courseName={ficha.courseName}
+      isComingSoon={ficha.isComingSoon}
+    />
+  </div>
+</Layout>

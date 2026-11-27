@@ -1,0 +1,90 @@
+/
+Cursos
+/
+QA & Testing
+/
+Cypress Automation Bootcamp
+Cypress Automation Bootcamp
+Inicio: 27 de Octubre de 2026
+Días: Martes y Jueves
+Horario: 18:00 - 21:00 horas
+Detalles del Curso
+Inicio:
+27 de Octubre de 2026
+Duración:
+36 horas (6 semanas)
+Horario:
+Martes y Jueves / 18:00 - 21:00
+Coste:
+547 €
+Inscripción anticipada:
+497 € (antes del 13 de octubre de 2026)
+25% de descuento extra para antiguos alumnos
+Inscríbete
+school
+¿De qué trata esta formación?
+
+El Automation Testing permite a los equipos de QA mejorar radicalmente la eficiencia, la precisión y la velocidad de sus pruebas, reduciendo el time-to-market. Cypress se ha consolidado como la herramienta del momento gracias a su arquitectura moderna. En este bootcamp, los alumnos aprenderán Cypress desde cero, dominando desde los conceptos básicos hasta las técnicas de automatización y patrones de diseño más avanzados del mercado.
+
+1
+MÓDULO 1
+
+Introducción a Cypress
+
+Análisis de la arquitectura de Cypress, instalación y configuración inicial.
+
+Estructura de carpetas y archivos de un proyecto estándar.
+Estrategias de identificación de elementos (Localizadores).
+Implementación de aserciones (Asserts) nativas de la herramienta.
+2
+MÓDULO 2
+
+Comandos Básicos e Interacción con UI
+
+Domina la navegación y manipulación del DOM.
+
+Simulación de acciones del usuario (clic, escritura, selección).
+Interacción avanzada con Checkboxes, Radio Buttons y Dropdowns.
+Manejo e intercepción de alertas, ventanas emergentes y tablas dinámicas.
+3
+MÓDULO 3
+
+Buenas Prácticas y Patrones de Diseño
+
+Escribe código limpio y frameworks mantenibles.
+
+Uso estratégico de Fixtures para la gestión de datos de prueba externos.
+Creación y mantenimiento de Custom Commands.
+Implementación del Patrón de Diseño Page Object Model (POM).
+Configuración de variables globales y manejo de Retries (flaky tests).
+4
+MÓDULO 4
+
+Otras Funcionalidades
+
+Lleva Cypress al siguiente nivel validando APIs y BDD.
+
+Validación integral de APIs (Backend) utilizando Cypress.
+Estrategias de ejecución de pruebas multiplataforma.
+Configuración y análisis de métricas usando Cypress Dashboard.
+Introducción a la integración de Cucumber (BDD).
+info
+Requisitos previos
+
+Se recomienda contar con nociones básicas de pruebas de software manuales (como las impartidas en el curso base de QA) y conocimientos fundamentales de tecnologías web (HTML/CSS) y JavaScript.
+
+Javier Flores
+Instructor Tech · Automatización QA
+
+Experiencia en entornos Agile y CI/CD
+
+QA Lead y Cypress Ambassador comprometido con la implementación de la calidad mediante automatización y diseño de frameworks mantenibles.
+
+Cypress Ambassador 2026
+ISTQB Foundation Level
+¿Tienes alguna duda?
+
+Consulta nuestra sección de preguntas frecuentes para resolver tus inquietudes antes de inscribirte.
+
+Ver Preguntas Frecuentes
+Inscríbete

@@ -1,0 +1,50 @@
+# Introducción a SQL para Power BI
+# URL: /cursos/data/sql-powerbi · Esquema: src/content.config.ts
+
+id: data-sql
+nombre: Introducción a SQL para Power BI
+categoria: data
+slug: sql-powerbi
+visible: true
+orden: 1
+imagen: ../../../assets/imagenes-cursos/data/sql-powerbi.jpeg
+resumen: Extrae, filtra y limpia datos en el origen optimizando el rendimiento.
+descripcion: Power BI es potente, pero enviar millones de filas de datos sucios o innecesarios ralentiza drásticamente los informes. Este curso enseña a los analistas a utilizar SQL para realizar el 'trabajo pesado' directamente en el servidor de bases de datos. Los alumnos aprenderán a extraer, filtrar, limpiar y agregar datos en el origen, dominando el concepto de 'Query Folding' (Plegado de Consultas) para que Power BI solo procese la información final, garantizando cuadros de mando ultrarrápidos y optimizados.
+requisitos: Lógica matemática básica y experiencia previa manejando datos en hojas de cálculo.
+nivel: Principiante
+modalidad: Online
+inicio: Por definir
+duracion: Por definir
+duracionCorta: Por definir
+horario: Por definir
+precio:
+  normal: Por definir
+temario:
+  - titulo: Bases de Datos Relacionales y Fundamentos SQL
+    descripcion: Conoce la arquitectura de bases de datos y el lenguaje de consultas.
+    temas:
+      - Entender la arquitectura de bases de datos relacionales y el lenguaje DML/DDL.
+      - "Sentencias básicas: SELECT, FROM, y filtrado potente con la cláusula WHERE."
+      - Búsqueda de patrones (LIKE), operadores lógicos (AND, OR, NOT) y rangos (BETWEEN).
+    icono: Database
+  - titulo: Análisis y Agregación de Datos en el Origen
+    descripcion: Aprende a agrupar y resumir información eficientemente.
+    temas:
+      - "Funciones de agregación: SUM, AVG, COUNT, MIN, MAX."
+      - Agrupación de datos con GROUP BY y filtrado condicional de grupos con HAVING.
+      - Ordenación de resultados (ORDER BY) y limitación de registros (TOP/LIMIT).
+    icono: BarChart
+  - titulo: Relacionando Información Compleja (JOINs)
+    descripcion: Cruza datos de múltiples tablas como un experto.
+    temas:
+      - Diferencias y usos estratégicos de INNER JOIN, LEFT JOIN, y RIGHT JOIN.
+      - Subconsultas (Subqueries) para cálculos dinámicos avanzados.
+      - Uso de DISTINCT y resolución de redundancias en grandes volúmenes.
+    icono: Layers
+  - titulo: Integración Optimizada con Power BI
+    descripcion: Conecta tu base de datos optimizada a Power BI.
+    temas:
+      - Configuración de conexiones y uso del Método de Consulta Nativa en Power BI.
+      - Entendiendo y forzando el Query Folding para maximizar el rendimiento.
+      - "Casos prácticos: de un esquema SQL complejo a una tabla plana perfecta para análisis."
+    icono: Zap

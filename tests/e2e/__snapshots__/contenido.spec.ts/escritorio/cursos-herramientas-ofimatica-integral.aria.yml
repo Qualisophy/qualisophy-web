@@ -1,0 +1,82 @@
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem:
+        - text: /
+        - link "Cursos":
+          - /url: /cursos
+      - listitem:
+        - text: /
+        - link "Herramientas Empresariales":
+          - /url: /cursos/herramientas
+      - listitem: / Ofimática Integral
+  - heading "Ofimática Integral" [level=1]
+  - text: "Inicio: Por definir Horario: Por definir"
+  - heading "Detalles del Curso" [level=2]
+  - text: "Inicio: Por definir Duración: Por definir Horario: Por definir Coste: Por definir"
+  - link "Me interesa el curso":
+    - /url: /course-enrollment?course=tools-office&type=interest
+    - button "Me interesa el curso"
+  - heading "school ¿De qué trata esta formación?" [level=3]
+  - paragraph: Basado en los 6 módulos de estudio estandarizados, este curso ofrece una capacitación completa en las herramientas ofimáticas esenciales del mercado. El objetivo es que cualquier profesional mejore radicalmente su velocidad, organización y capacidad para generar documentos, presentar ideas y estructurar presupuestos o inventarios en el entorno corporativo, eliminando fricciones tecnológicas del día a día.
+  - button "1 MÓDULO 1 Entorno de Trabajo y Gestión Documental":
+    - text: ""
+    - heading "MÓDULO 1" [level=3]
+    - paragraph: Entorno de Trabajo y Gestión Documental
+  - paragraph: Organiza tus archivos y trabaja en la nube de forma segura.
+  - list:
+    - listitem: Gestión eficiente de archivos en el sistema operativo y uso del almacenamiento en la nube.
+    - listitem: Navegación segura, configuración de perfiles y atajos generales del sistema.
+    - listitem: Organización de carpetas, permisos y colaboración de archivos básicos.
+  - button "2 MÓDULO 2 Procesamiento de Textos Avanzado (Word / Google Docs)":
+    - text: ""
+    - heading "MÓDULO 2" [level=3]
+    - paragraph: Procesamiento de Textos Avanzado (Word / Google Docs)
+  - paragraph: Crea documentos profesionales y estandarizados.
+  - list:
+    - listitem: Edición, formato corporativo y configuración de plantillas estándar.
+    - listitem: Uso de estilos, generación de índices automáticos y tablas de contenido.
+    - listitem: Combinación de correspondencia y revisión colaborativa (control de cambios).
+  - button "3 MÓDULO 3 Hojas de Cálculo - Nivel Básico e Intermedio":
+    - text: ""
+    - heading "MÓDULO 3" [level=3]
+    - paragraph: Hojas de Cálculo - Nivel Básico e Intermedio
+  - paragraph: Fundamentos para trabajar con datos estructurados.
+  - list:
+    - listitem: Interfaz de la hoja de cálculo, formato de celdas y tipos de datos.
+    - listitem: Fórmulas matemáticas básicas, porcentajes y referencias (absolutas y relativas).
+    - listitem: Configuración óptima de impresión y protección de celdas.
+  - button "4 MÓDULO 4 Hojas de Cálculo - Organización de Datos":
+    - text: ""
+    - heading "MÓDULO 4" [level=3]
+    - paragraph: Hojas de Cálculo - Organización de Datos
+  - paragraph: Ordena, filtra y visualiza tu información.
+  - list:
+    - listitem: Ordenación multinivel y aplicación de filtros avanzados.
+    - listitem: Creación de gráficos básicos (barras, líneas, circulares) para reportes rápidos.
+    - listitem: Introducción a funciones condicionales simples (SUMAR.SI, CONTAR.SI).
+  - button "5 MÓDULO 5 Presentaciones de Alto Impacto (PowerPoint / Google Slides)":
+    - text: ""
+    - heading "MÓDULO 5" [level=3]
+    - paragraph: Presentaciones de Alto Impacto (PowerPoint / Google Slides)
+  - paragraph: Comunica tus ideas de manera efectiva y visual.
+  - list:
+    - listitem: Estructuración visual de ideas, uso del patrón de diapositivas y guías.
+    - listitem: Integración de elementos multimedia (vídeo, audio, formas inteligentes).
+    - listitem: Transiciones, animaciones no intrusivas y consejos para exponer eficazmente.
+  - button "6 MÓDULO 6 Gestión del Correo y Calendario (Outlook / Entornos Colaborativos)":
+    - text: ""
+    - heading "MÓDULO 6" [level=3]
+    - paragraph: Gestión del Correo y Calendario (Outlook / Entornos Colaborativos)
+  - paragraph: Optimiza tu tiempo y comunicación diaria.
+  - list:
+    - listitem: Organización de la bandeja de entrada, creación de reglas y respuestas automáticas.
+    - listitem: Gestión experta de calendarios, envío de convocatorias y programación de reuniones.
+    - listitem: Integración de tareas pendientes y administración eficaz del tiempo laboral.
+  - heading "info Requisitos previos" [level=3]
+  - paragraph: Manejo básico del ordenador y conexión a internet.
+  - button "Me interesa"

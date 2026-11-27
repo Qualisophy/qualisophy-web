@@ -1,0 +1,36 @@
+- main:
+  - img "Catálogo Formación Qualisophy"
+  - text: CATÁLOGO FORMATIVO
+  - heading "Formación Individual" [level=1]
+  - paragraph: Impulsa tu carrera con nuestros itinerarios especializados. Domina las herramientas de QA, Datos, DevOps y Gestión Ágil.
+  - navigation "Breadcrumb":
+    - list:
+      - listitem:
+        - link "Ir al inicio":
+          - /url: /
+          - img
+      - listitem: / Cursos
+  - button "Todos"
+  - button "Reconversión Laboral"
+  - button "Inteligencia Artificial"
+  - button "QA & Automatización"
+  - button "Data & BI"
+  - button "Herramientas Empresariales"
+  - button "DevOps & Gestión"
+  - button "Agile & Scrum"
+  - text: search
+  - textbox "Buscar curso..."
+  - heading "Agile & Scrum" [level=2]
+  - text: Mostrando 1 curso
+  - 'link "Agile Mastery: El Camino del Scrum Master Agile Intermedio Agile Mastery: El Camino del Scrum Master Facilita, asesora y mentoriza a los equipos de desarrollo para maximizar valor. schedule Por definir wifi Online Ver arrow_forward_ios"':
+    - /url: /cursos/agile/scrum-master
+    - 'img "Agile Mastery: El Camino del Scrum Master"'
+    - text: Agile Intermedio
+    - 'heading "Agile Mastery: El Camino del Scrum Master" [level=3]'
+    - paragraph: Facilita, asesora y mentoriza a los equipos de desarrollo para maximizar valor.
+    - text: schedule Por definir wifi Online Ver arrow_forward_ios
+  - heading "Novedades y Actualidad" [level=3]
+  - paragraph: Recibe noticias sobre tecnología, inclusión y nuevas convocatorias de cursos directamente en tu bandeja.
+  - textbox "Tu correo electrónico"
+  - button "Suscribirse"
+  - paragraph: Al suscribirte aceptas nuestra política de privacidad. Sin spam, prometido. ✌️

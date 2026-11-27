@@ -4,10 +4,10 @@ import { ProgramHero } from "@/components/react/programs/ProgramHero";
 import { CourseGridCard } from "@/components/react/course/CourseGridCard";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 
-import { courseCategories } from "@/data/courseCatalog";
+import { getTarjetasCategoria } from "@/lib/cursos";
 
-const categoryData = courseCategories.find(c => c.id === "tools");
-const courses = categoryData?.courses || [];
+// Cursos de esta categoría (src/content/cursos/herramientas/)
+const courses = await getTarjetasCategoria("herramientas");
 ---
 
 <Layout title="Herramientas Empresariales - Qualisophy" fullWidth={true}>
@@ -44,9 +44,9 @@ const courses = categoryData?.courses || [];
                     description={course.description}
                     imageSrc={course.image}
                     href={course.href}
-                    level={course.level as any}
+                    level={course.level}
                     duration={course.duration}
-                    modality={course.modality as any}
+                    modality={course.modality}
                     category={course.categoryName}
                 />
                 ))}

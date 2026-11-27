@@ -1,0 +1,16 @@
+{
+  "firstName": "Ana",
+  "lastName": "Prueba",
+  "email": "ana.prueba@example.com",
+  "phone": "600000000",
+  "dni": "12345678Z",
+  "address": "Calle Prueba 1",
+  "zipCode": "29001",
+  "city": "Málaga",
+  "province": "Málaga",
+  "course": "ia-claude",
+  "courseName": "Claude: IA para Desarrollo y QA",
+  "discountCode": "",
+  "privacyAccepted": true,
+  "type": "interest"
+}
